@@ -1,0 +1,48 @@
+.ButtonUp-container {
+  cursor: pointer;
+  fill: none;
+  background-color: transparent;
+  border: none;
+  position:fixed;
+  z-index: 999;
+  float: right;
+}
+.button-up {
+  fill: none;
+  position: relative;
+}
+.button-up-mainpath {
+  stroke: #3a3a39;
+  stroke-width: 6px;
+}
+.button-up-path2 {
+  stroke: #3a3a39;
+  stroke-width: 4px;
+}
+.button-up-pathText {
+  fill: #3a3a39;
+  z-index: 10;
+}
+.button-up-filter {
+  width: 100%;
+  height: 100%;
+}
+/*animación*/
+.button-up-mainpath,
+.button-up-path2,
+.button-up-pathSymbol {
+  transition: fill 0.3s ease;
+}
+.button-up-pathSymbol {
+  z-index: 10;
+}
+.button-up-ellipse,
+.button-up-pathSymbol:hover,
+.button-up-mainpath {
+  fill: #f8f5ef;
+}
+.button-up-ellipse:hover,
+.button-up-mainpath:hover,
+.button-up-pathSymbol {
+  fill: #e52421;
+}

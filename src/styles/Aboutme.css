@@ -1,0 +1,167 @@
+/*Fonts styles*/
+.Aboutme-intro,
+.Aboutme-name,
+.Aboutme-title,
+.Aboutme-subtitle,
+.Aboutme-,
+.Aboutme-contactTittle,
+.Aboutme-contactMail {
+  color: #3a3a39;
+}
+.Aboutme-intro,
+.Aboutme-name,
+.Aboutme-title,
+.Aboutme-contactTittle {
+  font-family: PP-Hatton;
+  line-height: 0.9;
+}
+.Aboutme-contactMail {
+  font-family: "PP-Hatton-Ultralight";
+}
+.Aboutme-intro {
+  font-family: PP-Hatton-Ultralight;
+  font-size: 50px;
+  font-weight: 200;
+}
+.Aboutme-name {
+  font-size: 100px;
+  font-weight: 700;
+}
+.Aboutme-number,
+.Aboutme-contactNumber {
+  color: #e52421;
+  font-family: Magilio;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.Aboutme-number {
+  font-size: 300px;
+}
+.Aboutme-title {
+  font-size: 100px;
+  font-weight: 700;
+}
+.Aboutme-subtitle,
+.Aboutme-text,
+.Aboutme-subtitle2 {
+  font-family: Montserrat-Light;
+  font-size: 20px;
+  line-height: normal;
+}
+.Aboutme-subtitle {
+  font-weight: 700;
+  font-style: normal;
+}
+.Aboutme-text {
+  font-weight: 300;
+  font-style: normal;
+}
+.Aboutme-subtitle2 {
+  font-style: italic;
+  font-weight: 600;
+}
+.Aboutme-contactTittle {
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: -5.2px;
+}
+.Aboutme-contactNumber {
+  font-size: 70px;
+}
+.Aboutme-contactMail {
+  font-size: 40px;
+  font-weight: 200;
+}
+/*flexbox styles*/
+.Aboutme-container {
+  display: flex;
+  flex-direction: column;
+  /* margin-left: 192px; */
+  position: relative;
+  margin-top: 200px;
+}
+.Aboutme-maininfo {
+  display: flex;
+  justify-content: space-around;
+}
+.Aboutme-maininfoText {
+  display: flex;
+  flex-direction: column;
+  width: 766px;
+  height: 368px;
+}
+.Aboutme-titlecontainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 250px;
+}
+.Aboutme-number {
+  position: relative;
+  z-index: 1;
+}
+.Aboutme-title {
+  position: absolute;
+  z-index: 2;
+  left: 34px;
+  width: 539px;
+  height: 178px;
+}
+.Aboutme-text {
+  width: 995px;
+}
+.Aboutme-2356container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.Aboutme-62container,
+.Aboutme-32container {
+  display: flex;
+  flex-direction: column;
+}
+.Aboutme-1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-bottom: 250px;
+  width: 1266px;
+  height: 330px;
+}
+.Aboutme-description {
+  margin-left: 271px;
+}
+.Aboutme-3,
+.Aboutme-6,
+.Aboutme-5,
+.Aboutme-2,
+.Aboutme-contact {
+  display: flex;
+  flex-direction: column;
+}
+.Aboutme-3 {
+  height: 612px;
+  justify-content: space-between;
+  margin-bottom: 150px;
+}
+.Aboutme-3 .Aboutme-title {
+  margin-left: 86px;
+  margin-bottom: 60px;
+}
+.Aboutme-6 {
+  width: 564px;
+  height: 883px;
+}
+.Aboutme-5 {
+  width: 646px;
+  height: 529px;
+}
+.Aboutme-2 {
+  width: 701px;
+  height: 418px;
+}
+.Aboutme-contact {
+  width: 595px;
+  height: 251px;
+}

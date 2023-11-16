@@ -1,0 +1,35 @@
+.Contact-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+.Contact-mainContainer {
+  width: 57%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.Contact-main {
+  font-family: "PP-Hatton";
+  color: #3a3a39;
+  font-size: 148px;
+  line-height: 1;
+  font-weight: 700;
+}
+.Contact-number {
+  font-family: "Magilio";
+  font-size: 150px;
+  color: #e52421;
+  font-weight: normal;
+}
+.Contact-mail {
+  font-family: "PP-Hatton-Ultralight";
+  color: #3a3a39;
+  font-size: 100px;
+}
+.Contact-LinkContainer {
+  display: flex;
+  gap: 2rem;
+}

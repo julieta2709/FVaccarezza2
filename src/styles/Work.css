@@ -1,0 +1,48 @@
+/*Layout*/
+.Work-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+}
+.Work-TitleContainer {
+  display: flex;
+  width: 47.4%;
+  align-items: baseline;
+  margin-bottom: 7%;
+}
+.Work-asterisk {
+  width: 100%;
+}
+.Work-ListRow1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 5.5rem;
+  column-gap: 3rem;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 5rem;
+  width: 85%;
+}
+.Work-ListRow2 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 5.5rem;
+  column-gap: 3rem;
+  justify-items: stretch;
+  justify-content: center;
+}
+/*Fonts*/
+.Work-mainTitle {
+  font-family: "PP-Hatton";
+  font-size: 11.25rem;
+  font-weight: normal;
+  text-decoration: underline;
+  color: #e52421;
+  line-height: 1;
+  margin: 0;
+  text-align: center;
+}
+

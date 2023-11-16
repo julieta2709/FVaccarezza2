@@ -1,0 +1,71 @@
+/*layout*/
+.Home-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.HomePF-Container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto 85% auto;
+  height: 100vh;
+  margin: 0;
+  justify-items: center;
+  align-content: center;
+  justify-content: space-around;
+}
+.redCircle {
+  fill: #e52421;
+  align-self: center;
+  margin: 0 1em 1em 1em;
+}
+.redCircle:first-child {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+}
+.redCircle:last-child {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 2;
+}
+/*fonts styles*/
+h2, .year {
+  font-family: "Magilio";
+  font-size: 28rem;
+  font-weight: normal;
+  color: #e52421;
+  line-height: 1;
+  margin: 0;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  margin-block-start: 0.13em;
+  margin-block-end: 0;
+  justify-self: center;
+  align-self: center;
+}
+h1, .portfolio {
+  font-family: "PP-Hatton";
+  font-size: 7rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  z-index: 50;
+  justify-self: center;
+  align-self: center;
+  color: #3A3A39;
+}
+.fv {
+  font-family: "Montserrat";
+  font-size: 0.94rem;
+  font-weight: bold;
+  justify-self: flex-end;
+  align-self: flex-end;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  line-height: 10;
+}

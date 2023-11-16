@@ -1,0 +1,22 @@
+.Work-ItemNumber, .Work-NumberIndividual {
+  font-family: "Magilio";
+    color: #e52421;
+}
+.Work-ItemNumber {
+    font-size: 80px;
+}
+.Work-ItemText,
+.Work-TextIndividual {
+  font-family: "PP-Hatton";
+
+  color: #3a3a39;
+}
+.Work-ItemText {
+  font-size: 20px;
+}
+.Work-NumberIndividual {
+  font-size: 250px;
+}
+.Work-TextIndividual {
+  font-size: 80px;
+}
