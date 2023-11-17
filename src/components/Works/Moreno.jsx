@@ -9,6 +9,7 @@ const Moreno = () => {
       className="Work-TitleIndvidual"
       numberClass="Work-NumberIndividual"
       textClass="Work-TextIndividual"
+      active={currentComponent === 3}
     />
     <p>industrial design studio. branding & website design.</p>
     <p>APRIL 2023</p>

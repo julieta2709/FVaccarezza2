@@ -9,6 +9,7 @@ const Broke = () => {
       className="Work-TitleIndvidual"
       numberClass="Work-NumberIndividual"
       textClass="Work-TextIndividual"
+      active={currentComponent === 6}
     />
     <p>broke is a royalty free music label. identity rebrand, shop UI/UX.</p>
     <p>JANUARY 2023</p>

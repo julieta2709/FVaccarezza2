@@ -9,6 +9,7 @@ const Kp = () => {
       className="Work-TitleIndvidual"
       numberClass="Work-NumberIndividual"
       textClass="Work-TextIndividual"
+      active={currentComponent === 7}
     />
     <p>concept interior design website, UI/UX</p>
     <p>NOVEMBER 2022</p>

@@ -9,6 +9,7 @@ const Michi = () => {
       className="Work-TitleIndvidual"
       numberClass="Work-NumberIndividual"
       textClass="Work-TextIndividual"
+      active={currentComponent === 5}
     />
     <p>concept branding greek dine in & take away.</p>
     <p>JANUARY 2023</p>

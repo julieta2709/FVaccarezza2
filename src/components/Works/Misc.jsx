@@ -9,6 +9,7 @@ const Misc = () => {
       className="Work-TitleIndvidual"
       numberClass="Work-NumberIndividual"
       textClass="Work-TextIndividual"
+      active={currentComponent === 9}
     />
     <p>i have explored 3d renders using different materials and textures, playing with abstract shapes and compositions.</p>
     </div>

@@ -9,6 +9,7 @@ const Estudio = () => {
       className="Work-TitleIndvidual"
       numberClass="Work-NumberIndividual"
       textClass="Work-TextIndividual"
+      active={currentComponent === 2}
     />
     <p>furniture & decor store also located in tigre, buenos aires. brand identity, product photography & merchandising.</p>
     <p>MARCH 2023</p>

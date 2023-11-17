@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Next from "../Buttons/Next";
 import ItemTitle from "./ItemTitle";
 const Frog = () => {
+  const [currentComponent, setCurrentComponent] = useState(1);
+
+  const handleButtonClick = () => {
+    if (currentComponent < 9) {
+      setCurrentComponent(currentComponent + 1);
+    }
+  };
   return (
     <div>
       <ItemTitle
@@ -10,8 +17,9 @@ const Frog = () => {
         className="Work-TitleIndvidual"
         numberClass="Work-NumberIndividual"
         textClass="Work-TextIndividual"
+        active={currentComponent === 1}
       />
-      <Next />
+      <Next onClick={handleButtonClick} />
       <p>
         retail store located in tigre, buenos aires. branding, product
         photography & website design.

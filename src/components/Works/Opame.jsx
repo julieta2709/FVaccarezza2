@@ -9,6 +9,7 @@ const Opame = () => {
       className="Work-TitleIndvidual"
       numberClass="Work-NumberIndividual"
       textClass="Work-TextIndividual"
+      active={currentComponent === 4}
     />
     <p>exclusive artists & designers creations e-commerce. website redesign.</p>
     <p>APRIL 2023</p>
