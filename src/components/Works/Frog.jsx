@@ -1,31 +1,11 @@
-import React, { useState } from "react";
-import Next from "../Buttons/Next";
-import ItemTitle from "./ItemTitle";
-const Frog = () => {
-  const [currentComponent, setCurrentComponent] = useState(1);
+import React from "react";
+import WorkTitle from "./WorkTitle";
+import WorkTitleData from "./WorkTitleData";
 
-  const handleButtonClick = () => {
-    if (currentComponent < 9) {
-      setCurrentComponent(currentComponent + 1);
-    }
-  };
+const Frog = () => {
+
   return (
-    <div>
-      <ItemTitle
-        number="1"
-        text="FROG BAZAR."
-        className="Work-TitleIndvidual"
-        numberClass="Work-NumberIndividual"
-        textClass="Work-TextIndividual"
-        active={currentComponent === 1}
-      />
-      <Next onClick={handleButtonClick} />
-      <p>
-        retail store located in tigre, buenos aires. branding, product
-        photography & website design.
-      </p>
-      <p>DECEMBER 2022</p>
-    </div>
-  );
+    <WorkTitle data={WorkTitleData.components} />
+  )
 };
 export default Frog;

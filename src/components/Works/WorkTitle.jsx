@@ -1,23 +1,25 @@
 import React, { useEffect, useState } from "react";
 import Next from "../Buttons/Next";
 import ItemTitle from "./ItemTitle";
-import WorkTitleData from "./WorkTitleData.json";
 
-const WorkTitle = () => {
+const WorkTitle = ({ data }) => {
   const [currentComponent, setCurrentComponent] = useState(0);
   const [components, setComponents] = useState([]);
 
   useEffect(() => {
-    setComponents(WorkTitleData);
-  }, []);
+    setComponents(data);
+  }, [data]);
 
   const handleButtonClick = () => {
     if (currentComponent < components.length - 1) {
-        setCurrentComponent(currentComponent + 1);
-      }
+      setCurrentComponent(currentComponent + 1);
+    }
   };
+  if (components.length === 0) {
+    return null;
+  }
 
-  const { title, description, date } = components[currentComponent];
+  const { title, description, date } = components[currentComponent] || {};
 
   return (
     <div>
