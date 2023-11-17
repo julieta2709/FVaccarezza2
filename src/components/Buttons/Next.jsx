@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import ButtonNext from "../../assets/img/Buttons/ButtonNext";
 
 const Next = ({ onClick }) => {
-  const [isClicked, setIsClicked] = useState(false);
+  
   const handleClick = () => {
-    setIsClicked(true);
-    onClick();
+        onClick();
   };
   return <ButtonNext onClick={handleClick} />;
 };
