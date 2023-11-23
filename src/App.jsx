@@ -27,15 +27,15 @@ function App() {
         <Route path={"/Work"} element={<Work />} />
         <Route path={"/Contact"} element={<Contact />} />
         <Route path={"/Photography"} element={<Photography />} />
-        <Route path={"/Broke"} element={<Broke />} />
-        <Route path={"/Estudio"} element={<Estudio />} />
-        <Route path={"/Frog"} element={<Frog />} />
-        <Route path={"/Kp"} element={<Kp />} />
-        <Route path={"/Michi"} element={<Michi />} />
-        <Route path={"/Misc"} element={<Misc />} />
-        <Route path={"/Moreno"} element={<Moreno/>} />
-        <Route path={"/Opame"} element={<Opame />} />
-        <Route path={"/Logofolio"} element={<Logofolio />} />
+        <Route path="/Broke/:number" element={<Broke />} />
+        <Route path={"/Estudio/:number"} element={<Estudio />} />
+        <Route path={"/Frog/:number"} element={<Frog />} />
+        <Route path={"/Kp/:number"} element={<Kp />} />
+        <Route path={"/Michi/:number"} element={<Michi />} />
+        <Route path={"/Misc/:number"} element={<Misc />} />
+        <Route path={"/Moreno/:number"} element={<Moreno/>} />
+        <Route path={"/Opame/:number"} element={<Opame />} />
+        <Route path={"/Logofolio/:number"} element={<Logofolio />} />
       </Routes>
       {/* <div className="overlay"></div> */}
       <ButtonUp />

@@ -1,41 +1,39 @@
-import React, { useEffect, useState } from "react";
-import Next from "../Buttons/Next";
+import React from "react";
+import { useParams } from "react-router-dom";
+import Prev from "../Buttons/Prev";
 import ItemTitle from "./ItemTitle";
 import WorkTitleData from "./WorkTitleData.json";
+
 const Misc = () => {
-  const [currentComponent, setCurrentComponent] = useState(0);
-  const [components, setComponents] = useState([]);
+  const { number } = useParams();
+  const currentIndex = Number(number);
+  const components = WorkTitleData;
+  const currentComponent = components.find(
+    (item) => item.index === currentIndex
+  );
 
-  useEffect(() => {
-    setComponents(WorkTitleData);
-  }, []);
+  const prevComponent =
+    components.find((item) => item.index === currentIndex - 1) || {};
+  const nextComponent =
+    components.find((item) => item.index === currentIndex + 1) || {};
+  /* const navigateTo = (index) => {
+    navigate(`/work/${index}`);
+  }; */
 
-  const handleButtonClick = () => {
-    if (currentComponent < components.length - 1) {
-      setCurrentComponent(currentComponent + 1);
-    }
-  };
-  if (components.length === 0) {
-    return null;
-  }
-
-  const { index, title, description, date } =
-  components.find((item) => parseInt(item.index) === currentComponent + 1) ||
-  {};
-const decodedTitle = decodeURIComponent(title);
   return (
     <div>
+      {prevComponent && prevComponent.index && <Prev />}
       <ItemTitle
-        number={index}
-        text={decodedTitle}
+        number={currentComponent.index}
+        text={currentComponent.title}
         className="Work-TitleIndvidual"
         numberClass="Work-NumberIndividual"
         textClass="Work-TextIndividual"
-        active={currentComponent === 0}
+        active={true}
       />
-      <Next onClick={handleButtonClick} />
-      <p>{description}</p>
-      <p>{date}</p>
+      {nextComponent && nextComponent.index && <Next />}
+      <p>{currentComponent.description}</p>
+      <p>{currentComponent.date}</p>
     </div>
   );
 };

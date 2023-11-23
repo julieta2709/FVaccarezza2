@@ -14,7 +14,7 @@ const Work = () => {
           <ItemTitle
             number="1"
             text="FROG BAZAR."
-            link="/Frog"
+            link="/Frog/1"
             className="Work-ListItem"
             numberClass="Work-ItemNumber"
             textClass="Work-ItemText"
@@ -22,7 +22,7 @@ const Work = () => {
           <ItemTitle
             number="2"
             text="ESTUDIO 32 -"
-            link="/Estudio"
+            link="/Estudio/2"
             className="Work-ListItem"
             numberClass="Work-ItemNumber"
             textClass="Work-ItemText"
@@ -30,7 +30,7 @@ const Work = () => {
           <ItemTitle
             number="3"
             text="N.MORENO/PEDRAZA"
-            link="/Moreno"
+            link="/Moreno/3"
             className="Work-ListItem"
             numberClass="Work-ItemNumber"
             textClass="Work-ItemText"
@@ -38,7 +38,7 @@ const Work = () => {
           <ItemTitle
             number="4"
             text="OPAME COLLECTIVE ="
-            link="/Opame"
+            link="/Opame/4"
             className="Work-ListItem"
             numberClass="Work-ItemNumber"
             textClass="Work-ItemText"
@@ -48,7 +48,7 @@ const Work = () => {
           <ItemTitle
             number="5"
             text='MICHI BISTRO "'
-            link="/Michi"
+            link="/Michi/5"
             className="Work-ListItem"
             numberClass="Work-ItemNumber"
             textClass="Work-ItemText"
@@ -56,7 +56,7 @@ const Work = () => {
           <ItemTitle
             number="6"
             text="BROKE MUSIC _"
-            link="/Broke"
+            link="/Broke/6"
             className="Work-ListItem"
             numberClass="Work-ItemNumber"
             textClass="Work-ItemText"
@@ -64,7 +64,7 @@ const Work = () => {
           <ItemTitle
             number="7"
             text="KP INTERIOR DESIGN /"
-            link="/Kp"
+            link="/Kp/7"
             className="Work-ListItem"
             numberClass="Work-ItemNumber"
             textClass="Work-ItemText"
@@ -72,7 +72,7 @@ const Work = () => {
           <ItemTitle
             number="8"
             text="LOGOFOLIO }"
-            link="/Logofolio"
+            link="/Logofolio/8"
             className="Work-ListItem"
             numberClass="Work-ItemNumber"
             textClass="Work-ItemText"
@@ -80,7 +80,7 @@ const Work = () => {
           <ItemTitle
             number="9"
             text="3D MISC. ART *"
-            link="/Misc"
+            link="/Misc/9"
             className="Work-ListItem"
             numberClass="Work-ItemNumber"
             textClass="Work-ItemText"
