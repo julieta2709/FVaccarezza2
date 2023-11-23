@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Next from "../Buttons/Next";
 import ItemTitle from "./ItemTitle";
@@ -6,23 +6,31 @@ import WorkTitleData from "./WorkTitleData.json";
 
 const Frog = () => {
   const { number } = useParams();
-  const currentIndex = Number(number);
+  const initialIndex = Number(number);
   const components = WorkTitleData;
-  const currentComponent = components.find(
-    (item) => item.index === currentIndex
-  );
+  const [currentIndex, setCurrentIndex] = useState(initialIndex);
+  const [currentComponent, setCurrentComponent] = useState({});
 
-  const prevComponent =
-    components.find((item) => item.index === currentIndex - 1) || {};
-  const nextComponent =
-    components.find((item) => item.index === currentIndex + 1) || {};
+  useEffect(() => {
+    const foundComponent = components.find(
+      (item) => item.index === currentIndex
+    );
+    setCurrentComponent(foundComponent || {});
+  }, [components, currentIndex]);
+
+  const handleNextClick = () => {
+    const nextIndex = currentIndex + 1;
+    const nextComponent =
+      components.find((item) => item.index === nextIndex) || {};
+    setCurrentComponent(nextComponent);
+    setCurrentIndex(nextIndex);
+  };
   /* const navigateTo = (index) => {
     navigate(`/work/${index}`);
   }; */
 
   return (
     <div>
-      {prevComponent && prevComponent.index && <Prev />}
       <ItemTitle
         number={currentComponent.index}
         text={currentComponent.title}
@@ -31,7 +39,7 @@ const Frog = () => {
         textClass="Work-TextIndividual"
         active={true}
       />
-      {nextComponent && nextComponent.index && <Next />}
+      <Next onClick={handleNextClick} />
       <p>{currentComponent.description}</p>
       <p>{currentComponent.date}</p>
     </div>

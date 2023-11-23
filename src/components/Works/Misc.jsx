@@ -1,28 +1,47 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Next from "../Buttons/Next";
 import Prev from "../Buttons/Prev";
 import ItemTitle from "./ItemTitle";
 import WorkTitleData from "./WorkTitleData.json";
 
 const Misc = () => {
   const { number } = useParams();
-  const currentIndex = Number(number);
+  const initialIndex = Number(number);
   const components = WorkTitleData;
-  const currentComponent = components.find(
-    (item) => item.index === currentIndex
-  );
+  const [currentIndex, setCurrentIndex] = useState(initialIndex);
+  const [currentComponent, setCurrentComponent] = useState({});
 
-  const prevComponent =
-    components.find((item) => item.index === currentIndex - 1) || {};
-  const nextComponent =
-    components.find((item) => item.index === currentIndex + 1) || {};
+  useEffect(() => {
+    const foundComponent = components.find(
+      (item) => item.index === currentIndex
+    );
+    setCurrentComponent(foundComponent || {});
+  }, [components, currentIndex]);
+
+  const handlePrevClick = () => {
+    const prevIndex = currentIndex - 1;
+    const prevComponent =
+      components.find((item) => item.index === prevIndex) || {};
+    setCurrentComponent(prevComponent);
+    setCurrentIndex(prevIndex);
+  };
+  const handleNextClick = () => {
+    const nextIndex = currentIndex + 1;
+    const nextComponent =
+      components.find((item) => item.index === nextIndex) || {};
+    setCurrentComponent(nextComponent);
+    setCurrentIndex(nextIndex);
+  };
+
   /* const navigateTo = (index) => {
     navigate(`/work/${index}`);
   }; */
+  const isLastComponent = currentIndex === components.length - 1;
 
   return (
     <div>
-      {prevComponent && prevComponent.index && <Prev />}
+      <Prev onClick={handlePrevClick} />
       <ItemTitle
         number={currentComponent.index}
         text={currentComponent.title}
@@ -31,7 +50,7 @@ const Misc = () => {
         textClass="Work-TextIndividual"
         active={true}
       />
-      {nextComponent && nextComponent.index && <Next />}
+      <Next onClick={handleNextClick} disabled={isLastComponent} />
       <p>{currentComponent.description}</p>
       <p>{currentComponent.date}</p>
     </div>
