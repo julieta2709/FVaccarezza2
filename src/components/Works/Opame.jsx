@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import "../../styles/ItemTitle.css";
+import BeLink from "../Buttons/BeLink";
 import Next from "../Buttons/Next";
 import Prev from "../Buttons/Prev";
 import ItemTitle from "./ItemTitle";
@@ -44,9 +46,13 @@ const Opame = () => {
   }; */
   const isFirstComponent = currentIndex === 0;
   const isLastComponent = currentIndex === components.length - 1;
+  const currentComponentLink = currentComponent && currentComponent.url;
+
   return (
     <div>
-      <Prev onClick={handlePrevClick} disabled={isFirstComponent}/>
+      <div className="WorkTitle-maincontainer">
+      <div className="WorkTitle-container">
+      <Prev onClick={handlePrevClick} disabled={isFirstComponent} />
       <ItemTitle
         number={currentComponent.index}
         text={currentComponent.title}
@@ -55,9 +61,12 @@ const Opame = () => {
         textClass="Work-TextIndividual"
         active={true}
       />
-       <Next onClick={handleNextClick} disabled={isLastComponent} />
-      <p>{currentComponent.description}</p>
-      <p>{currentComponent.date}</p>
+      <Next onClick={handleNextClick} disabled={isLastComponent} />
+      </div>
+      <p className="WorkTitleDescription">{currentComponent.description}</p>
+      <p className="WorkTitleDate">{currentComponent.date}</p>
+      </div>
+      {currentComponentLink && <BeLink link={currentComponentLink} />}
     </div>
   );
 };

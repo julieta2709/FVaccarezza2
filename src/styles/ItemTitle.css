@@ -1,6 +1,8 @@
+.Work-ItemNumber, .Work-NumberIndividual, .WorkTitleDate {
+    color: #e52421;
+}
 .Work-ItemNumber, .Work-NumberIndividual {
   font-family: "Magilio";
-    color: #e52421;
 }
 .Work-ItemNumber {
     font-size: 80px;
@@ -8,10 +10,12 @@
 .Work-ItemText,
 .Work-TextIndividual {
   font-family: "PP-Hatton";
-
+}
+.Work-ItemText,
+.Work-TextIndividual, .WorkTitleDescription {
   color: #3a3a39;
 }
-.Work-ItemText {
+.Work-ItemText, .WorkTitleDescription {
   font-size: 20px;
 }
 .Work-NumberIndividual {
@@ -19,4 +23,20 @@
 }
 .Work-TextIndividual {
   font-size: 80px;
+}
+.WorkTitleDescription {
+  font-family: "Montserrat-Light";
+}
+.WorkTitleDate {
+  font-family: "Montserrat";
+}
+.WorkTitle-maincontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.WorkTitle-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
