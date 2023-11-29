@@ -30,7 +30,7 @@ const NavBar = () => {
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/lazy-pages/AboutMe" className="nav-link" onClick={handleToggleMenu}>
+          <Link to="/AboutMe" className="nav-link" onClick={handleToggleMenu}>
             ABOUT ME
           </Link>
         </li>

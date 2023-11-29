@@ -3,9 +3,9 @@ import asterisk from "../assets/img/icons/asterisk.svg";
 import ItemTitle from "../components/Works/ItemTitle";
 import "../styles/Work.css";
 
-const Work = () => {
+const Work = ({workRef}) => {
   return (
-    <div className="Work-container">
+    <div ref={workRef} className="Work-container">
       <div className="Work-TitleContainer">
         <img className="Work-asterisk" src={asterisk} alt="asteriskk" />
         <h2 className="Work-mainTitle">LATEST WORKS</h2>

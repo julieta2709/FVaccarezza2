@@ -29,13 +29,14 @@ const AboutMe = () => {
           <p className="Aboutme-title">profile.</p>
         </div>
         <div className="Aboutme-description">
-        <p className="Aboutme-subtitle">ABOUT ME</p>
-        <p className="Aboutme-text">
-          I am a freelance graphic designer from Tigre, Argentina. I have
-          studied several years at the universidad of buenos aires (U.B.A.),
-          from industrial to graphic design. Been always passionate about style
-          in all it forms and started exploring this world many years ago.
-        </p>
+          <p className="Aboutme-subtitle">ABOUT ME</p>
+          <p className="Aboutme-text">
+            I am a freelance graphic designer from Tigre, Argentina. I have
+            studied several years at the universidad of buenos aires (U.B.A.),
+            from industrial to graphic design. Been always passionate about
+            style in all it forms and started exploring this world many years
+            ago.
+          </p>
         </div>
       </div>
       <div className="Aboutme-2356container">

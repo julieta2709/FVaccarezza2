@@ -1,13 +1,11 @@
 import React, { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 
-function LazyPages ({ aboutMeRef, workRef, contactRef }) {
+const LazyPages = ({ aboutMeRef, workRef, contactRef }) => {
   const LazyAboutMe = React.lazy(() => import("../pages/AboutMe"));
-  const LazyWork = React.lazy(() => import("../pages/Work"));
-  const LazyContact = React.lazy(() => import("../pages/Contact"));
-  console.log('aboutMeRef:', aboutMeRef.current);
-  console.log('workRef:', workRef.current);
-  console.log('contactRef:', contactRef.current);
+ /*  const LazyWork = React.lazy(() => import("../pages/Work"));
+  const LazyContact = React.lazy(() => import("../pages/Contact")); */
+ 
   /* const LazyBroke = React.lazy(() => import("./Works/Broke"));
   const LazyEstudio = React.lazy(() => import("./Works/Estudio"));
   const LazyFrog = React.lazy(() => import("./Works/Frog"));
@@ -23,9 +21,9 @@ function LazyPages ({ aboutMeRef, workRef, contactRef }) {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Routes>
-        <Route path="/lazy-pages/AboutMe" element={<LazyAboutMe />} />
-        <Route path="/lazy-pages/Work" element={<LazyWork />} />
-        <Route path="/lazy-pages/Contact" element={<LazyContact />} />
+        <Route path="/lazy-pages/AboutMe" element={<LazyAboutMe aboutMeRef={aboutMeRef}/>}  />
+        {/* <Route path="/lazy-pages/Work" element={<LazyWork workRef={workRef} />} />
+        <Route path="/lazy-pages/Contact" element={<LazyContact contactRef={contactRef} />} /> */}
         {/* <Route path="/Broke/:number" element={<LazyBroke />} />
         <Route path={"/Estudio/:number"} element={<LazyEstudio />} />
         <Route path={"/Frog/:number"} element={<LazyFrog />} />
