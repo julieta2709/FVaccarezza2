@@ -43,7 +43,11 @@ body {
 /*fuentes*/
 @font-face {
   font-family: "Montserrat";
-  src: url("https://db.onlinewebfonts.com/t/5fc6f4fd75e944a52a342ab2c7f100f1.eot");
+  src: url("../assets/Fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  /* src: url("https://db.onlinewebfonts.com/t/5fc6f4fd75e944a52a342ab2c7f100f1.eot");
   src: url("https://db.onlinewebfonts.com/t/5fc6f4fd75e944a52a342ab2c7f100f1.eot?#iefix")
       format("embedded-opentype"),
     url("https://db.onlinewebfonts.com/t/5fc6f4fd75e944a52a342ab2c7f100f1.woff")
@@ -54,25 +58,30 @@ body {
       format("truetype"),
     url("https://db.onlinewebfonts.com/t/5fc6f4fd75e944a52a342ab2c7f100f1.svg#Montserrat")
       format("svg");
+  */
+}
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("../assets/Fonts/MontserratExtralight.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-}
-@font-face{
-  font-family: "Montserrat-Light";
-  src: url("https://db.onlinewebfonts.com/t/029177df870cce2b384f0610a6e1f82a.eot");
+  /*   src: url("https://db.onlinewebfonts.com/t/029177df870cce2b384f0610a6e1f82a.eot");
   src: url("https://db.onlinewebfonts.com/t/029177df870cce2b384f0610a6e1f82a.eot?#iefix")format("embedded-opentype"),
       url("https://db.onlinewebfonts.com/t/029177df870cce2b384f0610a6e1f82a.woff")format("woff"),
       url("https://db.onlinewebfonts.com/t/029177df870cce2b384f0610a6e1f82a.woff2")format("woff2"),
       url("https://db.onlinewebfonts.com/t/029177df870cce2b384f0610a6e1f82a.ttf")format("truetype"),
       url("https://db.onlinewebfonts.com/t/029177df870cce2b384f0610a6e1f82a.svg#Montserrat Light")format("svg");
-  font-weight:normal;
-  font-style:normal;
-  font-display:swap;
+   */
 }
 @font-face {
   font-family: "Magilio";
-  src: url("https://db.onlinewebfonts.com/t/6ab22bdce5f735579eceb300fe570dad.eot");
+  src: url("../assets/Fonts/MagilioRegular.ttf") format("truetype");
+  src: url("../assets/Fonts/MagilioRegular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  /* src: url("https://db.onlinewebfonts.com/t/6ab22bdce5f735579eceb300fe570dad.eot");
   src: url("https://db.onlinewebfonts.com/t/6ab22bdce5f735579eceb300fe570dad.eot?#iefix")
       format("embedded-opentype"),
     url("https://db.onlinewebfonts.com/t/6ab22bdce5f735579eceb300fe570dad.woff")
@@ -83,13 +92,15 @@ body {
       format("truetype"),
     url("https://db.onlinewebfonts.com/t/6ab22bdce5f735579eceb300fe570dad.svg#Magilio")
       format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+  */
 }
 @font-face {
   font-family: "PP-Hatton";
-  src: url("https://db.onlinewebfonts.com/t/3147420f5573b22000d1e233cae7cdc9.eot");
+  src: url("../assets/Fonts/PPHattonMedium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  /* src: url("https://db.onlinewebfonts.com/t/3147420f5573b22000d1e233cae7cdc9.eot");
   src: url("https://db.onlinewebfonts.com/t/3147420f5573b22000d1e233cae7cdc9.eot?#iefix")
       format("embedded-opentype"),
     url("https://db.onlinewebfonts.com/t/3147420f5573b22000d1e233cae7cdc9.woff")
@@ -100,19 +111,19 @@ body {
       format("truetype"),
     url("https://db.onlinewebfonts.com/t/3147420f5573b22000d1e233cae7cdc9.svg#PP Hatton")
       format("svg");
+   */
+}
+@font-face {
+  font-family: "PP-Hatton-Ultralight";
+  src: url("../assets/Fonts/PPHattonUltralight.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-}
-@font-face{
-  font-family: "PP-Hatton-Ultralight";
-  src: url("https://db.onlinewebfonts.com/t/25a746dc145d16d8684be3117e95b8eb.eot");
+  /* src: url("https://db.onlinewebfonts.com/t/25a746dc145d16d8684be3117e95b8eb.eot");
   src: url("https://db.onlinewebfonts.com/t/25a746dc145d16d8684be3117e95b8eb.eot?#iefix")format("embedded-opentype"),
       url("https://db.onlinewebfonts.com/t/25a746dc145d16d8684be3117e95b8eb.woff")format("woff"),
       url("https://db.onlinewebfonts.com/t/25a746dc145d16d8684be3117e95b8eb.woff2")format("woff2"),
       url("https://db.onlinewebfonts.com/t/25a746dc145d16d8684be3117e95b8eb.ttf")format("truetype"),
       url("https://db.onlinewebfonts.com/t/25a746dc145d16d8684be3117e95b8eb.svg#PP Hatton Ultralight")format("svg");
-  font-weight:normal;
-  font-style:normal;
-  font-display:swap;
+ */
 }
