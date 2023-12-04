@@ -4,7 +4,7 @@ import Home from "../pages/Home";
 import Photography from "../pages/Photography";
 
 const LazyAboutMe = lazy(() => import("../pages/AboutMe"));
-const LazyWork = lazy(() => import("../pages/Work"));
+const LazyWork2 = lazy(() => import("../pages/Work2"));
 const LazyContact = lazy(() => import("../pages/Contact"));
 const LazyFrog = lazy(() => import("../components/Works/Frog"));
 const LazyEstudio = lazy(() => import("../components/Works/Estudio"));
@@ -26,7 +26,7 @@ const Router = () => {
             <Home />
             <Suspense fallback={<div>Loading...</div>}>
               <LazyAboutMe />
-              <LazyWork />
+              <LazyWork2 />
               <LazyFrog prop="number, text, decription,date" />
               <LazyEstudio />
               <LazyMoreno />
@@ -44,7 +44,7 @@ const Router = () => {
       <Route path={"/ButtonUp"} element={<Home />} />
       <Route path={"/Photography"} element={<Photography />} />
       <Route path={"/AboutMe"} element={<LazyAboutMe />} />
-      <Route path={"/Work"} element={<LazyWork />} />
+      <Route path={"/Work"} element={<LazyWork2 />} />
       <Route
         path={"/Frog/:number"}
         element={(props) => {
