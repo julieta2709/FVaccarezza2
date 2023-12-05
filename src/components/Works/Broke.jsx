@@ -7,7 +7,7 @@ import Prev from "../Buttons/Prev";
 import ItemTitle from "./ItemTitle";
 import WorkTitleData from "./WorkTitleData.json";
 
-const Broke = () => {
+const Broke = ({ work, selectWork }) => {
   const { number } = useParams();
   const initialIndex = Number(number);
   const components = WorkTitleData;
