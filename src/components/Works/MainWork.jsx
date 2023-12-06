@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/Work.css";
-import Broke from "./Broke";
+
 
 const MainWork = ({ works, selectWork }) => {
   const firstRow = works.slice(0, 4);
@@ -37,12 +37,7 @@ const MainWork = ({ works, selectWork }) => {
           </li>
         ))}
       </ul>
-      <div>
-        {works.map((work) => (
-          <Broke key={work.index} work={work} selectWork={selectWork} />
-        ))}
-      </div>
-    </div>
+          </div>
   );
 };
 export default MainWork;

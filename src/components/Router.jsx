@@ -14,7 +14,7 @@ const LazyMichi = lazy(() => import("../components/Works/Michi"));
 const LazyBroke = lazy(() => import("../components/Works/Broke"));
 const LazyKp = lazy(() => import("../components/Works/Kp"));
 const LazyLogofolio = lazy(() => import("../components/Works/Logofolio"));
-const LazyMisc = lazy(() => import("../components/Works/Misc"));
+const LazyMisc = lazy(() => import("../components/Works/Misc")); 
 
 const Router = () => {
   return (

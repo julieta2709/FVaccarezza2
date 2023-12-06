@@ -1,72 +1,56 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import "../../styles/ItemTitle.css";
-import BeLink from "../Buttons/BeLink";
+import WorkData from "../../pages/WorkData.json";
+import "../../styles/Work.css";
 import Next from "../Buttons/Next";
 import Prev from "../Buttons/Prev";
-import ItemTitle from "./ItemTitle";
-import WorkTitleData from "./WorkTitleData.json";
 
-const Kp = () => {
-  const { number } = useParams();
-  const initialIndex = Number(number);
-  const components = WorkTitleData;
-  const [currentIndex, setCurrentIndex] = useState(initialIndex);
+const Kp = ({ work, selectWork }) => {
+  const [works, setWorks] = useState(WorkData);
+  const [currentIndex, setCurrentIndex] = useState(work ? work.index : 0);
   const [currentComponent, setCurrentComponent] = useState({});
 
   useEffect(() => {
-    const foundComponent = components.find(
-      (item) => item.index === currentIndex
-    );
-    setCurrentComponent(foundComponent || {});
-  }, [components, currentIndex]);
+    setCurrentIndex(work.index);
+  }, [work]);
 
   const handlePrevClick = () => {
     const prevIndex = currentIndex - 1;
-    if (currentIndex > 1) {
+    if (currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);
-      const prevComponent =
-        components.find((item) => item.index === prevIndex) || {};
+      const prevComponent = works.find((work) => work.index === prevIndex) || {};
       setCurrentComponent(prevComponent);
     }
   };
 
   const handleNextClick = () => {
     const nextIndex = currentIndex + 1;
-    if (nextIndex <= components.length) {
+    if (nextIndex <= works.length) {
       setCurrentIndex(nextIndex);
-      const nextComponent =
-        components.find((item) => item.index === nextIndex) || {};
+      const nextComponent = works.find((work) => work.index === nextIndex) || {};
       setCurrentComponent(nextComponent);
     }
   };
 
-  /* const navigateTo = (index) => {
-    navigate(`/work/${index}`);
-  }; */
-  const isFirstComponent = currentIndex === 0;
-  const isLastComponent = currentIndex === components.length - 1;
-  const currentComponentLink = currentComponent && currentComponent.url;
+  if (!work) {
+    return null;
+  }
+
   return (
     <div>
-      <div className="WorkTitle-maincontainer">
-      <div className="WorkTitle-container">
-      <Prev onClick={handlePrevClick} disabled={isFirstComponent} />
-      <ItemTitle
-        number={currentComponent.index}
-        text={currentComponent.title}
+      <Prev onClick={handlePrevClick} />
+      <div
         className="Work-TitleIndvidual"
-        numberClass="Work-NumberIndividual"
-        textClass="Work-TextIndividual"
-        active={true}
-      />
-      <Next onClick={handleNextClick} disabled={isLastComponent} />
+        // onClick={() => selectWork(work.index)}
+      >
+        <span className="Work-NumberIndividual">{work.index}</span>
+        <span className="Work-TextIndividual">{work.title}</span>
+        <p className="WorkTitleDescription">{work.description}</p>
+        <p className="WorkTitleDate">{work.date}</p>
+        <Next onClick={handleNextClick} />
       </div>
-      <p className="WorkTitleDescription">{currentComponent.description}</p>
-      <p className="WorkTitleDate">{currentComponent.date}</p>
-      </div>
-      {currentComponentLink && <BeLink link={currentComponentLink} />}
     </div>
   );
 };
+
 export default Kp;
+
