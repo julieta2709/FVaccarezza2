@@ -45,15 +45,15 @@ const Router = () => {
       <Route path={"/Photography"} element={<Photography />} />
       <Route path={"/AboutMe"} element={<LazyAboutMe />} />
       <Route path={"/Work"} element={<LazyWork />} />
-      <Route path={"/Frog/:number"} element={<LazyFrog />} />
-      <Route path={"/Estudio/:number"} element={<LazyEstudio />} />
-      <Route path={"/Moreno/:number"} element={<LazyMoreno />} />
-      <Route path={"/Opame/:number"} element={<LazyOpame />} />
-      <Route path={"/Michi/:number"} element={<LazyMichi />} />
-      <Route path={"/Broke/:number"} element={<LazyBroke />} />
-      <Route path={"/Kp/:number"} element={<LazyKp />} />
-      <Route path={"/Logofolio/:number"} element={<LazyLogofolio />} />
-      <Route path={"/Misc/:number"} element={<LazyMisc />} />
+      <Route path={"/Frog"} element={<LazyFrog />} />
+      <Route path={"/Estudio"} element={<LazyEstudio />} />
+      <Route path={"/Moreno"} element={<LazyMoreno />} />
+      <Route path={"/Opame"} element={<LazyOpame />} />
+      <Route path={"/Michi"} element={<LazyMichi />} />
+      <Route path={"/Broke"} element={<LazyBroke />} />
+      <Route path={"/Kp"} element={<LazyKp />} />
+      <Route path={"/Logofolio"} element={<LazyLogofolio />} />
+      <Route path={"/Misc"} element={<LazyMisc />} />
       <Route path={"/Contact"} element={<LazyContact />} />
     </Routes>
   );

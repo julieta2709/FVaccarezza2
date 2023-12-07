@@ -2,8 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/Work.css";
 
-
-const MainWork = ({ works, selectWork }) => {
+const MainWork = ({ works }) => {
   const firstRow = works.slice(0, 4);
   const secondRow = works.slice(4, 9);
 
@@ -14,7 +13,7 @@ const MainWork = ({ works, selectWork }) => {
           <li
             className="Work-ListItem"
             key={work.index}
-            onClick={() => selectWork(work.index)}
+            // onClick={() => selectWork(work.index)}
           >
             <Link to={work.link} className="Work-ItemLink">
               <span className="Work-ItemNumber">{work.index}</span>
@@ -28,7 +27,7 @@ const MainWork = ({ works, selectWork }) => {
           <li
             className="Work-ListItem"
             key={work.index}
-            onClick={() => selectWork(work.index)}
+            // onClick={() => selectWork(work.index)}
           >
             <Link to={work.link} className="Work-ItemLink">
               <span className="Work-ItemNumber">{work.index}</span>
@@ -37,7 +36,7 @@ const MainWork = ({ works, selectWork }) => {
           </li>
         ))}
       </ul>
-          </div>
+    </div>
   );
 };
 export default MainWork;

@@ -5,7 +5,7 @@
       "description": "retail store located in tigre, buenos aires. branding, product photography & website design.",
       "date": "DECEMBER 2022",
       "url": "https://www.behance.net/gallery/157959551/Frog-Bazar-2023",
-      "link":"/Frog/1"
+      "link":"/Frog"
     },
     {
       "index": 2,
@@ -13,28 +13,28 @@
       "description": "furniture & decor store also located in tigre, buenos aires. brand identity, product photography & merchandising.",
       "date": "MARCH 2023",
       "url": "https://www.behance.net/gallery/164603319/Estudio-32",
-      "link":"Estudio/2"
+      "link":"/Estudio"
     },
     {
       "index": 3,
       "title": "N.MORENO/PEDRAZA",
       "description": "industrial design studio. branding & website design.",
       "date": "APRIL 2023",
-      "link":"/Moreno/3"
+      "link":"/Moreno"
     },
     {
       "index": 4,
       "title": "OPAME COLLECTIVE =",
       "description": "exclusive artists & designers creations e-commerce. website redesign.",
       "date": "APRIL 2023",
-      "link":"/Opame/4"
+      "link":"/Opame"
     },
     {
       "index": 5,
       "title": "MICHI BISTRO \"",
       "description": "concept branding greek dine in & take away.",
       "date": "JANUARY 2023",
-      "link":"//Michi/5",
+      "link":"/Michi",
       "url": "https://www.behance.net/gallery/162858615/Michi-Dine-In-Take-Away"
     },
     {
@@ -42,7 +42,7 @@
       "title": "BROKE MUSIC _",
       "description": "broke is a royalty free music label. identity rebrand, shop UI/UX.",
       "date": "JANUARY 2023",
-      "link":"/Broke/6",
+      "link":"/Broke",
       "url": "https://www.behance.net/gallery/161530441/Broke-Music"
     },
     {
@@ -50,7 +50,7 @@
       "title": "KP INTERIOR DESIGN /",
       "description": "concept interior design website, UI/UX",
       "date": "NOVEMBER 2022",
-      "link":"//Kp/7",
+      "link":"/Kp",
       "url": "https://www.behance.net/gallery/157257595/KP-Interior-Design"
     },
     {
@@ -58,13 +58,13 @@
       "title": "LOGOFOLIO }",
       "description": "some of the logos I created over the past year.",
       "date": "",
-      "link":"/Logofolio/8"
+      "link":"/Logofolio"
     },
     {
       "index": 9,
       "title": "3D MISC. ART *",
       "description": "i have explored 3d renders using different materials and textures, playing with abstract shapes and compositions.",
       "date": "",
-      "link":"/Misc/9"
+      "link":"/Misc"
     }
   ]
