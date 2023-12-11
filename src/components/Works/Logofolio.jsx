@@ -9,9 +9,17 @@ const Logofolio = ({ data,  onPrevClick, onNextClick }) => {
   }
   const { index, title, description, date } = data;
 
+  const handlePrevClick = () => {
+    onPrevClick();
+  };
+
+  const handleNextClick = () => {
+    onNextClick();
+  };
+
   return (
     <div>
-      <Prev onPrevClick={onPrevClick} />
+      <Prev onClick={handlePrevClick} />
       <div
         className="Work-TitleIndvidual"
         onClick={() => selectWork(index)}
@@ -21,7 +29,7 @@ const Logofolio = ({ data,  onPrevClick, onNextClick }) => {
         <p className="WorkTitleDescription">{description}</p>
         <p className="WorkTitleDate">{date}</p>
       </div>
-      <Next onNextClick={onNextClick}/>
+      <Next onClick={handleNextClick}/>
     </div>
   );
 };

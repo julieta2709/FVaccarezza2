@@ -30,19 +30,51 @@ const WorkContainer = () => {
   return (
     <div>
       <MainWork works={WorkData} />
-      {currentIndex > 0 && <PrevButton onClick={handlePrevClick} />}
-      <Frog data={WorkData[0]} />
-      <Estudio data={WorkData[1]} />
-      <Moreno data={WorkData[2]} />
-      <Opame data={WorkData[3]} />
-      <Michi data={WorkData[4]} />
-      <Broke data={WorkData[5]} />
-      <Kp data={WorkData[6]} />
-      <Logofolio data={WorkData[7]} />
-      <Misc data={WorkData[8]} />
-      {currentIndex === dataLength - 1 && (
-        <NextButton onClick={handleNextClick} />
-      )}
+      <Frog
+        data={WorkData[currentIndex]}
+        onPrevClick={handlePrevClick}
+        onNextClick={handleNextClick}
+      />
+      <Estudio
+        data={WorkData[currentIndex]}
+        onPrevClick={handlePrevClick}
+        onNextClick={handleNextClick}
+      />
+      <Moreno
+        data={WorkData[currentIndex]}
+        onPrevClick={handlePrevClick}
+        onNextClick={handleNextClick}
+      />
+      <Opame
+        data={WorkData[currentIndex]}
+        onPrevClick={handlePrevClick}
+        onNextClick={handleNextClick}
+      />
+      <Michi
+        data={WorkData[currentIndex]}
+        onPrevClick={handlePrevClick}
+        onNextClick={handleNextClick}
+      />
+      <Broke
+        data={WorkData[currentIndex]}
+        onPrevClick={handlePrevClick}
+        onNextClick={handleNextClick}
+      />
+      <Kp
+        data={WorkData[currentIndex]}
+        onPrevClick={handlePrevClick}
+        onNextClick={handleNextClick}
+      />
+      <Logofolio
+        data={WorkData[currentIndex]}
+        onPrevClick={handlePrevClick}
+        onNextClick={handleNextClick}
+      />
+      <Misc
+        data={WorkData[currentIndex]}
+        onPrevClick={handlePrevClick}
+        onNextClick={handleNextClick}
+      />
     </div>
   );
 };
