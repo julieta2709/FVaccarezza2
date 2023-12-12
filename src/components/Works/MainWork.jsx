@@ -1,10 +1,17 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { startTransition } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "../../styles/Work.css";
 
 const MainWork = ({ works }) => {
   const firstRow = works.slice(0, 4);
   const secondRow = works.slice(4, 9);
+
+  const navigate = useNavigate();
+
+  const handleOnClick = (work) => {
+    navigate(work.link); 
+  };
+
 
   return (
     <div className="Work-ListContainer">
@@ -13,7 +20,7 @@ const MainWork = ({ works }) => {
           <li
             className="Work-ListItem"
             key={work.index}
-            // onClick={() => selectWork(work.index)}
+            onClick={() => startTransition(() => handleOnClick(work))}
           >
             <Link to={work.link} className="Work-ItemLink">
               <span className="Work-ItemNumber">{work.index}</span>
@@ -27,7 +34,7 @@ const MainWork = ({ works }) => {
           <li
             className="Work-ListItem"
             key={work.index}
-            // onClick={() => selectWork(work.index)}
+            onClick={() => startTransition(() => handleOnClick(work))}
           >
             <Link to={work.link} className="Work-ItemLink">
               <span className="Work-ItemNumber">{work.index}</span>
