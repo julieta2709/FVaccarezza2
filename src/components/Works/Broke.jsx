@@ -1,25 +1,15 @@
 import React from "react";
 import "../../styles/Work.css";
-import Next from "../Buttons/Next";
-import Prev from "../Buttons/Prev";
 
-const Broke = ({ data, onPrevClick, onNextClick }) => {
+const Broke = ({ data }) => {
   if (!data) {
     return null;
   }
   const { index, title, description, date } = data;
 
-  const handlePrevClick = () => {
-    onPrevClick();
-  };
-
-  const handleNextClick = () => {
-    onNextClick();
-  };
-
   return (
     <div>
-       <Prev onClick={handlePrevClick} />
+      
       <div
         className="Work-TitleIndvidual"
         onClick={() => selectWork(index)}
@@ -29,7 +19,7 @@ const Broke = ({ data, onPrevClick, onNextClick }) => {
         <p className="WorkTitleDescription">{description}</p>
         <p className="WorkTitleDate">{date}</p>
       </div>
-      <Next onClick={handleNextClick}/>
+      
     </div>
   );
 };

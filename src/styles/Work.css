@@ -46,3 +46,10 @@
   text-align: center;
 }
 
+.component {
+  display: none;
+}
+
+.component.active {
+  display: block;
+}
