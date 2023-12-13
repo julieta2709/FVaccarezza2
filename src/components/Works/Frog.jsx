@@ -1,12 +1,15 @@
 import React from "react";
 import "../../styles/Work.css";
 
-const Frog = ({ data }) => {
+const Frog = ({ props }) => {
   if (!data) {
+    console.log("No se recibieron datos en el componente Frog.");
     return null;
   }
 
-  const { index, title, description, date } = data;
+  const { index, title, description, date } = props.data;
+  console.log("Datos recibidos en Frog:", data);
+
 
   return (
     <div>

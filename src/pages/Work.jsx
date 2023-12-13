@@ -1,13 +1,20 @@
-import React, { createContext } from "react";
+import React, { createContext, useEffect } from "react";
 import WorkData from "../pages/WorkData.json";
 import "../styles/Work.css";
 
-const WorkDataContext = createContext();
-const Work = ({ children }) => {
+export const WorkDataContext = createContext();
+
+const WorkContext = ({ children }) => {
+
+  useEffect(() => {
+    console.log("Datos de WorkData en el contexto:", WorkData);
+  }, [WorkData]);
+
   return (
     <WorkDataContext.Provider value={WorkData}>
       {children}
     </WorkDataContext.Provider>
   );
 };
-export default Work;
+
+export default WorkContext;
