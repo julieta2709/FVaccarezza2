@@ -1,10 +1,11 @@
-import React, { lazy, useState } from "react";
-import WorkData from "../../pages/WorkData.json";
+import React, { useContext, useState } from "react";
+import { WorkDataContext } from "../../pages/Work";
 import "../../styles/Work.css";
 import Next from "../Buttons/Next";
 import Prev from "../Buttons/Prev";
 import Broke from "./Broke";
 import Estudio from "./Estudio";
+import Frog from "./Frog";
 import Kp from "./Kp";
 import Logofolio from "./Logofolio";
 import MainWork from "./MainWork";
@@ -14,12 +15,13 @@ import Moreno from "./Moreno";
 import Opame from "./Opame";
 
 
-const LazyFrog = lazy(() => import("./Frog"));
+// const LazyFrog = lazy(() => import("./Frog"));
 
 const WorkContainer = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const WorkData = useContext(WorkDataContext);
   const componentNames = [
-    <LazyFrog key="Frog" data={WorkData[0]} />,
+    <Frog key="Frog" data={WorkData[0]} />,
     <Estudio key="Estudio" data={WorkData[1]} />,
     <Moreno key="Moreno" data={WorkData[2]} />,
     <Opame key="Opame" data={WorkData[3]} />,
@@ -66,5 +68,5 @@ const WorkContainer = () => {
     </div>
   );
 };
-export { LazyFrog, WorkContainer };
+export default WorkContainer;
 

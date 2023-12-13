@@ -1,8 +1,13 @@
-import React from "react";
-import { WorkContainer } from "../components/Works/WorkContainer";
+import React, { createContext } from "react";
+import WorkData from "../pages/WorkData.json";
 import "../styles/Work.css";
 
-const Work = () => {
-  return <WorkContainer />;
+const WorkDataContext = createContext();
+const Work = ({ children }) => {
+  return (
+    <WorkDataContext.Provider value={WorkData}>
+      {children}
+    </WorkDataContext.Provider>
+  );
 };
 export default Work;

@@ -1,13 +1,12 @@
 import React, { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import { LazyFrog } from "../components/Works/WorkContainer";
+import Frog from "../components/Works/Frog";
 import Home from "../pages/Home";
 import Photography from "../pages/Photography";
 
 const LazyAboutMe = lazy(() => import("../pages/AboutMe"));
 const LazyWork = lazy(() => import("../pages/Work"));
 const LazyContact = lazy(() => import("../pages/Contact"));
-// const LazyFrog = lazy(() => import("../components/Works/Frog"));
 const LazyEstudio = lazy(() => import("../components/Works/Estudio"));
 const LazyMoreno = lazy(() => import("../components/Works/Moreno"));
 const LazyOpame = lazy(() => import("../components/Works/Opame"));
@@ -37,7 +36,7 @@ const Router = () => {
       <Route path={"/Photography"} element={<Photography />} />
       <Route path={"/AboutMe"} element={<LazyAboutMe />} />
       <Route path={"/Work"} element={<LazyWork />} />
-      <Route path={"/Frog"} element={<LazyFrog />} />
+      <Route path={"/Frog"} element={<Frog />} />
       <Route path={"/Estudio"} element={<LazyEstudio />} />
       <Route path={"/Moreno"} element={<LazyMoreno />} />
       <Route path={"/Opame"} element={<LazyOpame />} />
