@@ -1,17 +1,19 @@
-import React, { startTransition } from "react";
+import React, { startTransition, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../../styles/Work.css";
+import { WorkDataContext } from "./WorkContext";
 
-const MainWork = ({ works }) => {
+const MainWork = () => {
+  const works = useContext(WorkDataContext);
   const firstRow = works.slice(0, 4);
   const secondRow = works.slice(4, 9);
+  
 
   const navigate = useNavigate();
 
-  const handleOnClick = (work) => {
-    navigate(work.link); 
+  const handleOnClick = (link) => {
+    navigate(`/${link}/${index}`);
   };
-
 
   return (
     <div className="Work-ListContainer">

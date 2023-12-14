@@ -1,19 +1,18 @@
-import React, { useContext, useEffect, useState } from "react";
-import { WorkDataContext } from "../../pages/Work";
+import React, { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../../styles/Work.css";
 import Next from "../Buttons/Next";
 import Prev from "../Buttons/Prev";
 import Frog from "./Frog";
 import MainWork from "./MainWork";
+import { WorkDataContext } from "./WorkContext";
 
 // const LazyFrog = lazy(() => import("./Frog"));
 
 const WorkContainer = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const  WorkData  = useContext(WorkDataContext);
-  useEffect(() => {
-    console.log("Datos en WorkContainer:", WorkData);
-  }, [WorkData]);
+  const WorkData = useContext(WorkDataContext);
+  const navigate = useNavigate();
 
   const handlePrevClick = () => {
     if (currentIndex > 0) {
@@ -45,9 +44,6 @@ const WorkContainer = () => {
       )}
     </React.Fragment>
   ));
-  useEffect(() => {
-    console.log("Datos recibidos en WorkContainer:", WorkData);
-  }, [WorkData]);
   return (
     <div>
       <MainWork works={WorkData} />
