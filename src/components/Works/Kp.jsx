@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../../styles/Work.css";
 import { WorkDataContext } from "./WorkContext";
 
 const Kp = () => {
   const WorkData = useContext(WorkDataContext);
-  
+
   const { index, title, description, date } = WorkData[6];
 
   return (

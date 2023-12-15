@@ -1,19 +1,20 @@
 import React, { useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../../styles/Work.css";
 import { WorkDataContext } from "./WorkContext";
 
-const MainWork = () => {
+const MainWork = ({ onIndexChange }) => {
   const works = useContext(WorkDataContext);
   const firstRow = works.slice(0, 4);
   const secondRow = works.slice(4, 9);
-  
 
-  const navigate = useNavigate();
-
-  const handleOnClick = (index) => {
-    navigate(`/${works[index].link}/${index}`);
+  const navigateToIndex = (index) => {
+    onIndexChange(index);
   };
+
+  /*  const handleOnClick = (index) => {
+    navigate(`/${works[index].link}/${index}`);
+  }; */
 
   return (
     <div className="Work-ListContainer">
@@ -22,7 +23,7 @@ const MainWork = () => {
           <li
             className="Work-ListItem"
             key={work.index}
-            onClick={() => handleOnClick(index)}
+            onClick={() => navigateToIndex(index)}
           >
             <Link to={work.link} className="Work-ItemLink">
               <span className="Work-ItemNumber">{work.index}</span>
@@ -36,7 +37,7 @@ const MainWork = () => {
           <li
             className="Work-ListItem"
             key={work.index}
-            onClick={() => handleOnClick(index)}
+            onClick={() => navigateToIndex(index)}
           >
             <Link to={work.link} className="Work-ItemLink">
               <span className="Work-ItemNumber">{work.index}</span>

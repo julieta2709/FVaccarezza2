@@ -19,16 +19,29 @@ import { WorkDataContext } from "./WorkContext";
 const WorkContainer = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const WorkData = useContext(WorkDataContext);
-  const components = {
-    Frog,
-    Estudio,
-    Moreno,
-    Opame,
-    Michi,
-    Broke,
-    Kp,
-    Logofolio,
-    Misc,
+  const componentByIndex = (index) => {
+    switch (index) {
+      case 0:
+        return Frog;
+      case 1:
+        return Estudio;
+      case 2:
+        return Moreno;
+      case 3:
+        return Opame;
+      case 4:
+        return Michi;
+      case 5:
+        return Broke;
+      case 6:
+        return Kp;
+      case 7:
+        return Logofolio;
+      case 8:
+        return Misc;
+      default:
+        return null;
+    }
   };
 
   const handlePrevClick = () => {
@@ -42,11 +55,11 @@ const WorkContainer = () => {
       setCurrentIndex(currentIndex + 1);
     }
   };
-  if (!WorkData || WorkData.length === 0) {
+  /*   if (!WorkData || WorkData.length === 0) {
     return <div>No hay datos disponibles</div>;
-  }
+  } */
 
-  const ComponentToRender = components[WorkData[currentIndex].componentName];
+  const ComponentToRender = componentByIndex(currentIndex);
 
   const renderedComponents = WorkData.map((data, index) => (
     <React.Fragment key={index}>
@@ -55,7 +68,7 @@ const WorkContainer = () => {
       )}
       <div
         key={index}
-        className={index === currentIndex ? "component active" : "component"}
+        className={index === currentIndex ? "active" : "component"}
       >
         {index === currentIndex && <ComponentToRender data={data} />}
       </div>
@@ -66,7 +79,7 @@ const WorkContainer = () => {
   ));
   return (
     <div>
-      <MainWork works={WorkData} />
+      <MainWork works={WorkData} onIndexChange={setCurrentIndex} />
       <div className="components-container">{renderedComponents}</div>
     </div>
   );

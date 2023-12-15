@@ -54,6 +54,9 @@ function AllComponents() {
       <ButtonUp />
       <AboutMe />
       <WorkContainer />
+      <Frog />
+      <Estudio />
+      <Moreno />
       <Contact />
     </div>
   );
