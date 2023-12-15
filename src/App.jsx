@@ -7,23 +7,30 @@ import WorkContext from "../src/components/Works/WorkContext";
 import AboutMe from "../src/pages/AboutMe";
 import Contact from "../src/pages/Contact";
 import Home from "../src/pages/Home";
-import Photography from "../src/pages/Photography";
-import Broke from "./components/Works/Broke";
-import Estudio from "./components/Works/Estudio";
 import Frog from "./components/Works/Frog";
-import Kp from "./components/Works/Kp";
-import Logofolio from "./components/Works/Logofolio";
-import Michi from "./components/Works/Michi";
-import Misc from "./components/Works/Misc";
-import Moreno from "./components/Works/Moreno";
-import Opame from "./components/Works/Opame";
+import Photography from "./pages/Photography";
 
 function App() {
   return (
     <div className="App-container">
       <Header />
       <WorkContext>
-        <Routes>
+        <div id="home">
+          <Home />
+        </div>
+        <div id="about">
+          <AboutMe />
+        </div>
+        <div id="work">
+          <WorkContainer />
+        </div>
+        <div id="Frog">
+          <Frog />
+        </div>
+        <div id="contact">
+          <Contact />
+        </div>
+        {/*  <Routes>
           <Route path="/Home" element={<Home />} />
           <Route path="/Home" element={<ButtonUp />} />
           <Route path="/Photography" element={<Photography />} />
@@ -40,26 +47,27 @@ function App() {
           <Route path="/AboutMe" element={<AboutMe />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="*" element={<AllComponents />} />
-        </Routes>
+        </Routes> */}
       </WorkContext>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Photography" element={<Photography />} />
+      </Routes>
       <ButtonUp />
     </div>
   );
 }
 
-function AllComponents() {
+/* function AllComponents() {
   return (
     <div>
       <Home />
       <ButtonUp />
       <AboutMe />
       <WorkContainer />
-      <Frog />
-      <Estudio />
-      <Moreno />
       <Contact />
     </div>
   );
-}
+} */
 
 export default App;

@@ -9,11 +9,18 @@ const NavBar = () => {
   const handleToggleMenu = () => {
     setShowMenu(!showMenu);
   };
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      setShowMenu(false);
+    }
+  };
   return (
     <nav className="navbar">
       <div className="logo-container">
         <Link to="/">
-         <span className="logo">PF 2024 FV</span>
+          <span className="logo">PF 2024 FV</span>
         </Link>
       </div>
       <div className="navbar-menu" onClick={handleToggleMenu}>
@@ -24,23 +31,39 @@ const NavBar = () => {
         )}
       </div>
       <ul className={showMenu ? "nav-menu active" : "nav-menu"}>
-      <li className="nav-item">
-          <Link to="/" className="nav-link" onClick={handleToggleMenu}>
+        <li className="nav-item">
+          <Link
+            to="#"
+            className="nav-link"
+            onClick={() => scrollToSection("home")}
+          >
             HOME
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/AboutMe" className="nav-link" onClick={handleToggleMenu}>
+          <Link
+            to="#about"
+            className="nav-link"
+            onClick={() => scrollToSection("about")}
+          >
             ABOUT ME
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/Work" className="nav-link" onClick={handleToggleMenu}>
+          <Link
+            to="#work"
+            className="nav-link"
+            onClick={() => scrollToSection("work")}
+          >
             WORK
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/Contact" className="nav-link" onClick={handleToggleMenu}>
+          <Link
+            to="#contact"
+            className="nav-link"
+            onClick={() => scrollToSection("contact")}
+          >
             CONTACT
           </Link>
         </li>
