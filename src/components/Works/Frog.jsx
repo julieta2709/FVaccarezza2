@@ -4,13 +4,9 @@ import { WorkDataContext } from "./WorkContext";
 
 const Frog = () => {
   const WorkData = useContext(WorkDataContext);
-  /* if (!WorkData || WorkData.length === 0 || index < 0 || index >= WorkData.length) {
-    console.log("No se recibieron datos en el componente Frog o el índice está fuera de rango.");
-    return null;
-  } */
-
+  
   const { index, title, description, date } = WorkData[0];
-  console.log("Datos recibidos en Frog");
+
   return (
     <div>
       <div className="Work-TitleIndvidual">

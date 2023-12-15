@@ -1,10 +1,17 @@
 import React, { useContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import "../../styles/Work.css";
 import Next from "../Buttons/Next";
 import Prev from "../Buttons/Prev";
+import Broke from "./Broke";
+import Estudio from "./Estudio";
 import Frog from "./Frog";
+import Kp from "./Kp";
+import Logofolio from "./Logofolio";
 import MainWork from "./MainWork";
+import Michi from "./Michi";
+import Misc from "./Misc";
+import Moreno from "./Moreno";
+import Opame from "./Opame";
 import { WorkDataContext } from "./WorkContext";
 
 // const LazyFrog = lazy(() => import("./Frog"));
@@ -12,7 +19,17 @@ import { WorkDataContext } from "./WorkContext";
 const WorkContainer = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const WorkData = useContext(WorkDataContext);
-  const navigate = useNavigate();
+  const components = {
+    Frog,
+    Estudio,
+    Moreno,
+    Opame,
+    Michi,
+    Broke,
+    Kp,
+    Logofolio,
+    Misc,
+  };
 
   const handlePrevClick = () => {
     if (currentIndex > 0) {
@@ -28,6 +45,9 @@ const WorkContainer = () => {
   if (!WorkData || WorkData.length === 0) {
     return <div>No hay datos disponibles</div>;
   }
+
+  const ComponentToRender = components[WorkData[currentIndex].componentName];
+
   const renderedComponents = WorkData.map((data, index) => (
     <React.Fragment key={index}>
       {index === currentIndex && currentIndex > 0 && (
@@ -37,7 +57,7 @@ const WorkContainer = () => {
         key={index}
         className={index === currentIndex ? "component active" : "component"}
       >
-        {index === currentIndex && <Frog data={data} />}
+        {index === currentIndex && <ComponentToRender data={data} />}
       </div>
       {index === currentIndex && currentIndex < WorkData.length - 1 && (
         <Next onClick={handleNextClick} />

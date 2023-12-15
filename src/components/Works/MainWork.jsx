@@ -1,4 +1,4 @@
-import React, { startTransition, useContext } from "react";
+import React, { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../../styles/Work.css";
 import { WorkDataContext } from "./WorkContext";
@@ -11,18 +11,18 @@ const MainWork = () => {
 
   const navigate = useNavigate();
 
-  const handleOnClick = (link) => {
-    navigate(`/${link}/${index}`);
+  const handleOnClick = (index) => {
+    navigate(`/${works[index].link}/${index}`);
   };
 
   return (
     <div className="Work-ListContainer">
       <ul className="Work-ListRow1">
-        {firstRow.map((work) => (
+        {firstRow.map((work, index) => (
           <li
             className="Work-ListItem"
             key={work.index}
-            onClick={() => startTransition(() => handleOnClick(work))}
+            onClick={() => handleOnClick(index)}
           >
             <Link to={work.link} className="Work-ItemLink">
               <span className="Work-ItemNumber">{work.index}</span>
@@ -32,11 +32,11 @@ const MainWork = () => {
         ))}
       </ul>
       <ul className="Work-ListRow2">
-        {secondRow.map((work) => (
+        {secondRow.map((work, index) => (
           <li
             className="Work-ListItem"
             key={work.index}
-            onClick={() => startTransition(() => handleOnClick(work))}
+            onClick={() => handleOnClick(index)}
           >
             <Link to={work.link} className="Work-ItemLink">
               <span className="Work-ItemNumber">{work.index}</span>
