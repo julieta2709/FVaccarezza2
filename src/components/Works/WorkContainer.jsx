@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import asterisk from "../../assets/img/icons/asterisk.svg";
 import "../../styles/Work.css";
 import Next from "../Buttons/Next";
 import Prev from "../Buttons/Prev";
@@ -78,7 +79,11 @@ const WorkContainer = () => {
     </React.Fragment>
   ));
   return (
-    <div>
+    <div className="Work-container">
+      <div className="Work-TitleContainer">
+        <img className="Work-asterisk" src={asterisk} alt="asterisk" />
+        <h2 className="Work-mainTitle">LATEST WORKS</h2>
+      </div>
       <MainWork works={WorkData} onIndexChange={setCurrentIndex} />
       <div className="components-container">{renderedComponents}</div>
     </div>
