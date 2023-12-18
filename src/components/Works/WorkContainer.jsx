@@ -1,17 +1,15 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import asterisk from "../../assets/img/icons/asterisk.svg";
 import "../../styles/Work.css";
-import Next from "../Buttons/Next";
-import Prev from "../Buttons/Prev";
 import MainWork from "./MainWork";
 import { WorkDataContext } from "./WorkContext";
 
 
 
 const WorkContainer = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // const [currentIndex, setCurrentIndex] = useState(0);
   const WorkData = useContext(WorkDataContext);
-  
+  /* 
   const handlePrevClick = () => {
     if (currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);
@@ -33,7 +31,7 @@ const WorkContainer = () => {
         <Next onClick={handleNextClick} />
       )}
     </React.Fragment>
-  ;
+  ; */
   return (
     <div className="Work-container">
       <div className="Work-TitleContainer">
