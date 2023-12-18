@@ -19,7 +19,7 @@ const NavBar = () => {
   return (
     <nav className="navbar">
       <div className="logo-container">
-        <Link to="/">
+        <Link to="/" >
           <span className="logo">PF 2024 FV</span>
         </Link>
       </div>
@@ -33,9 +33,8 @@ const NavBar = () => {
       <ul className={showMenu ? "nav-menu active" : "nav-menu"}>
         <li className="nav-item">
           <Link
-            to="#"
+            to="/"
             className="nav-link"
-            onClick={() => scrollToSection("home")}
           >
             HOME
           </Link>
@@ -68,11 +67,7 @@ const NavBar = () => {
           </Link>
         </li>
         <li className="nav-item">
-          <Link
-            to="/Photography"
-            className="nav-link"
-            onClick={handleToggleMenu}
-          >
+          <Link to="/photography" className="nav-link">
             PHOTOGRAPHY
           </Link>
         </li>

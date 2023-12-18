@@ -3,48 +3,15 @@ import asterisk from "../../assets/img/icons/asterisk.svg";
 import "../../styles/Work.css";
 import Next from "../Buttons/Next";
 import Prev from "../Buttons/Prev";
-import Broke from "./Broke";
-import Estudio from "./Estudio";
-import Frog from "./Frog";
-import Kp from "./Kp";
-import Logofolio from "./Logofolio";
 import MainWork from "./MainWork";
-import Michi from "./Michi";
-import Misc from "./Misc";
-import Moreno from "./Moreno";
-import Opame from "./Opame";
 import { WorkDataContext } from "./WorkContext";
 
-// const LazyFrog = lazy(() => import("./Frog"));
+
 
 const WorkContainer = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const WorkData = useContext(WorkDataContext);
-  const componentByIndex = (index) => {
-    switch (index) {
-      case 0:
-        return Frog;
-      case 1:
-        return Estudio;
-      case 2:
-        return Moreno;
-      case 3:
-        return Opame;
-      case 4:
-        return Michi;
-      case 5:
-        return Broke;
-      case 6:
-        return Kp;
-      case 7:
-        return Logofolio;
-      case 8:
-        return Misc;
-      default:
-        return null;
-    }
-  };
-
+  
   const handlePrevClick = () => {
     if (currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);
@@ -56,49 +23,25 @@ const WorkContainer = () => {
       setCurrentIndex(currentIndex + 1);
     }
   };
-  /*   if (!WorkData || WorkData.length === 0) {
-    return <div>No hay datos disponibles</div>;
-  } */
-
-  const ComponentToRender = componentByIndex(currentIndex);
-
-  const renderedComponents = WorkData.map((data, index) => (
-    <React.Fragment key={index}>
-      {index === currentIndex && currentIndex > 0 && (
+ 
+    <React.Fragment key={WorkData.index}>
+      {WorkData.index === currentIndex && currentIndex > 0 && (
         <Prev onClick={handlePrevClick} />
       )}
-      <div
-        key={index}
-        className={index === currentIndex ? "active" : "component"}
-      >
-        {index === currentIndex && <ComponentToRender data={data} />}
-      </div>
-      {index === currentIndex && currentIndex < WorkData.length - 1 && (
+     
+      {WorkData.index === currentIndex && currentIndex < WorkData.length - 1 && (
         <Next onClick={handleNextClick} />
       )}
     </React.Fragment>
-  ));
+  ;
   return (
     <div className="Work-container">
       <div className="Work-TitleContainer">
         <img className="Work-asterisk" src={asterisk} alt="asterisk" />
         <h2 className="Work-mainTitle">LATEST WORKS</h2>
       </div>
-      <MainWork works={WorkData} onIndexChange={setCurrentIndex} />
-      <div className="components-container">{renderedComponents}</div>
+      <MainWork works={WorkData} />
     </div>
   );
 };
 export default WorkContainer;
-
-/*const componentNames = [
-  <Frog key="Frog" data={WorkData[0]} />,
-  <Estudio key="Estudio" data={WorkData[1]} />,
-  <Moreno key="Moreno" data={WorkData[2]} />,
-  <Opame key="Opame" data={WorkData[3]} />,
-  <Michi key="Michi" data={WorkData[4]} />,
-  <Broke key="Broke" data={WorkData[5]} />,
-  <Kp key="Kp" data={WorkData[6]} />,
-  <Logofolio key="Logofolio" data={WorkData[7]} />,
-  <Misc key="Misc" data={WorkData[8]} />,
-]; */
