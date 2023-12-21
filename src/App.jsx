@@ -27,7 +27,9 @@ function App() {
           path="/"
           element={
             <>
-              <Home />
+              <div id="home">
+                <Home />
+              </div>
               <WorkContext>
                 <div id="about">
                   <AboutMe />
@@ -75,8 +77,6 @@ function App() {
     </div>
   );
 }
-
-
 
 export default App;
 

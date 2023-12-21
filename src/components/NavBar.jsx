@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import "../styles/NavBar.css";
 
-function Links({ section, scrollToSection, children }) {
+function Links({ section, scrollToSection, children, className }) {
   const handleClick = () => {
     scrollToSection(section);
   };
@@ -11,7 +11,9 @@ function Links({ section, scrollToSection, children }) {
   const displayText = section === "about" ? "ABOUT ME" : children.toUpperCase();
 
   return (
-    <Link to={`/#${section}`} className="nav-link" onClick={handleClick}>
+    <Link to={`/#${section}`} 
+    className={`nav-link ${className}`} 
+    onClick={handleClick}>
       {displayText}
     </Link>
   );
@@ -19,8 +21,6 @@ function Links({ section, scrollToSection, children }) {
 
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const [isNavSticky, setIsNavSticky] = useState(false);
-  const location = useLocation();
 
   const handleToggleMenu = () => {
     setShowMenu(!showMenu);
@@ -34,38 +34,23 @@ const NavBar = () => {
     }
   };
 
+  //para que no se vea la NavBar cuando está en photography
+  const location = useLocation();
   const shouldHideNavBar = location.pathname === "/photography";
-
   if (shouldHideNavBar) {
     return null;
   }
 
-  const handleScroll = () => {
-    const offset = window.scrollY;
-    // Cambiar la clase o el estado de isNavSticky cuando el scroll sea superior a cierto punto
-    if (offset > 200) {
-      setIsNavSticky(true);
-    } else {
-      setIsNavSticky(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const navClassName = isNavSticky ? 'navbar navbar-fixed' : 'navbar';
-
   return (
-    <nav className={navClassName}>
+    <nav className="navbar">
       <div className="logo-container">
-        <Link to="/">
-          <span className="logo">PF 2024 FV</span>
-        </Link>
+        <Links
+          section="home"
+          className="logo"
+          scrollToSection={scrollToSection}
+        >
+          PF 2024 FV
+        </Links>
       </div>
       <div className="navbar-menu" onClick={handleToggleMenu}>
         {showMenu ? (
@@ -76,9 +61,13 @@ const NavBar = () => {
       </div>
       <ul className={showMenu ? "nav-menu active" : "nav-menu"}>
         <li className="nav-item">
-          <Link to="/" className="nav-link">
+          <Links
+            section="home"
+            className="nav-link"
+            scrollToSection={scrollToSection}
+          >
             HOME
-          </Link>
+          </Links>
         </li>
         <li className="nav-item">
           <Links
