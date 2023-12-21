@@ -11,14 +11,14 @@ const Estudio = () => {
 
   return (
     <div>
-      <Prev />
+      <Prev index={index}/>
       <div className="Work-TitleIndvidual">
         <span className="Work-NumberIndividual">{index}</span>
         <span className="Work-TextIndividual">{title}</span>
         <p className="WorkTitleDescription">{description}</p>
         <p className="WorkTitleDate">{date}</p>
       </div>
-      <Next />
+      <Next index={index}/>
     </div>
   );
 };

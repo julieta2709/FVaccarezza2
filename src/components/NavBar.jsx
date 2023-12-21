@@ -1,14 +1,31 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../styles/NavBar.css";
+
+function Links({ section, scrollToSection, children }) {
+  const handleClick = () => {
+    scrollToSection(section);
+  };
+
+  const displayText = section === "about" ? "ABOUT ME" : children.toUpperCase();
+
+  return (
+    <Link to={`/#${section}`} className="nav-link" onClick={handleClick}>
+      {displayText}
+    </Link>
+  );
+}
 
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [isNavSticky, setIsNavSticky] = useState(false);
+  const location = useLocation();
 
   const handleToggleMenu = () => {
     setShowMenu(!showMenu);
   };
+
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -16,10 +33,37 @@ const NavBar = () => {
       setShowMenu(false);
     }
   };
+
+  const shouldHideNavBar = location.pathname === "/photography";
+
+  if (shouldHideNavBar) {
+    return null;
+  }
+
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    // Cambiar la clase o el estado de isNavSticky cuando el scroll sea superior a cierto punto
+    if (offset > 200) {
+      setIsNavSticky(true);
+    } else {
+      setIsNavSticky(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const navClassName = isNavSticky ? 'navbar navbar-fixed' : 'navbar';
+
   return (
-    <nav className="navbar">
+    <nav className={navClassName}>
       <div className="logo-container">
-        <Link to="/" >
+        <Link to="/">
           <span className="logo">PF 2024 FV</span>
         </Link>
       </div>
@@ -32,39 +76,36 @@ const NavBar = () => {
       </div>
       <ul className={showMenu ? "nav-menu active" : "nav-menu"}>
         <li className="nav-item">
-          <Link
-            to="/"
-            className="nav-link"
-          >
+          <Link to="/" className="nav-link">
             HOME
           </Link>
         </li>
         <li className="nav-item">
-          <Link
-            to="#about"
+          <Links
+            section="about"
             className="nav-link"
-            onClick={() => scrollToSection("about")}
+            scrollToSection={scrollToSection}
           >
             ABOUT ME
-          </Link>
+          </Links>
         </li>
         <li className="nav-item">
-          <Link
-            to="#work"
+          <Links
+            section="work"
             className="nav-link"
-            onClick={() => scrollToSection("work")}
+            scrollToSection={scrollToSection}
           >
             WORK
-          </Link>
+          </Links>
         </li>
         <li className="nav-item">
-          <Link
-            to="#contact"
+          <Links
+            section="contact"
             className="nav-link"
-            onClick={() => scrollToSection("contact")}
+            scrollToSection={scrollToSection}
           >
             CONTACT
-          </Link>
+          </Links>
         </li>
         <li className="nav-item">
           <Link to="/photography" className="nav-link">
