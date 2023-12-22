@@ -34,6 +34,14 @@
   justify-items: stretch;
   justify-content: center;
 }
+.Work-componentTitle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.prevNext {
+  position: fixed;
+}
 /*Fonts*/
 .Work-mainTitle {
   font-family: "PP-Hatton";
@@ -55,48 +63,53 @@
 }
 
 /*Titles*/
-.Work-ItemNumber, .Work-NumberIndividual, .WorkTitleDate {
+.Work-ItemNumber,
+.Work-NumberIndividual,
+.WorkTitleDate {
   color: #e52421;
 }
-.Work-ItemNumber, .Work-NumberIndividual {
-font-family: "Magilio";
+.Work-ItemNumber,
+.Work-NumberIndividual {
+  font-family: "Magilio";
 }
 .Work-ItemNumber {
   font-size: 80px;
 }
 .Work-ItemText,
 .Work-TextIndividual {
-font-family: "PP-Hatton";
+  font-family: "PP-Hatton";
 }
 .Work-ItemText,
-.Work-TextIndividual, .WorkTitleDescription {
-color: #3a3a39;
+.Work-TextIndividual,
+.WorkTitleDescription {
+  color: #3a3a39;
 }
-.Work-ItemText, .WorkTitleDescription {
-font-size: 20px;
+.Work-ItemText,
+.WorkTitleDescription {
+  font-size: 20px;
 }
 .Work-NumberIndividual {
-font-size: 250px;
+  font-size: 250px;
 }
 .Work-TextIndividual {
-font-size: 80px;
+  font-size: 80px;
 }
 .WorkTitleDescription {
-font-family: "Montserrat-Light";
+  font-family: "Montserrat-Light";
 }
 .WorkTitleDate {
-font-family: "Montserrat";
+  font-family: "Montserrat";
 }
 .WorkTitle-maincontainer {
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .WorkTitle-container {
-display: flex;
-align-items: center;
-width: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 li {
-list-style-type: none; 
+  list-style-type: none;
 }
