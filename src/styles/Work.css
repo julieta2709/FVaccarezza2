@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 200px;
+  position: relative;
 }
 .Work-TitleContainer {
   display: flex;
@@ -36,11 +37,14 @@
 }
 .Work-componentTitle {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
-}
-.prevNext {
   position: fixed;
+  z-index: 100;
+  top: 50%;
+}
+.Work-TitleIndvidual {
+  top: 50%;
 }
 /*Fonts*/
 .Work-mainTitle {
@@ -52,14 +56,6 @@
   line-height: 1;
   margin: 0;
   text-align: center;
-}
-
-.component {
-  display: none;
-}
-
-.component.active {
-  display: block;
 }
 
 /*Titles*/
