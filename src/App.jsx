@@ -27,18 +27,26 @@ function App() {
           path="/"
           element={
             <>
-              <div id="home">
-                <Home />
+              <div className="BackgroundHome">
+                <div id="home">
+                  <Home />
+                </div>
               </div>
               <WorkContext>
-                <div id="about">
-                  <AboutMe />
+               <div className="BackgroundAbout">
+                  <div id="about">
+                    <AboutMe />
+                  </div>
+                  </div>
+                <div className="BackgroundWork">
+                  <div id="work">
+                    <WorkContainer />
+                  </div>
                 </div>
-                <div id="work">
-                  <WorkContainer />
-                </div>
-                <div id="frog">
-                  <Frog />
+                <div>
+                  <div id="frog">
+                    <Frog />
+                  </div>
                 </div>
                 <div id="estudio">
                   <Estudio />

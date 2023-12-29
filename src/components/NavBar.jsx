@@ -41,6 +41,7 @@ const NavBar = () => {
     return null;
   }
 
+ 
   return (
     <nav className="navbar">
       <div className="logo-container">

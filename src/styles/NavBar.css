@@ -6,25 +6,9 @@
   align-items: center;
   min-height: 100px;
   position: fixed;
-}
-.texture-navbar {
-  width: 100%;
-  height: 100%;
-  background: lightgray 0% 0% / 60.90909242630005px 60.90909242630005px repeat;
-  mix-blend-mode: overlay;
-  backdrop-filter: blur(2px);
-}
-/* .Header-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
   background-image: url("../assets/img/BG/TextureNavBar.svg");
-  transform: rotate(90deg);
-  mix-blend-mode: overlay;
-  backdrop-filter: blur(2px);
-} */
+}
+
 .navbar {
   font-family: "Montserrat";
   font-weight: bold;
@@ -35,6 +19,11 @@
   margin: 1.5% 0 1.5% 3%;
   position: fixed;
   top: 0;
+  transition: backdrop-filter 0.3s ease;
+}
+.Header-container.blur {
+  background: rgba(248, 244, 239, 0.90);
+  backdrop-filter: blur(2px);
 }
 .logo-container {
   width: 11%;

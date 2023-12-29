@@ -1,5 +1,5 @@
 import React from "react";
-import FVpic from "../assets/img/FVpic.png";
+import FVpic from "../assets/img/FVpic.svg";
 import ae from "../assets/img/icons/ae.svg";
 import ai from "../assets/img/icons/ai.svg";
 import cinema from "../assets/img/icons/cinema.svg";

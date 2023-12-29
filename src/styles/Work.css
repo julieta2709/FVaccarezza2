@@ -41,11 +41,11 @@
   width: 100%;
   position: fixed;
   z-index: 100;
-  top: 50%;
+  top: 80%;
 }
-.Work-TitleIndvidual {
+/* .Work-TitleIndvidual {
   top: 50%;
-}
+} */
 /*Fonts*/
 .Work-mainTitle {
   font-family: "PP-Hatton";
