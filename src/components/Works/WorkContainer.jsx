@@ -46,7 +46,7 @@ const WorkContainer = () => {
         <h2 className="Work-mainTitle">LATEST WORKS</h2>
       </div>
       <MainWork works={WorkData} />
-      <div className="Work-componentTitle">
+      <div className="Work-PrevNext">
       {currentIndex !== 0 && (
           <Prev className="prevNext" onClick={handlePrevClick} />
         )}

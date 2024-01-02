@@ -7,17 +7,23 @@ const Kp = () => {
   const WorkData = useContext(WorkDataContext);
 
   const { index, title, description, date, url } = WorkData[6];
-
+  const sentences = description.split("\n");
   return (
     <div className="Work-KpBg">
       <div className="Work-TitleIndvidual">
         <span className="Work-NumberIndividual">{index}</span>
         <span className="Work-TextIndividual">{title}</span>
-        <p className="WorkTitleDescription">{description}</p>
+        <div className="Work-DescriptionContainer">
+          {sentences.map((sentence, index) => (
+            <p className="WorkTitleDescription" key={index}>
+              {sentence}
+            </p>
+          ))}
+        </div>
         <p className="WorkTitleDate">{date}</p>
       </div>
       <BeLink link={url} />
-    </div>
+cd     </div>
   );
 };
 
