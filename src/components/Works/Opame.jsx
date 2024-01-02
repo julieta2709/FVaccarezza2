@@ -7,7 +7,7 @@ const Opame = () => {
   const { index, title, description, date } = WorkData[3];
 
   return (
-    <div>
+    <div className="Work-OpameBg">
       <div className="Work-TitleIndvidual">
         <span className="Work-NumberIndividual">{index}</span>
         <span className="Work-TextIndividual">{title}</span>

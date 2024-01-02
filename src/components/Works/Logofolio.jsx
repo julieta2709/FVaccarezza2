@@ -8,7 +8,7 @@ const Logofolio = () => {
   const { index, title, description, date } = WorkData[7];
 
   return (
-    <div>
+    <div className="Work-LogofolioBg">
       <div className="Work-TitleIndvidual">
         <span className="Work-NumberIndividual">{index}</span>
         <span className="Work-TextIndividual">{title}</span>
