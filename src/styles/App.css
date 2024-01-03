@@ -75,6 +75,13 @@ body {
   font-display: swap;
 }
 @font-face {
+  font-family: "MontserratBold";
+  src: url("../assets/Fonts/MontserratBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "Montserrat-Light";
   src: url("../assets/Fonts/MontserratExtralight.otf") format("truetype");
   font-weight: normal;

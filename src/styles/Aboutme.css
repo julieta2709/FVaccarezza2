@@ -20,11 +20,11 @@
 }
 .Aboutme-intro {
   font-family: PP-Hatton-Ultralight;
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: 200;
 }
 .Aboutme-name {
-  font-size: 100px;
+  font-size: 6.25rem;
   font-weight: 700;
 }
 .Aboutme-number,
@@ -42,10 +42,14 @@
   font-size: 100px;
   font-weight: 700;
 }
-.Aboutme-subtitle,
 .Aboutme-text,
 .Aboutme-subtitle2 {
   font-family: Montserrat-Light;
+  font-size: 20px;
+  line-height: normal;
+}
+.Aboutme-subtitle {
+  font-family: MontserratBold;
   font-size: 20px;
   line-height: normal;
 }
@@ -144,7 +148,7 @@
   height: 612px;
   justify-content: space-between;
   margin-bottom: 150px;
-  }
+}
 .Aboutme-3 .Aboutme-title {
   margin-left: 86px;
   margin-bottom: 60px;
