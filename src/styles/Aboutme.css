@@ -2,15 +2,16 @@
 .Aboutme-intro,
 .Aboutme-name,
 .Aboutme-title,
+.Aboutme-titleProf,
 .Aboutme-subtitle,
 .Aboutme-,
 .Aboutme-contactTittle,
 .Aboutme-contactMail {
   color: #3a3a39;
 }
-.Aboutme-intro,
 .Aboutme-name,
 .Aboutme-title,
+.Aboutme-titleProf,
 .Aboutme-contactTittle {
   font-family: PP-Hatton;
   line-height: 0.9;
@@ -18,16 +19,20 @@
 .Aboutme-contactMail {
   font-family: "PP-Hatton-Ultralight";
 }
-.Aboutme-intro {
+.Aboutme-introName,
+.Aboutme-introGraphic {
   font-family: PP-Hatton-Ultralight;
   font-size: 3.125rem;
   font-weight: 200;
 }
-.Aboutme-name {
+.Aboutme-name,
+.Aboutme-title,
+.Aboutme-titleProf {
   font-size: 6.25rem;
   font-weight: 700;
 }
 .Aboutme-number,
+.Aboutme-number1,
 .Aboutme-contactNumber {
   color: #e52421;
   font-family: Magilio;
@@ -35,28 +40,23 @@
   font-weight: 400;
   line-height: normal;
 }
-.Aboutme-number {
-  font-size: 300px;
-}
-.Aboutme-title {
-  font-size: 100px;
-  font-weight: 700;
+.Aboutme-number,
+.Aboutme-number1 {
+  font-size: 18.75rem;
 }
 .Aboutme-text,
 .Aboutme-subtitle2 {
   font-family: Montserrat-Light;
-  font-size: 20px;
-  line-height: normal;
+  font-size: 1.25rem;
+  line-height: 1.4;
 }
 .Aboutme-subtitle {
   font-family: MontserratBold;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: normal;
-}
-.Aboutme-subtitle {
-  font-weight: 700;
   font-style: normal;
 }
+
 .Aboutme-text {
   font-weight: 300;
   font-style: normal;
@@ -66,56 +66,202 @@
   font-weight: 600;
 }
 .Aboutme-contactTittle {
-  font-size: 80px;
+  font-size: 5rem;
   font-weight: 700;
   letter-spacing: -5.2px;
 }
 .Aboutme-contactNumber {
-  font-size: 70px;
+  font-size: 4.375rem;
 }
 .Aboutme-contactMail {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 200;
 }
-/*flexbox styles*/
+/*Layout styles*/
 .Aboutme-container {
-  display: flex;
-  flex-direction: column;
-  /* margin-left: 192px; */
-  position: relative;
-  margin-top: 200px;
+  display: grid;
 }
 .Aboutme-maininfo {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-rows: 3.94rem 17.875rem 3.94rem;
+  grid-template-columns: 47.875rem auto;
+}
+.Aboutme-introName,
+.Aboutme-name,
+.Aboutme-introGraphic {
+  grid-column: 1;
+}
+.Aboutme-introName {
+  grid-row: 1;
+}
+.Aboutme-name {
+  grid-row: 2;
+  line-height: normal;
+}
+.Aboutme-introGraphic {
+  grid-row: 3;
+}
+.Aboutme-maininfo-FVpic {
+  grid-column: 2;
+  grid-row: span 3;
+  margin-left: 18.355rem;
+  margin-top: -17.5rem;
 }
 .Aboutme-maininfoText {
-  display: flex;
-  flex-direction: column;
-  width: 766px;
-  height: 368px;
+  display: grid;
+  height: 23.63rem;
 }
-.Aboutme-titlecontainer {
-  display: flex;
-  align-items: center;
-  position: relative;
-  height: 250px;
+.Aboutme-1 {
+  display: grid;
+  margin-top: 9rem;
+  margin-bottom: 9rem;
+  grid-template-rows: auto 7.875rem 8.5625rem;
+  grid-template-columns: 4.875rem 74.25rem;
+  height: 20.625rem;
+  width: 100%;
 }
-.Aboutme-number {
-  position: relative;
+.Aboutme-number1 {
+  grid-row: span 3;
+  grid-column: 1;
+  align-self: baseline;
   z-index: 1;
 }
-.Aboutme-title {
-  position: absolute;
+.Aboutme-titleProf {
+  grid-row: 2;
+  grid-column: 2;
+  align-self: center;
+  margin-left: -1.875rem;
   z-index: 2;
-  left: 34px;
-  width: 539px;
-  height: 178px;
 }
-.Aboutme-text {
-  width: 995px;
+.Aboutme-description {
+  grid-row: 3;
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  margin-left: 11.3rem;
+}
+
+.Aboutme-subtitle {
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
 }
 .Aboutme-2356container {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto;
+  /* grid-template-rows: 20.625rem auto 20.625rem auto 15.69rem;
+  grid-template-columns: 9.5625rem 33.6875rem 9.5625rem 33.6875rem; */
+  height: 103.875rem;
+  width: 98rem;
+}
+.Aboutme-3,
+.Aboutme-6 {
+  grid-row: 1;
+  grid-column: span 2;
+}
+.Aboutme-2,
+.Aboutme-5 {
+  grid-row: 2;
+  grid-column: span 2;
+}
+.Aboutme-contact {
+  grid-row: 3;
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+}
+.Aboutme-3,
+.Aboutme-6,
+.Aboutme-2,
+.Aboutme-5 {
+  display: grid;
+  grid-template-columns: 9.5625rem auto;
+  grid-template-rows: 20.625rem 33.6875rem;
+}
+.Aboutme-3 .Aboutme-number,
+.Aboutme-3 .Aboutme-title,
+.Aboutme-6 .Aboutme-number,
+.Aboutme-6 .Aboutme-title,
+.Aboutme-2 .Aboutme-number,
+.Aboutme-2 .Aboutme-title,
+.Aboutme-5 .Aboutme-number,
+.Aboutme-5 .Aboutme-title {
+  grid-row: 1;
+}
+.Aboutme-3 .Aboutme-3container,
+.Aboutme-5 .Aboutme-5container,
+.Aboutme-2 .Aboutme-2container,
+.Aboutme-6 .Aboutme-6container{
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+}
+.Aboutme-number {
+  z-index: 1;
+  align-self: baseline;
+}
+.Aboutme-title {
+  z-index: 2;
+  margin-left: -30px;
+  align-self: center;
+}
+
+/* .Aboutme-3 .Aboutme-number,
+.Aboutme-3 .Aboutme-title,
+.Aboutme-6 .Aboutme-number,
+.Aboutme-6 .Aboutme-title {
+  grid-row: 1;
+}
+.Aboutme-3container,
+.Aboutme-6container {
+  grid-row: 2;
+ }
+
+.Aboutme-2 .Aboutme-number,
+.Aboutme-2 .Aboutme-title,
+.Aboutme-5 .Aboutme-number,
+.Aboutme-5 .Aboutme-title {
+  grid-row: 3;
+}
+.Aboutme-5container,
+.Aboutme-2container {
+  grid-row: 4;
+}
+.Aboutme-3 .Aboutme-number,
+.Aboutme-5 .Aboutme-number {
+  grid-column: 1;
+}
+.Aboutme-3 .Aboutme-title,
+.Aboutme-5 .Aboutme-title {
+  grid-column: 2;
+}
+.Aboutme-6 .Aboutme-number,
+.Aboutme-2 .Aboutme-number {
+  grid-column: 3;
+}
+.Aboutme-6 .Aboutme-title,
+.Aboutme-2 .Aboutme-title {
+  grid-column: 4;
+}
+.Aboutme-3container, .Aboutme-5container {
+  grid-column: 1 / span 2;
+}
+.Aboutme-6container, .Aboutme-2container {
+  grid-column: 3 / span 2;
+}
+
+.Aboutme-3container,
+.Aboutme-5container,
+.Aboutme-2container,
+.Aboutme-6container,
+.Aboutme-contact {
+  display: flex;
+  flex-direction: column;
+}
+.Aboutme-text {
+  display: flex;
+} */
+/* .Aboutme-2356container {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -125,17 +271,7 @@
   display: flex;
   flex-direction: column;
 }
-.Aboutme-1 {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  margin-bottom: 250px;
-  width: 1266px;
-  height: 330px;
-}
-.Aboutme-description {
-  margin-left: 271px;
-}
+
 .Aboutme-3,
 .Aboutme-6,
 .Aboutme-5,
@@ -169,3 +305,4 @@
   width: 595px;
   height: 251px;
 }
+ */
