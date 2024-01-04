@@ -22,6 +22,7 @@ body {
   width: 100%;
   height: 100vh;
 }
+/*imagenes de fondo*/
 .BackgroundHome {
   position: relative;
   top: 0;
@@ -46,6 +47,16 @@ body {
     url("../assets/img/BG/WorkRightBG.svg"),
     url("../assets/img/BG/Line.svg");
   background-position: center left, top right, center bottom;
+  background-repeat: no-repeat;
+}
+.BackgroundContact {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../assets/img/BG/bgContactderecho.svg"),
+    url("../assets/img/BG/bgContactizq.svg"),
+    url("../assets/img/BG/Line.svg");
+  background-position: bottom right, top left, center top;
   background-repeat: no-repeat;
 }
 /* .overlay {

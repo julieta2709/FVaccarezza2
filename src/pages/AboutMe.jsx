@@ -97,23 +97,28 @@ const AboutMe = () => {
           <p className="Aboutme-title">main abilities.</p>
           <div className="Aboutme-6container">
             <p className="Aboutme-text">
-              <img className="Aboutme-abilitieIcon" src={ai} /> adobe illustrator
+              <img className="Aboutme-abilitieIcon" src={ai} />
+              <p>adobe illustrator</p>
             </p>
             <p className="Aboutme-text">
-              <img className="Aboutme-abilitieIcon" src={ps} /> adobe photoshop
+              <img className="Aboutme-abilitieIcon" src={ps} />
+              <p>adobe photoshop</p>
             </p>
             <p className="Aboutme-text">
-              <img className="Aboutme-abilitieIcon" src={lr} /> adobe lightroom
+              <img className="Aboutme-abilitieIcon" src={lr} />
+              <p>adobe lightroom</p>
             </p>
             <p className="Aboutme-text">
-              <img className="Aboutme-abilitieIcon" src={ae} /> adobe after
-              effects
+              <img className="Aboutme-abilitieIcon" src={ae} />
+              <p>adobe after effects</p>
             </p>
             <p className="Aboutme-text">
-              <img className="Aboutme-abilitieIcon" src={figma} /> figma
+              <img className="Aboutme-abilitieIcon" src={figma} />
+              <p className="figma"> figma</p>
             </p>
             <p className="Aboutme-text">
-              <img className="Aboutme-abilitieIcon" src={cinema} /> cinema 4d
+              <img className="Aboutme-abilitieIcon" src={cinema} />
+              <p>cinema 4d</p>
             </p>
           </div>
         </div>
