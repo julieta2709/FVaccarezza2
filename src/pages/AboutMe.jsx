@@ -44,11 +44,35 @@ const AboutMe = () => {
           <div className="Aboutme-3container">
             <p className="Aboutme-subtitle">PORTFOLIO & SOCIAL MEDIA</p>
             <p className="Aboutme-subtitle2">DRIBBBLE</p>
-            <p className="Aboutme-text">dribbble.com/vaccarezza</p>
+            <p className="Aboutme-text">
+              <a
+                href="https://dribbble.com/vaccarezza"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                dribbble.com/vaccarezza
+              </a>
+            </p>
             <p className="Aboutme-subtitle2">BEHANCE</p>
-            <p className="Aboutme-text">behance.net/Vaccarezza</p>
+            <p className="Aboutme-text">
+              <a
+                href="https://behance.net/Vaccarezza"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                behance.net/Vaccarezza
+              </a>
+            </p>
             <p className="Aboutme-subtitle2">VSCO</p>
-            <p className="Aboutme-text">vsco.co/fedevaccarezza/gallery</p>
+            <p className="Aboutme-text">
+              <a
+                href="https://vsco.co/fedevaccarezza/gallery"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                vsco.co/fedevaccarezza/gallery
+              </a>
+            </p>
           </div>
         </div>
         <div className="Aboutme-5">
@@ -73,7 +97,7 @@ const AboutMe = () => {
           <p className="Aboutme-title">main abilities.</p>
           <div className="Aboutme-6container">
             <p className="Aboutme-text">
-              <img src={ai} /> adobe illustrator
+              <img className="Aboutme-abilitieIcon" src={ai} /> adobe illustrator
             </p>
             <p className="Aboutme-text">
               <img className="Aboutme-abilitieIcon" src={ps} /> adobe photoshop

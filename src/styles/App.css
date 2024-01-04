@@ -89,6 +89,13 @@ body {
   font-display: swap;
 }
 @font-face {
+  font-family: "MontserratSemiboldItalic";
+  src: url("../assets/Fonts/MontserratSemiboldItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "Magilio";
   src: url("../assets/Fonts/MagilioRegular.ttf") format("truetype");
   src: url("../assets/Fonts/MagilioRegular.otf") format("opentype");
