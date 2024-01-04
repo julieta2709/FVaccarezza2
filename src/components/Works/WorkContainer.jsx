@@ -45,7 +45,9 @@ const WorkContainer = () => {
         <img className="Work-asterisk" src={asterisk} alt="asterisk" />
         <h2 className="Work-mainTitle">LATEST WORKS</h2>
       </div>
+      <div>
       <MainWork works={WorkData} />
+      </div>
       <div className="Work-PrevNext">
       {currentIndex !== 0 && (
           <Prev className="prevNext" onClick={handlePrevClick} />

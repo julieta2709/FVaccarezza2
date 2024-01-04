@@ -88,7 +88,7 @@
 /*Layout styles*/
 .Aboutme-container {
   display: grid;
-  width: 100%;
+ margin-left: 13.3125rem;
 }
 /*presentación*/
 .Aboutme-maininfo {

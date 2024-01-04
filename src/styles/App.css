@@ -42,11 +42,10 @@ body {
 .BackgroundWork {
   position: relative;
   width: 100%;
-  min-height: 100vh;
   background-image: url("../assets/img/BG/WorkLeft.svg"),
     url("../assets/img/BG/WorkRightBG.svg"),
     url("../assets/img/BG/Line.svg");
-  background-position: center left, top right, center bottom;
+  background-position: top left, top right, center bottom;
   background-repeat: no-repeat;
 }
 .BackgroundContact {
