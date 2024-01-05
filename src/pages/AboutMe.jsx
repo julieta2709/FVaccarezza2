@@ -98,27 +98,27 @@ const AboutMe = () => {
           <div className="Aboutme-6container">
             <p className="Aboutme-text">
               <img className="Aboutme-abilitieIcon" src={ai} />
-              <p>adobe illustrator</p>
+              <span>adobe illustrator</span>
             </p>
             <p className="Aboutme-text">
               <img className="Aboutme-abilitieIcon" src={ps} />
-              <p>adobe photoshop</p>
+              <span>adobe photoshop</span>
             </p>
             <p className="Aboutme-text">
               <img className="Aboutme-abilitieIcon" src={lr} />
-              <p>adobe lightroom</p>
+              <span>adobe lightroom</span>
             </p>
             <p className="Aboutme-text">
               <img className="Aboutme-abilitieIcon" src={ae} />
-              <p>adobe after effects</p>
+              <span>adobe after effects</span>
             </p>
             <p className="Aboutme-text">
               <img className="Aboutme-abilitieIcon" src={figma} />
-              <p className="figma"> figma</p>
+              <span className="figma"> figma</span>
             </p>
             <p className="Aboutme-text">
               <img className="Aboutme-abilitieIcon" src={cinema} />
-              <p>cinema 4d</p>
+              <span>cinema 4d</span>
             </p>
           </div>
         </div>

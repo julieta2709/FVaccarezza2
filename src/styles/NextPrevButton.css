@@ -1,0 +1,47 @@
+.NexContainer {
+  position: relative;
+  display: inline-block;
+}
+.NextContainer::before {
+  pointer-events: none;
+}
+.NextContainer:hover .ellipseBg {
+  fill: #e52421;
+}
+.NextContainer:hover .pathColor {
+  fill: #f8f5ef;
+  transform: translateY(5%);
+}
+.ellipseBg:hover,
+.pathColor:hover {
+  transition: fill 2s cubic-bezier(0.21, 0.87, 0.35, 1),
+    transform 2s cubic-bezier(0.21, 0.87, 0.35, 1);
+}
+.NextContainer::after {
+    content: "Next project";
+    position: relative;
+    top: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    font-family: "Montserrat";
+    font-size: 12px;
+    color: #000;
+  }
+  
+  .NextContainer:hover::after {
+    opacity: 1;
+  }
+/* .next:hover::after {
+  content: "next project";
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #000;
+  font-size: 12px;
+  font-family: "Montserrat";
+}
+ */

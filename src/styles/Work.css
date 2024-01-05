@@ -42,9 +42,23 @@
 .Work-ItemLink {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .Work-ItemText {
-  margin-left: -0.625rem;
+  margin-left: -0.8rem;
+  margin-bottom: 0.6rem;
+}
+/*animación*/
+.Work-ItemNumber,
+.Work-ItemText {
+  transition: transform 2s cubic-bezier(0.21, 0.87, 0.35, 1);
+}
+.Work-ItemNumber:hover,
+.Work-ItemText:hover {
+  transform: translateX(10%);
+}
+.Work-ItemText:hover {
+  color:  #e52421;
 }
 /*Work Titles individuals*/
 .Work-PrevNext {
@@ -119,9 +133,11 @@
 .Work-ItemNumber {
   font-size: 5rem;
 }
-.Work-ItemText,
 .Work-TextIndividual {
   font-family: "PP-Hatton";
+}
+.Work-ItemText {
+  font-family: "PP-HattonBold";
 }
 .Work-ItemText,
 .Work-TextIndividual,

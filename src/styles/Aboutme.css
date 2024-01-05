@@ -249,7 +249,7 @@
   grid-column: 1;
   margin-right: 1.3125rem;
 }
-.Aboutme-6container .Aboutme-text .Aboutme-abilitieIcon p {
+.Aboutme-6container .Aboutme-text .Aboutme-abilitieIcon span {
   grid-column: 2;
 }
 .Aboutme-6container .Aboutme-text .figma {
