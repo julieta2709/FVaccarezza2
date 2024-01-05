@@ -8,18 +8,25 @@
 .NextContainer:hover .ellipseBg {
   fill: #e52421;
 }
-.NextContainer:hover .pathColor {
+.NextContainer:hover .pathColor,
+.NextContainer:hover .pathColorNext,
+.NextContainer:hover .pathColorPrev {
   fill: #f8f5ef;
-  transform: translateY(5%);
 }
 .ellipseBg:hover,
 .pathColor:hover {
   transition: fill 2s cubic-bezier(0.21, 0.87, 0.35, 1),
     transform 2s cubic-bezier(0.21, 0.87, 0.35, 1);
 }
-.NextContainer::after {
+.NextContainer:hover .pathColorNext {
+  transform: translateY(5%);
+}
+.NextContainer:hover .pathColorPrev {
+  transform: translateY(-5%);
+}
+/* .NextContainer::after {
     content: "Next project";
-    position: relative;
+    position: absolute;
     top: calc(100% + 5px);
     left: 50%;
     transform: translateX(-50%);
@@ -32,7 +39,7 @@
   
   .NextContainer:hover::after {
     opacity: 1;
-  }
+  } */
 /* .next:hover::after {
   content: "next project";
   display: block;

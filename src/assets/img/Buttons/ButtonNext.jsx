@@ -35,7 +35,7 @@ function ButtonBefore(props) {
         <path
           d="M86.894 66.667h5.156l4.642 14.072h-2.973l4.641-14.072h5.157l-5.612 16.092h-5.4l-5.611-16.092z"
           fill="#E52421"
-          className="pathColor"
+          className="pathColorNext"
         />
         <defs>
           <filter
