@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import UpIcon from "../../assets/img/Buttons/upIcon";
+import UpIcon from "../../assets/img/Buttons/UpIcon";
 import "../../styles/ButtonUp.css";
 
 const ButtonUp = () => {
