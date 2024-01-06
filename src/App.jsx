@@ -89,35 +89,3 @@ function App() {
 }
 
 export default App;
-
-/* function AllComponents() {
-  return (
-    <div>
-      <Home />
-      <ButtonUp />
-      <AboutMe />
-      <WorkContainer />
-      <Contact />
-    </div>
-  );
-} */
-{
-  /*  <Routes>
-          <Route path="/Home" element={<Home />} />
-          <Route path="/Home" element={<ButtonUp />} />
-          <Route path="/Photography" element={<Photography />} />
-          <Route path="/Work/*" element={<WorkContainer />} />
-          <Route path="/Frog" element={<Frog />} />
-          <Route path="/Estudio" element={<Estudio />} />
-          <Route path="/Moreno" element={<Moreno />} />
-          <Route path="/Opame" element={<Opame />} />
-          <Route path="/Michi" element={<Michi />} />
-          <Route path="/Broke" element={<Broke />} />
-          <Route path="/Kp" element={<Kp />} />
-          <Route path="/Logofolio" element={<Logofolio />} />
-          <Route path="/Misc" element={<Misc />} />
-          <Route path="/AboutMe" element={<AboutMe />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="*" element={<AllComponents />} />
-        </Routes> */
-}

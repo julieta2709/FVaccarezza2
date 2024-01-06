@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import "../styles/NavBar.css";
 import NavBar from "./NavBar";
 
@@ -21,6 +22,12 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const location = useLocation();
+  const shouldHideHeader = location.pathname === "/photography";
+  if (shouldHideHeader) {
+    return null;
+  }
 
   return (
     <div className="Header-container">

@@ -1,17 +1,24 @@
 .Photography-container {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100vh;
 }
 .Photography-mainTitle {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   align-items: center;
+  margin-left: 22.3125rem;
 }
 .Photography-mainText1 {
   grid-row: 1;
   grid-column: span 2;
-  align-self: flex-start;
+  text-align: left;
+  display: inline;
+  align-self: flex-end;
+  justify-self: left;
 }
 .Photography-mainText2 {
   grid-row: 2;
@@ -24,11 +31,30 @@
 }
 .RedCircle {
   fill: #e52421;
-  margin: 1.4375rem;
+  margin: 1.4375rem 1.4375rem 1.4375rem 0rem;
 }
 .Photography-mainText1,
 .Photography-mainText2 {
   font-family: "PP-Hatton";
   font-size: 9.725rem;
   color: #3a3a39;
+}
+.Rectangle {
+  position: fixed;
+  z-index: 999;
+}
+.animate {
+  /* Estilos de la animación */
+  animation-name: Dissolve;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-duration: 300ms;
+}
+
+@keyframes Dissolve {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
