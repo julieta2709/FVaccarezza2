@@ -13,8 +13,8 @@
 .NextContainer:hover .pathColorPrev {
   fill: #f8f5ef;
 }
-.ellipseBg:hover,
-.pathColor:hover {
+.ellipseBg,
+.pathColor {
   transition: fill 2s ease-out, transform 2s ease-out;
 }
 /* .ellipseBg:hover,

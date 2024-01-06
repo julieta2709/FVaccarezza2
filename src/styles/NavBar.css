@@ -47,6 +47,10 @@
 .nav-link {
   color: #3a3a39;
 }
+.nav-link:hover {
+  color:  #e52421;
+}
+
 @media screen and (max-width: 768px) {
   .nav-menu {
     display: none;

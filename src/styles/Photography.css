@@ -1,16 +1,23 @@
 .Photography-container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Photography-titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20.0625rem;
+  margin-bottom: 23.8125rem;
 }
 .Photography-mainTitle {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   align-items: center;
-  margin-left: 22.3125rem;
 }
 .Photography-mainText1 {
   grid-row: 1;
@@ -39,22 +46,11 @@
   font-size: 9.725rem;
   color: #3a3a39;
 }
-.Rectangle {
+.Rectangle-container {
   position: fixed;
   z-index: 999;
+  left: 0;
 }
-.animate {
-  /* Estilos de la animación */
-  animation-name: Dissolve;
-  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-  animation-duration: 300ms;
-}
-
-@keyframes Dissolve {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+.PhotosContainer {
+  width: 84.125rem;
 }

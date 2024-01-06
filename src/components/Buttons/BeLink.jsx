@@ -5,7 +5,7 @@ import BeButton from "../../assets/img/Buttons/BeButton";
 const BeLink = ({ link }) => {
   return (
     <Link to={link} className="be-button">
-      <BeButton />;
+      <BeButton />
     </Link>
    )
 };

@@ -1,0 +1,15 @@
+.rectangleContainer::before {
+  pointer-events: none;
+}
+.rectangleBg,
+.rectanglePath {
+  transition: fill 2s ease-out;
+}
+.rectangleContainer:hover .rectangleBg {
+  fill: #f8f5ef;
+  transition: fill 2s ease-out;
+}
+
+.rectangleContainer:hover .rectanglePath {
+  fill: #e52421;
+}

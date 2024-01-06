@@ -9,10 +9,12 @@ const Header = () => {
       const navbar = document.querySelector(".Header-container");
       const scrollPosition = window.scrollY;
 
-      if (scrollPosition > 110) {
-        navbar.classList.add("blur");
-      } else {
-        navbar.classList.remove("blur");
+      if (navbar) {
+        if (scrollPosition > 110) {
+          navbar.classList.add("blur");
+        } else {
+          navbar.classList.remove("blur");
+        }
       }
     };
 
@@ -22,13 +24,11 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
   const location = useLocation();
   const shouldHideHeader = location.pathname === "/photography";
   if (shouldHideHeader) {
     return null;
   }
-
   return (
     <div className="Header-container">
       <NavBar />
