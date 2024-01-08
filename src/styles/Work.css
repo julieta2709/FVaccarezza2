@@ -1,5 +1,5 @@
 /*Layout*/
-/*Work Title section*/
+/*Work Container*/
 .Work-container {
   width: 100%;
   height: 105.8125rem;
@@ -71,10 +71,12 @@
 }
 .Work-TitleIndvidual {
   display: grid;
-  grid-template-rows: 15.625rem 4.5ren auto;
+  grid-template-rows: 15.625rem 4.5rem auto;
   grid-template-columns: auto 1fr;
   width: 100%;
   height: 20%;
+  margin-top: 1.75rem;
+  margin-bottom: 3.6875rem;
 }
 .Work-NumberIndividual {
   grid-row: 1;
@@ -160,21 +162,12 @@
 .WorkTitleDate {
   font-family: "Montserrat";
 }
-.WorkTitle-maincontainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.WorkTitle-container {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
+
 li {
   list-style-type: none;
 }
 /*Backgrounds*/
-.Work-BrokeBg,
+/* .Work-BrokeBg,
 .Work-EstudioBg,
 .Work-FrogBg,
 .Work-KpBg,
@@ -212,4 +205,4 @@ li {
 }
 .Work-MiscBg {
   background-image: url("../assets/img/BG/MiscBg.svg");
-}
+} */

@@ -43,34 +43,34 @@ function App() {
                     <WorkContainer />
                   </div>
                 </div>
-                <div>
-                  <div id="frog">
+                <div className="IndividualWork-container">
+                  <div id="frog" style={{ width: "100%", marginTop: "11.125rem" }}>
                     <Frog />
                   </div>
-                </div>
-                <div id="estudio">
-                  <Estudio />
-                </div>
-                <div id="moreno">
-                  <Moreno />
-                </div>
-                <div id="opame">
-                  <Opame />
-                </div>
-                <div id="michi">
-                  <Michi />
-                </div>
-                <div id="broke">
-                  <Broke />
-                </div>
-                <div id="kp">
-                  <Kp />
-                </div>
-                <div id="logofolio">
-                  <Logofolio />
-                </div>
-                <div id="misc">
-                  <Misc />
+                  <div id="estudio">
+                    <Estudio />
+                  </div>
+                  <div id="moreno">
+                    <Moreno />
+                  </div>
+                  <div id="opame">
+                    <Opame />
+                  </div>
+                  <div id="michi">
+                    <Michi />
+                  </div>
+                  <div id="broke">
+                    <Broke />
+                  </div>
+                  <div id="kp">
+                    <Kp />
+                  </div>
+                  <div id="logofolio">
+                    <Logofolio />
+                  </div>
+                  <div id="misc">
+                    <Misc />
+                  </div>
                 </div>
                 <div className="BackgroundContact">
                   <div id="contact">

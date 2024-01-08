@@ -20,18 +20,20 @@ const Frog = () => {
   const { index, title, description, date, url } = WorkData[0];
   const sentences = description.split("\n");
   return (
-    <div className="Work-FrogBg">
-      <div className="Work-TitleIndvidual">
-        <span className="Work-NumberIndividual">{index}</span>
-        <span className="Work-TextIndividual">{title}</span>
-        <div className="Work-DescriptionContainer">
-          {sentences.map((sentence, index) => (
-            <p className="WorkTitleDescription" key={index}>
-              {sentence}
-            </p>
-          ))}
+    <div className="Work-FrogContainer">
+      <div className="Work-FrogBg">
+        <div className="Work-TitleIndvidual">
+          <span className="Work-NumberIndividual">{index}</span>
+          <span className="Work-TextIndividual">{title}</span>
+          <div className="Work-DescriptionContainer">
+            {sentences.map((sentence, index) => (
+              <p className="WorkTitleDescription" key={index}>
+                {sentence}
+              </p>
+            ))}
+          </div>
+          <p className="WorkTitleDate">{date}</p>
         </div>
-        <p className="WorkTitleDate">{date}</p>
       </div>
       <div className="Frogphoto-container">
         <img src={Frog1} alt="FrogBazar1" className="Frog1" />
@@ -44,9 +46,9 @@ const Frog = () => {
         <img src={Frogcel2} alt="FrogBazarcel2" className="Frogcel2" />
         <img src={Frogcel3} alt="FrogBazarcel3" className="Frogcel3" />
         <img src={Frogcel4} alt="FrogBazarcel4" className="Frogcel4" />
-      </div>
-      <div className="Belink">
-        <BeLink link={url} />
+        <div className="Belink-container">
+          <BeLink link={url} />
+        </div>
       </div>
     </div>
   );
