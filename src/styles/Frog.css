@@ -1,0 +1,71 @@
+.Frogphoto-container {
+  display: grid;
+  grid-template-columns: 31.3125rem 31.25rem;
+  grid-template-rows: repeat(5, auto);
+  width: 100%;
+  grid-gap: 3.875rem 5rem;
+  margin-top: 6.125rem;
+}
+.Frog1 {
+  grid-column: span 2;
+  grid-row: 1;
+}
+.Frog2 {
+  grid-row: 2 / span 3;
+  grid-column: 1;
+}
+.Frogcel1,
+.Frogcel2 {
+  grid-column: 1;
+  z-index: 1;
+}
+.Frogcel1,
+.Frogcel3 {
+  grid-row: 2;
+}
+.Frogcel2,
+.Frogcel4 {
+  grid-row: 3;
+}
+.Frogcel3,
+.Frogcel4 {
+  grid-column: 2;
+  z-index: 1;
+}
+.Frog3,
+.Frog4,
+.Frog6 {
+  grid-column: 2;
+}
+.Frog3 {
+  grid-row: 2;
+}
+.Frog4 {
+  grid-row: 3;
+}
+.Frog6 {
+  grid-row: 4;
+}
+.Frog5 {
+  grid-row: 5;
+  grid-column: span 2;
+}
+.Frogcel1 {
+  justify-self: end;
+  align-self: start;
+  margin-right: -4.5rem;
+  margin-top: -3rem;
+}
+.Frogcel2 {
+  justify-self: start;
+  align-self: flex-start;
+  margin-right: -6.1rem;
+  margin-bottom: -4.8rem;
+}
+.Frogcel3,
+.Frogcel4 {
+  justify-self: end;
+  align-self: flex-end;
+  margin-right: -6.1rem;
+  margin-bottom: -4.8rem;
+}
