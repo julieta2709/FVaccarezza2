@@ -3,8 +3,6 @@ import Moreno1 from "../../assets/img/Moreno/Moreno1.png";
 import Moreno2 from "../../assets/img/Moreno/Moreno2.png";
 import Moreno3 from "../../assets/img/Moreno/Moreno3.png";
 import Moreno4 from "../../assets/img/Moreno/Moreno4.png";
-import Morenocel1 from "../../assets/img/Moreno/Morenocel1.png";
-import Morenocel2 from "../../assets/img/Moreno/Morenocel2.png";
 import "../../styles/Moreno.css";
 import "../../styles/Work.css";
 import { WorkDataContext } from "./WorkContext";
@@ -35,8 +33,8 @@ const Moreno = () => {
         <img src={Moreno2} alt="Moreno2" className="Moreno2" />
         <img src={Moreno3} alt="Moreno3" className="Moreno3" />
         <img src={Moreno4} alt="Moreno4" className="Moreno4" />
-        <img src={Morenocel1} alt="Morenocel1" className="Morenocel1" />
-        <img src={Morenocel2} alt="Morenocel2" className="Morenocel2" />
+{/*         <img src={Morenocel1} alt="Morenocel1" className="Morenocel1" />
+        <img src={Morenocel2} alt="Morenocel2" className="Morenocel2" /> */}
       </div>
     </div>
   );

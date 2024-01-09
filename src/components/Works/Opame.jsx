@@ -1,4 +1,14 @@
 import React, { useContext } from "react";
+import Opame1 from "../../assets/img/Opame/Opame1.png";
+import Opame2 from "../../assets/img/Opame/Opame2.png";
+import Opame3 from "../../assets/img/Opame/Opame3.png";
+import Opame4 from "../../assets/img/Opame/Opame4.png";
+import Opame5 from "../../assets/img/Opame/Opame5.png";
+import Opame6 from "../../assets/img/Opame/Opame6.png";
+import Opame7 from "../../assets/img/Opame/Opame7.png";
+import Opamecel1 from "../../assets/img/Opame/Opamecel1.png";
+import Opamecel2 from "../../assets/img/Opame/Opamecel2.png";
+import Opamecel3 from "../../assets/img/Opame/Opamecel3.png";
 import "../../styles//Opame.css";
 import "../../styles/Work.css";
 import { WorkDataContext } from "./WorkContext";
@@ -25,7 +35,18 @@ const Opame = () => {
           <p className="WorkTitleDate">{date}</p>
         </div>
       </div>
-      <div className="WorkIndividualphoto-container"></div>
+      <div className="WorkIndividualphoto-container">
+        <img src={Opame1} alt="Opame1" className="Opame1" />
+        <img src={Opame2} alt="Opame2" className="Opame2" />
+        <img src={Opame3} alt="Opame3" className="Opame3" />
+        <img src={Opame4} alt="Opame4" className="Opame4" />
+        <img src={Opame5} alt="Opame5" className="Opame5" />
+        <img src={Opame6} alt="Opame6" className="Opame6" />
+        <img src={Opame7} alt="Opame7" className="Opame7" />
+        <img src={Opamecel1} alt="Opamecel1" className="Opamecel1" />
+        <img src={Opamecel2} alt="Opamecel2" className="Opamecel2" />
+        <img src={Opamecel3} alt="Opamecel3" className="Opamecel3" />
+      </div>
     </div>
   );
 };
