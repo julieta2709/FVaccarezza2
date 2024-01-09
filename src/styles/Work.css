@@ -58,7 +58,40 @@
   transform: translateX(10%);
 }
 .Work-ItemText:hover {
-  color:  #e52421;
+  color: #e52421;
+}
+/*Work Individuals containers*/
+.WorkIndividualphoto-container {
+  display: grid;
+  grid-template-columns: 31.3125rem 31.25rem;
+  grid-template-rows: repeat(5, auto);
+  width: 100%;
+  grid-gap: 3.875rem 5rem;
+  margin-top: 6.125rem;
+  justify-content: center;
+}
+.Work-FrogContainer,
+.Work-EstudioContainer,
+.Work-MorenoContainer,
+.Work-OpameContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-position: top center;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+.Work-FrogContainer {
+  background-image: url("../assets/img/BG/FrogBg.svg");
+}
+.Work-EstudioContainer {
+  background-image: url("../assets/img/BG/EstudioBg.svg");
+}
+.Work-MorenoContainer {
+  background-image: url("../assets/img/BG/PedrazaBg.svg");
+}
+.Work-OpameContainer {
+  background-image: url("../assets/img/BG/MichiBg.svg");
 }
 /*Work Titles individuals*/
 .Work-PrevNext {
@@ -186,7 +219,7 @@ li {
   background-image: url("../assets/img/BG/EstudioBg.svg");
 }
 .Work-MorenoBg {
-  background-image: url("../assets/img/BG/PedrazaBg.svg");
+ 
 }
 .Work-OpameBg {
   background-image: url("../assets/img/BG/OpameBg.svg");

@@ -44,31 +44,58 @@ function App() {
                   </div>
                 </div>
                 <div className="IndividualWork-container">
-                  <div id="frog" style={{ width: "100%", marginTop: "11.125rem" }}>
+                  <div
+                    id="frog"
+                    style={{ width: "100%", marginTop: "11.125rem" }}
+                  >
                     <Frog />
                   </div>
-                  <div id="estudio">
+                  <div
+                    id="estudio"
+                    style={{ width: "100%", marginTop: "11.125rem" }}
+                  >
                     <Estudio />
                   </div>
-                  <div id="moreno">
+                  <div
+                    id="moreno"
+                    style={{ width: "100%", marginTop: "11.125rem" }}
+                  >
                     <Moreno />
                   </div>
-                  <div id="opame">
+                  <div
+                    id="opame"
+                    style={{ width: "100%", marginTop: "11.125rem" }}
+                  >
                     <Opame />
                   </div>
-                  <div id="michi">
+                  <div
+                    id="michi"
+                    style={{ width: "100%", marginTop: "11.125rem" }}
+                  >
                     <Michi />
                   </div>
-                  <div id="broke">
+                  <div
+                    id="broke"
+                    style={{ width: "100%", marginTop: "11.125rem" }}
+                  >
                     <Broke />
                   </div>
-                  <div id="kp">
+                  <div
+                    id="kp"
+                    style={{ width: "100%", marginTop: "11.125rem" }}
+                  >
                     <Kp />
                   </div>
-                  <div id="logofolio">
+                  <div
+                    id="logofolio"
+                    style={{ width: "100%", marginTop: "11.125rem" }}
+                  >
                     <Logofolio />
                   </div>
-                  <div id="misc">
+                  <div
+                    id="misc"
+                    style={{ width: "100%", marginTop: "11.125rem" }}
+                  >
                     <Misc />
                   </div>
                 </div>

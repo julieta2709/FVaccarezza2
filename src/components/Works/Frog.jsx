@@ -35,7 +35,7 @@ const Frog = () => {
           <p className="WorkTitleDate">{date}</p>
         </div>
       </div>
-      <div className="Frogphoto-container">
+      <div className="WorkIndividualphoto-container">
         <img src={Frog1} alt="FrogBazar1" className="Frog1" />
         <img src={Frog2} alt="FrogBazar2" className="Frog2" />
         <img src={Frog3} alt="FrogBazar3" className="Frog3" />
