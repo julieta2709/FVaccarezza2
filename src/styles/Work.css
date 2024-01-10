@@ -73,7 +73,10 @@
 .Work-FrogContainer,
 .Work-EstudioContainer,
 .Work-MorenoContainer,
-.Work-OpameContainer {
+.Work-OpameContainer,
+.Work-MichiContainer,
+.Work-BrokeContainer,
+.Work-KpContainer, .Work-LogofolioContainer, .Work-MiscContainer {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -92,6 +95,21 @@
 }
 .Work-OpameContainer {
   background-image: url("../assets/img/BG/MichiBg.svg");
+}
+.Work-MichiContainer {
+  background-image: url("../assets/img/BG/MichiBg.svg");
+}
+.Work-BrokeContainer {
+  background-image: url("../assets/img/BG/BrokeBg.svg");
+}
+.Work-KpContainer {
+  background-image: url("../assets/img/BG/KpBg.svg");
+}
+.Work-LogofolioContainer {
+  background-image: url("../assets/img/BG/LogofolioBg.svg");
+}
+.Work-MiscContainer {
+  background-image: url("../assets/img/BG/MiscBg.svg");
 }
 /*Work Titles individuals*/
 .Work-PrevNext {
@@ -199,43 +217,4 @@
 li {
   list-style-type: none;
 }
-/*Backgrounds*/
-/* .Work-BrokeBg,
-.Work-EstudioBg,
-.Work-FrogBg,
-.Work-KpBg,
-.Work-LogofolioBg,
-.Work-MichiBg,
-.Work-MiscBg,
-.Work-MorenoBg,
-.Work-OpameBg {
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.Work-FrogBg {
-  background-image: url("../assets/img/BG/FrogBg.svg");
-}
-.Work-EstudioBg {
-  background-image: url("../assets/img/BG/EstudioBg.svg");
-}
-.Work-MorenoBg {
- 
-}
-.Work-OpameBg {
-  background-image: url("../assets/img/BG/OpameBg.svg");
-}
-.Work-MichiBg {
-  background-image: url("../assets/img/BG/MichiBg.svg");
-}
-.Work-BrokeBg {
-  background-image: url("../assets/img/BG/BrokeBg.svg");
-}
-.Work-KpBg {
-  background-image: url("../assets/img/BG/KpBg.svg");
-}
-.Work-LogofolioBg {
-  background-image: url("../assets/img/BG/LogofolioBg.svg");
-}
-.Work-MiscBg {
-  background-image: url("../assets/img/BG/MiscBg.svg");
-} */
+

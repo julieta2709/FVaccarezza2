@@ -9,6 +9,7 @@ import Opame7 from "../../assets/img/Opame/Opame7.png";
 import Opamecel1 from "../../assets/img/Opame/Opamecel1.png";
 import Opamecel2 from "../../assets/img/Opame/Opamecel2.png";
 import Opamecel3 from "../../assets/img/Opame/Opamecel3.png";
+import Opamecel4 from "../../assets/img/Opame/Opamecel4.png";
 import "../../styles//Opame.css";
 import "../../styles/Work.css";
 import { WorkDataContext } from "./WorkContext";
@@ -46,6 +47,7 @@ const Opame = () => {
         <img src={Opamecel1} alt="Opamecel1" className="Opamecel1" />
         <img src={Opamecel2} alt="Opamecel2" className="Opamecel2" />
         <img src={Opamecel3} alt="Opamecel3" className="Opamecel3" />
+        <img src={Opamecel4} alt="Opamecel4" className="Opamecel4" />
       </div>
     </div>
   );

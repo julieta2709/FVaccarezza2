@@ -9,21 +9,27 @@ const Kp = () => {
   const { index, title, description, date, url } = WorkData[6];
   const sentences = description.split("\n");
   return (
-    <div className="Work-KpBg">
-      <div className="Work-TitleIndvidual">
-        <span className="Work-NumberIndividual">{index}</span>
-        <span className="Work-TextIndividual">{title}</span>
-        <div className="Work-DescriptionContainer">
-          {sentences.map((sentence, index) => (
-            <p className="WorkTitleDescription" key={index}>
-              {sentence}
-            </p>
-          ))}
+    <div className="Work-KpContainer">
+      <div className="Work-KpBg">
+        <div className="Work-TitleIndvidual">
+          <span className="Work-NumberIndividual">{index}</span>
+          <span className="Work-TextIndividual">{title}</span>
+          <div className="Work-DescriptionContainer">
+            {sentences.map((sentence, index) => (
+              <p className="WorkTitleDescription" key={index}>
+                {sentence}
+              </p>
+            ))}
+          </div>
+          <p className="WorkTitleDate">{date}</p>
         </div>
-        <p className="WorkTitleDate">{date}</p>
       </div>
-      <BeLink link={url} />
-cd     </div>
+      <div className="WorkIndividualphoto-container">
+        <div className="Belink-container">
+          <BeLink link={url} />
+        </div>
+      </div>
+    </div>
   );
 };
 
