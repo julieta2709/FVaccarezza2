@@ -7,19 +7,20 @@
   margin-top: 6.125rem;
   justify-content: center;
 }
-.Work-BrokeContainer
-  .WorkIndividualphoto-container
-  > div:nth-child(2n-1):nth-child(n + 3):nth-child(-n + 6) {
-  background-color: #222222;
-}
 .Broke1 {
   grid-row: 1;
   grid-column: span 2;
 }
 .Broke2,
 .Broke3,
-.Broke4 {
+.Broke4,
+.broke-bg {
   grid-column: 1;
+}
+.Broke2,
+.Broke3,
+.Broke4 {
+  z-index: 1;
 }
 .Broke2,
 .Broke5 {
@@ -29,8 +30,11 @@
 .Broke6 {
   grid-row: 3;
 }
+.broke-bg {
+  grid-row: 2 / span 3;
+}
 .Broke4 {
-  grid-row: 4 / span 2;
+  grid-row: 4 / span 3;
 }
 .Broke5,
 .Broke6,
@@ -51,4 +55,7 @@
 .Broke10 {
   grid-row: 6;
   grid-column: 1 / span 2;
+}
+.Broke2, .Broke3, .Broke4 {
+  justify-self: center;
 }

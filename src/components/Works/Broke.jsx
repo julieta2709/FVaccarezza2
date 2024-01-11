@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import BG from "../../assets/img/Broke/BG.png";
 import Broke1 from "../../assets/img/Broke/Broke1.png";
 import Broke10 from "../../assets/img/Broke/Broke10.png";
 import Broke2 from "../../assets/img/Broke/Broke2.png";
@@ -50,6 +51,7 @@ const Broke = () => {
         <img src={Broke10} alt="Broke10" className="Broke10" />
         <img src={Brokecel1} alt="Brokecel1" className="Brokecel1" />
         <img src={Brokecel2} alt="Brokecel2" className="Brokecel2" />
+        <img src={BG} alt="background" className="broke-bg" />
         <div className="Belink-container">
           <BeLink link={url} />
         </div>
