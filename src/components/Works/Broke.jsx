@@ -11,6 +11,7 @@ import Broke8 from "../../assets/img/Broke/Broke8.png";
 import Broke9 from "../../assets/img/Broke/Broke9.png";
 import Brokecel1 from "../../assets/img/Broke/Brokecel1.png";
 import Brokecel2 from "../../assets/img/Broke/Brokecel2.png";
+import "../../styles/Broke.css";
 import "../../styles/Work.css";
 import BeLink from "../Buttons/BeLink";
 import { WorkDataContext } from "./WorkContext";

@@ -1,0 +1,54 @@
+.Work-BrokeContainer .WorkIndividualphoto-container {
+  display: grid;
+  grid-template-columns: 31.3125rem 31.25rem;
+  grid-template-rows: repeat(6, auto);
+  width: 100%;
+  grid-gap: 3.875rem 5rem;
+  margin-top: 6.125rem;
+  justify-content: center;
+}
+.Work-BrokeContainer
+  .WorkIndividualphoto-container
+  > div:nth-child(2n-1):nth-child(n + 3):nth-child(-n + 6) {
+  background-color: #222222;
+}
+.Broke1 {
+  grid-row: 1;
+  grid-column: span 2;
+}
+.Broke2,
+.Broke3,
+.Broke4 {
+  grid-column: 1;
+}
+.Broke2,
+.Broke5 {
+  grid-row: 2;
+}
+.Broke3,
+.Broke6 {
+  grid-row: 3;
+}
+.Broke4 {
+  grid-row: 4 / span 2;
+}
+.Broke5,
+.Broke6,
+.Broke7,
+.Broke8 {
+  grid-column: 2;
+}
+.Broke7 {
+  grid-row: 4;
+}
+.Broke8 {
+  grid-row: 5;
+}
+.Broke9 {
+  grid-row: 5;
+  grid-column: 1 / span 2;
+}
+.Broke10 {
+  grid-row: 6;
+  grid-column: 1 / span 2;
+}

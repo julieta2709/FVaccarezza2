@@ -1,8 +1,13 @@
-.Michi1, .Michi5, .Michi6 {
+/* .Work-MichiContainer .WorkIndividualphoto-container {
+  position: relative;
+} */
+.Michi1,
+.Michi5,
+.Michi6 {
   grid-column: span 2;
 }
 .Michi1 {
-    grid-row: 1;
+  grid-row: 1;
 }
 .Michi2 {
   grid-row: 2 / span 2;
@@ -10,19 +15,32 @@
   justify-self: flex-end;
   margin-right: -1.5rem;
 }
-.Michi3, .Michi4 {
-    grid-column: 2;
+.Michi3,
+.Michi4 {
+  grid-column: 2;
 }
 .Michi3 {
-    grid-row: 2;
+  grid-row: 2;
 }
 .Michi4 {
-    grid-row: 3;
-    margin-top: -3rem;
+  grid-row: 3;
+  margin-top: -3rem;
 }
 .Michi5 {
-    grid-row: 4;
+  grid-row: 4;
+  margin-top: -4rem;
 }
 .Michi6 {
-    grid-row: 5;
+  grid-row: 5;
+  margin-top: -4rem;
 }
+
+/* .Michicel1 {
+  position: absolute;
+  grid-column: span 2;
+  grid-row: 5;
+  z-index: 1;
+  align-self: baseline;
+  justify-self: flex-end;
+}
+ */
