@@ -1,0 +1,41 @@
+.Misc-sectionTitle {
+  color: #de211e;
+  text-align: center;
+  font-family: "MontserratBold";
+  font-size: 0.9375rem;
+  text-align: right;
+  margin-bottom: 1.25rem;
+}
+.Misc-MainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 67.5625rem;
+  height: 394.375rem;
+  justify-content: space-around;
+}
+.section1-container {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto;
+}
+.Misc1 {
+  grid-row: 1;
+  grid-column: span 2;
+}
+.Misc2,
+.Misc3 {
+  grid-column: 1;
+}
+.Misc4,
+.Misc5 {
+  grid-column: 2;
+}
+.Misc2,
+.Misc4 {
+  grid-row: 2;
+}
+.Misc3,
+.Misc5 {
+  grid-row: 3;
+}
