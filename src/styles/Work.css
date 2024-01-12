@@ -112,38 +112,47 @@
   background-image: url("../assets/img/BG/MiscBg.svg");
 }
 /*Work Titles individuals*/
-.Work-PrevNext {
+/* .Work-PrevNext {
   display: flex;
   justify-content: space-around;
   width: 100%;
   position: fixed;
   z-index: 100;
   top: 80%;
-}
+} */
 .Work-TitleIndvidual {
   display: grid;
   grid-template-rows: 15.625rem 4.5rem auto;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr auto 1fr 1fr;
   width: 100%;
   height: 20%;
   margin-top: 1.75rem;
   margin-bottom: 3.6875rem;
 }
+.Prev {
+  grid-row: 1;
+  grid-column: 1;
+}
+.Next {
+  grid-row: 1;
+  grid-column: 4;
+}
 .Work-NumberIndividual {
   grid-row: 1;
+  grid-column: 2;
   align-self: baseline;
   z-index: 1;
 }
 .Work-TextIndividual {
   grid-row: 1;
-  grid-column: 2;
+  grid-column: 3;
   align-self: center;
   margin-left: -1.875rem;
   z-index: 2;
 }
 .Work-DescriptionContainer {
   grid-row: 2;
-  grid-column: 2;
+  grid-column: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,7 +161,7 @@
 }
 .WorkTitleDate {
   grid-row: 3;
-  grid-column: 2;
+  grid-column: 3;
   justify-self: center;
 }
 

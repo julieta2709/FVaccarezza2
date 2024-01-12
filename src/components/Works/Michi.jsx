@@ -35,8 +35,10 @@ const Michi = () => {
       <div className="WorkIndividualphoto-container">
         <img src={Michi1} alt="Michi1" className="Michi1" />
         <img src={Michi2} alt="Michi2" className="Michi2" />
-        <img src={Michi3} alt="Michi3" className="Michi3" />
-        <img src={Michi4} alt="Michi4" className="Michi4" />
+        <div className="Michi-column2container">
+          <img src={Michi3} alt="Michi3" className="Michi3" />
+          <img src={Michi4} alt="Michi4" className="Michi4" />
+        </div>
         <img src={Michi5} alt="Michi5" className="Michi5" />
         <img src={Michi6} alt="Michi6" className="Michi6" />
         <img src={Michicel1} alt="Michicel1" className="Michicel1" />

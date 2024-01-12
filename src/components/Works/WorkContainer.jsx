@@ -48,12 +48,12 @@ const WorkContainer = () => {
       <div>
       <MainWork works={WorkData} />
       </div>
-      <div className="Work-PrevNext">
+      <div>
       {currentIndex !== 0 && (
-          <Prev className="prevNext" onClick={handlePrevClick} />
+          <Prev className="Prev" onClick={handlePrevClick} />
         )}
         {currentIndex !== WorkData.length - 1 && (
-          <Next className="prevNext" onClick={handleNextClick} />
+          <Next className="Next" onClick={handleNextClick} />
         )}
       </div>
     </div>
