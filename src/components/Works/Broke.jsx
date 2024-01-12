@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import BG from "../../assets/img/Broke/BG.png";
 import Broke1 from "../../assets/img/Broke/Broke1.png";
 import Broke10 from "../../assets/img/Broke/Broke10.png";
 import Broke2 from "../../assets/img/Broke/Broke2.png";
@@ -11,7 +10,6 @@ import Broke7 from "../../assets/img/Broke/Broke7.png";
 import Broke8 from "../../assets/img/Broke/Broke8.png";
 import Broke9 from "../../assets/img/Broke/Broke9.png";
 import Brokecel1 from "../../assets/img/Broke/Brokecel1.png";
-import Brokecel2 from "../../assets/img/Broke/Brokecel2.png";
 import "../../styles/Broke.css";
 import "../../styles/Work.css";
 import BeLink from "../Buttons/BeLink";
@@ -40,18 +38,20 @@ const Broke = () => {
       </div>
       <div className="WorkIndividualphoto-container">
         <img src={Broke1} alt="Broke1" className="Broke1" />
+        <div className="broke-column1">
         <img src={Broke2} alt="Broke2" className="Broke2" />
         <img src={Broke3} alt="Broke3" className="Broke3" />
         <img src={Broke4} alt="Broke4" className="Broke4" />
+        </div>
+        <div className="broke-column2">
         <img src={Broke5} alt="Broke5" className="Broke5" />
         <img src={Broke6} alt="Broke6" className="Broke6" />
         <img src={Broke7} alt="Broke7" className="Broke7" />
         <img src={Broke8} alt="Broke8" className="Broke8" />
+        </div>
         <img src={Broke9} alt="Broke9" className="Broke9" />
         <img src={Broke10} alt="Broke10" className="Broke10" />
         <img src={Brokecel1} alt="Brokecel1" className="Brokecel1" />
-        <img src={Brokecel2} alt="Brokecel2" className="Brokecel2" />
-        <img src={BG} alt="background" className="broke-bg" />
         <div className="Belink-container">
           <BeLink link={url} />
         </div>
