@@ -76,7 +76,9 @@
 .Work-OpameContainer,
 .Work-MichiContainer,
 .Work-BrokeContainer,
-.Work-KpContainer, .Work-LogofolioContainer, .Work-MiscContainer {
+.Work-KpContainer,
+.Work-LogofolioContainer,
+.Work-MiscContainer {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -120,7 +122,7 @@
   z-index: 100;
   top: 80%;
 } */
-.Work-TitleIndvidual {
+.Work-TitleIndividual {
   display: grid;
   grid-template-rows: 15.625rem 4.5rem auto;
   grid-template-columns: 1fr auto 1fr 1fr;
@@ -128,15 +130,30 @@
   height: 20%;
   margin-top: 1.75rem;
   margin-bottom: 3.6875rem;
+  position: relative;
+  justify-items: center;
 }
-.Prev {
+.PrevNext-container {
+  display: flex;
+  width: 70%;
+  height: 74%;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+}
+.Prev,
+.Next {
+  z-index: 10;
+}
+/* .Work-TitleIndividual .Next, .Work-TitleIndividual .Prev {
   grid-row: 1;
+}
+.Work-TitleIndividual .Prev {
   grid-column: 1;
 }
-.Next {
-  grid-row: 1;
+.Work-TitleIndvidual .Next {
   grid-column: 4;
-}
+} */
 .Work-NumberIndividual {
   grid-row: 1;
   grid-column: 2;
@@ -226,4 +243,3 @@
 li {
   list-style-type: none;
 }
-

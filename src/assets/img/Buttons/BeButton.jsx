@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../styles/NextPrevButton.css";
+import "../../../styles/PrevNextButton.css";
 function BeButton(props) {
   return (
     <div className="NextContainer">

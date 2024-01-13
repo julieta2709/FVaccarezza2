@@ -18,6 +18,7 @@ import Rimini from "../../assets/img//Logofolio/Rimini.png";
 import TheNewWave from "../../assets/img//Logofolio/TheNewWave.png";
 import "../../styles/Logofolio.css";
 import "../../styles/Work.css";
+import PrevNextButtons from "../Buttons/PrevNextButton";
 import { WorkDataContext } from "./WorkContext";
 
 const Logofolio = () => {
@@ -29,6 +30,7 @@ const Logofolio = () => {
     <div className="Work-LogofolioContainer">
       <div className="Work-LogofolioBg">
         <div className="Work-TitleIndvidual">
+        <PrevNextButtons />
           <span className="Work-NumberIndividual">{index}</span>
           <span className="Work-TextIndividual">{title}</span>
           <div className="Work-DescriptionContainer">

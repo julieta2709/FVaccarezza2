@@ -9,6 +9,7 @@ import Michicel1 from "../../assets/img/Michi/Michicel1.png";
 import "../../styles/Michi.css";
 import "../../styles/Work.css";
 import BeLink from "../Buttons/BeLink";
+import PrevNextButtons from "../Buttons/PrevNextButton";
 import { WorkDataContext } from "./WorkContext";
 
 const Michi = () => {
@@ -20,6 +21,7 @@ const Michi = () => {
     <div className="Work-MichiContainer">
       <div className="Work-MichiBg">
         <div className="Work-TitleIndvidual">
+        <PrevNextButtons />
           <span className="Work-NumberIndividual">{index}</span>
           <span className="Work-TextIndividual">{title}</span>
           <div className="Work-DescriptionContainer">

@@ -8,6 +8,7 @@ import Estudiopad1 from "../../assets/img/Estudio/Estudiopad1.png";
 import "../../styles/Estudio.css";
 import "../../styles/Work.css";
 import BeLink from "../Buttons/BeLink";
+import PrevNextButtons from "../Buttons/PrevNextButton";
 import { WorkDataContext } from "./WorkContext";
 
 const Estudio = () => {
@@ -19,6 +20,7 @@ const Estudio = () => {
     <div className="Work-EstudioContainer">
       <div className="Work-EstudioBg">
         <div className="Work-TitleIndvidual">
+        <PrevNextButtons />
           <span className="Work-NumberIndividual">{index}</span>
           <span className="Work-TextIndividual">{title}</span>
           <div className="Work-DescriptionContainer">

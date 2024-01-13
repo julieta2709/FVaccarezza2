@@ -13,6 +13,7 @@ import Brokecel1 from "../../assets/img/Broke/Brokecel1.png";
 import "../../styles/Broke.css";
 import "../../styles/Work.css";
 import BeLink from "../Buttons/BeLink";
+import PrevNextButtons from "../Buttons/PrevNextButton";
 import { WorkDataContext } from "./WorkContext";
 
 const Broke = () => {
@@ -24,6 +25,7 @@ const Broke = () => {
     <div className="Work-BrokeContainer">
       <div className="Work-BrokeBg">
         <div className="Work-TitleIndvidual">
+        <PrevNextButtons />
           <span className="Work-NumberIndividual">{index}</span>
           <span className="Work-TextIndividual">{title}</span>
           <div className="Work-DescriptionContainer">

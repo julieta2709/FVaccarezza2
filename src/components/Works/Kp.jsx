@@ -8,6 +8,7 @@ import Kp6 from "../../assets/img//Kp/Kp6.png";
 import "../../styles/Kp.css";
 import "../../styles/Work.css";
 import BeLink from "../Buttons/BeLink";
+import PrevNextButtons from "../Buttons/PrevNextButton";
 import { WorkDataContext } from "./WorkContext";
 
 const Kp = () => {
@@ -19,6 +20,7 @@ const Kp = () => {
     <div className="Work-KpContainer">
       <div className="Work-KpBg">
         <div className="Work-TitleIndvidual">
+        <PrevNextButtons />
           <span className="Work-NumberIndividual">{index}</span>
           <span className="Work-TextIndividual">{title}</span>
           <div className="Work-DescriptionContainer">

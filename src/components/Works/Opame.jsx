@@ -12,6 +12,7 @@ import Opamecel3 from "../../assets/img/Opame/Opamecel3.png";
 import Opamecel4 from "../../assets/img/Opame/Opamecel4.png";
 import "../../styles//Opame.css";
 import "../../styles/Work.css";
+import PrevNextButtons from "../Buttons/PrevNextButton";
 import { WorkDataContext } from "./WorkContext";
 
 const Opame = () => {
@@ -24,6 +25,7 @@ const Opame = () => {
     <div className="Work-OpameContainer">
       <div className="Work-OpameBg">
         <div className="Work-TitleIndvidual">
+        <PrevNextButtons />
           <span className="Work-NumberIndividual">{index}</span>
           <span className="Work-TextIndividual">{title}</span>
           <div className="Work-DescriptionContainer">

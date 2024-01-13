@@ -1,5 +1,5 @@
 import * as React from "react";
-import "../../../styles/NextPrevButton.css";
+import "../../../styles/PrevNextButton.css";
 function UpIcon(props) {
   return (
     <div className="NextContainer">

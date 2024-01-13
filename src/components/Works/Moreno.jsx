@@ -5,6 +5,7 @@ import Moreno3 from "../../assets/img/Moreno/Moreno3.png";
 import Moreno4 from "../../assets/img/Moreno/Moreno4.png";
 import "../../styles/Moreno.css";
 import "../../styles/Work.css";
+import PrevNextButtons from "../Buttons/PrevNextButton";
 import { WorkDataContext } from "./WorkContext";
 
 const Moreno = () => {
@@ -16,6 +17,7 @@ const Moreno = () => {
     <div className="Work-MorenoContainer">
       <div className="Work-MorenoBg">
         <div className="Work-TitleIndvidual">
+        <PrevNextButtons />
           <span className="Work-NumberIndividual">{index}</span>
           <span className="Work-TextIndividual">{title}</span>
           <div className="Work-DescriptionContainer">

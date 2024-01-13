@@ -18,6 +18,7 @@ import Misc8 from "../../assets/img/Misc/Misc8.png";
 import Misc9 from "../../assets/img/Misc/Misc9.png";
 import "../../styles/Misc.css";
 import "../../styles/Work.css";
+import PrevNextButtons from "../Buttons/PrevNextButton";
 import { WorkDataContext } from "./WorkContext";
 
 const Misc = () => {
@@ -29,6 +30,7 @@ const Misc = () => {
     <div className="Work-MiscContainer">
       <div className="Work-MiscBg">
         <div className="Work-TitleIndvidual">
+        <PrevNextButtons />
           <span className="Work-NumberIndividual">{index}</span>
           <span className="Work-TextIndividual">{title}</span>
           <div className="Work-DescriptionContainer">

@@ -12,6 +12,7 @@ import Frogcel4 from "../../assets/img/Frog/Frogcel4.png";
 import "../../styles/Frog.css";
 import "../../styles/Work.css";
 import BeLink from "../Buttons/BeLink";
+import PrevNextButtons from "../Buttons/PrevNextButton";
 import { WorkDataContext } from "./WorkContext";
 
 const Frog = () => {
@@ -22,7 +23,8 @@ const Frog = () => {
   return (
     <div className="Work-FrogContainer">
       <div className="Work-FrogBg">
-        <div className="Work-TitleIndvidual">
+        <div className="Work-TitleIndividual">
+          <PrevNextButtons />
           <span className="Work-NumberIndividual">{index}</span>
           <span className="Work-TextIndividual">{title}</span>
           <div className="Work-DescriptionContainer">
