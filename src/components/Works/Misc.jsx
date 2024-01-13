@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import Misc1 from "../../assets/img/Misc/Misc1.png";
 import Misc10 from "../../assets/img/Misc/Misc10.png";
 import Misc11 from "../../assets/img/Misc/Misc11.png";
@@ -18,19 +19,30 @@ import Misc8 from "../../assets/img/Misc/Misc8.png";
 import Misc9 from "../../assets/img/Misc/Misc9.png";
 import "../../styles/Misc.css";
 import "../../styles/Work.css";
-import PrevNextButtons from "../Buttons/PrevNextButton";
+import Prev from "../Buttons/Prev";
 import { WorkDataContext } from "./WorkContext";
 
 const Misc = () => {
   const WorkData = useContext(WorkDataContext);
+  const navigate = useNavigate();
 
   const { index, title, description, date } = WorkData[8];
   const sentences = description.split("\n");
+
+  const handlePrevClick = () => {
+    const nextElement = document.getElementById("logofolio");
+    if (nextElement) {
+      nextElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="Work-MiscContainer">
-      <div className="Work-MiscBg">
-        <div className="Work-TitleIndvidual">
-        <PrevNextButtons />
+   <div className="Work-TitleIndivCont">
+        <div className="Work-TitleIndividual">
+        <div className="Prev" onClick={handlePrevClick}>
+            <Prev />
+          </div>
           <span className="Work-NumberIndividual">{index}</span>
           <span className="Work-TextIndividual">{title}</span>
           <div className="Work-DescriptionContainer">

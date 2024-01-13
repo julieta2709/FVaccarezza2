@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import Opame1 from "../../assets/img/Opame/Opame1.png";
 import Opame2 from "../../assets/img/Opame/Opame2.png";
 import Opame3 from "../../assets/img/Opame/Opame3.png";
@@ -12,22 +13,45 @@ import Opamecel3 from "../../assets/img/Opame/Opamecel3.png";
 import Opamecel4 from "../../assets/img/Opame/Opamecel4.png";
 import "../../styles//Opame.css";
 import "../../styles/Work.css";
-import PrevNextButtons from "../Buttons/PrevNextButton";
+import Next from "../Buttons/Next";
+import Prev from "../Buttons/Prev";
 import { WorkDataContext } from "./WorkContext";
 
 const Opame = () => {
   const WorkData = useContext(WorkDataContext);
+  const navigate = useNavigate();
 
   const { index, title, description, date } = WorkData[3];
   const sentences = description.split("\n");
 
+  const handlePrevClick = () => {
+    const nextElement = document.getElementById("moreno");
+    if (nextElement) {
+      nextElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleNextClick = () => {
+    const nextElement = document.getElementById("michi");
+    if (nextElement) {
+      nextElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="Work-OpameContainer">
-      <div className="Work-OpameBg">
-        <div className="Work-TitleIndvidual">
-        <PrevNextButtons />
+      <div className="Work-TitleIndivCont">
+        <div className="Work-TitleIndividual">
+        <div className="Prev" onClick={handlePrevClick}>
+            <Prev />
+          </div>
+          <div className="Work-TitleIndivCont">
           <span className="Work-NumberIndividual">{index}</span>
           <span className="Work-TextIndividual">{title}</span>
+          </div>
+          <div className="Next" onClick={handleNextClick}>
+            <Next />
+          </div>
           <div className="Work-DescriptionContainer">
             {sentences.map((sentence, index) => (
               <p className="WorkTitleDescription" key={index}>

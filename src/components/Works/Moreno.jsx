@@ -1,25 +1,48 @@
 import React, { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import Moreno1 from "../../assets/img/Moreno/Moreno1.png";
 import Moreno2 from "../../assets/img/Moreno/Moreno2.png";
 import Moreno3 from "../../assets/img/Moreno/Moreno3.png";
 import Moreno4 from "../../assets/img/Moreno/Moreno4.png";
 import "../../styles/Moreno.css";
 import "../../styles/Work.css";
-import PrevNextButtons from "../Buttons/PrevNextButton";
+import Next from "../Buttons/Next";
+import Prev from "../Buttons/Prev";
 import { WorkDataContext } from "./WorkContext";
 
 const Moreno = () => {
   const WorkData = useContext(WorkDataContext);
+  const navigate = useNavigate();
 
   const { index, title, description, date } = WorkData[2];
   const sentences = description.split("\n");
+
+  const handlePrevClick = () => {
+    const nextElement = document.getElementById("estudio");
+    if (nextElement) {
+      nextElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleNextClick = () => {
+    const nextElement = document.getElementById("opame");
+    if (nextElement) {
+      nextElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="Work-MorenoContainer">
-      <div className="Work-MorenoBg">
-        <div className="Work-TitleIndvidual">
-        <PrevNextButtons />
+      <div className="Work-TitleIndivCont">
+        <div className="Work-TitleIndividual">
+          <div className="Prev" onClick={handlePrevClick}>
+            <Prev />
+          </div>
           <span className="Work-NumberIndividual">{index}</span>
           <span className="Work-TextIndividual">{title}</span>
+          <div className="Next" onClick={handleNextClick}>
+            <Next />
+          </div>
           <div className="Work-DescriptionContainer">
             {sentences.map((sentence, index) => (
               <p className="WorkTitleDescription" key={index}>
@@ -35,7 +58,7 @@ const Moreno = () => {
         <img src={Moreno2} alt="Moreno2" className="Moreno2" />
         <img src={Moreno3} alt="Moreno3" className="Moreno3" />
         <img src={Moreno4} alt="Moreno4" className="Moreno4" />
-{/*         <img src={Morenocel1} alt="Morenocel1" className="Morenocel1" />
+        {/*         <img src={Morenocel1} alt="Morenocel1" className="Morenocel1" />
         <img src={Morenocel2} alt="Morenocel2" className="Morenocel2" /> */}
       </div>
     </div>

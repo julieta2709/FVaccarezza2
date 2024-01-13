@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import Estudio1 from "../../assets/img/Estudio/Estudio1.png";
 import Estudio2 from "../../assets/img/Estudio/Estudio2.png";
 import Estudio3 from "../../assets/img/Estudio/Estudio3.png";
@@ -8,21 +9,43 @@ import Estudiopad1 from "../../assets/img/Estudio/Estudiopad1.png";
 import "../../styles/Estudio.css";
 import "../../styles/Work.css";
 import BeLink from "../Buttons/BeLink";
-import PrevNextButtons from "../Buttons/PrevNextButton";
+import Next from "../Buttons/Next";
+import Prev from "../Buttons/Prev";
 import { WorkDataContext } from "./WorkContext";
 
 const Estudio = () => {
   const WorkData = useContext(WorkDataContext);
+  const navigate = useNavigate();
 
   const { index, title, description, date, url } = WorkData[1];
   const sentences = description.split("\n");
+
+  const handlePrevClick = () => {
+    const nextElement = document.getElementById("frog");
+    if (nextElement) {
+      nextElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleNextClick = () => {
+    const nextElement = document.getElementById("moreno");
+    if (nextElement) {
+      nextElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="Work-EstudioContainer">
-      <div className="Work-EstudioBg">
-        <div className="Work-TitleIndvidual">
-        <PrevNextButtons />
+     <div className="Work-TitleIndivCont">
+        <div className="Work-TitleIndividual">
+          <div className="Prev" onClick={handlePrevClick}>
+            <Prev />
+          </div>
           <span className="Work-NumberIndividual">{index}</span>
           <span className="Work-TextIndividual">{title}</span>
+          <div className="Next" onClick={handleNextClick}>
+            <Next />
+          </div>
           <div className="Work-DescriptionContainer">
             {sentences.map((sentence, index) => (
               <p className="WorkTitleDescription" key={index}>

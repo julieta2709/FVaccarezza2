@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import Chamberlain from "../../assets/img//Logofolio/Chamberlain.png";
 import Frame1 from "../../assets/img//Logofolio/Frame1.png";
 import Frame10 from "../../assets/img//Logofolio/Frame10.png";
@@ -18,21 +19,43 @@ import Rimini from "../../assets/img//Logofolio/Rimini.png";
 import TheNewWave from "../../assets/img//Logofolio/TheNewWave.png";
 import "../../styles/Logofolio.css";
 import "../../styles/Work.css";
-import PrevNextButtons from "../Buttons/PrevNextButton";
+import Next from "../Buttons/Next";
+import Prev from "../Buttons/Prev";
 import { WorkDataContext } from "./WorkContext";
 
 const Logofolio = () => {
   const WorkData = useContext(WorkDataContext);
+  const navigate = useNavigate();
 
   const { index, title, description, date } = WorkData[7];
   const sentences = description.split("\n");
+
+  const handlePrevClick = () => {
+    const nextElement = document.getElementById("kp");
+    if (nextElement) {
+      nextElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleNextClick = () => {
+    const nextElement = document.getElementById("misc");
+    if (nextElement) {
+      nextElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="Work-LogofolioContainer">
-      <div className="Work-LogofolioBg">
-        <div className="Work-TitleIndvidual">
-        <PrevNextButtons />
+      <div className="Work-TitleIndivCont">
+        <div className="Work-TitleIndividual">
+          <div className="Prev" onClick={handlePrevClick}>
+            <Prev />
+          </div>
           <span className="Work-NumberIndividual">{index}</span>
           <span className="Work-TextIndividual">{title}</span>
+          <div className="Next" onClick={handleNextClick}>
+            <Next />
+          </div>
           <div className="Work-DescriptionContainer">
             {sentences.map((sentence, index) => (
               <p className="WorkTitleDescription" key={index}>

@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import Broke1 from "../../assets/img/Broke/Broke1.png";
 import Broke10 from "../../assets/img/Broke/Broke10.png";
 import Broke2 from "../../assets/img/Broke/Broke2.png";
@@ -13,21 +14,43 @@ import Brokecel1 from "../../assets/img/Broke/Brokecel1.png";
 import "../../styles/Broke.css";
 import "../../styles/Work.css";
 import BeLink from "../Buttons/BeLink";
-import PrevNextButtons from "../Buttons/PrevNextButton";
+import Next from "../Buttons/Next";
+import Prev from "../Buttons/Prev";
 import { WorkDataContext } from "./WorkContext";
 
 const Broke = () => {
   const WorkData = useContext(WorkDataContext);
+  const navigate = useNavigate();
 
   const { index, title, description, date, url } = WorkData[5];
   const sentences = description.split("\n");
+
+  const handlePrevClick = () => {
+    const nextElement = document.getElementById("michi");
+    if (nextElement) {
+      nextElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleNextClick = () => {
+    const nextElement = document.getElementById("kp");
+    if (nextElement) {
+      nextElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="Work-BrokeContainer">
-      <div className="Work-BrokeBg">
-        <div className="Work-TitleIndvidual">
-        <PrevNextButtons />
+      <div className="Work-TitleIndivCont">
+        <div className="Work-TitleIndividual">
+          <div className="Prev" onClick={handlePrevClick}>
+            <Prev />
+          </div>
           <span className="Work-NumberIndividual">{index}</span>
           <span className="Work-TextIndividual">{title}</span>
+          <div className="Next" onClick={handleNextClick}>
+            <Next />
+          </div>
           <div className="Work-DescriptionContainer">
             {sentences.map((sentence, index) => (
               <p className="WorkTitleDescription" key={index}>
@@ -41,15 +64,15 @@ const Broke = () => {
       <div className="WorkIndividualphoto-container">
         <img src={Broke1} alt="Broke1" className="Broke1" />
         <div className="broke-column1">
-        <img src={Broke2} alt="Broke2" className="Broke2" />
-        <img src={Broke3} alt="Broke3" className="Broke3" />
-        <img src={Broke4} alt="Broke4" className="Broke4" />
+          <img src={Broke2} alt="Broke2" className="Broke2" />
+          <img src={Broke3} alt="Broke3" className="Broke3" />
+          <img src={Broke4} alt="Broke4" className="Broke4" />
         </div>
         <div className="broke-column2">
-        <img src={Broke5} alt="Broke5" className="Broke5" />
-        <img src={Broke6} alt="Broke6" className="Broke6" />
-        <img src={Broke7} alt="Broke7" className="Broke7" />
-        <img src={Broke8} alt="Broke8" className="Broke8" />
+          <img src={Broke5} alt="Broke5" className="Broke5" />
+          <img src={Broke6} alt="Broke6" className="Broke6" />
+          <img src={Broke7} alt="Broke7" className="Broke7" />
+          <img src={Broke8} alt="Broke8" className="Broke8" />
         </div>
         <img src={Broke9} alt="Broke9" className="Broke9" />
         <img src={Broke10} alt="Broke10" className="Broke10" />

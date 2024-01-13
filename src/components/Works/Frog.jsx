@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import Frog1 from "../../assets/img/Frog/Frog1.png";
 import Frog2 from "../../assets/img/Frog/Frog2.png";
 import Frog3 from "../../assets/img/Frog/Frog3.png";
@@ -12,21 +13,32 @@ import Frogcel4 from "../../assets/img/Frog/Frogcel4.png";
 import "../../styles/Frog.css";
 import "../../styles/Work.css";
 import BeLink from "../Buttons/BeLink";
-import PrevNextButtons from "../Buttons/PrevNextButton";
+import Next from "../Buttons/Next";
 import { WorkDataContext } from "./WorkContext";
 
 const Frog = () => {
   const WorkData = useContext(WorkDataContext);
+  const navigate = useNavigate();
 
   const { index, title, description, date, url } = WorkData[0];
   const sentences = description.split("\n");
+
+  const handleNextClick = () => {
+    const nextElement = document.getElementById("estudio");
+    if (nextElement) {
+      nextElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="Work-FrogContainer">
-      <div className="Work-FrogBg">
+      <div className="Work-TitleIndivCont">
         <div className="Work-TitleIndividual">
-          <PrevNextButtons />
           <span className="Work-NumberIndividual">{index}</span>
           <span className="Work-TextIndividual">{title}</span>
+          <div className="Next" onClick={handleNextClick}>
+            <Next />
+          </div>
           <div className="Work-DescriptionContainer">
             {sentences.map((sentence, index) => (
               <p className="WorkTitleDescription" key={index}>

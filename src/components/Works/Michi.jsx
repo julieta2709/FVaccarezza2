@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import Michi1 from "../../assets/img/Michi/Michi1.png";
 import Michi2 from "../../assets/img/Michi/Michi2.png";
 import Michi3 from "../../assets/img/Michi/Michi3.png";
@@ -9,21 +10,43 @@ import Michicel1 from "../../assets/img/Michi/Michicel1.png";
 import "../../styles/Michi.css";
 import "../../styles/Work.css";
 import BeLink from "../Buttons/BeLink";
-import PrevNextButtons from "../Buttons/PrevNextButton";
+import Next from "../Buttons/Next";
+import Prev from "../Buttons/Prev";
 import { WorkDataContext } from "./WorkContext";
 
 const Michi = () => {
   const WorkData = useContext(WorkDataContext);
+  const navigate = useNavigate();
 
   const { index, title, description, date, url } = WorkData[4];
   const sentences = description.split("\n");
+
+  const handlePrevClick = () => {
+    const nextElement = document.getElementById("opame");
+    if (nextElement) {
+      nextElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleNextClick = () => {
+    const nextElement = document.getElementById("broke");
+    if (nextElement) {
+      nextElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="Work-MichiContainer">
-      <div className="Work-MichiBg">
-        <div className="Work-TitleIndvidual">
-        <PrevNextButtons />
+      <div className="Work-TitleIndivCont">
+        <div className="Work-TitleIndividual">
+          <div className="Prev" onClick={handlePrevClick}>
+            <Prev />
+          </div>
           <span className="Work-NumberIndividual">{index}</span>
           <span className="Work-TextIndividual">{title}</span>
+          <div className="Next" onClick={handleNextClick}>
+            <Next />
+          </div>
           <div className="Work-DescriptionContainer">
             {sentences.map((sentence, index) => (
               <p className="WorkTitleDescription" key={index}>
