@@ -26,7 +26,13 @@ const Frog = () => {
   const handleNextClick = () => {
     const nextElement = document.getElementById("estudio");
     if (nextElement) {
-      nextElement.scrollIntoView({ behavior: "smooth" });
+      const offset = 50;
+      const elementPosition =
+        nextElement.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: elementPosition - offset,
+        behavior: "smooth",
+      });
     }
   };
 
@@ -34,8 +40,10 @@ const Frog = () => {
     <div className="Work-FrogContainer">
       <div className="Work-TitleIndivCont">
         <div className="Work-TitleIndividual">
-          <span className="Work-NumberIndividual">{index}</span>
-          <span className="Work-TextIndividual">{title}</span>
+          <div className="Work-TitleIndivContainer">
+            <span className="Work-NumberIndividual">{index}</span>
+            <span className="Work-TextIndividual">{title}</span>
+          </div>
           <div className="Next" onClick={handleNextClick}>
             <Next />
           </div>

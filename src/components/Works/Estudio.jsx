@@ -23,26 +23,38 @@ const Estudio = () => {
   const handlePrevClick = () => {
     const nextElement = document.getElementById("frog");
     if (nextElement) {
-      nextElement.scrollIntoView({ behavior: "smooth" });
+      const offset = 50;
+      const elementPosition =
+        nextElement.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: elementPosition - offset,
+        behavior: "smooth",
+      });
     }
   };
-
   const handleNextClick = () => {
     const nextElement = document.getElementById("moreno");
     if (nextElement) {
-      nextElement.scrollIntoView({ behavior: "smooth" });
+      const offset = 50;
+      const elementPosition =
+        nextElement.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: elementPosition - offset,
+        behavior: "smooth",
+      });
     }
   };
-
   return (
     <div className="Work-EstudioContainer">
-     <div className="Work-TitleIndivCont">
+      <div className="Work-TitleIndivCont">
         <div className="Work-TitleIndividual">
           <div className="Prev" onClick={handlePrevClick}>
             <Prev />
           </div>
-          <span className="Work-NumberIndividual">{index}</span>
-          <span className="Work-TextIndividual">{title}</span>
+          <div className="Work-TitleIndivContainer">
+            <span className="Work-NumberIndividual">{index}</span>
+            <span className="Work-TextIndividual">{title}</span>
+          </div>
           <div className="Next" onClick={handleNextClick}>
             <Next />
           </div>

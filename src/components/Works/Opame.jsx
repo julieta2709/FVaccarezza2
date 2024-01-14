@@ -27,14 +27,26 @@ const Opame = () => {
   const handlePrevClick = () => {
     const nextElement = document.getElementById("moreno");
     if (nextElement) {
-      nextElement.scrollIntoView({ behavior: "smooth" });
+      const offset = 50;
+      const elementPosition =
+        nextElement.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: elementPosition - offset,
+        behavior: "smooth",
+      });
     }
   };
 
   const handleNextClick = () => {
     const nextElement = document.getElementById("michi");
     if (nextElement) {
-      nextElement.scrollIntoView({ behavior: "smooth" });
+      const offset = 50;
+      const elementPosition =
+        nextElement.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: elementPosition - offset,
+        behavior: "smooth",
+      });
     }
   };
 
@@ -42,12 +54,12 @@ const Opame = () => {
     <div className="Work-OpameContainer">
       <div className="Work-TitleIndivCont">
         <div className="Work-TitleIndividual">
-        <div className="Prev" onClick={handlePrevClick}>
+          <div className="Prev" onClick={handlePrevClick}>
             <Prev />
           </div>
-          <div className="Work-TitleIndivCont">
-          <span className="Work-NumberIndividual">{index}</span>
-          <span className="Work-TextIndividual">{title}</span>
+          <div className="Work-TitleIndivContainer">
+            <span className="Work-NumberIndividual">{index}</span>
+            <span className="Work-TextIndividual">{title}</span>
           </div>
           <div className="Next" onClick={handleNextClick}>
             <Next />
