@@ -88,45 +88,29 @@
   margin-top: -8rem;
 }
 /*animación*/
-.FrogCelanimation-container .Frogcel3 {
+.FrogCelanimation-container .Frogcel3.active {
   animation: smartAnimate 1500ms ease-in-out;
-  animation-delay: 0s;
-  /* z-index: 8; */
 }
-.FrogCelanimation-container .Frogcel3V2 {
+.FrogCelanimation-container .Frogcel3V2.active {
   animation: smartAnimate 300ms ease-out;
-  animation-delay: 1500ms;
-  /* z-index: 7; */
 }
-.FrogCelanimation-container .Frogcel3V3 {
+.FrogCelanimation-container .Frogcel3V3.active {
   animation: smartAnimate 300ms ease-in;
-  animation-delay: 1ms;
-  /* z-index: 6; */
 }
-.FrogCelanimation-container .Frogcel3V4 {
+.FrogCelanimation-container .Frogcel3V4.active {
   animation: dissolve 300ms ease-in;
-  animation-delay: 800ms;
-  /* z-index: 5; */
 }
-.FrogCelanimation-container .Frogcel3V5 {
+.FrogCelanimation-container .Frogcel3V5.active {
   animation: smartAnimate 1500ms cubic-bezier(0.42, 0, 0.11, 0.99);
-  animation-delay: 400ms;
-  /* z-index: 4; */
 }
-.FrogCelanimation-container .Frogcel3V6 {
+.FrogCelanimation-container .Frogcel3V6.active {
   animation: smartAnimate 300ms cubic-bezier(0.42, 0, 0.11, 0.99);
-  animation-delay: 500ms;
-  /* z-index: 3; */
 }
-.FrogCelanimation-container .Frogcel3V7 {
+.FrogCelanimation-container .Frogcel3V7.active {
   animation: smartAnimate 1500ms cubic-bezier(0.42, 0, 0.11, 0.99);
-  animation-delay: 4200ms;
-  /* z-index: 1; */
 }
-.FrogCelanimation-container .Frogcel3V8 {
-  animation: disolve 1500ms cubic-bezier(0.42, 0, 0.11, 0.99);
-  animation-delay: 800ms;
-  /* z-index: 2; */
+.FrogCelanimation-container .Frogcel3V8.active {
+  animation: dissolve 1500ms cubic-bezier(0.42, 0, 0.11, 0.99);
 }
 @keyframes fadeInOut {
   0%,

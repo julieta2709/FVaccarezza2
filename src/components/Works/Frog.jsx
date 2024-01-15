@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Frog1 from "../../assets/img/Frog/Frog1.png";
 import Frog2 from "../../assets/img/Frog/Frog2.png";
@@ -23,13 +23,54 @@ import BeLink from "../Buttons/BeLink";
 import Next from "../Buttons/Next";
 import { WorkDataContext } from "./WorkContext";
 
+const images = [
+  Frogcel3,
+  Frogcel3V2,
+  Frogcel3V3,
+  Frogcel3V4,
+  Frogcel3V5,
+  Frogcel3V6,
+  Frogcel3V7,
+  Frogcel3V8,
+];
+
 const Frog = () => {
   const WorkData = useContext(WorkDataContext);
   const navigate = useNavigate();
 
+  /* animación para la carga de las imagenes secuencial */
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const imageRefs = useRef([]);
+
+  useEffect(() => {
+    const handleAnimationEnd = () => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    };
+    images.forEach((imageRef, index) => {
+      if (imageRef && imageRef.current) {
+        const animationDelay = index * 1000;
+        imageRef.current.style.animationName = "fadeIn";
+        imageRef.current.style.animationDuration = "1500ms";
+        imageRef.current.style.animationTimingFunction = "ease-out";
+        imageRef.current.style.animationDelay = `${animationDelay}ms`;
+        imageRef.current.addEventListener("animationend", handleAnimationEnd);
+      }
+    });
+    return () => {
+      imageRefs.current.forEach((imageRef) => {
+        imageRef.current.removeEventListener(
+          "animationend",
+          handleAnimationEnd
+        );
+      });
+    };
+  }, [currentIndex]);
+
+  /*uso de la informacion del contexto*/
   const { index, title, description, date, url } = WorkData[0];
   const sentences = description.split("\n");
 
+  /*Navegación en la página a través de los botones*/
   const handleNextClick = () => {
     const nextElement = document.getElementById("estudio");
     if (nextElement) {
@@ -74,43 +115,18 @@ const Frog = () => {
         <img src={Frogcel1} alt="FrogBazarcel1" className="Frogcel1" />
         <img src={Frogcel2} alt="FrogBazarcel2" className="Frogcel2" />
         <img src={Frogcel4} alt="FrogBazarcel4" className="Frogcel4" />
+        {/*imagenes de la animación*/}
         <div className="FrogCelanimation-container">
-          <img src={Frogcel3} alt="FrogBazarcel3" className="Frogcel3" />
-          <img
-            src={Frogcel3V2}
-            alt="FrogBazarcelanimacion"
-            className="Frogcel3V2"
-          />
-          <img
-            src={Frogcel3V3}
-            alt="FrogBazarcelanimacion"
-            className="Frogcel3V3"
-          />
-          <img
-            src={Frogcel3V4}
-            alt="FrogBazarcelanimacion"
-            className="Frogcel3V4"
-          />
-          <img
-            src={Frogcel3V5}
-            alt="FrogBazarcelanimacion"
-            className="Frogcel3V5"
-          />
-          <img
-            src={Frogcel3V6}
-            alt="FrogBazarcelanimacion"
-            className="Frogcel3V6"
-          />
-          <img
-            src={Frogcel3V7}
-            alt="FrogBazarcelanimacion"
-            className="Frogcel3V7"
-          />
-          <img
-            src={Frogcel3V8}
-            alt="FrogBazarcelanimacion"
-            className="Frogcel3V8"
-          />
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`FrogBazarcel${index + 3}`}
+              className={`Frogcel${index + 3} ${
+                currentIndex === index ? "active" : ""
+              }`}
+            />
+          ))}
         </div>
         <div className="Belink-container">
           <BeLink link={url} />
@@ -121,3 +137,42 @@ const Frog = () => {
 };
 
 export default Frog;
+
+{
+  /* <img src={Frogcel3} alt="FrogBazarcel3" className={`Frogcel3 ${currentIndex === 0 ? 'active' : ''}`} />
+<img
+  src={Frogcel3V2}
+  alt="FrogBazarcelanimacion"
+  className={`Frogcel3V2 ${currentIndex === 1 ? 'active' : ''}`}
+/>
+<img
+  src={Frogcel3V3}
+  alt="FrogBazarcelanimacion"
+  className={`Frogcel3V3 ${currentIndex === 2 ? 'active' : ''}`}
+/>
+<img
+  src={Frogcel3V4}
+  alt="FrogBazarcelanimacion"
+  className={`Frogcel3V4 ${currentIndex === 3 ? 'active' : ''}`}
+/>
+<img
+  src={Frogcel3V5}
+  alt="FrogBazarcelanimacion"
+  className={`Frogcel3V5 ${currentIndex === 4 ? 'active' : ''}`}
+/>
+<img
+  src={Frogcel3V6}
+  alt="FrogBazarcelanimacion"
+  className={`Frogcel3V6 ${currentIndex === 5 ? 'active' : ''}`}
+/>
+<img
+  src={Frogcel3V7}
+  alt="FrogBazarcelanimacion"
+  className={`Frogcel3V7 ${currentIndex === 6 ? 'active' : ''}`}
+/>
+<img
+  src={Frogcel3V8}
+  alt="FrogBazarcelanimacion"
+  className={`Frogcel3V8 ${currentIndex === 7 ? 'active' : ''}`}
+/> */
+}
