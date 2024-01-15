@@ -12,14 +12,14 @@
   z-index: 1;
 }
 .Frogcel1,
-.Frogcel3 {
+.FrogCelanimation-container {
   grid-row: 2;
 }
 .Frogcel2,
 .Frogcel4 {
   grid-row: 3;
 }
-.Frogcel3,
+.FrogCelanimation-container,
 .Frogcel4 {
   grid-column: 2;
   z-index: 1;
@@ -54,12 +54,12 @@
   align-self: center;
   margin-left: -8.1rem;
 }
-.Frogcel3 {
+/* .Frogcel3 {
   justify-self: end;
   align-self: flex-end;
   margin-right: -6.1rem;
   margin-bottom: -4.8rem;
-}
+} */
 .Frogcel4 {
   justify-self: end;
   align-self: flex-end;
@@ -73,3 +73,34 @@
   margin-right: -39.5rem;
   margin-top: -8rem;
 } 
+/*animación*/
+.FrogCelanimation-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.FrogCelanimation-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+/*   width: 100%;
+  height: auto; */
+}
+.FrogCelanimation-container .Frogcel3 {
+  animation: fadeIn 300ms ease-out forwards;
+  animation-delay: 0ms;
+}
+.FrogCelanimation-container .Frogcel3V2 {
+  animation: fadeIn 300ms ease-out forwards;
+  animation-delay: 800ms;
+}
+.FrogCelanimation-container .Frogcel3V3 {
+  animation: fadeIn 300ms ease-out forwards;
+  animation-delay: 1600ms;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1; 
+  }
+}

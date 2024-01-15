@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../../styles/PrevNextButton.css";
+
 function ButtonBefore(props) {
-    return (
-      <div className="NextContainer">
+  const [showMessage, setShowMessage] = useState(false);
+
+  const handleMouseEnter = () => {
+    setShowMessage(true);
+  };
+
+  const handleMouseLeave = () => {
+    setShowMessage(false);
+  };
+
+  return (
+    <div className="NextContainer"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}>
+      {showMessage && <div className="messageNext">next project</div>}
       <svg
         width={170}
         height={170}
@@ -10,6 +24,7 @@ function ButtonBefore(props) {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         {...props}
+        className="svgButton"
       >
         <path
           d="M117.714 76.15c0 11.84-9.572 21.425-21.362 21.425S74.99 87.99 74.99 76.15s9.572-21.425 21.362-21.425 21.362 9.585 21.362 21.425z"
@@ -69,8 +84,8 @@ function ButtonBefore(props) {
           </filter>
         </defs>
       </svg>
-      </div>
-    )
-  }
-  
-  export default ButtonBefore;
+    </div>
+  );
+}
+
+export default ButtonBefore;

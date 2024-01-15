@@ -1,8 +1,23 @@
-import * as React from "react";
+import React, { useState } from "react";
 import "../../../styles/PrevNextButton.css";
+
 function ButtonNext(props) {
+
+  const [showMessage, setShowMessage] = useState(false);
+
+  const handleMouseEnter = () => {
+    setShowMessage(true);
+  };
+
+  const handleMouseLeave = () => {
+    setShowMessage(false);
+  };
+
   return (
-    <div className="NextContainer">
+    <div className="NextContainer"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}>
+      {showMessage && <div className="messagePrev">previous project</div>}
       <svg
         width={169}
         height={170}
@@ -10,6 +25,7 @@ function ButtonNext(props) {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         {...props}
+        className="svgButton"
       >
         <circle
           cx={95.5747}

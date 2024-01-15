@@ -9,6 +9,13 @@ import Frog6 from "../../assets/img/Frog/Frog6.png";
 import Frogcel1 from "../../assets/img/Frog/Frogcel1.png";
 import Frogcel2 from "../../assets/img/Frog/Frogcel2.png";
 import Frogcel3 from "../../assets/img/Frog/Frogcel3.png";
+import Frogcel3V2 from "../../assets/img/Frog/Frogcel3V2.png";
+import Frogcel3V3 from "../../assets/img/Frog/Frogcel3V3.png";
+import Frogcel3V4 from "../../assets/img/Frog/Frogcel3V4.png";
+import Frogcel3V5 from "../../assets/img/Frog/Frogcel3V5.png";
+import Frogcel3V6 from "../../assets/img/Frog/Frogcel3V6.png";
+import Frogcel3V7 from "../../assets/img/Frog/Frogcel3V7.png";
+import Frogcel3V8 from "../../assets/img/Frog/Frogcel3V8.png";
 import Frogcel4 from "../../assets/img/Frog/Frogcel4.png";
 import "../../styles/Frog.css";
 import "../../styles/Work.css";
@@ -66,8 +73,45 @@ const Frog = () => {
         <img src={Frog6} alt="FrogBazar6" className="Frog6" />
         <img src={Frogcel1} alt="FrogBazarcel1" className="Frogcel1" />
         <img src={Frogcel2} alt="FrogBazarcel2" className="Frogcel2" />
-        <img src={Frogcel3} alt="FrogBazarcel3" className="Frogcel3" />
         <img src={Frogcel4} alt="FrogBazarcel4" className="Frogcel4" />
+        <div className="FrogCelanimation-container">
+          <img src={Frogcel3} alt="FrogBazarcel3" className="Frogcel3" />
+          <img
+            src={Frogcel3V2}
+            alt="FrogBazarcelanimacion"
+            className="Frogcel3V2"
+          />
+          <img
+            src={Frogcel3V3}
+            alt="FrogBazarcelanimacion"
+            className="Frogcel3V3"
+          />
+          <img
+            src={Frogcel3V4}
+            alt="FrogBazarcelanimacion"
+            className="Frogcel3V4"
+          />
+          <img
+            src={Frogcel3V5}
+            alt="FrogBazarcelanimacion"
+            className="Frogcel3V5"
+          />
+          <img
+            src={Frogcel3V6}
+            alt="FrogBazarcelanimacion"
+            className="Frogcel3V6"
+          />
+          <img
+            src={Frogcel3V7}
+            alt="FrogBazarcelanimacion"
+            className="Frogcel3V7"
+          />
+          <img
+            src={Frogcel3V8}
+            alt="FrogBazarcelanimacion"
+            className="Frogcel3V8"
+          />
+        </div>
         <div className="Belink-container">
           <BeLink link={url} />
         </div>
