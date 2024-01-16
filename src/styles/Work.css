@@ -17,7 +17,6 @@
 }
 .Work-asterisk {
   width: 5.4375rem;
-  margin-right: -4rem;
   margin-top: -1.5rem;
 }
 /*Work MainList section*/
@@ -44,10 +43,14 @@
   justify-content: center;
   align-items: center;
 }
+.Work-ListItem a.Work-ItemLink[href="/#frog"] .Work-ItemText {
+  margin-left: -0.6rem;
+}
 .Work-ItemText {
   margin-left: -0.8rem;
   margin-bottom: 0.6rem;
 }
+
 /*animación*/
 .Work-ItemNumber,
 .Work-ItemText {
@@ -60,7 +63,7 @@
 .Work-ItemText:hover {
   color: #e52421;
 }
-/*Work Individuals containers*/
+/*Work Individuals Titles and containers*/
 .WorkIndividualphoto-container {
   display: grid;
   grid-template-columns: 31.3125rem 31.25rem;
@@ -172,10 +175,10 @@
 .Work-LogofolioContainer .Work-NumberIndividual {
   margin-right: -2.8rem;
   margin-bottom: -1.1rem;
-} 
+}
 .Work-MiscContainer .Work-NumberIndividual {
   margin-right: -2.7rem;
-} 
+}
 .Next {
   grid-column: 3;
 }
@@ -210,11 +213,9 @@
 
 /*Fonts*/
 .Work-mainTitle {
-  font-family: "PP-Hatton";
   font-size: 11.25rem;
   text-decoration: underline;
-  color: #e52421;
-  line-height: 1;
+  line-height: 1.1;
   text-decoration-thickness: 0.5rem;
   margin: 0;
   text-align: center;
@@ -228,7 +229,8 @@
 /*Titles*/
 .Work-ItemNumber,
 .Work-NumberIndividual,
-.WorkTitleDate {
+.WorkTitleDate,
+.Work-mainTitle {
   color: #e52421;
 }
 .Work-ItemNumber,
@@ -239,7 +241,8 @@
   font-size: 5rem;
 }
 .Work-ItemText,
-.Work-TextIndividual {
+.Work-TextIndividual,
+.Work-mainTitle {
   font-family: "PP-HattonBold";
 }
 .Work-ItemText,

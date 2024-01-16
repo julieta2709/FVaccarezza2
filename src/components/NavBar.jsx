@@ -11,9 +11,11 @@ function Links({ section, scrollToSection, children, className }) {
   const displayText = section === "about" ? "ABOUT ME" : children.toUpperCase();
 
   return (
-    <Link to={`/#${section}`} 
-    className={`nav-link ${className}`} 
-    onClick={handleClick}>
+    <Link
+      to={`/#${section}`}
+      className={`nav-link ${className}`}
+      onClick={handleClick}
+    >
       {displayText}
     </Link>
   );
@@ -29,7 +31,13 @@ const NavBar = () => {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      const offset = 150;
+      const elementPosition =
+        section.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: elementPosition - offset,
+        behavior: "smooth",
+      });
       setShowMenu(false);
     }
   };
@@ -41,7 +49,6 @@ const NavBar = () => {
     return null;
   }
 
- 
   return (
     <nav className="navbar">
       <div className="logo-container">
