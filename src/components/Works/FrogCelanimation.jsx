@@ -1,5 +1,6 @@
 import { animated, useSpring } from "@react-spring/web";
 import React, { useState } from "react";
+import { useInterval } from "react-use";
 import Frogcel3 from "../../assets/img/Frog/Frogcel3.png";
 import Frogcel3V2 from "../../assets/img/Frog/Frogcel3V2.png";
 import Frogcel3V3 from "../../assets/img/Frog/Frogcel3V3.png";
@@ -46,6 +47,10 @@ const animationData = [
 const ImageSequence = () => {
   const [index, setIndex] = useState(0);
 
+  useInterval(() => {
+    setIndex((prevIndex) => (prevIndex + 1) % images.length);
+  }, 1500);
+  
   const springs = useSpring({
     from: { opacity: 0, transform: "scale(0.5)" },
     to: {
@@ -59,10 +64,6 @@ const ImageSequence = () => {
     },
     loop: true,
     reset: true,
-    onRest: async () => {
-      await new Promise((resolve) => setTimeout(resolve, 10000));
-      setIndex((prevIndex) => (prevIndex + 1) % images.length);
-    },
   });
 
   return (
