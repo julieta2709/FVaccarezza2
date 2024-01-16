@@ -24,6 +24,9 @@ const Frog = () => {
   const sentences = description.split("\n");
 
   /*Navegación en la página a través de los botones*/
+  function quinticEaseOut(t) {
+    return 1 - Math.pow(1 - t, 5);
+  }
   const handleNextClick = () => {
     const nextElement = document.getElementById("estudio");
     if (nextElement) {
@@ -33,6 +36,7 @@ const Frog = () => {
       window.scrollTo({
         top: elementPosition - offset,
         behavior: "smooth",
+        easing: quinticEaseOut,
       });
     }
   };

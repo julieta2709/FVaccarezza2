@@ -6,12 +6,12 @@ import Michi3 from "../../assets/img/Michi/Michi3.png";
 import Michi4 from "../../assets/img/Michi/Michi4.png";
 import Michi5 from "../../assets/img/Michi/Michi5.png";
 import Michi6 from "../../assets/img/Michi/Michi6.png";
-import Michicel1 from "../../assets/img/Michi/Michicel1.png";
 import "../../styles/Michi.css";
 import "../../styles/Work.css";
 import BeLink from "../Buttons/BeLink";
 import Next from "../Buttons/Next";
 import Prev from "../Buttons/Prev";
+import MichiAnimation from "./MichiCelanimation";
 import { WorkDataContext } from "./WorkContext";
 
 const Michi = () => {
@@ -20,6 +20,10 @@ const Michi = () => {
 
   const { index, title, description, date, url } = WorkData[4];
   const sentences = description.split("\n");
+
+  function quinticEaseOut(t) {
+    return 1 - Math.pow(1 - t, 5);
+  }
 
   const handlePrevClick = () => {
     const nextElement = document.getElementById("opame");
@@ -30,6 +34,7 @@ const Michi = () => {
       window.scrollTo({
         top: elementPosition - offset,
         behavior: "smooth",
+        easing: quinticEaseOut,
       });
     }
   };
@@ -43,6 +48,7 @@ const Michi = () => {
       window.scrollTo({
         top: elementPosition - offset,
         behavior: "smooth",
+        easing: quinticEaseOut,
       });
     }
   };
@@ -80,7 +86,9 @@ const Michi = () => {
         </div>
         <img src={Michi5} alt="Michi5" className="Michi5" />
         <img src={Michi6} alt="Michi6" className="Michi6" />
-        <img src={Michicel1} alt="Michicel1" className="Michicel1" />
+        <div className="MichiAnimation-container">
+          <MichiAnimation />
+        </div>
         <div className="Belink-container">
           <BeLink link={url} />
         </div>

@@ -25,6 +25,10 @@ const Broke = () => {
   const { index, title, description, date, url } = WorkData[5];
   const sentences = description.split("\n");
 
+  function quinticEaseOut(t) {
+    return 1 - Math.pow(1 - t, 5);
+  }
+
   const handlePrevClick = () => {
     const nextElement = document.getElementById("michi");
     if (nextElement) {
@@ -34,6 +38,7 @@ const Broke = () => {
       window.scrollTo({
         top: elementPosition - offset,
         behavior: "smooth",
+        easing: quinticEaseOut,
       });
     }
   };
@@ -47,6 +52,7 @@ const Broke = () => {
       window.scrollTo({
         top: elementPosition - offset,
         behavior: "smooth",
+        easing: quinticEaseOut,
       });
     }
   };

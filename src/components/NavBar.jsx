@@ -28,6 +28,10 @@ const NavBar = () => {
     setShowMenu(!showMenu);
   };
 
+  function quinticEaseOut(t) {
+    return 1 - Math.pow(1 - t, 5);
+  }
+
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -37,6 +41,7 @@ const NavBar = () => {
       window.scrollTo({
         top: elementPosition - offset,
         behavior: "smooth",
+        easing: quinticEaseOut,
       });
       setShowMenu(false);
     }

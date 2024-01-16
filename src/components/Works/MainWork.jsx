@@ -9,6 +9,10 @@ const MainWork = () => {
   const secondRow = works.slice(4, 9);
   const navigate = useNavigate();
 
+  function quinticEaseOut(t) {
+    return 1 - Math.pow(1 - t, 5);
+  }
+
   const navigateToId = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -18,6 +22,7 @@ const MainWork = () => {
       window.scrollTo({
         top: elementPosition - offset,
         behavior: "smooth",
+        easing: quinticEaseOut,
       });
     }
     navigate(`#${id}`);

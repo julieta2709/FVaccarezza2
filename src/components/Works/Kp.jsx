@@ -20,6 +20,10 @@ const Kp = () => {
   const { index, title, description, date, url } = WorkData[6];
   const sentences = description.split("\n");
 
+  function quinticEaseOut(t) {
+    return 1 - Math.pow(1 - t, 5);
+  }
+
   const handlePrevClick = () => {
     const nextElement = document.getElementById("broke");
     if (nextElement) {
@@ -29,8 +33,9 @@ const Kp = () => {
       window.scrollTo({
         top: elementPosition - offset,
         behavior: "smooth",
-      });
-    }
+        easing: quinticEaseOut,
+    });
+  }
   };
 
   const handleNextClick = () => {
@@ -42,6 +47,7 @@ const Kp = () => {
       window.scrollTo({
         top: elementPosition - offset,
         behavior: "smooth",
+        easing: quinticEaseOut,
       });
     }
   };

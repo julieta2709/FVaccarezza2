@@ -30,6 +30,10 @@ const Logofolio = () => {
   const { index, title, description, date } = WorkData[7];
   const sentences = description.split("\n");
 
+  function quinticEaseOut(t) {
+    return 1 - Math.pow(1 - t, 5);
+  }
+
   const handlePrevClick = () => {
     const nextElement = document.getElementById("kp");
     if (nextElement) {
@@ -39,6 +43,7 @@ const Logofolio = () => {
       window.scrollTo({
         top: elementPosition - offset,
         behavior: "smooth",
+        easing: quinticEaseOut,
       });
     }
   };
@@ -52,6 +57,7 @@ const Logofolio = () => {
       window.scrollTo({
         top: elementPosition - offset,
         behavior: "smooth",
+        easing: quinticEaseOut,
       });
     }
   };

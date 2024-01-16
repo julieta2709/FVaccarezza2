@@ -17,6 +17,10 @@ const Moreno = () => {
   const { index, title, description, date } = WorkData[2];
   const sentences = description.split("\n");
 
+  function quinticEaseOut(t) {
+    return 1 - Math.pow(1 - t, 5);
+  }
+
   const handlePrevClick = () => {
     const nextElement = document.getElementById("estudio");
     if (nextElement) {
@@ -26,6 +30,7 @@ const Moreno = () => {
       window.scrollTo({
         top: elementPosition - offset,
         behavior: "smooth",
+        easing: quinticEaseOut,
       });
     }
   };
@@ -39,6 +44,7 @@ const Moreno = () => {
       window.scrollTo({
         top: elementPosition - offset,
         behavior: "smooth",
+        easing: quinticEaseOut,
       });
     }
   };

@@ -26,6 +26,10 @@ const Misc = () => {
   const WorkData = useContext(WorkDataContext);
   const navigate = useNavigate();
 
+  function quinticEaseOut(t) {
+    return 1 - Math.pow(1 - t, 5);
+  }
+
   const { index, title, description, date } = WorkData[8];
   const sentences = description.split("\n");
 
@@ -38,6 +42,7 @@ const Misc = () => {
       window.scrollTo({
         top: elementPosition - offset,
         behavior: "smooth",
+        easing: quinticEaseOut,
       });
     }
   };
