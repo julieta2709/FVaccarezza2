@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import Frog1 from "../../assets/img/Frog/Frog1.png";
 import Frog2 from "../../assets/img/Frog/Frog2.png";
@@ -8,14 +8,6 @@ import Frog5 from "../../assets/img/Frog/Frog5.png";
 import Frog6 from "../../assets/img/Frog/Frog6.png";
 import Frogcel1 from "../../assets/img/Frog/Frogcel1.png";
 import Frogcel2 from "../../assets/img/Frog/Frogcel2.png";
-import Frogcel3 from "../../assets/img/Frog/Frogcel3.png";
-import Frogcel3V2 from "../../assets/img/Frog/Frogcel3V2.png";
-import Frogcel3V3 from "../../assets/img/Frog/Frogcel3V3.png";
-import Frogcel3V4 from "../../assets/img/Frog/Frogcel3V4.png";
-import Frogcel3V5 from "../../assets/img/Frog/Frogcel3V5.png";
-import Frogcel3V6 from "../../assets/img/Frog/Frogcel3V6.png";
-import Frogcel3V7 from "../../assets/img/Frog/Frogcel3V7.png";
-import Frogcel3V8 from "../../assets/img/Frog/Frogcel3V8.png";
 import Frogcel4 from "../../assets/img/Frog/Frogcel4.png";
 import "../../styles/Frog.css";
 import "../../styles/Work.css";
@@ -23,48 +15,9 @@ import BeLink from "../Buttons/BeLink";
 import Next from "../Buttons/Next";
 import { WorkDataContext } from "./WorkContext";
 
-const images = [
-  Frogcel3,
-  Frogcel3V2,
-  Frogcel3V3,
-  Frogcel3V4,
-  Frogcel3V5,
-  Frogcel3V6,
-  Frogcel3V7,
-  Frogcel3V8,
-];
-
 const Frog = () => {
   const WorkData = useContext(WorkDataContext);
   const navigate = useNavigate();
-
-  /* animación para la carga de las imagenes secuencial */
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const imageRefs = useRef([]);
-
-  useEffect(() => {
-    const handleAnimationEnd = () => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    };
-    images.forEach((imageRef, index) => {
-      if (imageRef && imageRef.current) {
-        const animationDelay = index * 1000;
-        imageRef.current.style.animationName = "fadeIn";
-        imageRef.current.style.animationDuration = "1500ms";
-        imageRef.current.style.animationTimingFunction = "ease-out";
-        imageRef.current.style.animationDelay = `${animationDelay}ms`;
-        imageRef.current.addEventListener("animationend", handleAnimationEnd);
-      }
-    });
-    return () => {
-      imageRefs.current.forEach((imageRef) => {
-        imageRef.current.removeEventListener(
-          "animationend",
-          handleAnimationEnd
-        );
-      });
-    };
-  }, [currentIndex]);
 
   /*uso de la informacion del contexto*/
   const { index, title, description, date, url } = WorkData[0];
@@ -117,16 +70,7 @@ const Frog = () => {
         <img src={Frogcel4} alt="FrogBazarcel4" className="Frogcel4" />
         {/*imagenes de la animación*/}
         <div className="FrogCelanimation-container">
-          {images.map((image, index) => (
-            <img
-              key={index}
-              src={image}
-              alt={`FrogBazarcel${index + 3}`}
-              className={`Frogcel${index + 3} ${
-                currentIndex === index ? "active" : ""
-              }`}
-            />
-          ))}
+          {/* <ImageSequence /> */}
         </div>
         <div className="Belink-container">
           <BeLink link={url} />
@@ -176,3 +120,70 @@ export default Frog;
   className={`Frogcel3V8 ${currentIndex === 7 ? 'active' : ''}`}
 /> */
 }
+
+/* animación para la carga de las imagenes secuencial */
+/* const [currentIndex, setCurrentIndex] = useState(0);
+
+useEffect(() => {
+  const handleAnimationEnd = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+  images.forEach((imageRef, index) => {
+    if (imageRef && imageRef.current) {
+      const animationDelay = index * 1000;
+      imageRef.current.style.animationName = "fadeIn";
+      imageRef.current.style.animationDuration = "1500ms";
+      imageRef.current.style.animationTimingFunction = "ease-out";
+      imageRef.current.style.animationDelay = `${animationDelay}ms`;
+      imageRef.current.addEventListener("animationend", handleAnimationEnd);
+    }
+  });
+  return () => {
+    imageRefs.current.forEach((imageRef) => {
+      imageRef.current.removeEventListener(
+        "animationend",
+        handleAnimationEnd
+      );
+    });
+  };
+}, [currentIndex]); */
+/* {images.map((image, index) => (
+  <img
+    key={index}
+    src={image}
+    alt={`FrogBazarcel${index + 3}`}
+    className={`Frogcel${index + 3} ${
+      currentIndex === index ? "active" : ""
+    }`}
+  />
+))} */
+/* const animationData = [
+  { variant: "Variant1", timingFunction: "ease", duration: 1500, delay: 1500 },
+  {
+    variant: "Variant2",
+    timingFunction: "ease-out",
+    duration: 300,
+    delay: 800,
+  },
+  { variant: "Variant3", timingFunction: "ease-in", duration: 300, delay: 1 },
+  { variant: "Variant4", timingFunction: "ease", duration: 1500, delay: 800 },
+  {
+    variant: "Variant5",
+    timingFunction: "cubic-bezier(0.42, 0, 0.11, 0.99)",
+    duration: 1500,
+    delay: 400,
+  },
+  {
+    variant: "Variant6",
+    timingFunction: "cubic-bezier(0.42, 0, 0.11, 0.99)",
+    duration: 500,
+    delay: 300,
+  },
+  { variant: "Variant7", timingFunction: "ease-in", duration: 300, delay: 1 },
+  {
+    variant: "Variant8",
+    timingFunction: "cubic-bezier(0.42, 0, 0.11, 0.99)",
+    duration: 1500,
+    delay: 800,
+  },
+]; */
