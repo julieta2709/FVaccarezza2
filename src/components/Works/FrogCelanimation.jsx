@@ -1,5 +1,5 @@
-import { animated, config, useTransition } from "@react-spring/web";
-import React, { useEffect, useState } from "react";
+import { animated, useTransition } from "@react-spring/web";
+import React, { useState } from "react";
 import Frogcel3 from "../../assets/img/Frog/Frogcel3.png";
 import Frogcel3V2 from "../../assets/img/Frog/Frogcel3V2.png";
 import Frogcel3V3 from "../../assets/img/Frog/Frogcel3V3.png";
@@ -80,41 +80,35 @@ const transitionConfigs = [
   },
 ];
 
+const customSmartConfig = { tension: 170, friction: 26, precision: 0.1 };
+
 const ImageSequence = () => {
   const [index, setIndex] = useState(0);
   const currentConfig = transitionConfigs[index];
-  const totalDelay = currentConfig.delay + (index > 0 ? 2000 : 0);
 
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, totalDelay);
-
-    return () => clearTimeout(timeoutId);
-  }, [index, totalDelay]);
+  const handleRest = () => {
+    setIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
 
   const transition = useTransition(index, {
-    from: {
+ /*    from: {
       opacity: 0,
-      transform:
-        index === 1
-          ? "translateY(-1%) translateX(0%)"
-          : index === 4
-          ? "translateX(1%) translateY(0%)"
-          : "translateY(0)",
+      transform: "scale(1)",
     },
-    enter: { opacity: 1, transform: "translateY(0)" },
+    enter: {
+      opacity: 1,
+      transform: "scale(1)",
+    },
     leave: {
       opacity: 0,
-      transform:
-        index === 1
-          ? "translateY(1%) translateX(0%)"
-          : index === 4
-          ? "translateX(-1%) translateY(0%)"
-          : "translateY(0)",
+      transform: "scale(1)",
+    }, */
+    config: {
+      duration: currentConfig.duration,
     },
-    config: currentConfig.animate === "smart" ? config.default : config.gentle,
     delay: currentConfig.delay,
+    onRest: handleRest,
+    exitBeforeEnter: true,
   });
 
   return transition((props, item) => (
@@ -229,3 +223,43 @@ useInterval(increment, 1500); */
     duration: 1500,
   },
 ]; */
+
+/* const transition = useTransition(index, {
+  from: {
+    opacity: 0,
+    clipPath:
+      index === 1
+        ? "polygon(20% 0, 80% 0, 80% 100%, 20% 100%)"
+        : index === 4
+        ? "polygon(0 0, 100% 0, 0 100%, 100% 100%)"
+        : "scale(1)",
+  },
+  enter: { opacity: 1, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" },
+  leave: {
+    opacity: 0,
+    clipPath:
+      index === 1
+        ? "polygon(0 0, 100% 0, 100% 0, 0 0)"
+        : "polygon(100% 0, 100% 100%, 100% 100%, 100% 0)",
+  },
+  config: currentConfig.animate === "smart" ? config.default : config.gentle,
+  delay: currentConfig.delay,
+  onRest: handleRest,
+  exitBeforeEnter: true,
+  duration: currentConfig.duration,
+});
+
+return transition((props, item) => (
+  <animated.img
+    key={item}
+    src={images[item]}
+    alt={`imagen-${item + 1}`}
+    className="image-animation"
+    style={{
+      ...props,
+      transitionTimingFunction: currentConfig.timingFunction,
+      transitionDuration: `${currentConfig.duration}ms`,
+    }}
+  />
+));
+}; */

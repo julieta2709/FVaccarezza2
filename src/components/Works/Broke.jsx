@@ -25,20 +25,20 @@ const Broke = () => {
   const { index, title, description, date, url } = WorkData[5];
   const sentences = description.split("\n");
 
-  function quinticEaseOut(t) {
-    return 1 - Math.pow(1 - t, 5);
+  function easeInOutExpo(t) {
+    return t === 0 ? 0 : t === 1 ? 1 : t < 0.5 ? Math.pow(2, 20 * t - 10) / 2 : (2 - Math.pow(2, -20 * t + 10)) / 2;
   }
 
   const handlePrevClick = () => {
     const nextElement = document.getElementById("michi");
     if (nextElement) {
-      const offset = 50;
+      const offset = 200;
       const elementPosition =
         nextElement.getBoundingClientRect().top + window.scrollY;
       window.scrollTo({
         top: elementPosition - offset,
         behavior: "smooth",
-        easing: quinticEaseOut,
+        easing: easeInOutExpo,
       });
     }
   };
@@ -46,13 +46,13 @@ const Broke = () => {
   const handleNextClick = () => {
     const nextElement = document.getElementById("kp");
     if (nextElement) {
-      const offset = 50;
+      const offset = 200;
       const elementPosition =
         nextElement.getBoundingClientRect().top + window.scrollY;
       window.scrollTo({
         top: elementPosition - offset,
         behavior: "smooth",
-        easing: quinticEaseOut,
+        easing: easeInOutExpo,
       });
     }
   };

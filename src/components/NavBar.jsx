@@ -28,20 +28,20 @@ const NavBar = () => {
     setShowMenu(!showMenu);
   };
 
-  function quinticEaseOut(t) {
-    return 1 - Math.pow(1 - t, 5);
+  function easeInOutExpo(t) {
+    return t === 0 ? 0 : t === 1 ? 1 : t < 0.5 ? Math.pow(2, 20 * t - 10) / 2 : (2 - Math.pow(2, -20 * t + 10)) / 2;
   }
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      const offset = 150;
+      const offset = 200;
       const elementPosition =
         section.getBoundingClientRect().top + window.scrollY;
       window.scrollTo({
         top: elementPosition - offset,
         behavior: "smooth",
-        easing: quinticEaseOut,
+        easing: easeInOutExpo,
       });
       setShowMenu(false);
     }
