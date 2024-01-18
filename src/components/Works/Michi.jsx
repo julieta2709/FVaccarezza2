@@ -11,7 +11,7 @@ import "../../styles/Work.css";
 import BeLink from "../Buttons/BeLink";
 import Next from "../Buttons/Next";
 import Prev from "../Buttons/Prev";
-// import MichiAnimation from "./MichiCelanimation";
+import MichiAnimation from "./MichiCelanimation";
 import { WorkDataContext } from "./WorkContext";
 
 const Michi = () => {
@@ -87,7 +87,7 @@ const Michi = () => {
         <img src={Michi5} alt="Michi5" className="Michi5" />
         <img src={Michi6} alt="Michi6" className="Michi6" />
         <div className="MichiAnimation-container">
-          {/* <MichiAnimation /> */}
+          <MichiAnimation />
         </div>
         <div className="Belink-container">
           <BeLink link={url} />
