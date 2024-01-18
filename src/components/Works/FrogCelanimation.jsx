@@ -82,6 +82,7 @@ const animations = [
 
 const ImageSequence = () => {
   const [index, setIndex] = useState(0);
+
   const springRefs = useRef(animations.map(() => useSpringRef()));
 
   const animatedProps = animations.map((config, i) =>
@@ -91,22 +92,19 @@ const ImageSequence = () => {
       config,
       ref: springRefs.current[i],
       onRest: () => {
-        // Cambia al siguiente índice cuando la animación se completa
         setIndex((prevIndex) => (prevIndex + 1) % images.length);
+
+        if (index === images.length - 1) {
+          springRefs.current.forEach((ref, idx) => {
+            ref.start({ opacity: 0, reset: true });
+          });
+          setIndex(0);
+        }
       },
     })
   );
 
-  // Sincroniza todas las animaciones
-  useChain(springRefs.current, [0, ...Array(animations.length - 1).fill(0.5)]);
-
-  // Reinicia el índice al primero después de la última animación
-  const lastAnimationRef = springRefs.current[springRefs.current.length - 1];
-  if (lastAnimationRef) {
-    lastAnimationRef.onRest(() => {
-      setIndex(0);
-    });
-  }
+  useChain(springRefs.current);
 
   return (
     <div className="image-carousel">
