@@ -11,6 +11,7 @@ import "../../styles/Work.css";
 import BeLink from "../Buttons/BeLink";
 import Next from "../Buttons/Next";
 import Prev from "../Buttons/Prev";
+// import MichiAnimation from "./MichiCelanimation";
 import { WorkDataContext } from "./WorkContext";
 
 const Michi = () => {

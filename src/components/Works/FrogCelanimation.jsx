@@ -93,7 +93,6 @@ const ImageSequence = () => {
       ref: springRefs.current[i],
       onRest: () => {
         setIndex((prevIndex) => (prevIndex + 1) % images.length);
-
         if (index === images.length - 1) {
           springRefs.current.forEach((ref, idx) => {
             ref.start({ opacity: 0, reset: true });
@@ -107,7 +106,7 @@ const ImageSequence = () => {
   useChain(springRefs.current);
 
   return (
-    <div className="image-carousel">
+    <div className="FrogCelanimation-container">
       {animatedProps.map((props, i) => (
         <animated.img
           key={i}
@@ -115,10 +114,8 @@ const ImageSequence = () => {
           alt={`Image ${i + 1}`}
           style={{
             ...props,
-            width: "100%",
-            height: "auto",
-            position: "absolute",
           }}
+          className={"image-animation"}
         />
       ))}
     </div>
