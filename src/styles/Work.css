@@ -2,7 +2,7 @@
 /*Work Container*/
 .Work-container {
   width: 100%;
-  height: 105.8125rem;
+  height: 61.8125rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,6 +20,11 @@
   margin-top: -1.5rem;
 }
 /*Work MainList section*/
+.Work-ListContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .Work-ListRow1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

@@ -4,11 +4,7 @@ import Michicel1V3 from "../../assets/img/Michi/Michicel1V3.png";
 import Michicel1V4 from "../../assets/img/Michi/Michicel1V4.png";
 import "../../styles/Michi.css";
 
-const MichiImages = [
-  Michicel1V2,
-  Michicel1V3,
-  Michicel1V4,
-];
+const MichiImages = [Michicel1V2, Michicel1V3, Michicel1V4];
 
 const MichiAnimation = () => {
   const [index, setIndex] = useState(0);
@@ -33,7 +29,7 @@ const MichiAnimation = () => {
           style={{
             zIndex: currentIndex === index ? 2 : 1,
             opacity: currentIndex === index ? 1 : 0,
-            transition: `z-index 2800ms ${transitionTimingFunction}, opacity 2600ms`,
+            transition: `z-index 2800ms ${transitionTimingFunction} 1500ms, opacity 1500ms ease-in-out`,
           }}
         />
       ))}
