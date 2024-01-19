@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import Michicel1V2 from "../../assets/img/Michi/Michicel1V2.png";
 import Michicel1V3 from "../../assets/img/Michi/Michicel1V3.png";
@@ -7,36 +8,36 @@ import "../../styles/Michi.css";
 const MichiImages = [Michicel1V2, Michicel1V3, Michicel1V4];
 
 const MichiAnimation = () => {
-  const [index, setIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
-    const nextIndex = (index + 1) % MichiImages.length;
-    const timer = setTimeout(() => {
-      setIndex(nextIndex);
-    }, 2500);
-    return () => clearTimeout(timer);
-  }, [index, MichiImages]);
-  const transitionTimingFunction = "cubic-bezier(0.55, 0.59, 0, 1.01)";
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % MichiImages.length); 
+    }, 2000); 
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="animated-imageContainer">
-      {MichiImages.map((image, currentIndex) => (
-        <img
-          key={currentIndex}
+      {MichiImages.map((image, index) => (
+        <motion.img
+          key={index}
           src={image}
-          alt={`Michi ${currentIndex + 1}`}
-          className={`animated-image${currentIndex + 1}`}
-          style={{
-            zIndex: currentIndex === index ? 2 : 1,
-            opacity: currentIndex === index ? 1 : 0,
-            transition: `
-            z-index,
-            opacity 2500ms ${transitionTimingFunction} 0ms `,
+          alt={`Michi Image ${index + 1}`}
+          className={`animated-image${index + 1}`}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: activeIndex === index ? 1 : 0 }}
+          transition={{
+            duration: 1.5, 
+            ease: [0.55, 0.59, 0, 1.01],
+            type: "tween",
           }}
+          style={{ position: "absolute", top: 0, left: 0 }}
         />
       ))}
     </div>
   );
 };
+
 
 export default MichiAnimation;

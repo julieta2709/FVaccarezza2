@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import Estudiocel1V1 from "../../assets/img/Estudio/Estudiocel1V1.png";
 import Estudiocel1V2 from "../../assets/img/Estudio/Estudiocel1V2.png";
@@ -17,36 +18,80 @@ const EstudioCelImages = [
 ];
 
 const EstudioCelAnimation = () => {
-  const [index, setIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const transitions = {
+    type: "tween",
+    ease: [0.55, 0.59, 0, 1.01], 
+  };
+
+  const intervals = [5000, 6000, 3000, 3500, 4000, 6000];
 
   useEffect(() => {
-    const nextIndex = (index + 1) % EstudioCelImages.length;
-    const timer = setTimeout(() => {
-      setIndex(nextIndex);
-    }, 3000);
-    return () => clearTimeout(timer);
-  }, [index, EstudioCelImages]);
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % EstudioCelImages.length); 
+    }, intervals[activeIndex]); 
+    return () => clearInterval(interval);
+  }, [activeIndex, intervals]);
 
-  const transitionTimingFunction = "cubic-bezier(0.55, 0.59, 0, 1.01)";
-
+  const getDuration = (index) => {
+    switch (index) {
+      case 0:
+        return 3000; 
+      case 1:
+        return 2500; 
+      case 2:
+        return 1000; 
+      case 3:
+        return 1200; 
+      case 4:
+        return 1500; 
+      case 5:
+        return 3000; 
+      default:
+        return 0; 
+    }
+  };
+ 
   return (
     <div className="animated-imageContainer">
-      {EstudioCelImages.map((image, currentIndex) => (
-        <img
-          key={currentIndex}
+      {EstudioCelImages.map((image, index) => (
+        <motion.img
+          key={index}
           src={image}
-          alt={`Estudio ${currentIndex + 1}`}
-          className={`animated-Estudioimage${currentIndex + 1}`}
-          style={{
-            zIndex: currentIndex === index ? 4 : 3,
-            opacity: currentIndex === index ? 1 : 0,
-            transition: `
-            z-index,
-            opacity 2500ms ${transitionTimingFunction} 0ms `,
+          alt={`Estudio Cel Image ${index + 1}`}
+          initial={{ opacity: 0, y: 0 }}
+          animate={{
+            opacity: activeIndex === index ? 1 : 0,
+            y: index === 0 ? 6.74 : 0,
           }}
+          transition={{
+            opacity: { duration: getDuration(index) / 1000, ...transitions },
+            y: { duration: getDuration(index) / 1000, delay: 0, ...transitions }, 
+          }}
+          className="animated-Estudioimage"
         />
       ))}
     </div>
   );
 };
 export default EstudioCelAnimation;
+
+/* const getDelay = (index) => {
+  switch (index) {
+    case 0:
+      return 2000; 
+    case 1:
+      return 200; 
+    case 2:
+      return 1; 
+    case 3:
+      return 1; 
+    case 4:
+      return 1; 
+    case 5:
+      return 800; 
+    default:
+      return 0; 
+  }
+}; */
