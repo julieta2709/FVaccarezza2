@@ -13,7 +13,7 @@ const MichiAnimation = () => {
     const nextIndex = (index + 1) % MichiImages.length;
     const timer = setTimeout(() => {
       setIndex(nextIndex);
-    }, 3000);
+    }, 2500);
     return () => clearTimeout(timer);
   }, [index, MichiImages]);
   const transitionTimingFunction = "cubic-bezier(0.55, 0.59, 0, 1.01)";
@@ -29,7 +29,9 @@ const MichiAnimation = () => {
           style={{
             zIndex: currentIndex === index ? 2 : 1,
             opacity: currentIndex === index ? 1 : 0,
-            transition: `z-index 2800ms ${transitionTimingFunction} 1500ms, opacity 1500ms ease-in-out`,
+            transition: `
+            z-index,
+            opacity 2500ms ${transitionTimingFunction} 0ms `,
           }}
         />
       ))}

@@ -4,13 +4,13 @@ import Estudio1 from "../../assets/img/Estudio/Estudio1.png";
 import Estudio2 from "../../assets/img/Estudio/Estudio2.png";
 import Estudio3 from "../../assets/img/Estudio/Estudio3.png";
 import Estudio4 from "../../assets/img/Estudio/Estudio4.png";
-import Estudiocel1 from "../../assets/img/Estudio/Estudiocel1.png";
 import Estudiopad1 from "../../assets/img/Estudio/Estudiopad1.png";
 import "../../styles/Estudio.css";
 import "../../styles/Work.css";
 import BeLink from "../Buttons/BeLink";
 import Next from "../Buttons/Next";
 import Prev from "../Buttons/Prev";
+import EstudioCelAnimation from "./EstudioCelAnimation";
 import { WorkDataContext } from "./WorkContext";
 
 const Estudio = () => {
@@ -21,7 +21,13 @@ const Estudio = () => {
   const sentences = description.split("\n");
 
   function easeInOutExpo(t) {
-    return t === 0 ? 0 : t === 1 ? 1 : t < 0.5 ? Math.pow(2, 20 * t - 10) / 2 : (2 - Math.pow(2, -20 * t + 10)) / 2;
+    return t === 0
+      ? 0
+      : t === 1
+      ? 1
+      : t < 0.5
+      ? Math.pow(2, 20 * t - 10) / 2
+      : (2 - Math.pow(2, -20 * t + 10)) / 2;
   }
 
   const handlePrevClick = () => {
@@ -79,7 +85,9 @@ const Estudio = () => {
         <img src={Estudio2} alt="Estudio2" className="Estudio2" />
         <img src={Estudio3} alt="Estudio3" className="Estudio3" />
         <img src={Estudio4} alt="Estudio4" className="Estudio4" />
-        <img src={Estudiocel1} alt="Estudiocel1" className="Estudiocel1" />
+        <div className="EstudioCel-animationContainer">
+          <EstudioCelAnimation />
+        </div>
         <img src={Estudiopad1} alt="Estudio-IPAD" className="Estudiopad1" />
         <div className="Belink-container">
           <BeLink link={url} />
