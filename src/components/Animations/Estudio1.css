@@ -1,0 +1,13 @@
+.animated-imageContainer {
+  z-index: 2;
+  position: relative;
+}
+.animated-Estudio1 {
+  position: absolute;
+  z-index: 3;
+  border: 3px solid transparent;
+  display: block;
+  border-radius: 16.95px;
+  width: 130px;
+  height: 263px;
+}

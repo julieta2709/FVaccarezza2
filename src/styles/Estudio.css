@@ -30,12 +30,7 @@
   margin-left: -3.6rem;
   margin-top: 1.4rem;
   position: relative;
-  max-width: 130px;
-  max-height: 258px;
-  border-radius: 16.954px;
-  border: 5.765px solid #222;
-  background: #fff;
-  box-shadow: -6.691px 6.691px 40.146px 0px rgba(0, 0, 0, 0.25);
+  
 }
 .Estudiopad1 {
   align-self: center;
@@ -43,13 +38,7 @@
   margin-right: -5.2rem;
   margin-bottom: 6rem;
 }
-.animated-imageContainer {
-  z-index: 2;
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-  
-}
+
 /*animación*/
 /* .animated-Estudioimage1,
 .animated-Estudioimage2,
@@ -66,12 +55,3 @@
   display: block;
   object-fit: cover;
 } */
-.animated-Estudioimage {
-  position: absolute;
-  top: 0;
-  left: 0;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
