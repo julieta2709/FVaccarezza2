@@ -30,7 +30,7 @@
   margin-left: -3.6rem;
   margin-top: 1.4rem;
   position: relative;
-  
+  width: 130px;
 }
 .Estudiopad1 {
   align-self: center;
@@ -39,19 +39,4 @@
   margin-bottom: 6rem;
 }
 
-/*animación*/
-/* .animated-Estudioimage1,
-.animated-Estudioimage2,
-.animated-Estudioimage3,
-.animated-Estudioimage4,
-.animated-Estudioimage5,
-.animated-Estudioimage6,
-.animated-Estudioimage7 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-} */
+
