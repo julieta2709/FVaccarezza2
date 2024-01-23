@@ -7,38 +7,29 @@ import Estudio3 from "../Animations/Estudio/Estudio3";
 const EstudioCelAnimation = () => {
   const [currentEstudio, setCurrentEstudio] = useState(1);
 
-  // Duraciones de cada estudio en milisegundos
-  const estudioDurations = {
-    1: 3000, // Duración para Estudio1 en milisegundos
-    2: 8000, // Duración para Estudio2 en milisegundos
-    3: 2500, // Duración para Estudio3 en milisegundos
-  };
-
-  // useEffect para cambiar al siguiente estudio cuando el actual termina
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setCurrentEstudio((prev) => (prev % 3) + 1); // Cambia al siguiente estudio (1, 2, 3, 1, 2, 3, ...)
-    }, estudioDurations[currentEstudio]);
-    return () => clearTimeout(timer);
-  }, [currentEstudio, estudioDurations]);
-
-  // Renderizar el componente del estudio actual
-  const renderCurrentEstudio = () => {
+    let timer;
     switch (currentEstudio) {
       case 1:
-        return <Estudio1 key="estudio1" />;
+        timer = setTimeout(() => setCurrentEstudio(2), 3000); // Ajusta según la duración de Estudio1
+        break;
       case 2:
-        return <Estudio2 key="estudio2" />;
+        timer = setTimeout(() => setCurrentEstudio(3), 8000); // Ajusta según la duración de Estudio2
+        break;
       case 3:
-        return <Estudio3 key="estudio3" />;
+        timer = setTimeout(() => setCurrentEstudio(1), 2500); // Ajusta según la duración de Estudio3
+        break;
       default:
-        return null;
+        break;
     }
-  };
+    return () => clearTimeout(timer);
+  }, [currentEstudio]);
 
   return (
     <div>
-      {renderCurrentEstudio()}
+      {currentEstudio === 1 && <Estudio1 key="estudio1" />}
+      {currentEstudio === 2 && <Estudio2 key="estudio2" />}
+      {currentEstudio === 3 && <Estudio3 key="estudio3" />}
     </div>
   );
 };

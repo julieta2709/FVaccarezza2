@@ -5,6 +5,7 @@ import Estudiocel1V3 from "../../../assets/img/Estudio/Estudiocel1V3.png";
 import Estudiocel1V4 from "../../../assets/img/Estudio/Estudiocel1V4.png";
 import Estudiocel1V5 from "../../../assets/img/Estudio/Estudiocel1V5.png";
 import Estudiocel1V6 from "../../../assets/img/Estudio/Estudiocel1V6.png";
+import sillon from "../../../assets/img/Estudio/sillon.png";
 import "../Estudio1.css";
 
 const EstudioCelImages = [
@@ -44,6 +45,7 @@ const Estudio2 = () => {
           viewport={{ once: true }}
         />
       ))}
+      <img src={sillon} alt="sillon" className="sillon-estudio2" />
     </div>
   );
 };
