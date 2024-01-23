@@ -140,3 +140,10 @@ body {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "FraktionSansLight";
+  src: url("../assets/Fonts/FraktionSansLight.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

@@ -5,6 +5,7 @@ import Estudio2 from "../../assets/img/Estudio/Estudio2.png";
 import Estudio3 from "../../assets/img/Estudio/Estudio3.png";
 import Estudio4 from "../../assets/img/Estudio/Estudio4.png";
 import Estudiopad1 from "../../assets/img/Estudio/Estudiopad1.png";
+import carro from "../../assets/img/Estudio/carro.gif";
 import "../../styles/Estudio.css";
 import "../../styles/Work.css";
 import BeLink from "../Buttons/BeLink";
@@ -84,14 +85,17 @@ const Estudio = () => {
         <img src={Estudio1} alt="Estudio1" className="Estudio1" />
         <img src={Estudio2} alt="Estudio2" className="Estudio2" />
         <img src={Estudio3} alt="Estudio3" className="Estudio3" />
-        <img src={Estudio4} alt="Estudio4" className="Estudio4" />
+        <div className="carroContainer">
+          <img src={Estudio4} alt="Estudio4" className="Estudio4" />
+          <img src={carro} alt="carroGif" className="carroGif" />
+          <div className="Belink-container">
+            <BeLink link={url} />
+          </div>
+        </div>
         <div className="EstudioCel-animationContainer">
           <EstudioCelAnimation />
         </div>
         <img src={Estudiopad1} alt="Estudio-IPAD" className="Estudiopad1" />
-        <div className="Belink-container">
-          <BeLink link={url} />
-        </div>
       </div>
     </div>
   );

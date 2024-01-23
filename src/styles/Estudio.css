@@ -1,12 +1,14 @@
 .Estudio1,
-.Estudio4 {
+.carroContainer {
   grid-column: span 2;
 }
 .Estudio1 {
   grid-row: 1;
 }
-.Estudio4 {
+.carroContainer {
   grid-row: 3;
+  position: relative;
+  height: 1000px;
 }
 .Estudio2 {
   grid-row: 2;
@@ -38,5 +40,16 @@
   margin-right: -5.2rem;
   margin-bottom: 6rem;
 }
-
-
+.carroContainer img {
+  position: absolute;
+}
+.carroGif {
+  z-index: 2;
+  width: 1081px;
+  height: auto;
+}
+.carroContainer .Belink-container {
+  position: absolute;
+  bottom: 0;
+  right: 581px;
+}

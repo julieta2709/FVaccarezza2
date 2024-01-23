@@ -5,8 +5,7 @@
 .Moreno1 {
   grid-row: 1;
 }
-.Moreno2,
-.Moreno3 {
+.Moreno2 {
   grid-row: 2;
 }
 .Moreno2 {
@@ -14,5 +13,25 @@
   justify-self: center;
 }
 .Moreno3 {
+  position: relative;
+}
+/*Animación cuenta regresiva*/
+.countdown-container {
   grid-column: 2;
+  grid-row: 2;
+  z-index: 2;
+  position: relative;
+}
+.countdown-Animacontainer {
+  position: absolute;
+  z-index: 3;
+  top: 56px;
+  left: 364px;
+}
+.countdown-text {
+  font-family: "FraktionSansLight";
+  color: #fff;
+  font-size: 26.042px;
+  letter-spacing: -1.302px;
+  line-height: 86.1%;
 }

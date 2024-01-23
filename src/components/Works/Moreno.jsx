@@ -6,6 +6,7 @@ import Moreno3 from "../../assets/img/Moreno/Moreno3.png";
 import Moreno4 from "../../assets/img/Moreno/Moreno4.png";
 import "../../styles/Moreno.css";
 import "../../styles/Work.css";
+import Countdown from "../Animations/Moreno/CountDown";
 import Next from "../Buttons/Next";
 import Prev from "../Buttons/Prev";
 import { WorkDataContext } from "./WorkContext";
@@ -14,11 +15,18 @@ const Moreno = () => {
   const WorkData = useContext(WorkDataContext);
   const navigate = useNavigate();
 
+  /*información del contexto*/
   const { index, title, description, date } = WorkData[2];
   const sentences = description.split("\n");
 
   function easeInOutExpo(t) {
-    return t === 0 ? 0 : t === 1 ? 1 : t < 0.5 ? Math.pow(2, 20 * t - 10) / 2 : (2 - Math.pow(2, -20 * t + 10)) / 2;
+    return t === 0
+      ? 0
+      : t === 1
+      ? 1
+      : t < 0.5
+      ? Math.pow(2, 20 * t - 10) / 2
+      : (2 - Math.pow(2, -20 * t + 10)) / 2;
   }
 
   const handlePrevClick = () => {
@@ -76,10 +84,11 @@ const Moreno = () => {
       <div className="WorkIndividualphoto-container">
         <img src={Moreno1} alt="Moreno1" className="Moreno1" />
         <img src={Moreno2} alt="Moreno2" className="Moreno2" />
-        <img src={Moreno3} alt="Moreno3" className="Moreno3" />
         <img src={Moreno4} alt="Moreno4" className="Moreno4" />
-        {/*         <img src={Morenocel1} alt="Morenocel1" className="Morenocel1" />
-        <img src={Morenocel2} alt="Morenocel2" className="Morenocel2" /> */}
+        <div className="countdown-container">
+          <img src={Moreno3} alt="Moreno3" className="Moreno3" />
+          <Countdown />
+        </div>
       </div>
     </div>
   );

@@ -64,8 +64,6 @@
   position: relative;
   width: 7.5rem;
   height: 16.25rem;
-
-  /* background: #fbf8f3; */
   justify-self: end;
   align-self: flex-end;
   margin-right: -6.1rem;
@@ -84,59 +82,7 @@
 .Belink-container {
   align-self: flex-end;
   justify-self: end;
-  z-index: 1;
+  z-index: 2;
   margin-right: -39.5rem;
   margin-top: -8rem;
 }
-/*animación*/ /* 
-.FrogCelanimation-container .Frogcel3.active {
-  animation: smartAnimate 1500ms ease-in-out;
-}
-.FrogCelanimation-container .Frogcel3V2.active {
-  animation: smartAnimate 300ms ease-out;
-}
-.FrogCelanimation-container .Frogcel3V3.active {
-  animation: smartAnimate 300ms ease-in;
-}
-.FrogCelanimation-container .Frogcel3V4.active {
-  animation: dissolve 300ms ease-in;
-}
-.FrogCelanimation-container .Frogcel3V5.active {
-  animation: smartAnimate 1500ms cubic-bezier(0.42, 0, 0.11, 0.99);
-}
-.FrogCelanimation-container .Frogcel3V6.active {
-  animation: smartAnimate 300ms cubic-bezier(0.42, 0, 0.11, 0.99);
-}
-.FrogCelanimation-container .Frogcel3V7.active {
-  animation: smartAnimate 1500ms cubic-bezier(0.42, 0, 0.11, 0.99);
-}
-.FrogCelanimation-container .Frogcel3V8.active {
-  animation: dissolve 1500ms cubic-bezier(0.42, 0, 0.11, 0.99);
-}
-@keyframes fadeInOut {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
-@keyframes dissolve {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
-@keyframes smartAnimate {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.2);
-  }
-}
- */
