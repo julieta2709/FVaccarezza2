@@ -1,12 +1,25 @@
-/*Estudio1*/
-.animated-imageEstudio1 {
-  z-index: 2;
+/*Contenedor de Animaciones*/
+.Estudio-AnimationContainer {
   position: relative;
   width: 122px;
   height: 257px;
   border: solid #222222 5.76px;
   background-color: #ffffff;
   border-radius: 16.95px;
+}
+.Estudio-AnimationContainer > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/*Estudio1*/
+.animated-imageEstudio1 {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -50,44 +63,22 @@
 }
 /*Estudio2*/
 .animated-imageEstudio2 {
-  z-index: 1;
-  width: 123px;
-  height: 257px;
-  border-radius: 16.95px;
-  border: solid #222222 5.76px;
-  top: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
-.sillon-estudio2 {
-  z-index: 1;
+img.animated-Estudio2image {
+  position: absolute;
   width: 100%;
   height: 100%;
   border-radius: 16.95px;
-  overflow: hidden;
-  position: relative;
-}
-.sillon-estudio2::before {
-  content: "";
-  z-index: 2;
+  z-index: 6;
   top: 0;
   left: 0;
-  background: rgba(237, 237, 237, 0.8);
-  backdrop-filter: blur(4.899665832519531px);
-  width: 100%;
-  height: 100%;
-  border-radius: 16.95px;
-  overflow: hidden;
-  position: absolute;
+  object-fit: fill;
 }
-.animated-Estudio2image {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  border-radius: 16.95px;
-  z-index: 3;
-  top: 0;
-  overflow: hidden;
-}
+/*Estudio3*/
 .background-sillonFinal {
   background: #ffffff;
   width: 100%;
@@ -96,13 +87,4 @@
   border-radius: 11.95px;
   z-index: 5;
   overflow: hidden;
-}
-.Estudio-AnimationContainer {
-  position: relative;
-}
-
-.Estudio-AnimationContainer > div {
-  position: absolute;
-  top: 0;
-  left: 0;
 }

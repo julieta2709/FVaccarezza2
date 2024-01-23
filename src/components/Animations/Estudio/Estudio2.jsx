@@ -5,7 +5,6 @@ import Estudiocel1V3 from "../../../assets/img/Estudio/Estudiocel1V3.png";
 import Estudiocel1V4 from "../../../assets/img/Estudio/Estudiocel1V4.png";
 import Estudiocel1V5 from "../../../assets/img/Estudio/Estudiocel1V5.png";
 import Estudiocel1V6 from "../../../assets/img/Estudio/Estudiocel1V6.png";
-import sillon from "../../../assets/img/Estudio/sillon.png";
 import "../Estudio1.css";
 
 const EstudioCelImages = [
@@ -38,14 +37,13 @@ const Estudio2 = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{
-            duration: 1,
+            duration: 2,
             ease: [0.55, 0.59, 0, 1.01],
-            delay: currentIndex * 1,
+            delay: currentIndex * 2,
           }}
           viewport={{ once: true }}
         />
       ))}
-      <img src={sillon} alt="sillon" className="sillon-estudio2" />
     </div>
   );
 };
