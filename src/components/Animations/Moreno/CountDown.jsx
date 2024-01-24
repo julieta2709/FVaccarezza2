@@ -10,15 +10,12 @@ const Countdown = () => {
   );
 
   useEffect(() => {
-    // Inicia la animación con loop
-    const controls = animate(count, 1, { duration: 12, loop: Infinity });
-
-    // Detiene la animación al desmontar el componente
+    const controls = animate(count, 1, { duration: 12 });
     return controls.stop;
   }, [count]);
 
   return (
-    <motion.div className="countdown-Animacontainer">
+    <motion.div className="countdown-Animacontainer" viewport>
       <motion.div className="countdown-text">{rounded}</motion.div>
     </motion.div>
   );
