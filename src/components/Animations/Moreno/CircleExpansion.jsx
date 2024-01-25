@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 import "../Moreno/circle.css";
 
-const CircleFusion = () => {
+const CircleExpansion = () => {
   const originalPositions = [
     { x: 0, y: 0 },
     { x: 10, y: 0 },
@@ -20,21 +20,21 @@ const CircleFusion = () => {
 };
 
 const Circle = ({ x, y }) => {
-  const diagonalX = 5 - x;
-  const diagonalY = 5 - y;
+  const diagonalX = x - 5;
+  const diagonalY = y - 5;
   return (
     <AnimatePresence>
       <motion.div
         className="item"
         style={{
-          top: y,
-          left: x,
+          top: 5,
+          left: 5,
         }}
         whileInView={{
           x: diagonalX,
           y: diagonalY,
-          opacity: 0,
-          scale:0.5,
+          opacity: 1,
+          scale:1,
         }}
         transition={{
           duration: 2,
@@ -44,5 +44,4 @@ const Circle = ({ x, y }) => {
     </AnimatePresence>
   );
 };
-export default CircleFusion;
-
+export default CircleExpansion;

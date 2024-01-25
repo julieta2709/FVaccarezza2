@@ -6,8 +6,8 @@ import Moreno3 from "../../assets/img/Moreno/Moreno3.png";
 import Moreno4 from "../../assets/img/Moreno/Moreno4.png";
 import "../../styles/Moreno.css";
 import "../../styles/Work.css";
-import CircleFusion from "../Animations/Moreno/CircleFusion";
 import Countdown from "../Animations/Moreno/CountDown";
+import CircleAnimation from "../Animations/Moreno/circleAnimation";
 import Next from "../Buttons/Next";
 import Prev from "../Buttons/Prev";
 import { WorkDataContext } from "./WorkContext";
@@ -89,7 +89,7 @@ const Moreno = () => {
         <div className="countdown-container">
           <img src={Moreno3} alt="Moreno3" className="Moreno3" />
           <Countdown />
-          <CircleFusion />
+          <CircleAnimation />
         </div>
       </div>
     </div>
