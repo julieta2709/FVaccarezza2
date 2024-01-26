@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "../Moreno/circle.css";
 import CircleExpansion from "./CircleExpansion";
 import CircleFusion from "./CircleFusion";
 import CircleCenter from "./circleCenter";
@@ -23,7 +24,7 @@ const CircleAnimation = () => {
   }, [animationStep]);
 
   return (
-    <div>
+    <div className="Circlecontainer">
       {animationStep === 0 && <CircleFusion key="circleFusion" />}
       {animationStep === 1 && <CircleCenter key="circleCenter" />}
       {animationStep === 2 && <CircleExpansion key="circleExpansion" />}

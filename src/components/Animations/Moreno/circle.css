@@ -1,3 +1,4 @@
+/*contenedor principal de la animación*/
 .Circlecontainer {
   width: 78px;
   height: 78px;
@@ -7,8 +8,16 @@
   z-index: 3;
   top: 656px;
   left: 324px;
+  padding: 15px;
 }
-
+.circle-itemContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
 .item {
   position: absolute;
   background: white;

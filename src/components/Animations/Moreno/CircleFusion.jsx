@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import React from "react";
 import "../Moreno/circle.css";
 
@@ -11,7 +11,7 @@ const CircleFusion = () => {
   ];
 
   return (
-    <div className="Circlecontainer">
+    <div >
       {originalPositions.map((position, index) => (
         <Circle key={index} x={position.x} y={position.y} />
       ))}
@@ -31,7 +31,7 @@ const Circle = ({ x, y }) => {
   };
 
   return (
-    <AnimatePresence>
+    <div className="circle-itemContainer">
       <motion.div
         className="item"
         style={{
@@ -51,7 +51,7 @@ const Circle = ({ x, y }) => {
         }}
         viewport={{ once: true }}
       ></motion.div>
-    </AnimatePresence>
+  </div>
   );
 };
 export default CircleFusion;

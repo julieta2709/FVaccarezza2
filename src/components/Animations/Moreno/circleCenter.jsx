@@ -33,12 +33,12 @@ const CircleCenter = ({ startAnimation }) => {
   };
 
   return (
-    <div className="Circlecontainer">
+    <div className="circle-itemContainer">
       <motion.div
         className="item2"
         initial={{ opacity: 1 }}
         animate={controls}
-        transition={springConfig} 
+        transition={springConfig}
         // viewport={{ once: true }}
       ></motion.div>
     </div>
