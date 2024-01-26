@@ -5,9 +5,9 @@ import "../Moreno/circle.css";
 const CircleExpansion = () => {
   const originalPositions = [
     { x: 0, y: 0 },
-    { x: 38, y: 0 },
-    { x: 0, y: 38 },
-    { x: 38, y: 38 },
+    { x: 53, y: 0 },
+    { x: 0, y: 53 },
+    { x: 53, y: 53 },
   ];
 
   return (
@@ -20,8 +20,8 @@ const CircleExpansion = () => {
 };
 
 const Circle = ({ x, y }) => {
-  const diagonalX = x - 19;
-  const diagonalY = y - 19;
+  const diagonalX = x - 26.5;
+  const diagonalY = y - 26.5;
 
   const springConfig = {
     type: "spring",
@@ -34,10 +34,10 @@ const Circle = ({ x, y }) => {
     <div className="circle-itemContainer">
       <motion.div
         className="item"
-        style={{
+        /* style={{
           top: 10,
           left: 10,
-        }}
+        }} */
         whileInView={{
           x: diagonalX,
           y: diagonalY,

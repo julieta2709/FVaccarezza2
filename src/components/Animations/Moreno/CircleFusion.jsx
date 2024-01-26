@@ -5,9 +5,9 @@ import "../Moreno/circle.css";
 const CircleFusion = () => {
   const originalPositions = [
     { x: 0, y: 0 },
-    { x: 38, y: 0 },
-    { x: 0, y: 38 },
-    { x: 38, y: 38},
+    { x: 53, y: 0 },
+    { x: 0, y: 53 },
+    { x: 53, y: 53 },
   ];
 
   return (
@@ -20,8 +20,8 @@ const CircleFusion = () => {
 };
 
 const Circle = ({ x, y }) => {
-  const diagonalX = 19 - x;
-  const diagonalY = 19 - y;
+  const diagonalX = 26.5 - x;
+  const diagonalY = 26.5 - y;
 
   const springConfig = {
     type: "spring",
@@ -41,8 +41,8 @@ const Circle = ({ x, y }) => {
         whileInView={{
           x: diagonalX,
           y: diagonalY,
-          opacity: 0,
-          scale: 0.5,
+          opacity: 1,
+          scale: 2.5,
         }}
         transition={{
           duration: 2,
