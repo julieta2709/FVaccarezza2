@@ -5,9 +5,9 @@ import "../Moreno/circle.css";
 const CircleFusion = () => {
   const originalPositions = [
     { x: 0, y: 0 },
-    { x: 10, y: 0 },
-    { x: 0, y: 10 },
-    { x: 10, y: 10 },
+    { x: 38, y: 0 },
+    { x: 0, y: 38 },
+    { x: 38, y: 38},
   ];
 
   return (
@@ -20,8 +20,16 @@ const CircleFusion = () => {
 };
 
 const Circle = ({ x, y }) => {
-  const diagonalX = 5 - x;
-  const diagonalY = 5 - y;
+  const diagonalX = 19 - x;
+  const diagonalY = 19 - y;
+
+  const springConfig = {
+    type: "spring",
+    damping: 24,
+    stiffness: 256,
+    mass: 1,
+  };
+
   return (
     <AnimatePresence>
       <motion.div
@@ -34,10 +42,12 @@ const Circle = ({ x, y }) => {
           x: diagonalX,
           y: diagonalY,
           opacity: 0,
-          scale:0.5,
+          scale: 0.5,
         }}
         transition={{
           duration: 2,
+          delay: 1,
+          ...springConfig,
         }}
         viewport={{ once: true }}
       ></motion.div>
@@ -45,4 +55,3 @@ const Circle = ({ x, y }) => {
   );
 };
 export default CircleFusion;
-

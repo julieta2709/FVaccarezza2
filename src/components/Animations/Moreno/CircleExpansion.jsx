@@ -5,9 +5,9 @@ import "../Moreno/circle.css";
 const CircleExpansion = () => {
   const originalPositions = [
     { x: 0, y: 0 },
-    { x: 10, y: 0 },
-    { x: 0, y: 10 },
-    { x: 10, y: 10 },
+    { x: 38, y: 0 },
+    { x: 0, y: 38 },
+    { x: 38, y: 38},
   ];
 
   return (
@@ -20,24 +20,34 @@ const CircleExpansion = () => {
 };
 
 const Circle = ({ x, y }) => {
-  const diagonalX = x - 5;
-  const diagonalY = y - 5;
+  const diagonalX = x - 19;
+  const diagonalY = y - 19;
+
+  const springConfig = {
+    type: "spring",
+    damping: 24,
+    stiffness: 256,
+    mass: 1,
+  };
+
   return (
     <AnimatePresence>
       <motion.div
         className="item"
         style={{
-          top: 5,
-          left: 5,
+          top: 10,
+          left: 10,
         }}
         whileInView={{
           x: diagonalX,
           y: diagonalY,
           opacity: 1,
-          scale:1,
+          scale: 1,
         }}
         transition={{
           duration: 2,
+          delay: 1,
+          ...springConfig,
         }}
         viewport={{ once: true }}
       ></motion.div>
