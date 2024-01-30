@@ -1,16 +1,18 @@
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 import "../../../styles/Moreno.css";
 
 const numbersSequence = [1, 3, 7, 12, 9, 10, 6, 7];
 
 const formatNumber = (number) => {
-  const formattedNumber = number.toString().padStart(2, '0');
+  const formattedNumber = number.toString().padStart(2, "0");
   return `(${formattedNumber})`;
 };
 
 const Countdown = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [animationActive, setAnimationActive] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -20,17 +22,31 @@ const Countdown = () => {
     return () => clearInterval(interval);
   }, [currentIndex]);
 
+  const [ref, inView] = useInView({
+    threshold: 0.5,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      setAnimationActive(true);
+    } else {
+      setAnimationActive(false);
+    }
+  }, [inView]);
+
   return (
-    <div className="countdown-Animacontainer">
-      <motion.div
-        className="countdown-text"
-        key={currentIndex}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0 }}
-      >
-        {formatNumber(numbersSequence[currentIndex])}
-      </motion.div>
+    <div className="countdown-Animacontainer" ref={ref}>
+      {animationActive && (
+        <motion.div
+          className="countdown-text"
+          key={currentIndex}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0 }}
+        >
+          {formatNumber(numbersSequence[currentIndex])}
+        </motion.div>
+      )}
     </div>
   );
 };

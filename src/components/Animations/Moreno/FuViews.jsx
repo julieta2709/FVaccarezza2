@@ -10,20 +10,20 @@ const FuViews = () => {
   const containerAnimation = { rotate: [0, 90, 180, 270] };
   const springConfig = { mass: 100, stiffness: 256, damping: 24 };
   const animationItemRectangle = {
-    y: [-5, 8],
-    x: [-5, 8],
+    y: [-2, 3],
+    x: [-2, 3],
   };
   const animationItemPolygon = {
-    y: [5, -8],
-    x: [5, -8],
+    y: [2, -3],
+    x: [2, -3],
   };
   const animationItemEllipse = {
-    y: [5, -8],
-    x: [-5, 8],
+    y: [2, -3],
+    x: [-2, 3],
   };
 
   const [ref, inView] = useInView({
-    threshold: 0.5, // Umbral de visibilidad, ajusta según tus necesidades
+    threshold: 0.5,
   });
 
   const [animationActive, setAnimationActive] = useState(false);
@@ -36,9 +36,8 @@ const FuViews = () => {
     }
   }, [inView]);
 
-
   return (
-    <div ref={ref}>
+    <div className="FuView-AnimationContainer" ref={ref}>
       {animationActive && (
         <motion.ul
           className="FuImg-container"
@@ -48,7 +47,7 @@ const FuViews = () => {
           }}
           transition={{
             duration: 8,
-            // ease: "easeInOut",
+            ease: "easeInOut",
             times: [0, 0.25, 0.5, 0.75, 1],
             repeat: Infinity,
           }}
@@ -59,6 +58,8 @@ const FuViews = () => {
               rotate: animationItemEllipse,
             }}
             transition={{
+            /*   ease: "easeInOut",
+              duration: 8, */
               type: "spring",
               ...springConfig,
               repeat: Infinity,
@@ -73,7 +74,9 @@ const FuViews = () => {
               rotate: animationItemRectangle,
             }}
             transition={{
-              type: "spring",
+          /*     ease: "easeInOut",
+              duration: 8, */
+           type: "spring",
               ...springConfig,
               repeat: Infinity,
               delay: 0.5,
@@ -87,7 +90,9 @@ const FuViews = () => {
               rotate: animationItemPolygon,
             }}
             transition={{
-              type: "spring",
+          /*     ease: "easeInOut",
+              duration: 8, */
+                type: "spring",
               ...springConfig,
               repeat: Infinity,
               delay: 0.5,
