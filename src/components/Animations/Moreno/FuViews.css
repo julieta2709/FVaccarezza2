@@ -8,32 +8,32 @@
   justify-items: center;
   position: relative;
   /* animation: rotateImages 12s cubic-bezier(0.3, 1.3, 0.7, 1.3) infinite; */
-  animation-delay: 0s, 4s, 8s, 12s;
+  /* animation-delay: 0s, 4s, 8s, 12s; */
   background: black;
 }
 .Ellipse {
   grid-column: 1;
   grid-row: 2;
-  animation: moveCenterEllipse 4s ease-in-out infinite;
+  /* animation: moveCenterEllipse 4s ease-in-out infinite; */
 }
 .Rectangle {
   grid-row: 1;
   grid-column: 1 / span 2;
-  animation: moveCenterRectangle 4s ease-in-out infinite;
+  /* animation: moveCenterRectangle 4s ease-in-out infinite; */
 }
 .Polygon {
   grid-column: 2;
   grid-row: 2;
-  -webkit-animation: moveCenterPolygon 4s ease-in-out infinite;
-  animation: moveCenterPolygon 4s ease-in-out infinite;
+/*   -webkit-animation: moveCenterPolygon 4s ease-in-out infinite;
+  animation: moveCenterPolygon 4s ease-in-out infinite; */
 }
 
 .FuImg-container img {
-  animation: rotateImages 12s cubic-bezier(0.3, 1.3, 0.7, 1.3) infinite;
+  /* animation: rotateImages 12s cubic-bezier(0.3, 1.3, 0.7, 1.3) infinite; */
   /* animation-delay: 0s, 4s, 8s, 12s; */
 }
 /*animaciones*/
-@-webkit-keyframes moveCenterPolygon {
+/* @-webkit-keyframes moveCenterPolygon {
     0% {
       -webkit-transform: translate(-100%, -100%);
     }
@@ -54,7 +54,7 @@
   100% {
     transform: translate(-100%, -100%);
   }
-}
+} */
 /* @keyframes moveCenterRectangle {
   0% {
     transform: translate(0, 0);
