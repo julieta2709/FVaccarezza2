@@ -9,6 +9,7 @@ import "../../styles/Work.css";
 import Countdown from "../Animations/Moreno/CountDown";
 import FuViews from "../Animations/Moreno/FuViews";
 import Nmp1 from "../Animations/Moreno/Nmp1";
+import Nmp2 from "../Animations/Moreno/Nmp2";
 import CircleAnimation from "../Animations/Moreno/circleAnimation";
 import Next from "../Buttons/Next";
 import Prev from "../Buttons/Prev";
@@ -87,8 +88,11 @@ const Moreno = () => {
       <div className="WorkIndividualphoto-container">
         <img src={Moreno1} alt="Moreno1" className="Moreno1" />
         <div className="Moreno2-container">
-        <img src={Moreno2} alt="Moreno2" className="Moreno2" />
-        <Nmp1 />
+          <img src={Moreno2} alt="Moreno2" className="Moreno2" />
+          <div className="Nmp-AnimationContainer">
+          <Nmp1 />
+         <Nmp2 />
+          </div>
         </div>
         <img src={Moreno4} alt="Moreno4" className="Moreno4" />
         <div className="countdown-container">

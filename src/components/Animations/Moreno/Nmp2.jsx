@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
-import Nmp1Bg from "../../../assets/img/Moreno/Nmp1Bg.png";
-import Nmp1Pic from "../../../assets/img/Moreno/Nmp1Pic.png";
-import Pilltrack2 from "../../../assets/img/Moreno/Pilltrack2.png";
-import Project2 from "../../../assets/img/Moreno/Project2.png";
+import Nmp2Bg from "../../../assets/img/Moreno/Nmp2Bg.png";
+import Nmp2Project2 from "../../../assets/img/Moreno/Nmp2Project2.png";
+import Skinpro1 from "../../../assets/img/Moreno/Skinpro1.png";
+import Skinpro2 from "../../../assets/img/Moreno/Skinpro2.png";
 import "../../../styles/Moreno.css";
 import "../Moreno/Nmp.css";
 
-const Nmp1 = () => {
+const Nmp2 = () => {
   const [animationActive, setAnimationActive] = useState(false);
 
   const [ref, inView] = useInView({
@@ -30,16 +30,15 @@ const Nmp1 = () => {
     repeatType: "reverse",
     repeatDelay: 1,
   };
-
   return (
     <div ref={ref}>
       {animationActive && (
         <>
-          <img src={Nmp1Bg} alt="Nmp1" className="Nmp1Bg" />
+          <img src={Nmp2Bg} alt="Nmp2Bg" className="Nmp2Bg" />
           <motion.img
-            src={Nmp1Pic}
-            alt="Nmp1Pic"
-            className="Nmp1Pic"
+            src={Skinpro1}
+            alt="Skinpro1"
+            className="Skinpro1"
             initial={{
               opacity: 1,
             }}
@@ -52,9 +51,9 @@ const Nmp1 = () => {
             exit={{ opacity: 1 }}
           />
           <motion.img
-            src={Project2}
-            alt="Project2"
-            className="Project2"
+            src={Nmp2Project2}
+            alt="Nmp2Project2"
+            className="Nmp2Project2"
             initial={{
               opacity: 0,
             }}
@@ -67,9 +66,9 @@ const Nmp1 = () => {
             exit={{ opacity: 0 }}
           />
           <motion.img
-            src={Pilltrack2}
-            alt="Pilltrack2"
-            className="Pilltrack2"
+            src={Skinpro2}
+            alt="Skinpro2"
+            className="Skinpro2"
             initial={{
               opacity: 0,
             }}
@@ -86,4 +85,4 @@ const Nmp1 = () => {
     </div>
   );
 };
-export default Nmp1;
+export default Nmp2;
