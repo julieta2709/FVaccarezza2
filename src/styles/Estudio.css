@@ -1,6 +1,7 @@
 .Estudio1,
 .carroContainer {
-  grid-column: span 2;
+  grid-column: 1 / span 2;
+  width: 100%;
 }
 .Estudio1 {
   grid-row: 1;
@@ -8,7 +9,7 @@
 .carroContainer {
   grid-row: 3;
   position: relative;
-  height: 1000px;
+  height: 62.5rem;
 }
 .Estudio2 {
   grid-row: 2;
@@ -29,10 +30,10 @@
 }
 .EstudioCel-animationContainer {
   align-self: start;
-  margin-left: -3.6rem;
+  margin-left: -28.6rem;
   margin-top: 1.4rem;
   position: relative;
-  width: 130px;
+  width: 8.125rem;
 }
 .Estudiopad1 {
   align-self: center;
@@ -45,11 +46,11 @@
 }
 .carroGif {
   z-index: 2;
-  width: 1081px;
+  width: 67.5625rem;
   height: auto;
 }
 .carroContainer .Belink-container {
   position: absolute;
   bottom: 0;
-  right: 581px;
+  right: 36.3125rem;
 }

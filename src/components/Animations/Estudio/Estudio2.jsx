@@ -5,7 +5,7 @@ import Estudiocel1V3 from "../../../assets/img/Estudio/Estudiocel1V3.png";
 import Estudiocel1V4 from "../../../assets/img/Estudio/Estudiocel1V4.png";
 import Estudiocel1V5 from "../../../assets/img/Estudio/Estudiocel1V5.png";
 import Estudiocel1V6 from "../../../assets/img/Estudio/Estudiocel1V6.png";
-import "../Estudio1.css";
+import "../Estudio/Estudio1.css";
 
 const EstudioCelImages = [
   Estudiocel1V2,

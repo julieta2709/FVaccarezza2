@@ -1,17 +1,17 @@
 .FuView-AnimationContainer {
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   z-index: 3;
-  top: 992px;
-  left: 487px;
+  top: 62rem;
+  left: 30.4375rem;
   position: absolute;
   overflow: hidden;
-  padding: 3px;
+  padding: 0.1875rem;
 }
 .FuImg-container {
   display: grid;
-  grid-template-columns: 8px 8px;
-  grid-template-rows: 8px 8px;
+  grid-template-columns: 0.5rem 0.5rem;
+  grid-template-rows: 0.5rem 0.5rem;
   align-items: center;
   justify-items: center;
   position: absolute;

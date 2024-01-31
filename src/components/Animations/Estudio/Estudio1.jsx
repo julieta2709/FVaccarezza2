@@ -3,7 +3,7 @@ import React from "react";
 import sillon from "../../../assets/img/Estudio/sillon.png";
 import sillonBanner from "../../../assets/img/Estudio/sillonBanner.png";
 import sillonHeader from "../../../assets/img/Estudio/sillonHeader.png";
-import "../Estudio1.css";
+import "../Estudio/Estudio1.css";
 
 const Estudio1 = () => {
   return (

@@ -13,6 +13,8 @@
   width: 67.5625rem;
   height: 394.375rem;
   justify-content: space-around;
+  grid-row: 1;
+  grid-column: 1 / span 2;
 }
 .section1-container {
   display: grid;
@@ -20,6 +22,7 @@
   grid-template-columns: auto auto;
   row-gap: 2.9375rem;
   column-gap: 8.5625rem;
+  width: 100%;
 }
 .Misc1 {
   grid-row: 1;

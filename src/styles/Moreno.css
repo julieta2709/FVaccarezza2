@@ -22,27 +22,28 @@
   grid-row: 2;
   z-index: 2;
   position: relative;
+  width: 100%;
 }
 .countdown-Animacontainer {
   position: absolute;
   z-index: 3;
-  top: 56px;
-  left: 364px;
+  top: 3.5rem;
+  left: 15rem;
 }
 .countdown-text {
   font-family: "FraktionSansLight";
   color: #fff;
-  font-size: 26.042px;
-  letter-spacing: -1.302px;
+  font-size: 1.625rem;
+  letter-spacing: -0.0814rem;
   line-height: 86.1%;
 }
 .Nmp-AnimationContainer {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
-  gap: 30px;
-  width: 355px;
-  margin-top: -287px;
-  margin-left: 164px;
+  gap: 1.875rem;
+  width: 22.1875rem;
+  margin-top: -17.9375rem;
+  margin-left: 10.25rem;
 }
 

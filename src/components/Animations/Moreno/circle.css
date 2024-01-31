@@ -1,18 +1,18 @@
 /*contenedor principal de la animación*/
 .Circlecontainer {
-  width: 78px;
-  height: 78px;
+  width: 4.875rem;
+  height: 4.875rem;
   overflow: hidden;
   margin: 0;
   position: absolute;
   z-index: 3;
-  top: 656px;
-  left: 324px;
-  padding: 15px;
+  top: 41rem;
+  left: 20.25rem;
+  padding: 0.9375rem;
 }
 .circle-itemContainer {
-  width: 78px;
-  height: 78px;
+  width: 4.875rem;
+  height: 4.875rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,15 +22,15 @@
   position: absolute;
   background: white;
   border-radius: 50%;
-  width: 15px;
-  height: 15px;
+  width: 0.9375rem;
+  height: 0.9375rem;
   z-index: 4;
 }
 .item2 {
   position: absolute;
   background: white;
   border-radius: 50%;
-  width: 38px;
-  height: 38px;
+  width: 2.375rem;
+  height: 2.375rem;
   z-index: 4;
 }

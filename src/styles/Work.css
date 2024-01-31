@@ -61,9 +61,11 @@
 .Work-ItemText {
   transition: transform 2s cubic-bezier(0.21, 0.87, 0.35, 1);
 }
-.Work-ItemNumber:hover,
 .Work-ItemText:hover {
   transform: translateX(10%);
+}
+.Work-ItemNumber:hover {
+  transform: translateX(-30%);
 }
 .Work-ItemText:hover {
   color: #e52421;
@@ -77,6 +79,7 @@
   grid-gap: 3.875rem 5rem;
   margin-top: 6.125rem;
   justify-content: center;
+  justify-items: center;
 }
 .Work-FrogContainer,
 .Work-EstudioContainer,
