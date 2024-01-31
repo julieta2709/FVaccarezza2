@@ -108,7 +108,10 @@ function App() {
             </>
           }
         />
-        <Route path="/photography" element={<Photography />} />
+        <Route
+          path="/photography"
+          element={<Photography className="Photography-container" />}
+        />
       </Routes>
       <ButtonUp />
     </div>
