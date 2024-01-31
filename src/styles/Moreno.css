@@ -5,14 +5,14 @@
 .Moreno1 {
   grid-row: 1;
 }
-.Moreno2 {
+.Moreno2-container {
   grid-row: 2;
 }
-.Moreno2 {
+.Moreno2-container2 {
   grid-column: 1;
   justify-self: center;
 }
-.Moreno3 {
+.Moreno3, .Moreno2 {
   position: relative;
 }
 /*Animación cuenta regresiva*/

@@ -7,20 +7,7 @@ import Rectangle from "../../../assets/img/Moreno/Rectangle.png";
 import "../Moreno/FuViews.css";
 
 const FuViews = () => {
-  const containerAnimation = { rotate: [0, 90, 180, 270] };
-  const springConfig = { mass: 100, stiffness: 256, damping: 24 };
-  const animationItemRectangle = {
-    y: [-2, 3],
-    x: [-2, 3],
-  };
-  const animationItemPolygon = {
-    y: [2, -3],
-    x: [2, -3],
-  };
-  const animationItemEllipse = {
-    y: [2, -3],
-    x: [-2, 3],
-  };
+  const springConfig = { mass: 200, stiffness: 256, damping: 24 };
 
   const [ref, inView] = useInView({
     threshold: 0.5,
@@ -39,68 +26,53 @@ const FuViews = () => {
   return (
     <div className="FuView-AnimationContainer" ref={ref}>
       {animationActive && (
-        <motion.ul
-          className="FuImg-container"
-          animate="rotate"
-          variants={{
-            rotate: containerAnimation,
-          }}
-          transition={{
-            duration: 8,
-            ease: "easeInOut",
-            times: [0, 0.25, 0.5, 0.75, 1],
-            repeat: Infinity,
-          }}
-        >
-          <motion.li
+        <div className="FuImg-container">
+          <motion.img
             className="Ellipse"
-            variants={{
-              rotate: animationItemEllipse,
+            src={Ellipse}
+            alt="Ellipse"
+            initial={{ rotate: 0}}
+            animate={{
+              rotate: [0, 90, 180, 270, 360],
             }}
             transition={{
-            /*   ease: "easeInOut",
-              duration: 8, */
               type: "spring",
               ...springConfig,
               repeat: Infinity,
               delay: 0.5,
             }}
-          >
-            <img src={Ellipse} alt="Ellipse" />
-          </motion.li>
-          <motion.li
+          />
+          <motion.img
             className="Rectangle"
-            variants={{
-              rotate: animationItemRectangle,
+            src={Rectangle}
+            alt="Rectangle"
+            initial={{ rotate: 0 }}
+            animate={{
+              rotate: [0, 90, 180, 270, 360],
             }}
             transition={{
-          /*     ease: "easeInOut",
-              duration: 8, */
-           type: "spring",
+              type: "spring",
               ...springConfig,
               repeat: Infinity,
               delay: 0.5,
             }}
-          >
-            <img src={Rectangle} alt="Rectangle" />
-          </motion.li>
-          <motion.li
+          />
+          <motion.img
             className="Polygon"
-            variants={{
-              rotate: animationItemPolygon,
+            src={Polygon}
+            alt="Polygon"
+            initial={{ rotate: 0 }}
+            animate={{
+              rotate: [0, 90, 180, 270, 360],
             }}
             transition={{
-          /*     ease: "easeInOut",
-              duration: 8, */
-                type: "spring",
+              type: "spring",
               ...springConfig,
               repeat: Infinity,
               delay: 0.5,
             }}
-          >
-            <img src={Polygon} alt="Polygon" />
-          </motion.li>
-        </motion.ul>
+          />
+        </div>
       )}
     </div>
   );

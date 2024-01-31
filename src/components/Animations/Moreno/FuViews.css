@@ -6,6 +6,7 @@
   left: 487px;
   position: absolute;
   overflow: hidden;
+  padding: 3px;
 }
 .FuImg-container {
   display: grid;

@@ -1,0 +1,24 @@
+.Nmp-container {
+  position: absolute;
+}
+.Nmp1Bg,
+.Nmp1Pic,
+.Project2,
+.Pilltrack2 {
+  position: absolute;
+  top:0;
+  left:0;
+}
+.Project2 {
+  margin-left: 3.6px;
+  margin-top: 4.8px;
+}
+.Nmp1Pic {
+  z-index: 2;
+}
+.Project2 {
+  z-index: 3;
+}
+.Pilltrack2 {
+  z-index: 4;
+}
