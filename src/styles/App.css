@@ -33,11 +33,11 @@ body {
   background-position: top left;
   background-repeat: no-repeat;
 }
-.BackgroundAbout {
+/* .BackgroundAbout {
   background-image: url("../assets/img/BG/About2BG.svg");
   background-position: center left;
   background-repeat: no-repeat;
-}
+} */
 
 .BackgroundWork {
   position: relative;

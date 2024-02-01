@@ -87,8 +87,16 @@
 }
 /*Layout styles*/
 .Aboutme-container {
-  display: grid;
- margin-left: 13.3125rem;
+  display: flex;
+  /* margin-left: 13.3125rem; */
+  z-index: 2;
+  width: 100%;
+  flex-direction: column;
+  
+/*   width: 100%;
+  background-image: url("../assets/img/BG/About2BG.svg");
+  background-position: center left;
+  background-repeat: no-repeat; */
 }
 /*presentación*/
 .Aboutme-maininfo {
@@ -156,6 +164,15 @@
   margin-top: 1.25rem;
 }
 /*contenedor general de habilidades*/
+/*imgBG*/
+.Aboutme-Maincontainer {
+  width: 100%;
+}
+.About2BG {
+  position: relative;
+  z-index: 1;
+  margin-top: 100rem;
+}
 .Aboutme-2356container {
   display: grid;
   grid-template-rows: auto auto auto;

@@ -33,11 +33,11 @@ function App() {
                 </div>
               </div>
               <WorkContext>
-                <div className="BackgroundAbout">
+                {/* <div className="BackgroundAbout"> */}
                   <div id="about">
                     <AboutMe />
                   </div>
-                </div>
+                {/* </div> */}
                 <div className="BackgroundWork">
                   <div id="work">
                     <WorkContainer />
