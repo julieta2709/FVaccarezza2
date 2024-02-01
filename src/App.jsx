@@ -27,21 +27,15 @@ function App() {
           path="/"
           element={
             <>
-              <div className="BackgroundHome">
-                <div id="home">
-                  <Home />
-                </div>
+              <div id="home" style={{ width: "100%" }}>
+                <Home />
               </div>
               <WorkContext>
-                {/* <div className="BackgroundAbout"> */}
-                  <div id="about">
-                    <AboutMe />
-                  </div>
-                {/* </div> */}
-                <div className="BackgroundWork">
-                  <div id="work">
-                    <WorkContainer />
-                  </div>
+                <div id="about" style={{ width: "100%" }}>
+                  <AboutMe />
+                </div>
+                <div id="work" style={{ width: "100%" }}>
+                  <WorkContainer />
                 </div>
                 <div className="IndividualWork-container">
                   <div
@@ -99,11 +93,9 @@ function App() {
                     <Misc />
                   </div>
                 </div>
-                <div className="BackgroundContact">
-                  <div id="contact">
+                  <div id="contact" style={{ width: "100%" }}>
                     <Contact />
                   </div>
-                </div>
               </WorkContext>
             </>
           }

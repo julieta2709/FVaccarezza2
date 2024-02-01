@@ -35,7 +35,7 @@ const NavBar = () => {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      const offset = 200;
+      const offset = 170;
       const elementPosition =
         section.getBoundingClientRect().top + window.scrollY;
       window.scrollTo({

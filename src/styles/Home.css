@@ -2,16 +2,19 @@
 .Home-container {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 48.375rem;
+  margin-bottom: 8.75rem;
   display: flex;
   justify-content: center;
+  background-image: url("../assets/img/BG/HomeLeft.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  justify-self: center;
 }
 .HomePF-Container {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: auto 85% auto;
-  height: 100vh;
-  margin: 0;
+  grid-template-columns: 6.25rem 56rem 6.25rem;
   justify-items: center;
   align-content: center;
   justify-content: space-around;
@@ -30,7 +33,8 @@
   grid-row: 1 / span 2;
 }
 /*fonts styles*/
-h2, .year {
+h2,
+.year {
   font-family: "Magilio";
   font-size: 28rem;
   font-weight: normal;
@@ -44,10 +48,10 @@ h2, .year {
   justify-self: center;
   align-self: center;
 }
-h1, .portfolio {
-  font-family: "PP-Hatton";
+h1,
+.portfolio {
+  font-family: "PP-Hattonbold";
   font-size: 7rem;
-  font-weight: bold;
   margin: 0;
   line-height: 1;
   grid-column: 2 / span 1;
@@ -57,7 +61,7 @@ h1, .portfolio {
   z-index: 10;
   justify-self: center;
   align-self: center;
-  color: #3A3A39;
+  color: #3a3a39;
 }
 .fv {
   font-family: "Montserrat";
@@ -72,8 +76,8 @@ h1, .portfolio {
 /*animaciones*/
 .portfolio.animate-portfolio {
   animation-name: moveUp;
-  animation-duration: 2s; 
-  animation-timing-function: cubic-bezier(0.21, 0.87, 0.35, 1); 
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.21, 0.87, 0.35, 1);
 }
 
 @keyframes moveUp {

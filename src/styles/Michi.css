@@ -8,6 +8,7 @@
 }
 .Michi1 {
   grid-row: 1;
+  z-index: 2;
 }
 .Michi2 {
   grid-row: 2 / span 2;
@@ -25,7 +26,7 @@
 .MichiAnimation-container {
   grid-column: 1;
   grid-row: 4;
-  z-index: 1;
+  z-index: 3;
   justify-self: flex-start;
   margin-top: -15rem;
   margin-left: -3.5rem;
@@ -34,10 +35,12 @@
   position: relative;
   border-radius: 0.419rem;
   border: 0.25rem solid #284895;
+  
 }
 .Michi5 {
   grid-row: 3;
   margin-top: -4rem;
+  z-index: 2;
 }
 .Michi6 {
   grid-row: 5;
@@ -70,4 +73,17 @@
   100% {
     opacity: 1;
   }
+}
+/*imgBG*/
+.MichiBgR {
+  position: absolute;
+  right: 0;
+  top: 35rem;
+  z-index: 1;
+}
+.MichiBgL {
+  position: absolute;
+  left: 0;
+  bottom: 24rem;
+  z-index: 1;
 }

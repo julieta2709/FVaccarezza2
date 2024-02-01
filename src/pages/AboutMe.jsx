@@ -1,6 +1,7 @@
 import React from "react";
 import About2BG from "../../src/assets/img/BG/About2BG.svg";
-import FVpic from "../assets/img/FVpic.svg";
+import AboutBG from "../../src/assets/img/BG/AboutBG.svg";
+import FVpic from "../assets/img/FVpic.png";
 import ae from "../assets/img/icons/ae.svg";
 import ai from "../assets/img/icons/ai.svg";
 import cinema from "../assets/img/icons/cinema.svg";
@@ -13,6 +14,7 @@ const AboutMe = () => {
   return (
     <div className="Aboutme-Maincontainer">
         <img src={About2BG} alt="AboutMeBg" className="About2BG" />
+        <img src={AboutBG} alt="AboutMeBg" className="AboutBG" />
       <div className="Aboutme-container">
         <div className="Aboutme-maininfo">
           <div className="Aboutme-maininfoText">

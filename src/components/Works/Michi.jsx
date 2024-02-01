@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import MichiBgVectorL from "../../assets/img/BG/MichiBgVectorL.svg";
+import MichiBgVectorR from "../../assets/img/BG/MichiBgVectorR.svg";
 import Michi1 from "../../assets/img/Michi/Michi1.png";
 import Michi2 from "../../assets/img/Michi/Michi2.png";
 import Michi3 from "../../assets/img/Michi/Michi3.png";
@@ -77,6 +79,8 @@ const Michi = () => {
           <p className="WorkTitleDate">{date}</p>
         </div>
       </div>
+      <img src={MichiBgVectorR} alt="MichiBgR" className="MichiBgR" />
+      <img src={MichiBgVectorL} alt="MichiBgL" className="MichiBgL" />
       <div className="WorkIndividualphoto-container">
         <img src={Michi1} alt="Michi1" className="Michi1" />
         <img src={Michi2} alt="Michi2" className="Michi2" />

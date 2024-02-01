@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import BrokeBgVectorL from "../../assets/img/BG/BrokeBgVectorL.svg";
+// import BrokeBgVectorR from "../../assets/img/BG/BrokeBgVectorR.svg";
 import Broke1 from "../../assets/img/Broke/Broke1.png";
 import Broke10 from "../../assets/img/Broke/Broke10.png";
 import Broke2 from "../../assets/img/Broke/Broke2.png";
@@ -81,6 +83,8 @@ const Broke = () => {
           <p className="WorkTitleDate">{date}</p>
         </div>
       </div>
+      <img src={BrokeBgVectorL} alt="BrokeBgL" className="BrokeBgL" />
+      {/* <img src={BrokeBgVectorR} alt="BrokeBgR" className="BrokeBgR" /> */}
       <div className="WorkIndividualphoto-container">
         <img src={Broke1} alt="Broke1" className="Broke1" />
         <div className="broke-column1">

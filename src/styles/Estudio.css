@@ -5,6 +5,7 @@
 }
 .Estudio1 {
   grid-row: 1;
+  z-index: 2;
 }
 .carroContainer {
   grid-row: 3;
@@ -53,4 +54,17 @@
   position: absolute;
   bottom: 0;
   right: 36.3125rem;
+}
+/*imgBg*/
+.eclipse  {
+  position: absolute;
+  right: 0;
+  align-self: center;
+  z-index: 1;
+}
+.EstudioBgR {
+  position: absolute;
+  right: 0;
+  top:75rem;
+  z-index: 1;
 }

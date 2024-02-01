@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import MiscBgVectorR from "../../assets/img/BG/MiscBgVectorR.svg";
 import Misc1 from "../../assets/img/Misc/Misc1.png";
 import Misc10 from "../../assets/img/Misc/Misc10.png";
 import Misc11 from "../../assets/img/Misc/Misc11.png";
@@ -74,6 +75,7 @@ const Misc = () => {
           <p className="WorkTitleDate">{date}</p>
         </div>
       </div>
+      <img src={MiscBgVectorR} alt="MiscBgR" className="MiscBgR" />
       <div className="WorkIndividualphoto-container">
         <div className="Misc-MainContainer">
           <div className="Misc-section1">

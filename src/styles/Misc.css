@@ -27,6 +27,7 @@
 .Misc1 {
   grid-row: 1;
   grid-column: span 2;
+  z-index: 2;
 }
 .Misc2,
 .Misc3 {
@@ -51,4 +52,11 @@
 }
 .Misc14 {
   margin-top: 3.125rem;
+}
+/*imgBG*/
+.MiscBgR {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 39rem;
 }

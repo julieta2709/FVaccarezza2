@@ -4,6 +4,7 @@
 }
 .Opame1 {
   grid-row: 1;
+  z-index: 2;
 }
 .Opame2,
 .Opame7,
@@ -77,4 +78,23 @@
   align-self: start;
   margin-right: -5rem;
   margin-top: 1rem;
+}
+/*imgBg*/
+.eclipse {
+  position: absolute;
+  right: 0;
+  align-self: center;
+  z-index: 1;
+}
+.OpameBgR {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  top: 30rem;
+}
+.OpameBgL {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  bottom: 60rem;
 }

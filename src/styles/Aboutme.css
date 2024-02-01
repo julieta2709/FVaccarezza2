@@ -86,23 +86,38 @@
   font-weight: 200;
 }
 /*Layout styles*/
+/*contenedor general*/
+.Aboutme-Maincontainer {
+  width: 100%;
+  position: relative;
+  margin-bottom: 12rem;
+}
+/*imgBG*/
+.About2BG {
+  z-index: 1;
+  margin-top: 75rem;
+  position: absolute;
+}
+.AboutBG {
+  z-index: 1;
+  position: absolute;
+  top:-20rem;
+  right: 0;
+}
 .Aboutme-container {
   display: flex;
-  /* margin-left: 13.3125rem; */
-  z-index: 2;
   width: 100%;
   flex-direction: column;
-  
-/*   width: 100%;
-  background-image: url("../assets/img/BG/About2BG.svg");
-  background-position: center left;
-  background-repeat: no-repeat; */
+  justify-content: center;
+  /* margin-left: 13.3125rem; */
 }
 /*presentación*/
 .Aboutme-maininfo {
   display: grid;
   grid-template-rows: 3.94rem 17.875rem 3.94rem;
-  grid-template-columns: 47.875rem auto;
+  grid-template-columns: 53rem 32rem;
+  justify-items: center;
+  justify-content: center;
 }
 .Aboutme-introName,
 .Aboutme-name,
@@ -121,9 +136,9 @@
 }
 .Aboutme-maininfo-FVpic {
   grid-column: 2;
-  grid-row: span 3;
-  margin-left: 18.355rem;
-  margin-top: -17.5rem;
+  grid-row: 2;
+  align-self: center;
+  z-index: 2;
 }
 .Aboutme-maininfoText {
   display: grid;
@@ -137,7 +152,7 @@
   grid-template-rows: auto 7.875rem 8.5625rem;
   grid-template-columns: 4.875rem 74.25rem;
   height: 20.625rem;
-  width: 100%;
+  justify-content: center;
 }
 .Aboutme-number1 {
   grid-row: span 3;
@@ -164,36 +179,34 @@
   margin-top: 1.25rem;
 }
 /*contenedor general de habilidades*/
-/*imgBG*/
-.Aboutme-Maincontainer {
-  width: 100%;
-}
-.About2BG {
-  position: relative;
-  z-index: 1;
-  margin-top: 100rem;
-}
+
 .Aboutme-2356container {
   display: grid;
   grid-template-rows: auto auto auto;
-  grid-template-columns: auto auto;
+  grid-template-columns: 43.8125rem 43.8125rem;
   height: 103.875rem;
-  width: 98rem;
+  justify-content: center;
+  /* width: 98rem; */
 }
 .Aboutme-3,
 .Aboutme-6 {
   grid-row: 1;
-  grid-column: span 2;
 }
 .Aboutme-2,
 .Aboutme-5 {
   grid-row: 2;
-  grid-column: span 2;
+}
+.Aboutme-3, .Aboutme-5 {
+  grid-column: 1;
+}
+.Aboutme-2, .Aboutme-6 {
+  grid-column: 2;
+  margin-left: 5rem;
 }
 /*contact*/
 .Aboutme-contact {
   grid-row: 3;
-  grid-column: 1;
+  grid-column: 1 / span 2;
   display: flex;
   flex-direction: column;
   margin-top: -5.5rem;

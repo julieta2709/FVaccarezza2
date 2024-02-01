@@ -33,7 +33,6 @@ const Home = React.memo(() => {
   }, []);
 
   return (
-    <div className="BackgroundHome"> 
       <div className="Home-container">
         <div className="HomePF-Container">
           <div className="redCircle">
@@ -47,7 +46,6 @@ const Home = React.memo(() => {
           </div>
         </div>
       </div>
-    </div>
   );
 });
 export default Home;

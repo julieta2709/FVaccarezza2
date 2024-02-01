@@ -7,6 +7,11 @@
   margin-top: 6.125rem;
   justify-content: center;
 } */
+.Work-BrokeContainer  {
+  background-image: url("../assets/img/BG/BrokeBgVectorR.svg");
+  background-position: center right;
+  background-repeat: no-repeat;
+}
 .Broke1 {
   grid-row: 1;
   grid-column: span 2;
@@ -55,4 +60,11 @@
   justify-self: flex-start;
   margin-left: -7rem;
   margin-top: -17rem;
+}
+/*imgBG*/
+.BrokeBgL {
+  position: absolute;
+  z-index: 1;
+  top: 35rem;
+  left: 0;
 }

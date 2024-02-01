@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import EstudioBgVectorR from "../../assets/img/BG/EstudioBgVectorR.svg";
+import eclipse from "../../assets/img/BG/eclipse.png";
 import Estudio1 from "../../assets/img/Estudio/Estudio1.png";
 import Estudio2 from "../../assets/img/Estudio/Estudio2.png";
 import Estudio3 from "../../assets/img/Estudio/Estudio3.png";
@@ -68,6 +70,7 @@ const Estudio = () => {
             <span className="Work-NumberIndividual">{index}</span>
             <span className="Work-TextIndividual">{title}</span>
           </div>
+          <img src={eclipse} alt="eclipse" className="eclipse" />
           <div className="Next" onClick={handleNextClick}>
             <Next />
           </div>
@@ -81,6 +84,7 @@ const Estudio = () => {
           <p className="WorkTitleDate">{date}</p>
         </div>
       </div>
+      <img src={EstudioBgVectorR} alt="Estudiobg" className="EstudioBgR"></img>
       <div className="WorkIndividualphoto-container">
         <img src={Estudio1} alt="Estudio1" className="Estudio1" />
         <img src={Estudio2} alt="Estudio2" className="Estudio2" />
