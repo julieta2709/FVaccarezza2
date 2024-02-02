@@ -77,11 +77,11 @@
 .Work-ItemText {
   transition: transform 2s cubic-bezier(0.21, 0.87, 0.35, 1);
 }
-.Work-ItemText:hover {
+.Work-ItemLink:hover .Work-ItemText {
   transform: translateX(10%);
 }
-.Work-ItemNumber:hover {
-  transform: translateX(-30%);
+.Work-ItemLink:hover .Work-ItemNumber {
+  transform: translateX(-10%);
 }
 .Work-ItemText:hover {
   color: #e52421;

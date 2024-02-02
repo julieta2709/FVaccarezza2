@@ -1,8 +1,25 @@
-import React, { useEffect } from "react";
-import RedCircle from "../assets/img/icons/RedCircle";
+import React from "react";
+import RedCircle from "../assets/img/icons/RedCircle.svg";
+// import RedCircle from "../assets/img/icons/RedCircle";
 import "../styles/Home.css";
 
-const Home = React.memo(() => {
+const Home = () => {
+  
+  return (
+      <div className="Home-container">
+        <div className="HomePF-Container">
+        <img src={RedCircle} alt="RedCircle" className="redCircle" />
+          <h1 className="portfolio">PORTFOLIO.</h1>
+          <h2 className="year">2024</h2>
+          <p className="fv">FEDERICO VACCAREZZA</p>
+      <img src={RedCircle} alt="RedCircle" className="redCircle" />
+        </div>
+      </div>
+  );
+};
+export default Home;
+
+/* const Home = React.memo(() => {
   useEffect(() => {
     const handleScroll = () => {
       const portfolioElement = document.querySelector(".portfolio");
@@ -48,4 +65,4 @@ const Home = React.memo(() => {
       </div>
   );
 });
-export default Home;
+export default Home; */

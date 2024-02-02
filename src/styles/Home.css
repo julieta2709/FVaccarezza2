@@ -74,7 +74,22 @@ h1,
   line-height: 10;
 }
 /*animaciones*/
-.portfolio.animate-portfolio {
+.HomePF-Container:hover .portfolio {
+  transform: translateY(7%);
+}
+
+.HomePF-Container:hover .year {
+  transform: translateY(-7%);
+}
+.HomePF-Container:hover .redCircle {
+  transform: translateY(-50%);
+}
+.portfolio,
+.redCircle,
+.year {
+  transition: transform 2s cubic-bezier(0.21, 0.87, 0.35, 1);
+}
+/* .portfolio.animate-portfolio {
   animation-name: moveUp;
   animation-duration: 2s;
   animation-timing-function: cubic-bezier(0.21, 0.87, 0.35, 1);
@@ -89,4 +104,4 @@ h1,
     transform: translateY(0);
     opacity: 1;
   }
-}
+} */
