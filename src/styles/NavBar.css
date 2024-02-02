@@ -7,6 +7,7 @@
   min-height: 6.25rem;
   position: fixed;
   background-image: url("../assets/img/BG/TextureNavBar.svg");
+  background-size: cover;
 }
 
 .navbar {
@@ -51,10 +52,10 @@
   color:  #e52421;
 }
 
-@media screen and (max-width: 768px) {
-  .nav-menu {
+@media screen and (width <= 768px) {
+/*   .nav-menu {
     display: none;
-  }
+  } */
   .nav-menu.active {
     display: flex;
     margin: 1rem;
@@ -65,19 +66,19 @@
     right: 0%;
     width: 60%;
     border-radius: 1.25rem;
-    background-color: #e2e2e2;
+    background-color: #f8f4ef;
   }
   .navbar-menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 2.5rem;
-    color: #333;
+    color: #e52421;
     cursor: pointer;
     text-decoration: none;
-    background-color: #ffffff;
+    background-color: #f8faef;
     padding: 0.0625rem;
-    border: #333;
+    border: #e52421;
     border-radius: 0.3125rem;
     border-style: solid;
     margin-left: 0.1875rem;

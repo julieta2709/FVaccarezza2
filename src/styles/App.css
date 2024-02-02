@@ -36,7 +36,7 @@ body {
   margin: 0 auto;
   flex-shrink: 0;
   background-color: #f8f4ef;
-  background-blend-mode: overlay; 
+  background-blend-mode: overlay;
   background-image: url("../assets/img/Texture.png");
   z-index: 10;
 }
@@ -105,4 +105,25 @@ body {
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+/*medias querys*/
+@media screen and (width <= 576px) {
+  body {
+    font-size: 4.8px;
+  }
+}
+@media screen and (576px > width <= 768px) {
+  body {
+    font-size: 6px;
+  }
+}
+@media screen and (768px > width <= 1024px) {
+  body {
+    font-size: 8.5px;
+  }
+}
+@media screen and (1024px > width <= 1200px) {
+  body {
+    font-size: 10px;
+  }
 }

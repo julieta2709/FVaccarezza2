@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import "../styles/NavBar.css";
 
@@ -65,14 +64,15 @@ const NavBar = () => {
           PF 2024 FV
         </Links>
       </div>
-      <div className="navbar-menu" onClick={handleToggleMenu}>
+ {/*      <div className="navbar-menu" onClick={handleToggleMenu}>
         {showMenu ? (
           <FaTimes className="menu-icon" />
         ) : (
           <FaBars className="menu-icon" />
         )}
-      </div>
-      <ul className={showMenu ? "nav-menu active" : "nav-menu"}>
+      </div> */}
+      {/* className={showMenu ? "nav-menu active" : "nav-menu"} */}
+      <ul className="nav-menu">
         <li className="nav-item">
           <Links
             section="home"

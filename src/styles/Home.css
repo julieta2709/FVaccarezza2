@@ -89,19 +89,9 @@ h1,
 .year {
   transition: transform 2s cubic-bezier(0.21, 0.87, 0.35, 1);
 }
-/* .portfolio.animate-portfolio {
-  animation-name: moveUp;
-  animation-duration: 2s;
-  animation-timing-function: cubic-bezier(0.21, 0.87, 0.35, 1);
+/*media query*/
+@media screen and (width <= 768px) {
+  h1, .portfolio, h2, .year {
+    font-size: 6px;
+  }
 }
-
-@keyframes moveUp {
-  from {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-} */
