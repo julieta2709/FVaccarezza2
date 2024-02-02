@@ -21,91 +21,93 @@ import Opame from "./components/Works/Opame";
 function App() {
   return (
     <div className="App-container">
-      <Header />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <div id="home" style={{ width: "100%" }}>
-                <Home />
-              </div>
-              <WorkContext>
-                <div id="about" style={{ width: "100%" }}>
-                  <AboutMe />
+      <div className="overlay">
+        <Header />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <div id="home" style={{ width: "100%" }}>
+                  <Home />
                 </div>
-                <div id="work" style={{ width: "100%" }}>
-                  <WorkContainer />
-                </div>
-                <div className="IndividualWork-container">
-                  <div
-                    id="frog"
-                    style={{ width: "100%", marginTop: "11.125rem" }}
-                  >
-                    <Frog />
+                <WorkContext>
+                  <div id="about" style={{ width: "100%" }}>
+                    <AboutMe />
                   </div>
-                  <div
-                    id="estudio"
-                    style={{ width: "100%", marginTop: "11.125rem" }}
-                  >
-                    <Estudio />
+                  <div id="work" style={{ width: "100%" }}>
+                    <WorkContainer />
                   </div>
-                  <div
-                    id="moreno"
-                    style={{ width: "100%", marginTop: "11.125rem" }}
-                  >
-                    <Moreno />
+                  <div className="IndividualWork-container">
+                    <div
+                      id="frog"
+                      style={{ width: "100%", marginTop: "11.125rem" }}
+                    >
+                      <Frog />
+                    </div>
+                    <div
+                      id="estudio"
+                      style={{ width: "100%", marginTop: "11.125rem" }}
+                    >
+                      <Estudio />
+                    </div>
+                    <div
+                      id="moreno"
+                      style={{ width: "100%", marginTop: "11.125rem" }}
+                    >
+                      <Moreno />
+                    </div>
+                    <div
+                      id="opame"
+                      style={{ width: "100%", marginTop: "11.125rem" }}
+                    >
+                      <Opame />
+                    </div>
+                    <div
+                      id="michi"
+                      style={{ width: "100%", marginTop: "11.125rem" }}
+                    >
+                      <Michi />
+                    </div>
+                    <div
+                      id="broke"
+                      style={{ width: "100%", marginTop: "11.125rem" }}
+                    >
+                      <Broke />
+                    </div>
+                    <div
+                      id="kp"
+                      style={{ width: "100%", marginTop: "11.125rem" }}
+                    >
+                      <Kp />
+                    </div>
+                    <div
+                      id="logofolio"
+                      style={{ width: "100%", marginTop: "11.125rem" }}
+                    >
+                      <Logofolio />
+                    </div>
+                    <div
+                      id="misc"
+                      style={{ width: "100%", marginTop: "11.125rem" }}
+                    >
+                      <Misc />
+                    </div>
                   </div>
-                  <div
-                    id="opame"
-                    style={{ width: "100%", marginTop: "11.125rem" }}
-                  >
-                    <Opame />
-                  </div>
-                  <div
-                    id="michi"
-                    style={{ width: "100%", marginTop: "11.125rem" }}
-                  >
-                    <Michi />
-                  </div>
-                  <div
-                    id="broke"
-                    style={{ width: "100%", marginTop: "11.125rem" }}
-                  >
-                    <Broke />
-                  </div>
-                  <div
-                    id="kp"
-                    style={{ width: "100%", marginTop: "11.125rem" }}
-                  >
-                    <Kp />
-                  </div>
-                  <div
-                    id="logofolio"
-                    style={{ width: "100%", marginTop: "11.125rem" }}
-                  >
-                    <Logofolio />
-                  </div>
-                  <div
-                    id="misc"
-                    style={{ width: "100%", marginTop: "11.125rem" }}
-                  >
-                    <Misc />
-                  </div>
-                </div>
                   <div id="contact" style={{ width: "100%" }}>
                     <Contact />
                   </div>
-              </WorkContext>
-            </>
-          }
-        />
-        <Route
-          path="/photography"
-          element={<Photography className="Photography-container" />}
-        />
-      </Routes>
-      <ButtonUp />
+                </WorkContext>
+              </>
+            }
+          />
+          <Route
+            path="/photography"
+            element={<Photography className="Photography-container" />}
+          />
+        </Routes>
+        <ButtonUp />
+      </div>
     </div>
   );
 }

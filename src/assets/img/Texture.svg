@@ -1,6 +1,6 @@
 <svg width="1915" height="3390" viewBox="0 0 1915 3390" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g style="mix-blend-mode:overlay">
-<rect x="0" width="1920" height="3390" transform="rotate(0 0 0)" fill="url(#pattern0)"/>
+<rect x="1920" width="3390" height="1920" transform="rotate(90 1920 0)" fill="url(#pattern0)"/>
 </g>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="0.039528" height="0.0697917">
