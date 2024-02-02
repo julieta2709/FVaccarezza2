@@ -15,6 +15,7 @@
 .Estudio2 {
   grid-row: 2;
   grid-column: 1;
+  width: 100%;
 }
 .Estudio3,
 .EstudioCel-animationContainer,
@@ -24,6 +25,7 @@
 }
 .Estudio3 {
   justify-self: center;
+  width: 100%;
 }
 .EstudioCel-animationContainer1,
 .Estudiopad1 {
@@ -41,9 +43,11 @@
   justify-self: end;
   margin-right: -5.2rem;
   margin-bottom: 6rem;
+  width: 100%;
 }
 .carroContainer img {
   position: absolute;
+  width: 100%;
 }
 .carroGif {
   z-index: 2;

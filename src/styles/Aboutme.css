@@ -139,6 +139,7 @@
   grid-row: 2;
   align-self: center;
   z-index: 2;
+  width: 100%;
 }
 .Aboutme-maininfoText {
   display: grid;
@@ -179,14 +180,12 @@
   margin-top: 1.25rem;
 }
 /*contenedor general de habilidades*/
-
 .Aboutme-2356container {
   display: grid;
   grid-template-rows: auto auto auto;
   grid-template-columns: 43.8125rem 43.8125rem;
   height: 103.875rem;
   justify-content: center;
-  /* width: 98rem; */
 }
 .Aboutme-3,
 .Aboutme-6 {
@@ -278,6 +277,9 @@
 .Aboutme-6container .Aboutme-text .Aboutme-abilitieIcon {
   grid-column: 1;
   margin-right: 1.3125rem;
+}
+.Aboutme-abilitieIcon {
+  width: 100%;
 }
 .Aboutme-6container .Aboutme-text .Aboutme-abilitieIcon span {
   grid-column: 2;

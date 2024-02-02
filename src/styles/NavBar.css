@@ -6,14 +6,17 @@
   align-items: center;
   min-height: 6.25rem;
   position: fixed;
-  background-image: url("../assets/img/BG/TextureNavBar.svg");
+  background-color: #f8f4ef;
+  background-blend-mode: overlay;
+  background-image: url("../assets/img/BG/TextureNavBar.png");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .navbar {
   font-family: "Montserrat";
   font-weight: bold;
-  font-size: 0.95em;
+  font-size: 0.95rem;
   width: 75%;
   display: flex;
   align-items: center;
@@ -51,8 +54,12 @@
 .nav-link:hover {
   color:  #e52421;
 }
-
-@media screen and (width <= 768px) {
+@media screen and (width <= 576px) {
+  .Header-container {
+    background-size: contain;
+  }
+}
+@media screen and (576px < width <= 768px) {
 /*   .nav-menu {
     display: none;
   } */

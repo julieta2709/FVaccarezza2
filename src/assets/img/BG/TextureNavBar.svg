@@ -1,13 +1,13 @@
 <svg width="100%" height="auto" viewBox="0 0 1915 107" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="1915" height="107" fill="#F5F5F5"/>
+<rect width="100%" height="auto" fill="#F5F5F5"/>
 <g id="PORTFOLIO" clip-path="url(#clip0_0_1)">
-<rect width="1915" height="46322" fill="#F8F4EF"/>
+<rect width="100%" height="auto" fill="#F8F4EF"/>
 <g id="Frame" clip-path="url(#clip1_0_1)">
 <path id="Vector" d="M260.178 255.594C315.868 182.4 327.784 129.033 397.239 98.422C455.567 72.7359 491.236 91.0302 531.826 56.7976C576.116 19.411 592.108 -51.781 579.875 -105.603C552.704 -224.783 382.015 -282.205 266.88 -287.469C113.651 -294.502 5.66232 -211.391 -64.3654 -157.73C-87.085 -140.258 -254.214 -11.7928 -224.506 74.8751C-215.205 101.97 -185.684 127.883 -170.212 122.944C-155.79 118.325 -160.515 89.0628 -135.739 67.0004C-123.43 56.0389 -110.118 52.5164 -98.6036 49.6051C-59.7543 39.785 38.3527 35.0903 67.2936 88.4595C97.177 143.609 42.8722 241.98 -25.7108 267.483C-98.1006 294.395 -158.322 229.713 -208.884 266.788C-236.801 287.246 -247.426 328.169 -240.567 358.541C-226.533 420.603 -136.274 453.437 -70.9782 456.481C98.0191 463.989 243.493 277.468 260.178 255.594Z" stroke="#D71A17" stroke-opacity="0.25" stroke-miterlimit="10"/>
 </g>
 <g id="TextureNavBar">
 <g id="Rectangle 1" filter="url(#filter0_b_0_1)">
-<rect width="1920" height="107" fill="#F8F4EF" fill-opacity="0.9"/>
+<rect width="100%" height="auto" fill="#F8F4EF" fill-opacity="0.9"/>
 </g>
 <g id="Texture" style="mix-blend-mode:overlay">
 <rect x="1920" y="-2137" width="2244" height="1920" transform="rotate(90 1920 -2137)" fill="url(#pattern0)"/>
@@ -25,7 +25,7 @@
 <use xlink:href="#image0_0_1" transform="scale(0.000271431 0.000317235)"/>
 </pattern>
 <clipPath id="clip0_0_1">
-<rect width="1915" height="46322" fill="white"/>
+<rect width="100%" height="auto" fill="white"/>
 </clipPath>
 <clipPath id="clip1_0_1">
 <rect width="944" height="621" fill="white" transform="translate(696.977 161.371) rotate(157.175)"/>

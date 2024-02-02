@@ -28,14 +28,17 @@
   grid-row: 1;
   grid-column: span 2;
   z-index: 2;
+  width: 100%;
 }
 .Misc2,
 .Misc3 {
   grid-column: 1;
+  width: 100%;
 }
 .Misc4,
 .Misc5 {
   grid-column: 2;
+  width: 100%;
 }
 .Misc2,
 .Misc4 {
@@ -49,9 +52,11 @@
   display: flex;
   justify-content: space-between;
   margin-top: 3.125rem;
+  width: 100%;
 }
 .Misc14 {
   margin-top: 3.125rem;
+  width: 100%;
 }
 /*imgBG*/
 .MiscBgR {

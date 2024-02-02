@@ -20,17 +20,18 @@
   justify-content: space-around;
 }
 .redCircle {
-  fill: #e52421;
   align-self: center;
   margin: 0 1em 1em 1em;
 }
 .redCircle:first-child {
   grid-column: 1 / span 1;
   grid-row: 1 / span 2;
+  width: 100%;
 }
 .redCircle:last-child {
   grid-column: 3 / span 1;
   grid-row: 1 / span 2;
+  width: 100%;
 }
 /*fonts styles*/
 h2,
@@ -90,8 +91,8 @@ h1,
   transition: transform 2s cubic-bezier(0.21, 0.87, 0.35, 1);
 }
 /*media query*/
-@media screen and (width <= 768px) {
+/* @media screen and (width <= 768px) {
   h1, .portfolio, h2, .year {
     font-size: 6px;
   }
-}
+} */

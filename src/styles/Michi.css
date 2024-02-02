@@ -5,6 +5,7 @@
 .Michi5,
 .Michi6 {
   grid-column: 1 / span 2;
+  width: 100%;
 }
 .Michi1 {
   grid-row: 1;
@@ -15,6 +16,7 @@
   grid-column: 1;
   justify-self: flex-end;
   margin-right: -1.5rem;
+  width: 100%;
 }
 .Michi-column2container {
   grid-column: 2;
