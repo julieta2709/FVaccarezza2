@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import Eclipse from "../../assets/img/BG/Eclipse.png";
 import EstudioBgVectorR from "../../assets/img/BG/EstudioBgVectorR.svg";
-import eclipse from "../../assets/img/BG/eclipse.png";
 import Estudio1 from "../../assets/img/Estudio/Estudio1.png";
 import Estudio2 from "../../assets/img/Estudio/Estudio2.png";
 import Estudio3 from "../../assets/img/Estudio/Estudio3.png";
@@ -70,7 +70,7 @@ const Estudio = () => {
             <span className="Work-NumberIndividual">{index}</span>
             <span className="Work-TextIndividual">{title}</span>
           </div>
-          <img src={eclipse} alt="eclipse" className="eclipse" />
+          <img src={Eclipse} alt="eclipse" className="eclipse" />
           <div className="Next" onClick={handleNextClick}>
             <Next />
           </div>

@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import Eclipse from "../../assets/img/BG/Eclipse.png";
 import OpameBgVectorL from "../../assets/img/BG/OpameBgVectorL.svg";
 import OpameBgVectorR from "../../assets/img/BG/OpameBgVectorR.svg";
-import eclipse from "../../assets/img/BG/eclipse.png";
 import Opame1 from "../../assets/img/Opame/Opame1.png";
 import Opame2 from "../../assets/img/Opame/Opame2.png";
 import Opame3 from "../../assets/img/Opame/Opame3.png";
@@ -70,7 +70,7 @@ const Opame = () => {
             <span className="Work-NumberIndividual">{index}</span>
             <span className="Work-TextIndividual">{title}</span>
           </div>
-          <img src={eclipse} alt="eclipse" className="eclipse" />
+          <img src={Eclipse} alt="eclipse" className="eclipse" />
           <div className="Next" onClick={handleNextClick}>
             <Next />
           </div>
