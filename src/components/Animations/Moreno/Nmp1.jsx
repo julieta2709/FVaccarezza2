@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import Nmp1Bg from "../../../assets/img/Moreno/Nmp1Bg.png";
 import Nmp1Pic from "../../../assets/img/Moreno/Nmp1Pic.png";
+// import Nmp1Pic from "../../../assets/img/Moreno/Nmp1Pic.png";
 import Pilltrack2 from "../../../assets/img/Moreno/Pilltrack2.png";
 import Project2 from "../../../assets/img/Moreno/Project2.png";
 import "../../../styles/Moreno.css";
