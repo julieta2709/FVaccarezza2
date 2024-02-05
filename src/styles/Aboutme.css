@@ -1,13 +1,15 @@
 /*Fonts styles*/
 .Aboutme-intro,
 .Aboutme-name,
-.Aboutme-title,
 .Aboutme-titleProf,
 .Aboutme-subtitle,
 .Aboutme-,
 .Aboutme-contactTittle,
 .Aboutme-contactMail {
   color: #3a3a39;
+}
+.Aboutme-title {
+  color: #3a3a39ec;
 }
 .Aboutme-name,
 .Aboutme-title,

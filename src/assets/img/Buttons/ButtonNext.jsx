@@ -18,8 +18,8 @@ function ButtonBefore(props) {
       onMouseLeave={handleMouseLeave}>
       {showMessage && <div className="messageNext">next project</div>}
       <svg
-        width={170}
-        height={170}
+        width={"100%"}
+        height={"auto"}
         viewBox="0 0 170 170"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

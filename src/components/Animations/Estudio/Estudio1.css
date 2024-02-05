@@ -88,3 +88,16 @@ img.animated-Estudio2image {
   z-index: 5;
   overflow: hidden;
 }
+@media screen and (width <= 576px) {
+  .Estudio-AnimationContainer {
+    width: 5.795rem;
+    height: 12.3rem;
+  }
+  .sillon {
+    width: 5.8425rem;
+    height: 10.45rem;
+  }
+  .background-sillonBanner {
+    height: 10.45rem;
+  }
+}

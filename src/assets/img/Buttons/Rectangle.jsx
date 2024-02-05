@@ -6,8 +6,8 @@ function Rectangle(props) {
     <svg
     className="rectangleContainer"
       xmlns="http://www.w3.org/2000/svg"
-      width="80"
-      height="1080"
+      width="100%"
+      height="auto"
       fill="none"
       viewBox="0 0 80 1080"
     >

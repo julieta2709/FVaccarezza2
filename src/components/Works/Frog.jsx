@@ -27,7 +27,13 @@ const Frog = () => {
 
   /*Navegación en la página a través de los botones*/
   function easeInOutExpo(t) {
-    return t === 0 ? 0 : t === 1 ? 1 : t < 0.5 ? Math.pow(2, 20 * t - 10) / 2 : (2 - Math.pow(2, -20 * t + 10)) / 2;
+    return t === 0
+      ? 0
+      : t === 1
+      ? 1
+      : t < 0.5
+      ? Math.pow(2, 20 * t - 10) / 2
+      : (2 - Math.pow(2, -20 * t + 10)) / 2;
   }
   const handleNextClick = () => {
     const nextElement = document.getElementById("estudio");
@@ -71,9 +77,15 @@ const Frog = () => {
         <img src={Frog4} alt="FrogBazar4" className="Frog4" />
         <img src={Frog5} alt="FrogBazar5" className="Frog5" />
         <img src={Frog6} alt="FrogBazar6" className="Frog6" />
-        <img src={Frogcel1} alt="FrogBazarcel1" className="Frogcel1" />
-        <img src={Frogcel2} alt="FrogBazarcel2" className="Frogcel2" />
-        <img src={Frogcel4} alt="FrogBazarcel4" className="Frogcel4" />
+        <div className="FrogCel-container1">
+          <img src={Frogcel1} alt="FrogBazarcel1" className="Frogcel1" />
+        </div>
+        <div className="FrogCel-container2">
+          <img src={Frogcel2} alt="FrogBazarcel2" className="Frogcel2" />
+        </div>
+        <div className="FrogCel-container4">
+          <img src={Frogcel4} alt="FrogBazarcel4" className="Frogcel4" />
+        </div>
         {/*imagenes de la animación*/}
         <div className="FrogCelanimation-container">
           <ImageSequence />

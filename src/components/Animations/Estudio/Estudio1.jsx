@@ -13,11 +13,11 @@ const Estudio1 = () => {
         className="sillon"
         src={sillon}
         alt="sillon"
-        initial={{ scaleY: 1, originY: 1, borderRadius: "0px" }}
+        initial={{ scaleY: 1, originY: 1, borderRadius: "0rem" }}
         whileInView={{
           scaleY: 1.18,
           originY: 0,
-          borderRadius: "0px 0px 11.95px 11.95px",
+          borderRadius: "0rem 0rem 0.7469rem 0.7469rem",
         }}
         transition={{ duration: 1, ease: [0.55, 0.59, 0, 1.01] }}
         viewport={{ once: true }}
