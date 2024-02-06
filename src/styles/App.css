@@ -41,13 +41,12 @@ body {
   z-index: 10;
 }
 .buttonUp-Container {
-  width: 4.6875rem;
-  height: 4.6875rem;
   position: fixed;
   bottom: 1.25rem;
   right: 7.1rem;
   z-index: 999;
-}
+  width: 13%;
+} 
 /*fuentes*/
 @font-face {
   font-family: "Montserrat";

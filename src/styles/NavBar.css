@@ -1,10 +1,9 @@
 .Header-container {
   z-index: 50;
   width: 100%;
-  box-sizing: border-box;
   display: flex;
   align-items: center;
-  min-height: 6.25rem;
+  height: 6.25rem;
   position: fixed;
   background-color: #f8f4ef;
   background-blend-mode: overlay;
@@ -54,14 +53,14 @@
   color: #e52421;
 }
 @media screen and (width <= 576px) {
-  .Header-container {
-    width: 576px;
-  }
+ /*  .Header-container {
+    background-size: 100%;
+  } */
   .Header-container.blur .navbar {
-    width: 100%;
+    width: 90%;
   }
   .navbar {
-    width: 100%;
+    width: 90%;
   }
   .nav-menu {
     margin-left: 9%;

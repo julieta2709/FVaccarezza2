@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-// import ButtonUp from "../src/components/Buttons/ButtonUp";
+import ButtonUp from "../src/components/Buttons/ButtonUp";
 import Header from "../src/components/Header";
 import WorkContainer from "../src/components/Works/WorkContainer";
 import WorkContext from "../src/components/Works/WorkContext";
@@ -30,7 +30,7 @@ function App() {
               <>
                 <div id="home" style={{ width: "100%" }}>
                   <Home />
-                </div>
+                </div> 
                 <WorkContext>
                   <div id="about" style={{ width: "100%" }}>
                     <AboutMe />
@@ -106,9 +106,9 @@ function App() {
             element={<Photography className="Photography-container" />}
           />
         </Routes>
-       {/*  <div className="buttonUp-Container">
-        <ButtonUp  />
-        </div> */}
+        <div className="buttonUp-Container">
+          <ButtonUp />
+        </div>
       </div>
     </div>
   );

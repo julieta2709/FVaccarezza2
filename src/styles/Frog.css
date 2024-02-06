@@ -26,7 +26,7 @@
 .FrogCelanimation-container,
 .FrogCel-container4 {
   grid-column: 2;
-  z-index: 1;
+  z-index: 3;
 }
 .Frog3,
 .Frog4,

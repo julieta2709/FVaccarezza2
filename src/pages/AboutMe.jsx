@@ -118,11 +118,11 @@ const AboutMe = () => {
                 <span>adobe after effects</span>
               </p>
               <p className="Aboutme-text">
-                <img className="Aboutme-abilitieIcon" src={figma} />
+                <img className="Aboutme-abilitieIconF" src={figma} />
                 <span className="figma"> figma</span>
               </p>
               <p className="Aboutme-text">
-                <img className="Aboutme-abilitieIcon" src={cinema} />
+                <img className="Aboutme-abilitieIconF" src={cinema} />
                 <span>cinema 4d</span>
               </p>
             </div>

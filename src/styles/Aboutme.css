@@ -186,6 +186,8 @@
   grid-template-columns: 43.8125rem 43.8125rem;
   height: 103.875rem;
   justify-content: center;
+  column-gap: 12rem;
+  row-gap: 8.125rem;
 }
 .Aboutme-3,
 .Aboutme-6 {
@@ -202,7 +204,6 @@
 .Aboutme-2,
 .Aboutme-6 {
   grid-column: 2;
-  margin-left: 5rem;
 }
 /*contact*/
 .Aboutme-contact {
@@ -276,14 +277,14 @@
   justify-items: center;
   margin-left: 4.5rem;
 }
-.Aboutme-6container .Aboutme-text .Aboutme-abilitieIcon {
+.Aboutme-6container .Aboutme-text .Aboutme-abilitieIcon, .Aboutme-abilitieIconF {
   grid-column: 1;
   margin-right: 1.3125rem;
 }
 .Aboutme-abilitieIcon {
   width: 100%;
 }
-.Aboutme-6container .Aboutme-text .Aboutme-abilitieIcon span {
+.Aboutme-6container .Aboutme-text .Aboutme-abilitieIcon span, .Aboutme-abilitieIconF span{
   grid-column: 2;
 }
 .Aboutme-6container .Aboutme-text .figma {
@@ -292,7 +293,7 @@
 }
 /*5*/
 .Aboutme-5 {
-  margin-top: -12rem;
+  margin-top: -15rem;
 }
 .Aboutme-5 .Aboutme-title {
   margin-left: -3.3rem;
@@ -318,8 +319,18 @@
   .Aboutme-abilitieIcon {
     width: 50%;
   }
+  .Aboutme-abilitieIconF  {
+    width: 30%;
+  }
+
   .About2BG,
   .AboutBG {
     width: 32%;
+  }
+  .Aboutme-3,
+  .Aboutme-6,
+  .Aboutme-2,
+  .Aboutme-5 {
+    grid-template-columns: 9.5625rem 34rem;
   }
 }

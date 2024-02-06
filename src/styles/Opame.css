@@ -58,11 +58,12 @@
 .Opame7 {
   margin-top: -2rem;
 }
-.Opamecel1,
+
 .Opamecel3,
 .Opamecel4 {
   z-index: 1;
 }
+.Opamecel1,
 .Opamecel2 {
   z-index: 3;
 }
@@ -112,18 +113,19 @@
 }
 @media screen and (width <= 576px) {
   .Opamecel1,
-.Opamecel2,
-.Opamecel3,
-.Opamecel4 {
- width: 35%;
-}
-.Opamecel2 {
+  .Opamecel2,
+  .Opamecel3,
+  .Opamecel4 {
+    width: 35%;
+  }
+  .Opamecel2 {
     margin-top: 18rem;
-}
-.Work-OpameContainer .eclipse {
-width: 50%;
-}
-.OpameBgR, .OpameBgL {
- width: 32.5%;
-}
+  }
+  .Work-OpameContainer .eclipse {
+    width: 50%;
+  }
+  .OpameBgR,
+  .OpameBgL {
+    width: 32.5%;
+  }
 }
