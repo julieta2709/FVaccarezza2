@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import Eclipse from "../../assets/img/BG/Eclipse.png";
+import EstudioBgBottomL from "../../assets/img/BG/EstudioBgBottomL.png";
 import EstudioBgVectorR from "../../assets/img/BG/EstudioBgVectorR.svg";
 import Estudio1 from "../../assets/img/Estudio/Estudio1.png";
 import Estudio2 from "../../assets/img/Estudio/Estudio2.png";
@@ -61,6 +62,7 @@ const Estudio = () => {
   };
   return (
     <div className="Work-EstudioContainer">
+      <img src={Eclipse} alt="eclipse" className="eclipse" />
       <div className="Work-TitleIndivCont">
         <div className="Work-TitleIndividual">
           <div className="Prev" onClick={handlePrevClick}>
@@ -70,7 +72,6 @@ const Estudio = () => {
             <span className="Work-NumberIndividual">{index}</span>
             <span className="Work-TextIndividual">{title}</span>
           </div>
-          <img src={Eclipse} alt="eclipse" className="eclipse" />
           <div className="Next" onClick={handleNextClick}>
             <Next />
           </div>
@@ -103,6 +104,7 @@ const Estudio = () => {
         <img src={Estudiopad1} alt="Estudio-IPAD" className="Estudiopad1" />
         </div>
       </div>
+      <img src={EstudioBgBottomL} alt="EstudioBgBottomL" className="EstudioBgBottomL"></img>
     </div>
   );
 };

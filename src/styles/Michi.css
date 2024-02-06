@@ -1,6 +1,3 @@
-/* .Work-MichiContainer .WorkIndividualphoto-container {
-  position: relative;
-} */
 .Michi1,
 .Michi5,
 .Michi6 {
@@ -64,6 +61,14 @@
   object-fit: cover;
   position: absolute;
 }
+.Work-MichiContainer .WorkIndividualphoto-container .Belink-container {
+  align-self: flex-end;
+  justify-self: end;
+  z-index: 3;
+  margin-right: -3rem;
+  margin-bottom: -58rem;
+  width: 6.25rem;
+}
 /*animación*/
 @keyframes fadeInOut {
   0% {
@@ -98,5 +103,8 @@
   }
   .Michi2 {
     width: 134%;
+  }
+  .MichiBgR, .MichiBgL {
+    width: 32.5%;
   }
 }

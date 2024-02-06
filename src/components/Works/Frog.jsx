@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
-// import eclipse from "../../assets/img/BG/eclipse.png";
+import FrogBgVectorL from "../../assets/img/BG/FrogBgVectorL.svg";
+import FrogBgVectorR from "../../assets/img/BG/FrogBgVectorR.svg";
 import Frog1 from "../../assets/img/Frog/Frog1.png";
 import Frog2 from "../../assets/img/Frog/Frog2.png";
 import Frog3 from "../../assets/img/Frog/Frog3.png";
@@ -70,6 +71,8 @@ const Frog = () => {
           <p className="WorkTitleDate">{date}</p>
         </div>
       </div>
+      <img src={FrogBgVectorL} alt="FrogBgL" className="FrogBgL" />
+      <img src={FrogBgVectorR} alt="FrogBgR" className="FrogBgR" />
       <div className="WorkIndividualphoto-container">
         <img src={Frog1} alt="FrogBazar1" className="Frog1" />
         <img src={Frog2} alt="FrogBazar2" className="Frog2" />

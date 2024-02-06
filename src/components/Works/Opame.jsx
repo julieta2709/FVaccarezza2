@@ -28,7 +28,13 @@ const Opame = () => {
   const sentences = description.split("\n");
 
   function easeInOutExpo(t) {
-    return t === 0 ? 0 : t === 1 ? 1 : t < 0.5 ? Math.pow(2, 20 * t - 10) / 2 : (2 - Math.pow(2, -20 * t + 10)) / 2;
+    return t === 0
+      ? 0
+      : t === 1
+      ? 1
+      : t < 0.5
+      ? Math.pow(2, 20 * t - 10) / 2
+      : (2 - Math.pow(2, -20 * t + 10)) / 2;
   }
 
   const handlePrevClick = () => {
@@ -61,6 +67,7 @@ const Opame = () => {
 
   return (
     <div className="Work-OpameContainer">
+      <img src={Eclipse} alt="eclipse" className="eclipse" />
       <div className="Work-TitleIndivCont">
         <div className="Work-TitleIndividual">
           <div className="Prev" onClick={handlePrevClick}>
@@ -70,7 +77,6 @@ const Opame = () => {
             <span className="Work-NumberIndividual">{index}</span>
             <span className="Work-TextIndividual">{title}</span>
           </div>
-          <img src={Eclipse} alt="eclipse" className="eclipse" />
           <div className="Next" onClick={handleNextClick}>
             <Next />
           </div>
@@ -84,8 +90,8 @@ const Opame = () => {
           <p className="WorkTitleDate">{date}</p>
         </div>
       </div>
-      <img src={OpameBgVectorR} alt="OpameBgR" className="OpameBgR"/>
-      <img src={OpameBgVectorL} alt="OpameBgL" className="OpameBgL"/>
+      <img src={OpameBgVectorR} alt="OpameBgR" className="OpameBgR" />
+      <img src={OpameBgVectorL} alt="OpameBgL" className="OpameBgL" />
       <div className="WorkIndividualphoto-container">
         <img src={Opame1} alt="Opame1" className="Opame1" />
         <img src={Opame2} alt="Opame2" className="Opame2" />

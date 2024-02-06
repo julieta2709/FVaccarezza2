@@ -12,7 +12,6 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 .navbar {
   font-family: "Montserrat";
   font-weight: bold;
@@ -56,10 +55,16 @@
 }
 @media screen and (width <= 576px) {
   .Header-container {
-    width: 575px;
+    width: 576px;
+  }
+  .Header-container.blur .navbar {
+    width: 100%;
   }
   .navbar {
-    width: 50%;
+    width: 100%;
+  }
+  .nav-menu {
+    margin-left: 9%;
   }
 }
 @media screen and (576px < width <= 768px) {

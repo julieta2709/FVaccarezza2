@@ -16,6 +16,7 @@
   grid-row: 2;
   grid-column: 1;
   width: 100%;
+  z-index: 2;
 }
 .Estudio3,
 .EstudioCel-animationContainer,
@@ -63,16 +64,23 @@
   right: 36.3125rem;
 }
 /*imgBg*/
-.eclipse {
+.Work-EstudioContainer .eclipse {
   position: absolute;
   right: 0;
+  top: -35rem;
   align-self: center;
   z-index: 1;
 }
 .EstudioBgR {
   position: absolute;
   right: 0;
-  top: 75rem;
+  top: 70rem;
+  z-index: 1;
+}
+.EstudioBgBottomL {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   z-index: 1;
 }
 @media screen and (width <= 576px) {
@@ -87,5 +95,14 @@
     width: 31rem;
     margin-right: -5.4rem;
     margin-bottom: 6rem;
+  }
+  .Work-EstudioContainer .eclipse {
+    width: 50%;
+  }
+  .EstudioBgR {
+    width: 35%;
+  }
+  .EstudioBgBottomL {
+    width: 45%;
   }
 }

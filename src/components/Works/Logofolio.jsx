@@ -86,7 +86,6 @@ const Logofolio = () => {
           <p className="WorkTitleDate">{date}</p>
         </div>
       </div>
-      <div className="WorkIndividualphoto-container"></div>
       <ul className="Logo-MainContainer">
         <li className="Logo-container">
           <div className="LogoTitle-container">

@@ -54,3 +54,8 @@
 .Frame {
   width: 13%;
 }
+@media screen and (width <= 576px) {
+  .Logo-container {
+    background-size: 10%;
+  }
+}

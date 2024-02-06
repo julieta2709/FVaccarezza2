@@ -40,7 +40,6 @@
   font-family: Magilio;
   font-style: normal;
   font-weight: 400;
-  /* line-height: normal; */
 }
 .Aboutme-number,
 .Aboutme-number1 {
@@ -103,7 +102,7 @@
 .AboutBG {
   z-index: 1;
   position: absolute;
-  top:-20rem;
+  top: -20rem;
   right: 0;
 }
 .Aboutme-container {
@@ -111,7 +110,6 @@
   width: 100%;
   flex-direction: column;
   justify-content: center;
-  /* margin-left: 13.3125rem; */
 }
 /*presentación*/
 .Aboutme-maininfo {
@@ -197,10 +195,12 @@
 .Aboutme-5 {
   grid-row: 2;
 }
-.Aboutme-3, .Aboutme-5 {
+.Aboutme-3,
+.Aboutme-5 {
   grid-column: 1;
 }
-.Aboutme-2, .Aboutme-6 {
+.Aboutme-2,
+.Aboutme-6 {
   grid-column: 2;
   margin-left: 5rem;
 }
@@ -317,5 +317,9 @@
 @media screen and (width <= 576px) {
   .Aboutme-abilitieIcon {
     width: 50%;
+  }
+  .About2BG,
+  .AboutBG {
+    width: 32%;
   }
 }

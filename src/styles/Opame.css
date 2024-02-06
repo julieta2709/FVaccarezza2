@@ -16,6 +16,7 @@
 .Opame2 {
   grid-row: 2 / span 2;
   width: 100%;
+  z-index: 2;
 }
 .Opame3,
 .Opame4,
@@ -58,10 +59,12 @@
   margin-top: -2rem;
 }
 .Opamecel1,
-.Opamecel2,
 .Opamecel3,
 .Opamecel4 {
   z-index: 1;
+}
+.Opamecel2 {
+  z-index: 3;
 }
 .Opamecel1 {
   justify-self: end;
@@ -88,9 +91,10 @@
   margin-top: 1rem;
 }
 /*imgBg*/
-.eclipse {
+.Work-OpameContainer .eclipse {
   position: absolute;
   right: 0;
+  top: -50rem;
   align-self: center;
   z-index: 1;
 }
@@ -115,5 +119,11 @@
 }
 .Opamecel2 {
     margin-top: 18rem;
+}
+.Work-OpameContainer .eclipse {
+width: 50%;
+}
+.OpameBgR, .OpameBgL {
+ width: 32.5%;
 }
 }

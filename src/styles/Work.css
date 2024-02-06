@@ -115,17 +115,10 @@
   position: relative;
 }
 .Work-FrogContainer {
-  background-image: url("../assets/img/BG/FrogBg.svg"),
-    url("../assets/img/BG/FrogBgVectorL.svg"),
-    url("../assets/img/BG/FrogBgVectorR.svg");
-  background-position: top center, bottom left, center right;
-  background-repeat: no-repeat;
+  background-image: url("../assets/img/BG/FrogBg.svg");
 }
 .Work-EstudioContainer {
-  background-image: url("../assets/img/BG/EstudioBg.svg"),
-    url("../assets/img/BG/EstudioBgBottomL.png");
-  background-position: top center, bottom left;
-  background-repeat: no-repeat;
+  background-image: url("../assets/img/BG/EstudioBg.svg");
 }
 .Work-MorenoContainer {
   background-image: url("../assets/img/BG/PedrazaBg.svg");
@@ -146,11 +139,7 @@
   background-image: url("../assets/img/BG/LogofolioBg.svg");
 }
 .Work-MiscContainer {
-  background-image: url("../assets/img/BG/MiscBg.svg"),
-    url("../assets/img/BG/MiscBgVectorR2.svg"),
-    url("../assets/img/BG/MiscBgVectorR3.svg");
-  background-position: top center, center right, bottom right;
-  background-repeat: no-repeat;
+  background-image: url("../assets/img/BG/MiscBg.svg");
 }
 .Work-TitleIndividual {
   display: grid;
@@ -308,4 +297,18 @@
 
 li {
   list-style-type: none;
+}
+/*media query*/
+@media screen and (width <= 576px) {
+  .Work-container{
+    background-size: 5.5%;
+  }
+  .WorkRightBG {
+    width: 32.5%;
+  }
+  .WorkLeft {
+    width: 50%;
+  }
+  .Work-FrogContainer, .Work-EstudioContainer, .Work-MiscContainer {
+  }
 }

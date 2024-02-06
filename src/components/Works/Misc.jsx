@@ -1,6 +1,10 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import MiscBgVectorL from "../../assets/img/BG/MiscBgVectorL.svg";
+import MiscBgVectorL2 from "../../assets/img/BG/MiscBgVectorL2.svg";
 import MiscBgVectorR from "../../assets/img/BG/MiscBgVectorR.svg";
+import MiscBgVectorR2 from "../../assets/img/BG/MiscBgVectorR2.svg";
+import MiscBgVectorR3 from "../../assets/img/BG/MiscBgVectorR3.svg";
 import Misc1 from "../../assets/img/Misc/Misc1.png";
 import Misc10 from "../../assets/img/Misc/Misc10.png";
 import Misc11 from "../../assets/img/Misc/Misc11.png";
@@ -75,7 +79,15 @@ const Misc = () => {
           <p className="WorkTitleDate">{date}</p>
         </div>
       </div>
+      <div className="MiscBgR-container">
       <img src={MiscBgVectorR} alt="MiscBgR" className="MiscBgR" />
+      <img src={MiscBgVectorR2} alt="MiscBgR" className="MiscBgR2" />
+      <img src={MiscBgVectorR3} alt="MiscBgR" className="MiscBgR3" />
+      </div>
+      <div className="MiscBgL-container">
+      <img src={MiscBgVectorL} alt="MiscBgR" className="MiscBgL" />
+      <img src={MiscBgVectorL2} alt="MiscBgR" className="MiscBgL2" />
+      </div>
       <div className="WorkIndividualphoto-container">
         <div className="Misc-MainContainer">
           <div className="Misc-section1">

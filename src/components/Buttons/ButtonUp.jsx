@@ -5,9 +5,12 @@ import "../../styles/ButtonUp.css";
 
 const ButtonUp = () => {
   return (
-    <Link to="/" className="button-up-link">
-      <div className="button-up" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-        <UpIcon /> 
+    <Link to="/">
+      <div
+        className="button-up"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      >
+        <UpIcon />
       </div>
     </Link>
   );

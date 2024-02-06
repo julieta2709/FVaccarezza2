@@ -39,6 +39,7 @@
 }
 .Frog4 {
   grid-row: 3;
+  z-index: 2;
 }
 .Frog6 {
   grid-row: 4;
@@ -96,4 +97,23 @@
   margin-right: -39.5rem;
   margin-top: -8rem;
   width: 6.25rem;
+}
+/*imgBG*/
+.FrogBgL {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: -14rem;
+}
+.FrogBgR {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 110rem;
+}
+@media screen and (width <= 576px) {
+  .FrogBgL, .FrogBgR {
+    width: 32.5%;
+  }
+  
 }
