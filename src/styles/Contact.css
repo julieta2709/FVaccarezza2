@@ -43,4 +43,16 @@
   gap: 3.5rem;
   align-items: flex-end;
   margin-top: 1.81rem;
+  width: 100%;
+}
+.Contact-LinkContainer a {
+  width: 4.9375rem;
+}
+.Contact-LinkContainer a img {
+  width: 100%;
+}
+@media screen and (width <= 576px) {
+.Contact-container {
+  background-size: 32.5%;
+}
 }

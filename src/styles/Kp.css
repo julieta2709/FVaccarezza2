@@ -42,3 +42,14 @@
   margin-top: -20rem;
   justify-self: flex-end;
 }
+@media screen and (width <= 576px) {
+  .Kp2,
+  .Kp3,
+  .Kp4,
+  .Kp5 {
+    width: 124%;
+  }
+  .Kp4, .Kp5 {
+    justify-self: left;
+  }
+}

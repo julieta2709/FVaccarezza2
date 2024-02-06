@@ -7,7 +7,7 @@ function Rectangle(props) {
     className="rectangleContainer"
       xmlns="http://www.w3.org/2000/svg"
       width="100%"
-      height="auto"
+      height="100%"
       fill="none"
       viewBox="0 0 80 1080"
     >

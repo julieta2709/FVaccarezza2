@@ -99,7 +99,9 @@ const Estudio = () => {
         <div className="EstudioCel-animationContainer">
           <EstudioCelAnimation />
         </div>
+        <div className="Ipad-container">
         <img src={Estudiopad1} alt="Estudio-IPAD" className="Estudiopad1" />
+        </div>
       </div>
     </div>
   );

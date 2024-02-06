@@ -92,29 +92,29 @@ const Misc = () => {
             <p className="Misc-sectionTitle">GEO</p>
             <img src={Misc6} alt="Misc6" className="Misc" />
             <div className="Misc-subContainer">
-              <img src={Misc7} alt="Misc7" className="Misc" />
-              <img src={Misc8} alt="Misc8" className="Misc" />
+              <img src={Misc7} alt="Misc7" className="Miscsc" />
+              <img src={Misc8} alt="Misc8" className="Miscsc" />
             </div>
           </div>
           <div className="Misc-section2">
             <p className="Misc-sectionTitle">BALANCE</p>
             <img src={Misc9} alt="Misc9" className="Misc" />
             <div className="Misc-subContainer">
-              <img src={Misc10} alt="Misc10" className="Misc" />
-              <img src={Misc17} alt="Misc17" className="Misc" />
+              <img src={Misc10} alt="Misc10" className="Miscsc" />
+              <img src={Misc17} alt="Misc17" className="Miscsc" />
             </div>
           </div>
           <div className="Misc-section3">
             <p className="Misc-sectionTitle">NET</p>
             <img src={Misc11} alt="Misc11" className="Misc" />
             <div className="Misc-subContainer">
-              <img src={Misc12} alt="Misc12" className="Misc" />
-              <img src={Misc13} alt="Misc13" className="Misc" />
+              <img src={Misc12} alt="Misc12" className="Miscsc" />
+              <img src={Misc13} alt="Misc13" className="Miscsc" />
             </div>
             <img src={Misc14} alt="Misc14" className="Misc14" />
             <div className="Misc-subContainer">
-              <img src={Misc15} alt="Misc15" className="Misc" />
-              <img src={Misc16} alt="Misc16" className="Misc" />
+              <img src={Misc15} alt="Misc15" className="Miscsc" />
+              <img src={Misc16} alt="Misc16" className="Miscsc" />
             </div>
           </div>
         </div>

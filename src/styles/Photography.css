@@ -40,10 +40,11 @@
   grid-row: 2;
   grid-column: 1;
   display: flex;
+  width: 15.9375rem;
 }
 .RedCircle {
-  fill: #e52421;
   margin: 1.4375rem 1.4375rem 1.4375rem 0rem;
+  width: 100%;
 }
 .Photography-mainText1,
 .Photography-mainText2 {
@@ -55,20 +56,18 @@
   position: fixed;
   z-index: 999;
   left: 0;
+  width:4%;
 }
 .PhotosContainer {
   width: 100%;
   margin-top: -42rem;
-  background-image: url("../assets/img/BG/Line.svg");
-  background-position: bottom center;
-  background-repeat: no-repeat;
   z-index: 2;
 }
 .contactBg {
-  background-image: url("../assets/img/BG/PhotoBg4.png"),
+/*   background-image: url("../assets/img/BG/PhotoBg4.png"),
     url("../assets/img/BG/PhotoBg5.png");
   background-position: top left, bottom right;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   width: 100%;
 }
 .titleAndBg-container {
@@ -80,4 +79,13 @@
   position: relative;
   z-index: 1;
   align-self: flex-end;
+  width: 38%;
+}
+@media screen and (width <= 576px) {
+  .RedCircle {
+    width: 27%;
+  }
+  .Photography-container {
+  background-size: 32.5%;
+  }
 }

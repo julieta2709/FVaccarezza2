@@ -48,11 +48,20 @@
 .Misc5 {
   grid-row: 3;
 }
+.Misc-section2 {
+  width: 100%;
+}
 .Misc-subContainer {
   display: flex;
   justify-content: space-between;
   margin-top: 3.125rem;
   width: 100%;
+}
+.Misc {
+  width: 100%;
+}
+.Miscsc {
+  width: 48%;
 }
 .Misc14 {
   margin-top: 3.125rem;

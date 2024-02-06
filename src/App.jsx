@@ -106,7 +106,7 @@ function App() {
             element={<Photography className="Photography-container" />}
           />
         </Routes>
-        <ButtonUp />
+        <ButtonUp className="buttonUp-Container"style={{ width: "100%" }}/>
       </div>
     </div>
   );

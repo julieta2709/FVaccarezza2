@@ -16,7 +16,6 @@
   grid-column: 1;
   justify-self: flex-end;
   margin-right: -1.5rem;
-  width: 100%;
 }
 .Michi-column2container {
   grid-column: 2;
@@ -24,6 +23,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
 }
 .MichiAnimation-container {
   grid-column: 1;
@@ -88,4 +88,15 @@
   left: 0;
   bottom: 24rem;
   z-index: 1;
+}
+@media screen and (width <=576px) {
+  .Michi4 {
+    width: 117%;
+  }
+  .Michi3 {
+    width: 100%;
+  }
+  .Michi2 {
+    width: 134%;
+  }
 }

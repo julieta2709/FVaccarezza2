@@ -93,35 +93,35 @@ const Logofolio = () => {
             <p className="Logo-number">1.</p>
             <p className="Logo-text">THE NEW WAVE</p>
           </div>
-          <img src={TheNewWave} alt="TheNewWave" className="Logo-img" />
+          <img src={TheNewWave} alt="TheNewWave" className="Logo-imgtnw" />
         </li>
         <li className="Logo-container">
           <div className="LogoTitle-container">
             <p className="Logo-number">2.</p>
             <p className="Logo-text">CHAMBERLAIN</p>
           </div>
-          <img src={Chamberlain} alt="Chamberlain" className="Logo-img" />
+          <img src={Chamberlain} alt="Chamberlain" className="Logo-imgch" />
         </li>
         <li className="Logo-container">
           <div className="LogoTitle-container">
             <p className="Logo-number">3.</p>
             <p className="Logo-text">POSSCO</p>
           </div>
-          <img src={Possco} alt="Possco" className="Logo-img" />
+          <img src={Possco} alt="Possco" className="Logo-imgch" />
         </li>
         <li className="Logo-container">
           <div className="LogoTitle-container">
             <p className="Logo-number">4.</p>
             <p className="Logo-text">LA HERMANDAD DEL ANZUELO</p>
           </div>
-          <img src={Hermandad} alt="Hermandad" className="Logo-img" />
+          <img src={Hermandad} alt="Hermandad" className="Logo-imgtnw" />
         </li>
         <li className="Logo-container">
           <div className="LogoTitle-container">
             <p className="Logo-number">5.</p>
             <p className="Logo-text">RIMINI</p>
           </div>
-          <img src={Rimini} alt="Rimini" className="Logo-img" />
+          <img src={Rimini} alt="Rimini" className="Logo-imgch" />
         </li>
       </ul>
       <div className="Frame-container">

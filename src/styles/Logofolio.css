@@ -32,6 +32,12 @@
   align-items: center;
   justify-content: space-between;
 }
+.Logo-imgtnw {
+  width: 22%;
+}
+.Logo-imgch {
+  width: 42%;
+}
 .Frame-container {
   height: 33.125rem;
   width: 68rem;
@@ -44,4 +50,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.Frame {
+  width: 13%;
 }

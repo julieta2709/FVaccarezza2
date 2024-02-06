@@ -90,12 +90,12 @@ img.animated-Estudio2image {
 }
 @media screen and (width <= 576px) {
   .Estudio-AnimationContainer {
-    width: 5.795rem;
-    height: 12.3rem;
+    width: 7.3rem;
+    height: 16.1rem;
   }
   .sillon {
-    width: 5.8425rem;
-    height: 10.45rem;
+    width: 7.4rem;
+    height: 14rem;
   }
   .background-sillonBanner {
     height: 10.45rem;

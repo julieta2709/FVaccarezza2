@@ -1,6 +1,6 @@
 import React from "react";
 import PhotoBg2 from "../assets/img/BG/PhotoBg2.png";
-import RedCircle from "../assets/img/icons/RedCircle";
+import RedCircle from "../assets/img/icons/RedCircle.svg";
 import RectangleButton from "../components/Buttons/RectangleButton";
 import Photos from "../components/Photos";
 import Contact from "../pages/Contact";
@@ -17,9 +17,9 @@ const Photography = () => {
           <div className="Photography-mainTitle">
             <h2 className="Photography-mainText1">PHOTO ~ </h2>
             <div className="RedCircle-container">
-              <RedCircle className="RedCircle" />
-              <RedCircle className="RedCircle" />
-              <RedCircle className="RedCircle" />
+              <img src={RedCircle} alt="RedCircle" className="RedCircle" />
+              <img src={RedCircle} alt="RedCircle" className="RedCircle" />
+              <img src={RedCircle} alt="RedCircle" className="RedCircle" />
             </div>
             <h2 className="Photography-mainText2">GRAPHY.</h2>
           </div>

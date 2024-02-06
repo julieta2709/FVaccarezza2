@@ -9,27 +9,33 @@
 .Photo-item2,
 .Photo-item3 {
   grid-row: 1;
+  width: 100%;
 }
 .Photo-item1,
 .Photo-item4, .Photos-c {
   grid-column: 1;
+  width: 100%;
 }
 .Photo-item2,
 .Photo-item5, .Photos-d {
   grid-column: 2;
+  width: 100%;
 }
 .Photo-item3,
 .Photo-item6, .Photos-e {
   grid-column: 3;
+  width: 100%;
 }
 .Photo-item4,
 .Photo-item5,
 .Photo-item6 {
   grid-row: 2;
+  width: 100%;
 }
 .Photo-item7,
 .Photo-item8 {
   grid-row: 3;
+  width: 100%;
 }
 .Photo-item7 {
   grid-column: 1 / span 2;
