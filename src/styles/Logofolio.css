@@ -54,7 +54,12 @@
 .Frame {
   width: 13%;
 }
-@media screen and (width <= 576px) {
+@media screen and (width <= 425px) {
+  .Logo-text {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (425px < width <= 576px) {
   .Logo-container {
     background-size: 10%;
   }

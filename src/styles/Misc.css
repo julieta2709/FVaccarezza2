@@ -105,6 +105,11 @@
 .MiscBgL2 {
   bottom: 20rem;
 } */
+@media screen and (width <= 425px) {
+  .Misc-sectionTitle {
+    font-size: 1.2rem;
+  }
+}
 @media screen and (width <= 576px) {
   .MiscBgR,
   .MiscBgR2,

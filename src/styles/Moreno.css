@@ -47,7 +47,21 @@
   margin-top: -17.9375rem;
   margin-left: 10.25rem;
 }
-@media screen and (width <= 576px) {
+@media screen and (width <= 425px) {
+  .Moreno2 {
+    width: 129%;
+  }
+  .Moreno3 {
+    width: 123.6%;
+  }
+  .Moreno2 {
+    margin-left: -5rem;
+  }
+  .Nmp-AnimationContainer {
+    margin-left: 5.25rem;
+  }
+}
+@media screen and (425px < width <= 576px) {
   .Moreno2,
   .Moreno3 {
     width: 123.6%;

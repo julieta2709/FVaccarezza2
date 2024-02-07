@@ -47,7 +47,19 @@
 .Skinpro2 {
   z-index: 4;
 }
-@media screen and (width <= 576px) {
+@media screen and (width <= 425px) {
+  .Nmp1Bg,
+  .Nmp1Pic,
+  .Project2,
+  .Pilltrack2,
+  .Nmp2Bg,
+  .Nmp2Project2,
+  .Skinpro1,
+  .Skinpro2 {
+    width: 9.5%;
+  }
+}
+@media screen and (425px < width <= 576px) {
   .Nmp1Bg,
   .Nmp1Pic,
   .Project2,

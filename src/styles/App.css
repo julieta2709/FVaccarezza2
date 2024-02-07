@@ -115,7 +115,7 @@ body {
 /*medias querys*/
 @media screen and (width <= 425px ) {
   html {
-    font-size: 3.5px;
+    font-size: 4px;
   }
 }
 @media screen and (425px < width <= 576px) {

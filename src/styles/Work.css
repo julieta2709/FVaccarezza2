@@ -299,7 +299,13 @@ li {
   list-style-type: none;
 }
 /*media query*/
-@media screen and (width <= 576px) {
+@media screen and (width <=425px) {
+  .WorkTitleDescription {
+    font-size: 1.6rem;
+  }
+  .WorkTitleDate {
+    font-size: 1.2rem;
+  }
   .Work-container{
     background-size: 5.5%;
   }
@@ -309,6 +315,15 @@ li {
   .WorkLeft {
     width: 50%;
   }
-  .Work-FrogContainer, .Work-EstudioContainer, .Work-MiscContainer {
+}
+@media screen and (425px < width <= 576px) {
+  .Work-container{
+    background-size: 5.5%;
+  }
+  .WorkRightBG {
+    width: 32.5%;
+  }
+  .WorkLeft {
+    width: 50%;
   }
 }

@@ -83,7 +83,30 @@
   left: 0;
   z-index: 1;
 }
-@media screen and (width <= 576px) {
+@media screen and (width <=425px) {
+  .Estudio3 {
+    width: 131%;
+  }
+  .EstudioCel-animationContainer {
+    margin-left: -28.8rem;
+    margin-top: 1.4rem;
+  }
+  .Ipad-container {
+    width: 31rem;
+    margin-right: -5.4rem;
+    margin-bottom: 6rem;
+  }
+  .Work-EstudioContainer .eclipse {
+    width: 50%;
+  }
+  .EstudioBgR {
+    width: 35%;
+  }
+  .EstudioBgBottomL {
+    width: 45%;
+  }
+}
+@media screen and (425px < width <= 576px) {
   .Estudio3 {
     width: 131%;
   }

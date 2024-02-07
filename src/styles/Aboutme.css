@@ -315,7 +315,36 @@
   margin-bottom: 1.875rem;
   margin-top: -2rem;
 }
-@media screen and (width <= 576px) {
+@media screen and (width <=425px) {
+  .Aboutme-text, .Aboutme-subtitle, .Aboutme-subtitle2 {
+    font-size: 1.6rem;
+  }
+  .Aboutme-2356container {
+    column-gap: 5rem;
+  }
+  .Aboutme-3,
+  .Aboutme-6,
+  .Aboutme-2,
+  .Aboutme-5 {
+    grid-template-columns: 9.5625rem 34rem;
+  }
+  .Aboutme-abilitieIcon {
+    width: 60%;
+  }
+  .Aboutme-abilitieIconF  {
+    width: 35%;
+  }
+  .Aboutme-contact {
+    margin-top: -15.5rem 
+  }
+  .AboutBG {
+    width: 32%;
+  }
+  .About2BG {
+    width: 58%;
+  }
+}
+@media screen and (425px < width <= 576px) {
   .Aboutme-abilitieIcon {
     width: 50%;
   }
