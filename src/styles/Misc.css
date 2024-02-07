@@ -87,24 +87,7 @@
   align-items: flex-start;
   justify-content: space-evenly;
 }
-/* .MiscBgR2 {
-  align-self: center;
-}
-.MiscBgR3 {
-  bottom: 39rem;
-}
-.MiscBgL,
-.MiscBgL2 {
-  position: absolute;
-  z-index: 1;
-  left: 0;
-}
-.MiscBgL {
-  top: 50rem;
-}
-.MiscBgL2 {
-  bottom: 20rem;
-} */
+
 @media screen and (width <= 425px) {
   .Misc-sectionTitle {
     font-size: 1.2rem;

@@ -319,6 +319,9 @@
   .Aboutme-text, .Aboutme-subtitle, .Aboutme-subtitle2 {
     font-size: 1.6rem;
   }
+  .Aboutme-text {
+    font-size: 1.9rem;
+  }
   .Aboutme-2356container {
     column-gap: 5rem;
   }
