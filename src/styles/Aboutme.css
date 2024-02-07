@@ -327,6 +327,7 @@
   margin-bottom: 1.875rem;
   margin-top: -2rem;
 }
+/*medias querys*/
 @media screen and (width <=425px) {
   .Aboutme-text,
   .Aboutme-subtitle,
@@ -368,6 +369,31 @@
     width: 58%;
   }
 }
+@media screen and (425px <= width <= 490px) {
+  .Aboutme-introName {
+    font-size: 2.5rem;
+  }
+  .Aboutme-name {
+    font-size: 5.5rem;
+  }
+  .Aboutme-maininfo-FVpic {
+    width: 87%;
+  }
+  .Aboutme-maininfo {
+    grid-template-columns: 46rem 32rem;
+  }
+  .Aboutme-1 {
+    justify-content: center;
+  }
+  .Aboutme-description {
+    margin-left: 3.3rem;
+  }
+}
+@media screen and (490px < width <= 576px) {
+  .Aboutme-1 {
+    justify-content: flex-start;
+  }
+}
 @media screen and (425px < width <= 576px) {
   .Aboutme-abilitieIcon {
     width: 50%;
@@ -375,15 +401,55 @@
   .Aboutme-abilitieIconF {
     width: 30%;
   }
-
   .About2BG,
   .AboutBG {
     width: 32%;
+  }
+  .Aboutme-text,
+  .Aboutme-subtitle,
+  .Aboutme-subtitle2 {
+    font-size: 1.6rem;
+  }
+  .Aboutme-text {
+    font-size: 1.9rem;
+  }
+  .About1a6-container {
+    align-items: center;
+  }
+  .Aboutme-1 {
+    width: 77%;
+  }
+  .Aboutme-2356container {
+    column-gap: 1rem;
+    margin-top: 5rem;
+    grid-template-columns: 40.8125rem 40.8125rem;
   }
   .Aboutme-3,
   .Aboutme-6,
   .Aboutme-2,
   .Aboutme-5 {
-    grid-template-columns: 9.5625rem 34rem;
+    grid-template-columns: 9.5625rem 31rem;
+  }
+  .Aboutme-2 {
+    margin-top: 2.5rem;
+  }
+  .Aboutme-5 {
+    margin-top: -13rem;
+  }
+  .Aboutme-contact {
+    margin-top: -7.5rem;
+  }
+}
+@media screen and (576px < width <= 768px) {
+  .About1a6-container {
+    column-gap: 5rem;
+    align-items: center;
+  }
+  .Aboutme-2356container {
+   justify-items: center;
+  }
+  .About2BG,
+  .AboutBG {
+    width: 32%;
   }
 }

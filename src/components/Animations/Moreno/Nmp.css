@@ -47,7 +47,48 @@
 .Skinpro2 {
   z-index: 4;
 }
-@media screen and (width <= 425px) {
+
+@media screen and (425px < width <= 460px) {
+  .Nmp1Bg,
+  .Nmp1Pic,
+  .Project2,
+  .Pilltrack2,
+  .Nmp2Bg,
+  .Nmp2Project2,
+  .Skinpro1,
+  .Skinpro2 {
+    width: 11%;
+  }
+}
+@media screen and (460px < width <= 500px),
+  screen and (576px < width <= 630px) {
+  .Nmp1Bg,
+  .Nmp1Pic,
+  .Project2,
+  .Pilltrack2,
+  .Nmp2Bg,
+  .Nmp2Project2,
+  .Skinpro1,
+  .Skinpro2 {
+    width: 10.5%;
+  }
+}
+@media screen and (500px < width <= 530px),
+  screen and (630px < width <= 660px) {
+  .Nmp1Bg,
+  .Nmp1Pic,
+  .Project2,
+  .Pilltrack2,
+  .Nmp2Bg,
+  .Nmp2Project2,
+  .Skinpro1,
+  .Skinpro2 {
+    width: 10%;
+  }
+}
+@media screen and (width <= 425px),
+  screen and (530px < width <= 545px),
+  screen and (660px < width <= 690px) {
   .Nmp1Bg,
   .Nmp1Pic,
   .Project2,
@@ -59,7 +100,8 @@
     width: 9.5%;
   }
 }
-@media screen and (425px < width <= 576px) {
+@media screen and (545px < width <= 576px),
+  screen and (690px < width <= 768px) {
   .Nmp1Bg,
   .Nmp1Pic,
   .Project2,
@@ -68,6 +110,30 @@
   .Nmp2Project2,
   .Skinpro1,
   .Skinpro2 {
-    width: 8%;
+    width: 9%;
+  }
+}
+@media screen and (576px < width <= 630px) {
+  .Nmp1Bg,
+  .Nmp1Pic,
+  .Project2,
+  .Pilltrack2,
+  .Nmp2Bg,
+  .Nmp2Project2,
+  .Skinpro1,
+  .Skinpro2 {
+    width: 10.5%;
+  }
+}
+@media screen and (690px < width <= 768px) {
+  .Nmp1Bg,
+  .Nmp1Pic,
+  .Project2,
+  .Pilltrack2,
+  .Nmp2Bg,
+  .Nmp2Project2,
+  .Skinpro1,
+  .Skinpro2 {
+    width: 8.5%;
   }
 }

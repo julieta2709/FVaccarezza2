@@ -91,16 +91,26 @@ h1,
   transition: transform 2s cubic-bezier(0.21, 0.87, 0.35, 1);
 }
 /*media query*/
-@media screen and (width <=425px) {
-  .logo-container {
-    width: 12%;
-  }
+@media screen and (width <= 425px) {
   .fv {
     font-size: 1.1rem;
     line-height: 8;
   }
+  .Home-container {
+    background-size: 32.5%;
+    height: 56rem;
+  }
 }
-@media screen and (width <= 768px) {
+@media screen and (425px < width <= 576px) {
+  .fv {
+    font-size: 1.1rem;
+    line-height: 8;
+  }
+  .Home-container {
+    background-size: 32.5%;
+  }
+}
+@media screen and (576px < width <= 768px) {
   .Home-container {
     background-size: 32.5%;
   }

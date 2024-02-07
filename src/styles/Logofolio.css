@@ -59,8 +59,11 @@
     font-size: 1.2rem;
   }
 }
-@media screen and (425px < width <= 576px) {
+@media screen and (425px < width <= 768px) {
   .Logo-container {
     background-size: 10%;
+  }
+  .Logo-text {
+    font-size: 1.2rem;
   }
 }

@@ -81,7 +81,7 @@
   align-self: flex-end;
   width: 38%;
 }
-@media screen and (width <= 576px) {
+@media screen and (width <= 1024px) {
   .RedCircle {
     width: 27%;
   }

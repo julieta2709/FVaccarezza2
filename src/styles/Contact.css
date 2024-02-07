@@ -52,7 +52,7 @@
 .Contact-LinkContainer a img {
   width: 100%;
 }
-@media screen and (width <= 576px) {
+@media screen and (width <= 1024px) {
 .Contact-container {
   background-size: 32.5%, 32.5%, 5%;
 }

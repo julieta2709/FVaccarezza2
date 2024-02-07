@@ -52,23 +52,36 @@
 .nav-link:hover {
   color: #e52421;
 }
-@media screen and (width <= 576px) {
- /*  .Header-container {
-    background-size: 100%;
-  } */
+/*medias query*/
+@media screen and (width <= 425px) {
+  .navbar {
+    font-size: 1.5rem;
+    width: 89%;
+  }
+  .nav-menu {
+    margin-left: 6%;
+  }
+  .logo-container {
+    width: 13%;
+  }
+}
+@media screen and (425px < width <= 576px) {
   .Header-container.blur .navbar {
     width: 90%;
   }
   .navbar {
     width: 90%;
+    font-size: 1.5rem;
   }
   .nav-menu {
     margin-left: 9%;
   }
+  .logo-container {
+    width: 14%;
+  }
 }
-@media  screen and (width <= 425px) {
+@media screen and (576px < width <= 768px) {
   .navbar {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
+  }
 }
-}
-

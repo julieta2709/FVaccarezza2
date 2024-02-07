@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../styles/NavBar.css";
 
@@ -21,20 +21,26 @@ function Links({ section, scrollToSection, children, className }) {
 }
 
 const NavBar = () => {
-  const [showMenu, setShowMenu] = useState(false);
-
-  const handleToggleMenu = () => {
-    setShowMenu(!showMenu);
-  };
 
   function easeInOutExpo(t) {
-    return t === 0 ? 0 : t === 1 ? 1 : t < 0.5 ? Math.pow(2, 20 * t - 10) / 2 : (2 - Math.pow(2, -20 * t + 10)) / 2;
+    return t === 0
+      ? 0
+      : t === 1
+      ? 1
+      : t < 0.5
+      ? Math.pow(2, 20 * t - 10) / 2
+      : (2 - Math.pow(2, -20 * t + 10)) / 2;
   }
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      const offset = 170;
+      let offset = 170;
+
+      if (window.innerWidth <= 767) {
+        offset = 40; 
+      }
+
       const elementPosition =
         section.getBoundingClientRect().top + window.scrollY;
       window.scrollTo({
@@ -42,7 +48,6 @@ const NavBar = () => {
         behavior: "smooth",
         easing: easeInOutExpo,
       });
-      setShowMenu(false);
     }
   };
 
@@ -64,14 +69,6 @@ const NavBar = () => {
           PF 2024 FV
         </Links>
       </div>
- {/*      <div className="navbar-menu" onClick={handleToggleMenu}>
-        {showMenu ? (
-          <FaTimes className="menu-icon" />
-        ) : (
-          <FaBars className="menu-icon" />
-        )}
-      </div> */}
-      {/* className={showMenu ? "nav-menu active" : "nav-menu"} */}
       <ul className="nav-menu">
         <li className="nav-item">
           <Links

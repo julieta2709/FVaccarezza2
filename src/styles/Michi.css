@@ -94,7 +94,8 @@
   bottom: 24rem;
   z-index: 1;
 }
-@media screen and (width <=576px) {
+
+@media screen and (width <= 768px) {
   .Michi4 {
     width: 117%;
   }

@@ -40,7 +40,10 @@ const Opame = () => {
   const handlePrevClick = () => {
     const nextElement = document.getElementById("moreno");
     if (nextElement) {
-      const offset = 200;
+      let offset = 200;
+      if (window.innerWidth <= 767) {
+        offset = 40; 
+      }
       const elementPosition =
         nextElement.getBoundingClientRect().top + window.scrollY;
       window.scrollTo({
@@ -54,7 +57,10 @@ const Opame = () => {
   const handleNextClick = () => {
     const nextElement = document.getElementById("michi");
     if (nextElement) {
-      const offset = 200;
+      let offset = 200;
+      if (window.innerWidth <= 767) {
+        offset = 40; 
+      }
       const elementPosition =
         nextElement.getBoundingClientRect().top + window.scrollY;
       window.scrollTo({

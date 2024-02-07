@@ -37,7 +37,10 @@ const Logofolio = () => {
   const handlePrevClick = () => {
     const nextElement = document.getElementById("kp");
     if (nextElement) {
-      const offset = 200;
+      let offset = 200;
+      if (window.innerWidth <= 767) {
+        offset = 40; 
+      }
       const elementPosition =
         nextElement.getBoundingClientRect().top + window.scrollY;
       window.scrollTo({
@@ -51,7 +54,10 @@ const Logofolio = () => {
   const handleNextClick = () => {
     const nextElement = document.getElementById("misc");
     if (nextElement) {
-      const offset = 200;
+      let offset = 200;
+      if (window.innerWidth <= 767) {
+        offset = 40; 
+      }
       const elementPosition =
         nextElement.getBoundingClientRect().top + window.scrollY;
       window.scrollTo({

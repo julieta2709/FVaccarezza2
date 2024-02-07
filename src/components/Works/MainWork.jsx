@@ -10,13 +10,24 @@ const MainWork = () => {
   const navigate = useNavigate();
 
   function easeInOutExpo(t) {
-    return t === 0 ? 0 : t === 1 ? 1 : t < 0.5 ? Math.pow(2, 20 * t - 10) / 2 : (2 - Math.pow(2, -20 * t + 10)) / 2;
+    return t === 0
+      ? 0
+      : t === 1
+      ? 1
+      : t < 0.5
+      ? Math.pow(2, 20 * t - 10) / 2
+      : (2 - Math.pow(2, -20 * t + 10)) / 2;
   }
 
   const navigateToId = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      const offset = 200;
+      let offset = 200;
+
+      if (window.innerWidth <= 767) {
+        offset = 40;
+      }
+      
       const elementPosition =
         element.getBoundingClientRect().top + window.scrollY;
       window.scrollTo({
