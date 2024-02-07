@@ -401,10 +401,6 @@
   .Aboutme-abilitieIconF {
     width: 30%;
   }
-  .About2BG,
-  .AboutBG {
-    width: 32%;
-  }
   .Aboutme-text,
   .Aboutme-subtitle,
   .Aboutme-subtitle2 {
@@ -458,7 +454,6 @@
   }
   .Aboutme-2356container {
     column-gap: 5rem;
-    /* align-items: center; */
   }
   .About1a6-container {
     align-items: center;
@@ -482,9 +477,52 @@
   .Aboutme-contact {
     margin-top: -7.5rem;
   }
+}  
+@media screen and (768px < width <= 1024px) {
+  .Aboutme-abilitieIcon {
+    width: 50%;
+  }
+  .Aboutme-abilitieIconF {
+    width: 30%;
+  }
+  .About2BG,
+  .AboutBG {
+    width: 32%;
+  }
+  .Aboutme-text,
+  .Aboutme-subtitle,
+  .Aboutme-subtitle2 {
+    font-size: 1.6rem;
+  }
+  .Aboutme-2356container {
+    column-gap: 5rem;
+  }
+  .About1a6-container {
+    align-items: center;
+  }
+  .Aboutme-1 {
+    justify-content: flex-start;
+    width: 72%;
+  }
+  .Aboutme-3,
+  .Aboutme-6,
+  .Aboutme-2,
+  .Aboutme-5 {
+    grid-template-columns: 9.5625rem 31rem;
+  }
+  .Aboutme-2 {
+    margin-top: 2.5rem;
+  }
+  .Aboutme-5 {
+    margin-top: -13rem;
+  }
+  .Aboutme-contact {
+    margin-top: -7.5rem;
+  }
+} 
+@media screen and ( 425px < width <= 1024px) {
   .About2BG,
   .AboutBG {
     width: 32%;
   }
 }
-  

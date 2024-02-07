@@ -73,12 +73,13 @@
     margin-left: 5.25rem;
   }
 }
-@media screen and (576px < width <= 768px) {
+@media screen and (576px < width <= 1024px) {
   .Moreno2 {
     width: 129.8%;
   }
   .Moreno3 {
-    width: 123.6%;
+    width: 124.5%;
+    margin-left: -0.5rem;
   }
   .Moreno2 {
     margin-left: -5rem;

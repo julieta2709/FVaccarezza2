@@ -111,7 +111,7 @@
   z-index: 1;
   bottom: 60rem;
 }
-@media screen and (width <= 768px) {
+@media screen and (width <= 1024px) {
   .Opamecel1,
   .Opamecel2,
   .Opamecel3,

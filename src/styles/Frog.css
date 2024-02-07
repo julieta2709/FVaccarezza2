@@ -113,19 +113,8 @@
   right: 0;
   top: 110rem;
 }
-@media screen and (width <= 425px) {
-  .FrogBgL,
-  .FrogBgR {
-    width: 32.5%;
-  }
-}
-@media screen and (425px < width <= 576px) {
-  .FrogBgL,
-  .FrogBgR {
-    width: 32.5%;
-  }
-}
-@media screen and (576px < width <= 768px) {
+
+@media screen and (width <= 1024px) {
   .FrogBgL,
   .FrogBgR {
     width: 32.5%;

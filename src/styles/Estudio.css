@@ -83,7 +83,7 @@
   left: 0;
   z-index: 1;
 }
-@media screen and (width <=768px) {
+@media screen and (width <=1024px) {
   .Estudio3 {
     width: 131%;
   }
