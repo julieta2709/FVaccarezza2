@@ -84,4 +84,10 @@
   .navbar {
     font-size: 1.5rem;
   }
+  .logo-container {
+    width: 14%;
+  }
+  .nav-menu {
+    margin-left: 25%;
+  }
 }

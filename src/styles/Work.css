@@ -364,6 +364,15 @@ li {
   }
 }
 @media screen and (576px < width <= 768px) {
+  .Work-ItemText {
+    font-size: 1.6rem;
+  }
+  .Work-container {
+    background-size: 5.5%;
+  }
+  .Work-TitleIndividual {
+    grid-template-columns: 10.5625rem 92.5rem 10.5625rem;
+  }
   .WorkRightBG {
     width: 32.5%;
   }
