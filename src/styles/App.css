@@ -113,7 +113,12 @@ body {
   font-display: swap;
 }
 /*medias querys*/
-@media screen and (width <= 576px) {
+@media screen and (width <= 425px ) {
+  html {
+    font-size: 3.5px;
+  }
+}
+@media screen and (425px < width <= 576px) {
   html {
     font-size: 4.8px;
   }
