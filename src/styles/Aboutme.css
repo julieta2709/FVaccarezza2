@@ -145,6 +145,12 @@
   display: grid;
   height: 23.63rem;
 }
+.About1a6-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 /*1*/
 .Aboutme-1 {
   display: grid;
@@ -154,12 +160,15 @@
   grid-template-columns: 4.875rem 74.25rem;
   height: 20.625rem;
   justify-content: center;
+  align-self: center;
 }
 .Aboutme-number1 {
   grid-row: span 3;
   grid-column: 1;
   align-self: baseline;
   z-index: 1;
+  justify-self: center;
+  width: 90%;
 }
 .Aboutme-titleProf {
   grid-row: 2;
@@ -188,6 +197,7 @@
   justify-content: center;
   column-gap: 12rem;
   row-gap: 8.125rem;
+  margin-top: 5rem;
 }
 .Aboutme-3,
 .Aboutme-6 {
@@ -277,14 +287,16 @@
   justify-items: center;
   margin-left: 4.5rem;
 }
-.Aboutme-6container .Aboutme-text .Aboutme-abilitieIcon, .Aboutme-abilitieIconF {
+.Aboutme-6container .Aboutme-text .Aboutme-abilitieIcon,
+.Aboutme-abilitieIconF {
   grid-column: 1;
   margin-right: 1.3125rem;
 }
 .Aboutme-abilitieIcon {
   width: 100%;
 }
-.Aboutme-6container .Aboutme-text .Aboutme-abilitieIcon span, .Aboutme-abilitieIconF span{
+.Aboutme-6container .Aboutme-text .Aboutme-abilitieIcon span,
+.Aboutme-abilitieIconF span {
   grid-column: 2;
 }
 .Aboutme-6container .Aboutme-text .figma {
@@ -316,7 +328,9 @@
   margin-top: -2rem;
 }
 @media screen and (width <=425px) {
-  .Aboutme-text, .Aboutme-subtitle, .Aboutme-subtitle2 {
+  .Aboutme-text,
+  .Aboutme-subtitle,
+  .Aboutme-subtitle2 {
     font-size: 1.6rem;
   }
   .Aboutme-text {
@@ -324,6 +338,7 @@
   }
   .Aboutme-2356container {
     column-gap: 5rem;
+    margin-top: 5rem;
   }
   .Aboutme-3,
   .Aboutme-6,
@@ -334,11 +349,17 @@
   .Aboutme-abilitieIcon {
     width: 60%;
   }
-  .Aboutme-abilitieIconF  {
+  .Aboutme-abilitieIconF {
     width: 35%;
   }
+  .Aboutme-2 {
+    margin-top: 2.5rem;
+  }
+  .Aboutme-5 {
+    margin-top: -13rem;
+  }
   .Aboutme-contact {
-    margin-top: -15.5rem 
+    margin-top: -7.5rem;
   }
   .AboutBG {
     width: 32%;
@@ -351,7 +372,7 @@
   .Aboutme-abilitieIcon {
     width: 50%;
   }
-  .Aboutme-abilitieIconF  {
+  .Aboutme-abilitieIconF {
     width: 30%;
   }
 
