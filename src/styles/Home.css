@@ -106,7 +106,7 @@ h1,
     line-height: 8;
   }
 }
-@media screen and (width <= 1024px) {
+@media screen and (width <= 1440px) {
   .Home-container {
     background-size: 32.5%;
   }

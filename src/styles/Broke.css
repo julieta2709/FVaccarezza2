@@ -67,7 +67,7 @@
   top: 125rem;
   right: 0;
 }
-@media screen and (width <= 1024px) {
+@media screen and (width <= 1200px) {
   .Broke2 {
     width: 52.8%;
   }

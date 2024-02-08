@@ -40,10 +40,10 @@
 }
 .Nmp-AnimationContainer {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
-  gap: 1.875rem;
-  width: 22.1875rem;
+  grid-template-columns: 10.1rem 10.1rem;
+  grid-template-rows: 13.98rem;
+  gap: 1.4rem;
+  width: 22.1825rem;
   margin-top: -17.9375rem;
   margin-left: 10.25rem;
 }
@@ -58,7 +58,7 @@
     margin-left: -5rem;
   }
   .Nmp-AnimationContainer {
-    margin-left: 5.25rem;
+    margin-left: 5.4rem;
   }
 }
 @media screen and (425px < width <= 576px) {
@@ -73,7 +73,7 @@
     margin-left: 5.25rem;
   }
 }
-@media screen and (576px < width <= 1024px) {
+@media screen and (576px < width <= 1200px) {
   .Moreno2 {
     width: 129.8%;
   }

@@ -2,9 +2,8 @@ import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import Nmp1Bg from "../../../assets/img/Moreno/Nmp1Bg.png";
-import Project1 from "../../../assets/img/Moreno/Project1.png";
-// import Nmp1Pic from "../../../assets/img/Moreno/Nmp1Pic.png";
 import Pilltrack2 from "../../../assets/img/Moreno/Pilltrack2.png";
+import Project1 from "../../../assets/img/Moreno/Project1.png";
 import Project2 from "../../../assets/img/Moreno/Project2.png";
 import "../../../styles/Moreno.css";
 import "../Moreno/Nmp.css";
@@ -33,7 +32,7 @@ const Nmp1 = () => {
   };
 
   return (
-    <div ref={ref}>
+    <div ref={ref} className="Nmp1-container">
       {animationActive && (
         <>
           <img src={Nmp1Bg} alt="Nmp1" className="Nmp1Bg" />

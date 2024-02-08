@@ -114,7 +114,7 @@
   top: 110rem;
 }
 
-@media screen and (width <= 1024px) {
+@media screen and (width <= 1200px) {
   .FrogBgL,
   .FrogBgR {
     width: 32.5%;

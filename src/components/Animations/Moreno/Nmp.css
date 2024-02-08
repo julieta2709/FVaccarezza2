@@ -14,6 +14,11 @@
   width: 100%;
   height: 100%;
 }
+.Nmp1-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
 .Nmp1Bg,
 .Nmp1Pic,
 .Project2,
@@ -23,6 +28,8 @@
 .Skinpro1,
 .Skinpro2 {
   position: absolute;
+  width: 100%;
+  height: 100%;
 }
 .Project2 {
   margin-left: 0.225rem;
@@ -46,98 +53,4 @@
 .Pilltrack2,
 .Skinpro2 {
   z-index: 4;
-}
-
-@media screen and (425px < width <= 460px) {
-  .Nmp1Bg,
-  .Nmp1Pic,
-  .Project2,
-  .Pilltrack2,
-  .Nmp2Bg,
-  .Nmp2Project2,
-  .Skinpro1,
-  .Skinpro2 {
-    width: 11%;
-  }
-}
-@media screen and (460px < width <= 500px),
-  screen and (576px < width <= 630px) {
-  .Nmp1Bg,
-  .Nmp1Pic,
-  .Project2,
-  .Pilltrack2,
-  .Nmp2Bg,
-  .Nmp2Project2,
-  .Skinpro1,
-  .Skinpro2 {
-    width: 10.5%;
-  }
-}
-@media screen and (500px < width <= 530px),
-  screen and (630px < width <= 660px),
-  screen and (840px <= width <= 890px) {
-  .Nmp1Bg,
-  .Nmp1Pic,
-  .Project2,
-  .Pilltrack2,
-  .Nmp2Bg,
-  .Nmp2Project2,
-  .Skinpro1,
-  .Skinpro2 {
-    width: 10%;
-  }
-}
-@media screen and (width <= 425px),
-  screen and (530px < width <= 545px),
-  screen and (660px < width <= 690px),
-  screen and (890px <= width <= 990px) {
-  .Nmp1Bg,
-  .Nmp1Pic,
-  .Project2,
-  .Pilltrack2,
-  .Nmp2Bg,
-  .Nmp2Project2,
-  .Skinpro1,
-  .Skinpro2 {
-    width: 9.5%;
-  }
-}
-@media screen and (545px < width <= 576px),
-  screen and (690px < width <= 768px) {
-  .Nmp1Bg,
-  .Nmp1Pic,
-  .Project2,
-  .Pilltrack2,
-  .Nmp2Bg,
-  .Nmp2Project2,
-  .Skinpro1,
-  .Skinpro2 {
-    width: 9%;
-  }
-}
-@media screen and (576px < width <= 630px),
-  screen and (768px <= width <= 840px) {
-  .Nmp1Bg,
-  .Nmp1Pic,
-  .Project2,
-  .Pilltrack2,
-  .Nmp2Bg,
-  .Nmp2Project2,
-  .Skinpro1,
-  .Skinpro2 {
-    width: 10.5%;
-  }
-}
-@media screen and (690px < width <= 768px),
-  screen and (990px <= width <= 1024px) {
-  .Nmp1Bg,
-  .Nmp1Pic,
-  .Project2,
-  .Pilltrack2,
-  .Nmp2Bg,
-  .Nmp2Project2,
-  .Skinpro1,
-  .Skinpro2 {
-    width: 8.5%;
-  }
 }

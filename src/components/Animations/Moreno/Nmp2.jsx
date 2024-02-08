@@ -31,7 +31,7 @@ const Nmp2 = () => {
     repeatDelay: 1,
   };
   return (
-    <div ref={ref}>
+    <div ref={ref} className="Nmp1-container">
       {animationActive && (
         <>
           <img src={Nmp2Bg} alt="Nmp2Bg" className="Nmp2Bg" />

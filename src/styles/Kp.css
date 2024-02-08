@@ -42,7 +42,7 @@
   margin-top: -20rem;
   justify-self: flex-end;
 }
-@media screen and (width <= 1024px) {
+@media screen and (width <= 1200px) {
   .Kp2,
   .Kp3,
   .Kp4,

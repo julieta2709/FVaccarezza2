@@ -27,6 +27,7 @@
 .Estudio3 {
   justify-self: center;
   width: 100%;
+  z-index: 2;
 }
 .EstudioCel-animationContainer1,
 .Ipad-container {
@@ -45,6 +46,7 @@
   justify-self: end;
   margin-right: -5.2rem;
   margin-bottom: 6rem;
+  z-index: 3;
 }
 .Estudiopad1 {
   width: 100%;
@@ -83,7 +85,7 @@
   left: 0;
   z-index: 1;
 }
-@media screen and (width <=1024px) {
+@media screen and (width <=1200px) {
   .Estudio3 {
     width: 131%;
   }
@@ -104,5 +106,25 @@
   }
   .EstudioBgBottomL {
     width: 45%;
+  }
+}
+@media screen and (1200px < width <= 1440px) {
+  .Estudio3 {
+    width: 131%;
+  }
+  .Ipad-container {
+    width: 31rem;
+    margin-right: -5.4rem;
+    margin-bottom: 6rem;
+  }
+}
+@media screen and (width > 1400px) {
+  .Estudio3 {
+    width: 131%;
+  }
+  .Ipad-container {
+    width: 31rem;
+    margin-right: -5.4rem;
+    margin-bottom: 6rem;
   }
 }
