@@ -92,3 +92,15 @@
     margin-left: 20%;
   }
 }
+@media screen and (768px < width <= 1024px) {
+  .navbar {
+    font-size: 1.4rem;
+    width: 95%;
+  }
+  .logo-container {
+    width: 15%;
+  }
+  .nav-menu {
+    margin-left: 20%;
+  }
+}

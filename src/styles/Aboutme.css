@@ -478,6 +478,26 @@
     margin-top: -7.5rem;
   }
 }  
+@media screen and (768px < width <=851px ) {
+  .Aboutme-2356container {
+    column-gap: 3rem;
+    grid-template-columns: 40.8125rem 40.8125rem 
+}
+.Aboutme-1 {
+  width: 90%;
+}
+}
+@media screen and (851px < width <=1024px ) {
+  .Aboutme-2356container {
+    column-gap: 5rem;
+    justify-items: center;
+}
+.Aboutme-1 {
+  width: 87%;
+  justify-content: flex-start;
+}
+}
+
 @media screen and (768px < width <= 1024px) {
   .Aboutme-abilitieIcon {
     width: 50%;
@@ -485,30 +505,17 @@
   .Aboutme-abilitieIconF {
     width: 30%;
   }
-  .About2BG,
-  .AboutBG {
-    width: 32%;
-  }
-  .Aboutme-text,
-  .Aboutme-subtitle,
-  .Aboutme-subtitle2 {
-    font-size: 1.6rem;
-  }
-  .Aboutme-2356container {
-    column-gap: 5rem;
-  }
   .About1a6-container {
     align-items: center;
   }
   .Aboutme-1 {
     justify-content: flex-start;
-    width: 72%;
   }
   .Aboutme-3,
   .Aboutme-6,
   .Aboutme-2,
   .Aboutme-5 {
-    grid-template-columns: 9.5625rem 31rem;
+    grid-template-columns: 9.5625rem 30rem;
   }
   .Aboutme-2 {
     margin-top: 2.5rem;

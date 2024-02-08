@@ -360,7 +360,20 @@ li {
   .Work-TitleIndividual {
     grid-template-columns: 10.5625rem 70.5rem 10.5625rem;
   }
-  
+}
+@media screen and (768px < width <= 1024px) {
+  .Work-container {
+    background-size: 5.5%;
+  }
+  .Work-TitleIndividual {
+    grid-template-columns: 10.5625rem 68.5rem 10.5625rem;
+  }
+  .Work-ListRow2, .Work-ListRow1 {
+    column-gap: 0.7rem;
+  }
+  .Work-ItemText {
+    font-size: 1.2rem;
+  }
 }
 @media screen and (width <= 1024px) {
   .WorkRightBG {

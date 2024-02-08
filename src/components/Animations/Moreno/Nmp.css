@@ -74,7 +74,8 @@
   }
 }
 @media screen and (500px < width <= 530px),
-  screen and (630px < width <= 660px) {
+  screen and (630px < width <= 660px),
+  screen and (840px <= width <= 890px) {
   .Nmp1Bg,
   .Nmp1Pic,
   .Project2,
@@ -88,7 +89,8 @@
 }
 @media screen and (width <= 425px),
   screen and (530px < width <= 545px),
-  screen and (660px < width <= 690px) {
+  screen and (660px < width <= 690px),
+  screen and (890px <= width <= 990px) {
   .Nmp1Bg,
   .Nmp1Pic,
   .Project2,
@@ -113,7 +115,8 @@
     width: 9%;
   }
 }
-@media screen and (576px < width <= 630px) {
+@media screen and (576px < width <= 630px),
+  screen and (768px <= width <= 840px) {
   .Nmp1Bg,
   .Nmp1Pic,
   .Project2,
@@ -125,7 +128,8 @@
     width: 10.5%;
   }
 }
-@media screen and (690px < width <= 768px) {
+@media screen and (690px < width <= 768px),
+  screen and (990px <= width <= 1024px) {
   .Nmp1Bg,
   .Nmp1Pic,
   .Project2,
