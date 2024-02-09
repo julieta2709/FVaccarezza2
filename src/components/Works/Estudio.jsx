@@ -7,10 +7,10 @@ import Estudio1 from "../../assets/img/Estudio/Estudio1.png";
 import Estudio2 from "../../assets/img/Estudio/Estudio2.png";
 import Estudio3 from "../../assets/img/Estudio/Estudio3.png";
 import Estudio4 from "../../assets/img/Estudio/Estudio4.png";
-import Estudiopad1 from "../../assets/img/Estudio/Estudiopad1.png";
 import carro from "../../assets/img/Estudio/carro.gif";
 import "../../styles/Estudio.css";
 import "../../styles/Work.css";
+import AnimaIpad1 from "../Animations/Estudio/AnimaIpad1";
 import BeLink from "../Buttons/BeLink";
 import Next from "../Buttons/Next";
 import Prev from "../Buttons/Prev";
@@ -39,7 +39,7 @@ const Estudio = () => {
     if (nextElement) {
       let offset = 200;
       if (window.innerWidth <= 767) {
-        offset = 40; 
+        offset = 40;
       }
       const elementPosition =
         nextElement.getBoundingClientRect().top + window.scrollY;
@@ -55,7 +55,7 @@ const Estudio = () => {
     if (nextElement) {
       let offset = 200;
       if (window.innerWidth <= 767) {
-        offset = 40; 
+        offset = 40;
       }
       const elementPosition =
         nextElement.getBoundingClientRect().top + window.scrollY;
@@ -107,10 +107,14 @@ const Estudio = () => {
           <EstudioCelAnimation />
         </div>
         <div className="Ipad-container">
-        <img src={Estudiopad1} alt="Estudio-IPAD" className="Estudiopad1" />
+          <AnimaIpad1 className="Estudiopad1" />
         </div>
       </div>
-      <img src={EstudioBgBottomL} alt="EstudioBgBottomL" className="EstudioBgBottomL"></img>
+      <img
+        src={EstudioBgBottomL}
+        alt="EstudioBgBottomL"
+        className="EstudioBgBottomL"
+      ></img>
     </div>
   );
 };
