@@ -107,7 +107,7 @@ const Estudio = () => {
           <EstudioCelAnimation />
         </div>
         <div className="Ipad-container">
-          <AnimaIpad1 className="Estudiopad1" />
+          <AnimaIpad1 />
         </div>
       </div>
       <img
