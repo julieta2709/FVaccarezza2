@@ -1,14 +1,18 @@
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
-// import Ipad1 from "../../../assets/img/Estudio/Ipad1.png";
+import Ipad1 from "../../../assets/img/Estudio/Ipad1.png";
 import Ipad1Bg from "../../../assets/img/Estudio/Ipad1Bg.png";
 import Ipad2 from "../../../assets/img/Estudio/Ipad2.png";
-import "./Ipad.css";
+import Ipad3 from "../../../assets/img/Estudio/Ipad3.png";
+import "../Estudio/Ipad.css";
 
 const AnimaIpad1 = () => {
   const [animationActive, setAnimationActive] = useState(false);
-  const [ref, inView] = useInView({ threshold: 0.5 });
+
+  const [ref, inView] = useInView({
+    threshold: 0.5,
+  });
 
   useEffect(() => {
     if (inView) {
@@ -18,20 +22,12 @@ const AnimaIpad1 = () => {
     }
   }, [inView]);
 
-  const transition = {
-    duration: 2,
-    ease: [0.42, 0, 0.11, 0.99],
-    repeat: Infinity,
-  };
-
   return (
     <div ref={ref} className="Ipad1-container">
       {animationActive && (
         <>
           <img src={Ipad1Bg} alt="Ipad1Bg" className="Ipad1Bg" />
-          {/* <AnimatePresence initial={false}> */}
-{/*           <motion.img
-            key="ipad1"
+          <motion.img
             src={Ipad1}
             alt="Ipad1"
             className="Ipad1"
@@ -39,15 +35,18 @@ const AnimaIpad1 = () => {
               opacity: 0,
               y: 0,
             }}
-            visible={{
+            animate={{
               opacity: 1,
               y: "-10%",
             }}
-            transition={{ ...transition }}
-            exit={{
-              opacity: 0,
+            transition={{
+              duration: 3,
+              ease: [0.42, 0, 0.11, 0.99],
+/*               repeat: Infinity,
+              repeatType: "reverse", */
             }}
-          /> */}
+            exit={{ opacity: 0 }}
+          />
           <motion.img
             src={Ipad2}
             alt="Ipad2"
@@ -55,15 +54,39 @@ const AnimaIpad1 = () => {
             initial={{
               opacity: 0,
             }}
-            visible={{
+            animate={{
               opacity: 1,
             }}
-            transition={{ ...transition }}
-            exit={{
-              opacity: 0,
+            transition={{
+              duration: 2,
+              ease: [0.42, 0, 0.11, 0.99],
+/*               repeat: Infinity,
+              repeatType: "reverse", */
+              delay: 0.6,
             }}
+            exit={{ opacity: 0 }}
           />
-          {/* </AnimatePresence> */}
+          <motion.img
+            src={Ipad3}
+            alt="Ipad3"
+            className="Ipad3"
+            initial={{
+              opacity: 1,
+              y: 0,
+            }}
+            animate={{
+              opacity: 0,
+              y: "-10%",
+            }}
+            transition={{
+              duration: 3,
+              ease: [0.42, 0, 0.11, 0.99],
+/*               repeat: Infinity,
+              repeatType: "reverse", */
+              delay: 3,
+            }}
+            exit={{ opacity: 0 }}
+          />
         </>
       )}
     </div>

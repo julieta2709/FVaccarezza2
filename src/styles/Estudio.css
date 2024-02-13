@@ -29,8 +29,7 @@
   width: 100%;
   z-index: 2;
 }
-.EstudioCel-animationContainer1,
-.Ipad-container {
+.EstudioCel-animationContainer1 {
   z-index: 1;
 }
 .EstudioCel-animationContainer {
@@ -41,7 +40,10 @@
   width: 8.125rem;
 }
 .Ipad-container {
-  width: 18.5rem;
+  height: 25.9375rem;
+  width: 34.625rem;
+  border: solid 0.3256rem #222222;
+  border-radius: 0.815rem;
   align-self: center;
   justify-self: end;
   margin-right: -5.2rem;
