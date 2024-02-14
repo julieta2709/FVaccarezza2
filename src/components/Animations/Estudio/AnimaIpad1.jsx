@@ -9,10 +9,7 @@ import "../Estudio/Ipad.css";
 
 const AnimaIpad1 = () => {
   const [animationActive, setAnimationActive] = useState(false);
-
-  const [ref, inView] = useInView({
-    threshold: 0.5,
-  });
+  const [ref, inView] = useInView({ threshold: 0.5 });
 
   useEffect(() => {
     if (inView) {
@@ -32,20 +29,22 @@ const AnimaIpad1 = () => {
             alt="Ipad1"
             className="Ipad1"
             initial={{
-              opacity: 0,
+              opacity: 1,
               y: 0,
             }}
             animate={{
-              opacity: 1,
-              y: "-10%",
+              opacity: 0,
+              y: -50,
             }}
             transition={{
-              duration: 3,
-              ease: [0.42, 0, 0.11, 0.99],
-/*               repeat: Infinity,
-              repeatType: "reverse", */
+              opacity: {
+                duration: 2,
+              },
+              y: {
+                duration: 2,
+                ease: [0.42, 0, 0.11, 0.99],
+              },
             }}
-            exit={{ opacity: 0 }}
           />
           <motion.img
             src={Ipad2}
@@ -53,43 +52,50 @@ const AnimaIpad1 = () => {
             className="Ipad2"
             initial={{
               opacity: 0,
+              y: 0,
             }}
             animate={{
               opacity: 1,
+              y: -60.96,
+              transitionEnd: {
+                display: "none",
+              },
             }}
+/*             exit={{
+              opacity: 0,
+              y: -60.96,
+            }} */
             transition={{
-              duration: 2,
-              ease: [0.42, 0, 0.11, 0.99],
-/*               repeat: Infinity,
-              repeatType: "reverse", */
-              delay: 0.6,
+              opacity: {
+                duration: 3,
+                ease: [0.42, 0, 0.11, 0.99],
+              },
+              y: {
+                delay: 3,
+                duration: 3,
+              },
             }}
-            exit={{ opacity: 0 }}
           />
           <motion.img
             src={Ipad3}
             alt="Ipad3"
             className="Ipad3"
             initial={{
-              opacity: 1,
-              y: 0,
+              opacity: 0,
             }}
             animate={{
-              opacity: 0,
-              y: "-10%",
+              opacity: 1,
             }}
             transition={{
               duration: 3,
               ease: [0.42, 0, 0.11, 0.99],
-/*               repeat: Infinity,
-              repeatType: "reverse", */
-              delay: 3,
+              delay: 6,
             }}
-            exit={{ opacity: 0 }}
           />
         </>
       )}
     </div>
   );
 };
+
 export default AnimaIpad1;

@@ -14,6 +14,8 @@
 .Ipad8,
 .Ipad9,
 .Ipad10,
+.Ipad12,
+.Ipad13,
 .Ipad15 {
   position: absolute;
   width: 100%;
@@ -22,12 +24,7 @@
   right: 0;
   z-index: 4;
 }
-.Ipad12,
-.Ipad13 {
-  position: absolute;
-  width: calc(34.625rem - 0.3256rem);
-  height: calc(25.9375rem - 0.3256rem);
-  top: 0;
-  right: 0;
-  z-index: 4;
+
+.hidden {
+  display: none;
 }

@@ -43,12 +43,14 @@
   height: 25.9375rem;
   width: 34.625rem;
   border: solid 0.3256rem #222222;
-  border-radius: 0.815rem;
+  border-radius: 1.3rem;
   align-self: center;
   justify-self: end;
   margin-right: -5.2rem;
   margin-bottom: 6rem;
-  z-index: 3;
+  z-index: 4;
+  position: relative;
+  background-color: #EDEDED;
 }
 .Estudiopad1 {
   width: 100%;

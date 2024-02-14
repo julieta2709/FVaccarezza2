@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import Ipad10 from "../../../assets/img/Estudio/Ipad10.png";
@@ -54,34 +54,25 @@ const AnimaIpad2 = () => {
               }}
             />
           ))}
-          {/* <motion.img
-            src={Ipad15}
-            alt="Ipad15"
-            className="Ipad15"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{
-                delay: IpadImg.length * 2,
-            }}
-          /> */}
           <motion.img
             src={Ipad13}
             alt="Ipad13"
             className="Ipad13"
             initial={{
               opacity: 0,
-              width: 0,
+              width: "50%",
             }}
             animate={{
               opacity: 1,
               width: "100%",
-            //   height: "25.6119rem",
             }}
             transition={{
-                delay: (IpadImg.length * 2) + 2,
+              delay: IpadImg.length * 2 + 2,
+              ease: [0.55, 0.59, 0, 1.01],
+              duration: 1.5,
             }}
           />
-           <motion.img
+          <motion.img
             src={Ipad12}
             alt="Ipad12"
             className="Ipad12"
@@ -92,23 +83,34 @@ const AnimaIpad2 = () => {
               opacity: 1,
             }}
             transition={{
-                delay: (IpadImg.length * 2) + 3,
+              delay: IpadImg.length * 2 + 3,
             }}
           />
-          <motion.img
-            src={Ipad13}
-            alt="Ipad13"
-            className="Ipad13"
-            initial={{
-              opacity: 0,
-            }}
-            animate={{
-              opacity: 1,
-            }}
-            transition={{
-                delay: (IpadImg.length * 2) + 4,
-            }}
-          />
+          <AnimatePresence>
+            <motion.img
+              src={Ipad13}
+              alt="Ipad13"
+              className="Ipad13"
+              initial={{
+                opacity: 0,
+                width: "100%",
+              }}
+              animate={{
+                opacity: 1,
+              }}
+              exit={{
+                width: "50%",
+                opacity: 0,
+                transition: {
+                  duration: 0.5,
+                  ease: [0.55, 0.59, 0, 1.01],
+                },
+              }}
+              transition={{
+                delay: IpadImg.length * 2 + 6,
+              }}
+            />
+          </AnimatePresence>
           <motion.img
             src={Ipad15}
             alt="Ipad15"
@@ -120,7 +122,9 @@ const AnimaIpad2 = () => {
               opacity: 1,
             }}
             transition={{
-                delay: (IpadImg.length * 2) + 5,
+              duration: 2,
+              ease: [0.55, 0.59, 0, 1.01],
+              delay: IpadImg.length * 2 + 8,
             }}
           />
         </>
