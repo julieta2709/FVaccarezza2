@@ -1,69 +1,115 @@
-import { AnimatePresence, motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
-import Ipad1 from "../../../assets/img/Estudio/Ipad1.png";
+import { motion } from "framer-motion";
+import React from "react";
+import Ip1 from "../../../assets/img/Estudio/Ip1.png";
+import Ip2 from "../../../assets/img/Estudio/Ip2.png";
+import Ip3 from "../../../assets/img/Estudio/Ip3.png";
+import Ip6 from "../../../assets/img/Estudio/Ip6.png";
 import Ipad1Bg from "../../../assets/img/Estudio/Ipad1Bg.png";
-import Ipad2 from "../../../assets/img/Estudio/Ipad2.png";
-import Ipad3 from "../../../assets/img/Estudio/Ipad3.png";
+import Ipad4 from "../../../assets/img/Estudio/Ipad4.png";
+import Ipad5 from "../../../assets/img/Estudio/Ipad5.png";
+import Ipad5Bg from "../../../assets/img/Estudio/Ipad5Bg.png";
+import Rectangle1 from "../../../assets/img/Estudio/Rectangle1.png";
 import "../Estudio/Ipad.css";
 
-const images = [Ipad1, Ipad2, Ipad3];
-
 const AnimaIpad3 = () => {
-  const [index, setIndex] = useState(0);
-  const [yOffsets, setYOffsets] = useState([]);
-
-  useEffect(() => {
-    setYOffsets(generateYOffsets());
-
-    const interval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 2400);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  const generateYOffsets = () => {
-    const offsets = images.map((_, i) => {
-      if (i === 0) return -28;
-      else if (i === 1) return -60.96;
-      else return 0;
-    });
-    return offsets;
-  };
-
   return (
     <div className="Ipad1-container">
       <img src={Ipad1Bg} alt="Ipad1Bg" className="Ipad1Bg" />
-      <AnimatePresence wait>
-        <motion.img
-          key={index}
-          src={images[index]}
-          className={`Ipad${index + 1}`}
-          alt={`Ipad${index + 1}`}
-          initial={{ opacity: 0, y: 0 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            delay: 0.5,
-            duration: 1,
-            ease: [0.42, 0, 0.11, 0.99],
-          }}
-          exit={{
-            opacity: 0,
-            y: yOffsets[index],
-            transition: {
-              opacity: {
-                duration: 1.5,
-                // ease: [0.42, 0, 0.11, 0.99],
-                delay: 0,
-              },
-              y: {
-                duration: 0.2,
-                delay: 0,
-              },
-            },
-          }}
-        />
-      </AnimatePresence>
+      <motion.img
+        src={Ip1}
+        className="Ipad1"
+        alt="Ipad1"
+        initial={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 0, y: -28 }}
+        transition={{
+          duration: 4,
+          ease: [0.42, 0, 0.11, 0.99],
+        }}
+      />
+      <motion.img
+        src={Ip2}
+        className="Ipad2"
+        alt="Ipad2"
+        initial={{ y: 0 }}
+        animate={{ y: [0, -28, -90] }}
+        transition={{
+          duration: 8,
+          ease: [0.42, 0, 0.11, 0.99],
+          times: [0, 0.5, 1],
+        }}
+      />
+      <motion.img
+        src={Ip3}
+        className="Ipad3"
+        alt="Ipad3"
+        initial={{ y: 93 }}
+        animate={{ y: [93, 65, 0] }}
+        transition={{
+          duration: 8,
+          ease: [0.42, 0, 0.11, 0.99],
+          times: [0, 0.5, 1],
+        }}
+      />
+      <motion.img
+        src={Rectangle1}
+        className="Rectangle"
+        alt="Rectangle"
+        initial={{ y: 0 }}
+        animate={{ y: [10, 35] }}
+        transition={{
+          duration: 4,
+          ease: [0.42, 0, 0.11, 0.99],
+          delay: 4,
+        }}
+      />
+      <motion.img
+        src={Ipad4}
+        className="Ipad4"
+        alt="Ipad4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          duration: 1,
+          ease: [0.42, 0, 0.11, 0.99],
+          delay: 8,
+        }}
+      />
+      <motion.img
+        src={Ipad5}
+        className="Ipad5b"
+        alt="Ipad5"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          duration: 1,
+          ease: [0.42, 0, 0.11, 0.99],
+          delay: 9,
+        }}
+      />
+      <motion.img
+        src={Ip6}
+        className="Ip6"
+        alt="Ip6"
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 3,
+          ease: [0.42, 0, 0.11, 0.99],
+          delay: 10,
+        }}
+      />
+      <motion.img
+        src={Ipad5Bg}
+        className="Ipad5"
+        alt="Ipad5"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          duration: 3,
+          ease: [0.42, 0, 0.11, 0.99],
+          delay: 10,
+        }}
+      />
     </div>
   );
 };

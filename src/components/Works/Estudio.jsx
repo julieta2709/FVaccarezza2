@@ -10,9 +10,7 @@ import Estudio4 from "../../assets/img/Estudio/Estudio4.png";
 import carro from "../../assets/img/Estudio/carro.gif";
 import "../../styles/Estudio.css";
 import "../../styles/Work.css";
-// import AnimaIpad1 from "../Animations/Estudio/AnimaIpad1";
-// import AnimaIpad2 from "../Animations/Estudio/AnimaIpad2";
-import AnimaIpad3 from "../Animations/Estudio/AnimaIpad3";
+import AnimaIpad2 from "../Animations/Estudio/AnimaIpad2";
 import BeLink from "../Buttons/BeLink";
 import Next from "../Buttons/Next";
 import Prev from "../Buttons/Prev";
@@ -109,9 +107,7 @@ const Estudio = () => {
           <EstudioCelAnimation />
         </div>
         <div className="Ipad-container">
-          <AnimaIpad3 />
-          {/* <AnimaIpad1 /> */}
-          {/* <AnimaIpad2 /> */}
+          <AnimaIpad2 />
         </div>
       </div>
       <img

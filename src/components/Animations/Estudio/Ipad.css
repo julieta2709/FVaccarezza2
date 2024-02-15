@@ -3,12 +3,17 @@
   z-index: 4;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 .Ipad1Bg,
 .Ipad1,
 .Ipad2,
 .Ipad3,
+.Ipad4,
 .Ipad5,
+.Ipad5b,
+.Ip6,
+.Ip7,
 .Ipad6,
 .Ipad7,
 .Ipad8,
@@ -16,15 +21,12 @@
 .Ipad10,
 .Ipad12,
 .Ipad13,
-.Ipad15 {
+.Ipad15,
+.Rectangle {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   right: 0;
   z-index: 4;
-}
-
-.hidden {
-  display: none;
 }
