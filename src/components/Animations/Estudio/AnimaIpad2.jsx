@@ -58,8 +58,8 @@ const AnimaIpad2 = () => {
             src={Ip1c}
             className="Ipad1"
             alt="Ipad1"
-            initial={{ opacity: 1, y: 0 }}
-            animate={{ opacity: 0, y: -15 }}
+            initial={{ opacity: 1, y: "0rem" }}
+            animate={{ opacity: 0, y: "-4rem" }}
             transition={{
               duration: 4,
               ease: [0.42, 0, 0.11, 0.99],
@@ -69,8 +69,8 @@ const AnimaIpad2 = () => {
             src={Ip2c}
             className="Ipad2"
             alt="Ipad2"
-            initial={{ y: 0 }}
-            animate={{ y: [0, -15, -44] }}
+            initial={{ y: "0rem" }}
+            animate={{ y: ["0rem", "-4rem", "-10.5rem"] }}
             transition={{
               duration: 8,
               ease: [0.42, 0, 0.11, 0.99],
@@ -81,8 +81,8 @@ const AnimaIpad2 = () => {
             src={Ip3c}
             className="Ipad3"
             alt="Ipad3"
-            initial={{ y: 0 }}
-            animate={{ y: [0, -15, -44] }}
+            initial={{ y: "0rem" }}
+            animate={{ y: ["0rem", "-4rem", "-10.5rem"] }}
             transition={{
               duration: 8,
               ease: [0.42, 0, 0.11, 0.99],
@@ -93,8 +93,8 @@ const AnimaIpad2 = () => {
             src={Rectangle1}
             className="Rectangle"
             alt="Rectangle"
-            initial={{ y: 0 }}
-            animate={{ y: [10, 16] }}
+            initial={{ y: "0rem" }}
+            animate={{ y: ["1rem", "3rem"] }}
             transition={{
               duration: 4,
               ease: [0.42, 0, 0.11, 0.99],
@@ -137,18 +137,20 @@ const AnimaIpad2 = () => {
               delay: 11,
             }}
           />
-          <motion.img
-            src={Ipad5Bg}
-            className="Ipad5"
-            alt="Ipad5"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{
-              duration: 2,
-              ease: [0.42, 0, 0.11, 0.99],
-              delay: 12,
-            }}
-          />
+          {
+            <motion.img
+              src={Ipad5Bg}
+              className="Ipad5"
+              alt="Ipad5"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{
+                duration: 2,
+                ease: [0.42, 0, 0.11, 0.99],
+                delay: 12,
+              }}
+            />
+          }
           {IpadImg.map((image, currentIndex) => (
             <motion.img
               key={currentIndex}
