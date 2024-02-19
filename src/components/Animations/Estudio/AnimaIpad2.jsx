@@ -91,7 +91,7 @@ const AnimaIpad2 = () => {
           />
           <motion.img
             src={Rectangle1}
-            className="Rectangle"
+            className="Rectangle1"
             alt="Rectangle"
             initial={{ y: "0rem" }}
             animate={{ y: ["1rem", "3rem"] }}
