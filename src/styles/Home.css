@@ -14,10 +14,11 @@
 .HomePF-Container {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 6.25rem 56rem 6.25rem;
+  grid-template-columns: 6.5rem 72.75rem 6.5rem;
   justify-items: center;
   align-content: center;
   justify-content: space-around;
+  margin-top: 7.5625rem;
 }
 .redCircle {
   align-self: center;
@@ -26,18 +27,18 @@
 .redCircle:first-child {
   grid-column: 1 / span 1;
   grid-row: 1 / span 2;
-  width: 100%;
+  width: 68.3%;
 }
 .redCircle:last-child {
   grid-column: 3 / span 1;
   grid-row: 1 / span 2;
-  width: 100%;
+  width: 68.3%;
 }
 /*fonts styles*/
 h2,
 .year {
   font-family: "Magilio";
-  font-size: 28rem;
+  font-size: 37.49rem;
   font-weight: normal;
   color: #e52421;
   line-height: 1;
@@ -52,7 +53,7 @@ h2,
 h1,
 .portfolio {
   font-family: "PP-Hattonbold";
-  font-size: 7rem;
+  font-size: 9.25rem;
   margin: 0;
   line-height: 1;
   grid-column: 2 / span 1;
@@ -66,13 +67,14 @@ h1,
 }
 .fv {
   font-family: "Montserrat";
-  font-size: 0.94rem;
+  font-size: 0.96rem;
   font-weight: bold;
   justify-self: flex-end;
   align-self: flex-end;
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
   line-height: 10;
+  margin-right: 2rem;
 }
 /*animaciones*/
 .HomePF-Container:hover .portfolio {

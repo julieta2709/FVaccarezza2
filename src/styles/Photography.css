@@ -57,6 +57,7 @@
   z-index: 999;
   left: 0;
   width:4%;
+  height: 100%;
 }
 .PhotosContainer {
   width: 100%;
