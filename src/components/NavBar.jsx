@@ -35,7 +35,7 @@ const NavBar = () => {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      let offset = 170;
+      let offset = 130;
 
       if (window.innerWidth <= 767) {
         offset = 40; 
