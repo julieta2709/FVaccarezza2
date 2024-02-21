@@ -112,39 +112,39 @@ const Logofolio = () => {
             <p className="Logo-number">3.</p>
             <p className="Logo-text">POSSCO</p>
           </div>
-          <img src={Possco} alt="Possco" className="Logo-imgch" />
+          <img src={Possco} alt="Possco" className="Logo-imgps" />
         </li>
         <li className="Logo-container">
           <div className="LogoTitle-container">
             <p className="Logo-number">4.</p>
             <p className="Logo-text">LA HERMANDAD DEL ANZUELO</p>
           </div>
-          <img src={Hermandad} alt="Hermandad" className="Logo-imgtnw" />
+          <img src={Hermandad} alt="Hermandad" className="Logo-imglha" />
         </li>
         <li className="Logo-container">
           <div className="LogoTitle-container">
             <p className="Logo-number">5.</p>
             <p className="Logo-text">RIMINI</p>
           </div>
-          <img src={Rimini} alt="Rimini" className="Logo-imgch" />
+          <img src={Rimini} alt="Rimini" className="Logo-imgr" />
         </li>
       </ul>
       <div className="Frame-container">
         <div className="Frame-row">
-          <img src={Frame1} alt="Frame1" className="Frame" />
-          <img src={Frame2} alt="Frame2" className="Frame" />
-          <img src={Frame3} alt="Frame3" className="Frame" />
-          <img src={Frame4} alt="Frame4" className="Frame" />
-          <img src={Frame5} alt="Frame5" className="Frame" />
-          <img src={Frame6} alt="Frame6" className="Frame" />
+          <img src={Frame1} alt="Frame1" className="Frame1" />
+          <img src={Frame2} alt="Frame2" className="Frame2" />
+          <img src={Frame3} alt="Frame3" className="Frame3" />
+          <img src={Frame4} alt="Frame4" className="Frame4" />
+          <img src={Frame5} alt="Frame5" className="Frame5" />
+          <img src={Frame6} alt="Frame6" className="Frame6" />
         </div>
         <div className="Frame-row">
-          <img src={Frame7} alt="Frame7" className="Frame" />
-          <img src={Frame8} alt="Frame8" className="Frame" />
-          <img src={Frame9} alt="Frame9" className="Frame" />
-          <img src={Frame10} alt="Frame10" className="Frame" />
-          <img src={Frame11} alt="Frame11" className="Frame" />
-          <img src={Frame12} alt="Frame12" className="Frame" />
+          <img src={Frame7} alt="Frame7" className="Frame7" />
+          <img src={Frame8} alt="Frame8" className="Frame8" />
+          <img src={Frame9} alt="Frame9" className="Frame9" />
+          <img src={Frame10} alt="Frame10" className="Frame10" />
+          <img src={Frame11} alt="Frame11" className="Frame11" />
+          <img src={Frame12} alt="Frame12" className="Frame12" />
         </div>
       </div>
     </div>

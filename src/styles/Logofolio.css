@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   background-image: url("../assets/img/BG/Line.svg");
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -31,12 +31,33 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 0;
+  height: 6.5625rem;
 }
 .Logo-imgtnw {
   width: 22%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .Logo-imgch {
   width: 42%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.Logo-imgps {
+  width: 36.5%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.Logo-imglha {
+  width: 24.94%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.Logo-imgr {
+  width: 29.05%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .Frame-container {
   height: 33.125rem;
@@ -44,6 +65,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin-top: 11.875rem;
 }
 .Frame-row {
   width: 100%;
@@ -51,8 +73,41 @@
   align-items: center;
   justify-content: space-between;
 }
-.Frame {
-  width: 13%;
+.Frame1 {
+  width: 11.4%;
+}
+.Frame2 {
+  width: 12.32%;
+}
+.Frame3 {
+  width: 10.2%;
+}
+.Frame4 {
+  width: 10.7%;
+}
+.Frame5 {
+  width: 8.5%;
+}
+.Frame6 {
+  width: 13.06%;
+}
+.Frame7 {
+  width: 12.7%;
+}
+.Frame8 {
+  width: 10.11%;
+}
+.Frame9 {
+  width: 13.5%;
+}
+.Frame10 {
+  width: 9.5%;
+}
+.Frame11 {
+  width: 10.11%;
+}
+.Frame12 {
+  width: 8.6%;
 }
 @media screen and (width <= 425px) {
   .Logo-text {
