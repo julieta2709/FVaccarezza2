@@ -15,7 +15,8 @@ import "../../styles/Frog.css";
 import "../../styles/Work.css";
 import BeLink from "../Buttons/BeLink";
 import Next from "../Buttons/Next";
-import ImageSequence from "./FrogCelanimation";
+// import ImageSequence from "./FrogCelanimation2";
+import FrogAnimation from "../Animations/Frog/FrogCelAnimation";
 import { WorkDataContext } from "./WorkContext";
 
 const Frog = () => {
@@ -94,7 +95,8 @@ const Frog = () => {
         </div>
         {/*imagenes de la animación*/}
         <div className="FrogCelanimation-container">
-          <ImageSequence />
+          <FrogAnimation />
+          {/* <ImageSequence /> */}
         </div>
         <div className="Belink-container">
           <BeLink link={url} />
