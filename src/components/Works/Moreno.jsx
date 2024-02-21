@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import Envelope from "../../assets/img/Moreno/Envelope.png";
 import Moreno1 from "../../assets/img/Moreno/Moreno1.png";
 import Moreno2 from "../../assets/img/Moreno/Moreno2.png";
 import Moreno3 from "../../assets/img/Moreno/Moreno3.png";
@@ -96,6 +97,7 @@ const Moreno = () => {
         <div className="Moreno2-container">
           <img src={Moreno2} alt="Moreno2" className="Moreno2" />
           <div className="Nmp-AnimationContainer">
+            <img src={Envelope} alt="Envelope" className="Envelope" />
             <Nmp1 />
             <Nmp2 />
           </div>

@@ -17,6 +17,9 @@
 .Moreno2 {
   position: relative;
 }
+.Moreno3 {
+  margin-left: -8.2rem;
+}
 /*Animación cuenta regresiva*/
 .countdown-container {
   grid-column: 2;
@@ -40,37 +43,44 @@
 }
 .Nmp-AnimationContainer {
   display: grid;
-  grid-template-columns: 10.1rem 10.1rem;
-  grid-template-rows: 13.98rem;
+  grid-template-columns: 10.7rem 10.7rem;
+  grid-template-rows: auto 13.98rem;
   gap: 1.4rem;
-  width: 22.1825rem;
-  margin-top: -17.9375rem;
-  margin-left: 10.25rem;
+  width: 100%;
+  margin-top: -35.2rem;
+  justify-content: center;
+}
+.Envelope {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  z-index: 3;
+  width: 103%;
+  margin-left: -0.36rem;
 }
 @media screen and (width <= 425px) {
   .Moreno2 {
-    width: 129%;
+    width: 130%;
   }
   .Moreno3 {
-    width: 123.6%;
+    width: 161.5%;
   }
   .Moreno2 {
     margin-left: -5rem;
   }
   .Nmp-AnimationContainer {
-    margin-left: 5.4rem;
+    margin-left: 0.25rem;
   }
 }
 @media screen and (425px < width <= 576px) {
-  .Moreno2,
-  .Moreno3 {
-    width: 123.6%;
-  }
   .Moreno2 {
-    margin-left: -4rem;
+    width: 130%;
+    margin-left: -5rem;
+  }
+  .Moreno3 {
+    width: 161%;
   }
   .Nmp-AnimationContainer {
-    margin-left: 5.25rem;
+    margin-left: 0.25rem;
   }
 }
 @media screen and (576px < width <= 1200px) {
@@ -78,13 +88,12 @@
     width: 129.8%;
   }
   .Moreno3 {
-    width: 124.5%;
-    margin-left: -0.5rem;
+    width: 161.5%;
   }
   .Moreno2 {
     margin-left: -5rem;
   }
   .Nmp-AnimationContainer {
-    margin-left: 5.25rem;
+    margin-left: 0.25rem;
   }
 }
