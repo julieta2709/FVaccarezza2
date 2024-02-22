@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import Kp1 from "../../assets/img//Kp/Kp1.png";
-import Kp2 from "../../assets/img//Kp/Kp2.png";
-import Kp3 from "../../assets/img//Kp/Kp3.png";
-import Kp4 from "../../assets/img//Kp/Kp4.png";
-import Kp5 from "../../assets/img//Kp/Kp5.png";
-import Kp6 from "../../assets/img//Kp/Kp6.png";
+import Kp1 from "../../assets/img//Kp/Kp1.svg";
+import Kp2 from "../../assets/img//Kp/Kp2.svg";
+import Kp3 from "../../assets/img//Kp/Kp3.svg";
+import Kp4 from "../../assets/img//Kp/Kp4.svg";
+import Kp5 from "../../assets/img//Kp/Kp5.svg";
+import Kp6 from "../../assets/img//Kp/Kp6.svg";
 import "../../styles/Kp.css";
 import "../../styles/Work.css";
 import BeLink from "../Buttons/BeLink";
