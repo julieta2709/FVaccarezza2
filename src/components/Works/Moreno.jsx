@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import Envelope from "../../assets/img/Moreno/Envelope.png";
-import Moreno1 from "../../assets/img/Moreno/Moreno1.png";
-import Moreno2 from "../../assets/img/Moreno/Moreno2.png";
-import Moreno3 from "../../assets/img/Moreno/Moreno3.png";
-import Moreno4 from "../../assets/img/Moreno/Moreno4.png";
+import Envelope from "../../assets/img/Moreno/Envelope.svg";
+import Moreno1 from "../../assets/img/Moreno/Moreno1.svg";
+import Moreno2 from "../../assets/img/Moreno/Moreno2.svg";
+import Moreno3 from "../../assets/img/Moreno/Moreno3.svg";
+import Moreno4 from "../../assets/img/Moreno/Moreno4.svg";
 import "../../styles/Moreno.css";
 import "../../styles/Work.css";
 import Countdown from "../Animations/Moreno/CountDown";
