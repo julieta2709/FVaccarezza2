@@ -37,13 +37,13 @@ body {
   flex-shrink: 0;
   background-color: #f8f4ef;
   background-blend-mode: overlay;
-  background-image: url("../assets/img/Texture.png");
+  background-image: url("../assets/img/Texture.svg");
   z-index: 10;
 }
 .buttonUp-Container {
   position: fixed;
-  bottom: 1.25rem;
-  right: 4.1rem;
+  bottom: 5%;
+  right: 5%;
   z-index: 999;
   width: 10.35%;
 } 
@@ -137,4 +137,9 @@ body {
   html {
     font-size: 10px;
   }
+}
+@media screen and (width > 1200px) {
+  .buttonUp-Container {
+    width: 8.45%;
+  } 
 }

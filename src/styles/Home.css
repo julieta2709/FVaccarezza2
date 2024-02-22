@@ -2,14 +2,21 @@
 .Home-container {
   position: relative;
   width: 100%;
+  max-width: 1920px;
   height: 48.375rem;
   margin-bottom: 8.75rem;
   display: flex;
   justify-content: center;
-  background-image: url("../assets/img/BG/HomeLeft.svg");
-  background-position: top left;
-  background-repeat: no-repeat;
-  justify-self: center;
+}
+.HomeBg {
+  top: 0;
+  left: 0;
+  width: 25%;
+  position: absolute;
+}
+.Home-WidthContainer {
+  margin-left: calc((100% - 95%) / 2 + 2.5%);
+  margin-right: calc((100% - 95%) / 2 + 2.5%);
 }
 .HomePF-Container {
   display: grid;

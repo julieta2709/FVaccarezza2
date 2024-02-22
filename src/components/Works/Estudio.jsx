@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import Eclipse from "../../assets/img/BG/Eclipse.png";
-import EstudioBgBottomL from "../../assets/img/BG/EstudioBgBottomL.png";
+import Eclipse from "../../assets/img/BG/Eclipse.svg";
+import EstudioBgBottomL from "../../assets/img/BG/EstudioBgBottomL.svg";
 import EstudioBgVectorR from "../../assets/img/BG/EstudioBgVectorR.svg";
 import Estudio1 from "../../assets/img/Estudio/Estudio1.png";
 import Estudio2 from "../../assets/img/Estudio/Estudio2.png";

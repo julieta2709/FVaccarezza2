@@ -28,7 +28,7 @@ function App() {
             path="/"
             element={
               <>
-                <div id="home" style={{ width: "100%" }}>
+                <div id="home" style={{ width: "100%", display:"flex", justifyContent: "center" }}>
                   <Home />
                 </div> 
                 <WorkContext>

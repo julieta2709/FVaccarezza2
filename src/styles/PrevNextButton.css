@@ -15,7 +15,7 @@
 }
 .ellipseBg,
 .pathColor {
-  transition: fill 1s ease-out, transform 1s ease-out;
+  transition: fill 0.5s ease-out, transform 0.5s ease-out;
   cursor: pointer;
 }
 .messageNext,

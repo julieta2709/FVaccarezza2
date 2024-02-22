@@ -89,9 +89,11 @@
 /*Layout styles*/
 /*contenedor general*/
 .Aboutme-Maincontainer {
-  width: 100%;
+  max-width: 1920px;
   position: relative;
   margin-bottom: 12rem;
+  display: flex;
+  justify-content: center;
 }
 /*imgBG*/
 .About2BG {
@@ -107,9 +109,10 @@
 }
 .Aboutme-container {
   display: flex;
-  width: 100%;
   flex-direction: column;
   justify-content: center;
+  margin-left: calc((100% - 95%) / 2 + 2.5%);
+  margin-right: calc((100% - 95%) / 2 + 2.5%);
 }
 /*presentación*/
 .Aboutme-maininfo {
@@ -156,7 +159,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 81.67%;
+  margin-left: calc((100% - 95%) / 2 + 2.5%);
+  margin-right: calc((100% - 95%) / 2 + 2.5%);
   align-self: center;
 }
 /*1*/
@@ -191,7 +195,7 @@
   display: flex;
   flex-direction: column;
   margin-left: 11.3rem;
-  width: 63.46%;
+  width: 85.5%;
 }
 .Aboutme-subtitle {
   margin-bottom: 1.25rem;

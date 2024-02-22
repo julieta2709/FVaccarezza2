@@ -8,17 +8,24 @@
 }
 .Moreno2-container {
   grid-row: 2;
+  width: 100%;
+  grid-column: 1;
 }
-.Moreno2-container2 {
+/* .Moreno2-container2 {
   grid-column: 1;
   justify-self: center;
-}
+} */
 .Moreno3,
 .Moreno2 {
   position: relative;
 }
+.Moreno2 {
+width: 131%;
+margin-left: -5rem;
+}
 .Moreno3 {
-  margin-left: -8.2rem;
+  margin-left: -8.3rem;
+  width: 161%;
 }
 /*Animación cuenta regresiva*/
 .countdown-container {

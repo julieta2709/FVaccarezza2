@@ -24,21 +24,35 @@
 }
 .Broke2 {
   margin-top: 3rem;
+  width: 16.15rem;
+  height: auto;
 }
 .Broke4 {
-  width: 100%;
+  width: 106%;
+  margin-top: 3.5rem;
+}
+.Broke5 {
+  width: 18.9375rem;
 }
 .Broke6 {
   margin-top: -1rem;
+  width: 39.9375rem;
+  height: auto;
 }
 .Broke7 {
   margin-top: 1rem;
   width: 100%;
 }
+.Broke8 {
+  width: 26.83rem;
+  height: auto;
+}
 .Broke9 {
   grid-row: 3;
   grid-column: 1 / span 2;
   justify-self: center;
+  width: 51.75rem;
+  height: auto;
 }
 .Broke10 {
   grid-row: 4;

@@ -6,6 +6,7 @@ import Ip2c from "../../../assets/img/Estudio/Ip2c.png";
 import Ip3c from "../../../assets/img/Estudio/Ip3c.png";
 import Ip6 from "../../../assets/img/Estudio/Ip6.png";
 import Ipad10 from "../../../assets/img/Estudio/Ipad10.png";
+import Ipad11 from "../../../assets/img/Estudio/Ipad11.png";
 import Ipad12 from "../../../assets/img/Estudio/Ipad12.png";
 import Ipad13 from "../../../assets/img/Estudio/Ipad13.png";
 import Ipad15 from "../../../assets/img/Estudio/Ipad15.png";
@@ -167,7 +168,7 @@ const AnimaIpad2 = () => {
             />
           ))}
           <motion.img
-            src={Ipad13}
+            src={Ipad11}
             alt="Ipad13"
             className="Ipad13"
             initial={{

@@ -44,7 +44,7 @@
   width: 100%;
 }
 .Opame4 {
-  margin-top: -4rem;
+  margin-top: -6rem;
   width: 100%;
 }
 .Opame5 {
@@ -70,26 +70,34 @@
 .Opamecel1 {
   justify-self: end;
   align-self: start;
-  margin-right: -5rem;
-  margin-top: -4rem;
+  margin-right: -4.5rem;
+  margin-top: -2rem;
+  width: 8.5rem;
+  height: 16.25rem;
 }
 .Opamecel2 {
   justify-self: start;
   align-self: center;
-  margin-left: -5rem;
-  margin-top: -4rem;
+  margin-left: -4rem;
+  margin-top: 15.5rem;
+  width: 8.5rem;
+  height: 16.25rem;
 }
 .Opamecel3 {
   justify-self: start;
   align-self: center;
-  margin-left: -6.5rem;
-  margin-top: 2rem;
+  margin-left: -4.5rem;
+  margin-top: -1rem;
+  width: 8.5rem;
+  height: 16.25rem;
 }
 .Opamecel4 {
   justify-self: end;
   align-self: start;
-  margin-right: -5rem;
+  margin-right: -4rem;
   margin-top: 1rem;
+  width: 8.5rem;
+  height: 16.25rem;
 }
 /*imgBg*/
 .Work-OpameContainer .eclipse {
