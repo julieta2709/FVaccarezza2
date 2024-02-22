@@ -42,23 +42,7 @@ const FrogAnimation = () => {
           type: "spring",
         }}
       />
-{/*       <motion.img
-        src={FrogAnima4}
-        alt="FrogAnima4"
-        className="image-animation"
-        initial={{
-          opacity: 0,
-        }}
-        animate={{
-          opacity: 1,
-          fill: "#222222",
-        }}
-        transition={{
-          duration: 2.5,
-          ease: "easeIn",
-        }}
-      /> */}
-            <AnimatePresence>
+      <AnimatePresence>
         {Img.map((image, currentIndex) => (
           <motion.img
             key={currentIndex}
@@ -81,25 +65,6 @@ const FrogAnimation = () => {
             }}
           />
         ))}
-      {/*         <motion.img
-          src={FrogAnima4}
-          alt="FrogAnima4"
-          className="image-animation"
-          initial={{
-            opacity: 0,
-          }}
-          animate={{
-            opacity: 1,
-          }}
-          transition={{
-            duration: 1,
-            delay: 3.5,
-            ease: "easeIn",
-          }}
-          exit={{
-            opacity: 0,
-          }}
-        /> */}
       </AnimatePresence>
     </div>
   );
