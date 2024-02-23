@@ -1,34 +1,41 @@
-
 .Contact-container {
   width: 100%;
-  height: 70.1875rem;
   display: flex;
   justify-content: center;
-  align-content: center;
   background-image: url("../assets/img/BG/bgContactderecho.svg"),
-    url("../assets/img/BG/bgContactizq.svg"),
-    url("../assets/img/BG/Line.svg");
-  background-position: bottom right, top left, center top;
+    /* url("../assets/img/BG/bgContactizq.svg"), */
+      url("../assets/img/BG/Line.svg");
+  background-position: bottom right, center top;
   background-repeat: no-repeat;
-  position: relative;
+  background-size: 34%, 5%;
+}
+.contactBgleft {
+  position: absolute;
+  z-index: 1;
+  margin-top: -5.3%;
+  left: 0;
+  width: 38%;
 }
 .Contact-mainContainer {
-  width: 72.8125rem;
+  width: 57%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  margin-top: 12%;
+  z-index: 2;
 }
 .Contact-main {
   font-family: "PP-Hattonbold";
   color: #3a3a39;
-  font-size: 9.25rem;
+  font-size: 5.8em;
   line-height: 1;
   letter-spacing: -0.3125rem;
 }
 .Contact-number {
   font-family: "Magilio";
-  font-size: 9.375rem;
+  font-size: 6em;
   color: #e52421;
   font-weight: normal;
   margin-top: 1rem;
@@ -36,29 +43,74 @@
 .Contact-mail {
   font-family: "PP-Hatton-Ultralight";
   color: #3a3a39;
-  font-size: 6.25rem;
+  font-size: 4em;
   margin-top: -1rem;
 }
 .Contact-LinkContainer {
   display: flex;
-  gap: 3.5rem;
+  gap: 6%;
   align-items: flex-end;
-  margin-top: 1.81rem;
+  margin-top: 5%;
   width: 100%;
 }
 .Contact-LinkContainer a {
-  width: 4.9375rem;
+  width: 7.3%;
 }
 .Contact-LinkContainer a img {
   width: 100%;
 }
-@media screen and (width <= 1200px) {
-.Contact-container {
-  background-size: 32.5%, 32.5%, 5%;
-}
-}
-@media screen and (1200px < width <= 1440px) {
-  .Contact-container {
-    background-size: 38%, 38%, 5%;
+@media screen and (320px < width <= 375px) {
+  .Contact-main {
+    font-size: 1.5em;
   }
+  .Contact-number {
+    font-size: 1.6em;
   }
+  .Contact-mail {
+    font-size: 1.2em;
+  }
+}
+@media screen and (375px < width <= 426px) {
+  .Contact-main {
+    font-size: 2em;
+  }
+  .Contact-number {
+    font-size: 2.2em;
+  }
+  .Contact-mail {
+    font-size: 1.4em;
+  }
+}
+@media screen and (426px < width <= 768px) {
+  .Contact-main {
+    font-size: 3.5em;
+  }
+  .Contact-number {
+    font-size: 3.8em;
+  }
+  .Contact-mail {
+    font-size: 2.5em;
+  }
+}
+@media screen and (768px < width <= 1024px) {
+  .Contact-main {
+    font-size: 3.5em;
+  }
+  .Contact-number {
+    font-size: 3.8em;
+  }
+  .Contact-mail {
+    font-size: 2.5em;
+  }
+}
+@media screen and (1024px < width <= 1200px) {
+  .Contact-main {
+    font-size: 4.7em;
+  }
+  .Contact-number {
+    font-size: 5em;
+  }
+  .Contact-mail {
+    font-size: 3.3em;
+  }
+}
