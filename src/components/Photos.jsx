@@ -52,14 +52,21 @@ import "../styles/Photos.css";
 const Photos = () => {
   return (
     <div className="Photos-grid">
-      <img src={pic1} alt="paisaje1" className="Photo-item1" />
-      <img src={pic2} alt="paisaje2" className="Photo-item2" />
-      <img src={pic3} alt="paisaje3" className="Photo-item3" />
-      <img src={pic4} alt="paisaje4" className="Photo-item4" />
-      <img src={pic5} alt="paisaje5" className="Photo-item5" />
-      <img src={pic6} alt="paisaje6" className="Photo-item6" />
+      <div className="photo-cont1">
+        <img src={pic1} alt="paisaje1" className="Photo-item1" />
+        <img src={pic4} alt="paisaje4" className="Photo-item4" />
+      </div>
+      <div className="photo-cont2">
+        <img src={pic2} alt="paisaje2" className="Photo-item2" />
+        <img src={pic5} alt="paisaje5" className="Photo-item5" />
+      </div>
+      <div className="photo-cont3">
+        <img src={pic3} alt="paisaje3" className="Photo-item3" />
+        <img src={pic6} alt="paisaje6" className="Photo-item6" />
+      </div>
       <img src={pic7} alt="paisaje7" className="Photo-item7" />
       <img src={pic8} alt="paisaje8" className="Photo-item8" />
+
       <div className="Photos-c">
         <img src={c1} alt="foto1" className="Photo-c1" />
         <img src={c2} alt="foto2" className="Photo-c2" />

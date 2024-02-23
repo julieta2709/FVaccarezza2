@@ -1,37 +1,40 @@
 .Photos-grid {
   display: grid;
-  grid-template-columns: repeat(3, 26.25rem);
+  grid-template-columns: repeat(3, 22%);
   grid-auto-rows: auto;
-  gap: 2.5rem;
+  column-gap: 2%;
+  row-gap: 2.5rem;
   justify-content: center;
 }
-.Photo-item1,
-.Photo-item2,
-.Photo-item3 {
+.photo-cont1,
+.photo-cont2,
+.photo-cont3 {
   grid-row: 1;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
-.Photo-item1,
-.Photo-item4, .Photos-c {
+.photo-cont1,
+.Photos-c {
   grid-column: 1;
   width: 100%;
 }
-.Photo-item2,
-.Photo-item5, .Photos-d {
+.photo-cont2,
+.Photos-d {
   grid-column: 2;
   width: 100%;
 }
-.Photo-item3,
-.Photo-item6, .Photos-e {
+.photo-cont3,
+.Photos-e {
   grid-column: 3;
   width: 100%;
 }
-.Photo-item4,
+/* .Photo-item4,
 .Photo-item5,
 .Photo-item6 {
   grid-row: 2;
   width: 100%;
-}
+} */
 .Photo-item7,
 .Photo-item8 {
   grid-row: 3;
@@ -43,14 +46,17 @@
 .Photo-item8 {
   grid-column: 3;
 }
-.Photo-item4,
+/* .Photo-item4,
 .Photo-item6 {
   margin-top: -20rem;
-}
-.Photos-c, .Photos-d, .Photos-e {
+} */
+.Photos-c,
+.Photos-d,
+.Photos-e {
   grid-row: 4;
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
   margin-bottom: 19.8125rem;
+  margin-top: 2.5rem;
 }
