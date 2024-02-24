@@ -1,10 +1,7 @@
 /*layout*/
 .Home-container {
-  position: relative;
   width: 100%;
   max-width: 1920px;
-  height: 48.375rem;
-  margin-bottom: 8.75rem;
   display: flex;
   justify-content: center;
 }
@@ -15,17 +12,17 @@
   position: absolute;
 }
 .Home-WidthContainer {
-  margin-left: calc((100% - 95%) / 2 + 2.5%);
-  margin-right: calc((100% - 95%) / 2 + 2.5%);
+  width: 72%;
 }
 .HomePF-Container {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 6.5rem 72.75rem 6.5rem;
+  grid-template-columns: 5.5% 89% 5.5%;
   justify-items: center;
   align-content: center;
   justify-content: space-around;
-  margin-top: 7.5625rem;
+  margin-top: 3.5%;
+  margin-bottom: 3.5%;
 }
 .redCircle {
   align-self: center;
@@ -34,18 +31,18 @@
 .redCircle:first-child {
   grid-column: 1 / span 1;
   grid-row: 1 / span 2;
-  width: 68.3%;
+  width: 90.5%;
 }
 .redCircle:last-child {
   grid-column: 3 / span 1;
   grid-row: 1 / span 2;
-  width: 68.3%;
+  width: 90.5%;
 }
 /*fonts styles*/
 h2,
 .year {
   font-family: "Magilio";
-  font-size: 37.49rem;
+  font-size: 23.43em;
   font-weight: normal;
   color: #e52421;
   line-height: 1;
@@ -60,7 +57,7 @@ h2,
 h1,
 .portfolio {
   font-family: "PP-Hattonbold";
-  font-size: 9.25rem;
+  font-size: 5.86em;
   margin: 0;
   line-height: 1;
   grid-column: 2 / span 1;
@@ -74,14 +71,14 @@ h1,
 }
 .fv {
   font-family: "Montserrat";
-  font-size: 0.96rem;
+  font-size: 0.6em;
   font-weight: bold;
   justify-self: flex-end;
   align-self: flex-end;
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
   line-height: 10;
-  margin-right: 2rem;
+  margin-right: 6%;
 }
 /*animaciones*/
 .HomePF-Container:hover .portfolio {
