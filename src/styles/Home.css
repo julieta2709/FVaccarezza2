@@ -21,8 +21,8 @@
   justify-items: center;
   align-content: center;
   justify-content: space-around;
-  margin-top: 3.5%;
-  margin-bottom: 3.5%;
+  margin-top: 3.51%;
+  margin-bottom: 3.51%;
 }
 .redCircle {
   align-self: center;
@@ -97,7 +97,7 @@ h1,
   transition: transform 2s cubic-bezier(0.21, 0.87, 0.35, 1);
 }
 /*media query*/
-@media screen and (width <= 425px) {
+/* @media screen and (width <= 425px) {
   .fv {
     font-size: 1.1rem;
     line-height: 8;
@@ -105,15 +105,57 @@ h1,
   .Home-container {
     height: 56rem;
   }
+} */
+@media screen and (width <= 375px) {
+  h2,
+.year {
+  font-size: 6.25em;
 }
-@media screen and (425px < width <= 576px) {
-  .fv {
-    font-size: 1.1rem;
-    line-height: 8;
-  }
+h1,
+.portfolio {
+  font-size: 1.56em;
 }
-@media screen and (width <= 1440px) {
-  .Home-container {
-    background-size: 32.5%;
-  }
+.fv {
+  font-size: 0.16em;
 }
+}
+@media screen and (375px < width <= 425px) {
+  h2,
+.year {
+  font-size: 7.3em;
+}
+h1,
+.portfolio {
+  font-size: 1.83em;
+}
+.fv {
+  font-size: 0.187em;
+}
+}
+@media screen and (425px < width <= 768px) {
+  h2,
+.year {
+  font-size: 8.3em;
+}
+h1,
+.portfolio {
+  font-size: 2.08em;
+}
+.fv {
+  font-size: 0.21em;
+}
+}
+@media screen and (768px < width <= 1024px) {
+  h2,
+.year {
+  font-size: 20em;
+}
+h1,
+.portfolio {
+  font-size: 5em;
+}
+.fv {
+  font-size: 0.51em;
+}
+}
+

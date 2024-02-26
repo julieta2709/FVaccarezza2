@@ -4,7 +4,7 @@
   max-width: 1920px;
   display: flex;
   align-items: center;
-  height: 22.87%;
+  height: 22.9vh;
   position: fixed;
   top: 0;
   background-color: #f8f4ef;
@@ -56,6 +56,33 @@
   color: #e52421;
 }
 /*medias query*/
+@media screen and (width <= 320px) {
+  .Header-container {
+    height: 6.1vh;
+  }
+}
+@media screen and (320 < width <= 375px) {
+  .Header-container {
+    height: 7.16vh;
+  }
+}
+@media screen and (375px < width <= 425px) {
+  .Header-container {
+    height: 8.12vh;
+  }
+}
+@media screen and (425px < width <= 768px) {
+  .Header-container {
+    height: 14.6vh;
+  }
+}
+@media screen and (768px < width <= 1024px) {
+  .Header-container {
+    height: 19.6vh;
+  }
+}
+/*
+
 /* @media screen and (width <= 425px) {
   .navbar {
     font-size: 1.5rem;
