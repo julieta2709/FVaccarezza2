@@ -59,7 +59,18 @@
 .Contact-LinkContainer a img {
   width: 100%;
 }
-@media screen and (320px < width <= 375px) {
+@media screen and (width <= 320px) {
+  .Contact-main {
+    font-size: 1.5em;
+  }
+  .Contact-number {
+    font-size: 1.6em;
+  }
+  .Contact-mail {
+    font-size: 1em;
+  }
+}
+@media screen and (320px <= width <= 375px) {
   .Contact-main {
     font-size: 1.5em;
   }
@@ -70,7 +81,7 @@
     font-size: 1.2em;
   }
 }
-@media screen and (375px < width <= 426px) {
+@media screen and (375px <= width <= 426px) {
   .Contact-main {
     font-size: 2em;
   }
@@ -81,7 +92,7 @@
     font-size: 1.4em;
   }
 }
-@media screen and (426px < width <= 768px) {
+@media screen and (426px <= width <= 768px) {
   .Contact-main {
     font-size: 3.5em;
   }
@@ -92,7 +103,7 @@
     font-size: 2.5em;
   }
 }
-@media screen and (768px < width <= 1024px) {
+@media screen and (768px <= width <= 1024px) {
   .Contact-main {
     font-size: 3.5em;
   }
@@ -103,7 +114,7 @@
     font-size: 2.5em;
   }
 }
-@media screen and (1024px < width <= 1200px) {
+@media screen and (1024px <= width <= 1200px) {
   .Contact-main {
     font-size: 4.7em;
   }

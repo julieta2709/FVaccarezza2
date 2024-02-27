@@ -116,10 +116,10 @@ h1,
   font-size: 1.56em;
 }
 .fv {
-  font-size: 0.16em;
+  font-size: 0.2em;
 }
 }
-@media screen and (375px < width <= 425px) {
+@media screen and (375px <= width <= 425px) {
   h2,
 .year {
   font-size: 7.3em;
@@ -132,7 +132,7 @@ h1,
   font-size: 0.187em;
 }
 }
-@media screen and (425px < width <= 768px) {
+@media screen and (425px <= width <= 768px) {
   h2,
 .year {
   font-size: 8.3em;
@@ -145,7 +145,7 @@ h1,
   font-size: 0.21em;
 }
 }
-@media screen and (768px < width <= 1024px) {
+@media screen and (768px <= width <= 1024px) {
   h2,
 .year {
   font-size: 20em;

@@ -38,16 +38,18 @@
 .nav-menu {
   display: flex;
   justify-content: center;
-  width: 70%;
+  flex-grow: 1;
+  justify-content: space-evenly;
+/*   width: 70%;
   margin-left: 20%;
-  margin-right: 30%;
+  margin-right: 30%; */
 }
 .navbar-menu {
   display: none;
 }
-.nav-item {
+/* .nav-item {
   margin-right: 8%;
-}
+} */
 
 .nav-link {
   color: #3a3a39;
@@ -60,25 +62,40 @@
   .Header-container {
     height: 6.1vh;
   }
+  .navbar {
+    font-size: 0.35em;
+  }
 }
-@media screen and (320 < width <= 375px) {
+@media screen and (320 <= width <= 375px) {
   .Header-container {
     height: 7.16vh;
   }
+  .navbar {
+    font-size: 0.35em;
+  }
 }
-@media screen and (375px < width <= 425px) {
+@media screen and (375px <= width <= 425px) {
   .Header-container {
     height: 8.12vh;
   }
+  .navbar {
+    font-size: 0.35em;
+  }
 }
-@media screen and (425px < width <= 768px) {
+@media screen and (425px <= width <= 768px) {
   .Header-container {
     height: 14.6vh;
   }
+  .navbar {
+    font-size: 0.35em;
+  }
 }
-@media screen and (768px < width <= 1024px) {
+@media screen and (768px <= width <= 1024px) {
   .Header-container {
     height: 19.6vh;
+  }
+  .navbar {
+    font-size: 0.35em;
   }
 }
 /*

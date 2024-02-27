@@ -13,9 +13,9 @@
 }
 .Work-TitleContainer {
   display: flex;
-  width: 56.875rem;
+  width: 53.66%;
   align-items: baseline;
-  margin-bottom: 5.9375rem;
+  margin-bottom: 5%;
   justify-content: center;
 }
 .Work-asterisk {

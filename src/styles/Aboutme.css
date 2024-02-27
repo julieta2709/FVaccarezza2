@@ -15,7 +15,7 @@
 .Aboutme-title,
 .Aboutme-titleProf,
 .Aboutme-contactTittle {
-  font-family: PP-Hatton;
+  font-family: "PP-Hatton";
   line-height: 0.9;
 }
 .Aboutme-contactMail {
@@ -23,7 +23,7 @@
 }
 .Aboutme-introName,
 .Aboutme-introGraphic {
-  font-family: PP-Hatton-Ultralight;
+  font-family: "PP-Hatton-Ultralight";
   font-size: 3.125rem;
   font-weight: 200;
 }
@@ -37,7 +37,7 @@
 .Aboutme-number1,
 .Aboutme-contactNumber {
   color: #e52421;
-  font-family: Magilio;
+  font-family: "Magilio";
   font-style: normal;
   font-weight: 400;
 }
@@ -46,23 +46,23 @@
   font-size: 18.75rem;
 }
 .Aboutme-text {
-  font-family: Montserrat-Light;
+  font-family: "Montserrat-Light";
   font-size: 1.25rem;
   line-height: 1.4;
 }
 .Aboutme-2 .Aboutme-2container .Aboutme-subtitle2 .Aboutme-text {
-  font-family: Montserrat-Light;
+  font-family: "Montserrat-Light";
   font-size: 1.25rem;
   line-height: 1.4;
 }
 .Aboutme-subtitle2 {
-  font-family: MontserratSemiboldItalic;
+  font-family: "MontserratSemiboldItalic";
   font-size: 1.25rem;
-  line-height: 1.4;
-  margin-bottom: 1.4375rem;
+  line-height: 1;
+  margin-bottom: 2%;
 }
 .Aboutme-subtitle {
-  font-family: MontserratBold;
+  font-family: "MontserratBold";
   font-size: 1.25rem;
   line-height: normal;
   font-style: normal;
@@ -91,39 +91,41 @@
 .Aboutme-Maincontainer {
   max-width: 1920px;
   position: relative;
-  margin-bottom: 12rem;
+  margin-bottom: 32%;
   display: flex;
   justify-content: center;
+  margin-top: 10%;
+  height: auto;
 }
 /*imgBG*/
 .About2BG {
   z-index: 1;
-  margin-top: 75rem;
+  margin-top: 70%;
+  left: 0;
   position: absolute;
+  width: 52%;
 }
 .AboutBG {
   z-index: 1;
   position: absolute;
-  top: -20rem;
+  top: -8%;
   right: 0;
+  width: 39%;
 }
 .Aboutme-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: calc((100% - 95%) / 2 + 2.5%);
-  margin-right: calc((100% - 95%) / 2 + 2.5%);
+  width: 81.6%;
+  height: auto;
 }
 /*presentación*/
 .Aboutme-maininfo {
   display: grid;
-  grid-template-rows: 3.94rem 17.875rem 3.94rem;
-  grid-template-columns: 55% 27.8%;
-  column-gap: 17.2%;
-  justify-items: center;
+  grid-template-rows: 17% 68% 17%;
+  grid-template-columns: 49% 27.8%;
+  column-gap: 16%;
   justify-content: center;
-  align-self: center;
-  width: 81.67%;
 }
 .Aboutme-introName,
 .Aboutme-name,
@@ -142,15 +144,14 @@
 }
 .Aboutme-maininfo-FVpic {
   grid-column: 2;
-  grid-row: 2;
-  align-self: center;
+  grid-row: 1 / span 3;
   z-index: 2;
-  width: 100%;
+  margin-top: 5%;
+  width: 105%;
 }
 .Aboutme-maininfoText {
-  display: grid;
-  height: 23.63rem;
-  justify-content: flex-start;
+  /*   display: grid;
+  justify-content: flex-start; */
   width: 100%;
 }
 /*Contenedor de habilidades*/
@@ -159,17 +160,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: calc((100% - 95%) / 2 + 2.5%);
-  margin-right: calc((100% - 95%) / 2 + 2.5%);
   align-self: center;
+  margin-top: 5%;
+  height: auto;
 }
 /*1*/
 .Aboutme-1 {
   display: grid;
-  margin-top: 9rem;
-  margin-bottom: 9rem;
-  grid-template-rows: auto 7.875rem 8.5625rem;
-  grid-template-columns: 4.875rem 1fr;
+  grid-template-rows: 25% 20% 60%;
+  grid-template-columns: 7.5% 1fr;
   justify-content: center;
   align-self: center;
   align-items: flex-start;
@@ -180,13 +179,12 @@
   align-self: baseline;
   z-index: 1;
   justify-self: center;
-  width: 90%;
 }
 .Aboutme-titleProf {
   grid-row: 2;
   grid-column: 2;
   align-self: center;
-  margin-left: -1.875rem;
+  margin-left: -4%;
   z-index: 2;
 }
 .Aboutme-description {
@@ -194,23 +192,28 @@
   grid-column: 2;
   display: flex;
   flex-direction: column;
-  margin-left: 11.3rem;
-  width: 69.2%;
+  margin-left: 10%;
+  margin-right: 15%;
+}
+.Aboutme-description .Aboutme-subtitle {
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 .Aboutme-subtitle {
-  margin-bottom: 1.25rem;
-  margin-top: 1.25rem;
+  margin-bottom: 4%;
 }
 /*contenedor general de habilidades*/
 .Aboutme-2356container {
   display: grid;
   grid-template-rows: auto auto auto;
-  grid-template-columns: 42.1% 44.7%;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
   column-gap: 13.2%;
-  row-gap: 8.125rem;
-  margin-top: 5rem;
+  row-gap: 8%;
+  margin-top: 10%;
   align-items: flex-start;
+  width: 100%;
+  height: auto;
 }
 .Aboutme-3,
 .Aboutme-6 {
@@ -234,11 +237,11 @@
   grid-column: 1 / span 2;
   display: flex;
   flex-direction: column;
-  margin-top: -5.5rem;
+  margin-top: -15%;
 }
 .Aboutme-contactNumber {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
 }
 /*contenedores individuales de habilidades*/
 .Aboutme-3,
@@ -246,8 +249,8 @@
 .Aboutme-2,
 .Aboutme-5 {
   display: grid;
-  grid-template-columns: 9.5625rem 1fr;
-  grid-template-rows: 20.625rem auto;
+  grid-template-columns: 28% 1fr;
+  grid-template-rows: auto auto;
 }
 .Aboutme-3 .Aboutme-number,
 .Aboutme-3 .Aboutme-title,
@@ -267,6 +270,9 @@
   grid-column: span 2;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  margin-left: 2%;
+  height: auto;
 }
 .Aboutme-number {
   z-index: 1;
@@ -275,30 +281,30 @@
 .Aboutme-title {
   z-index: 2;
   align-self: center;
-  margin-bottom: 2.5rem;
+  overflow-wrap: break-word;
+  margin-bottom: 9.5%;
 }
 /*3*/
 .Aboutme-3 .Aboutme-title {
-  margin-left: -1.75rem;
-  width: 33.1875rem;
+  margin-left: -16%;
 }
-.Aboutme-3container {
-  margin-top: -3.5rem;
-}
+
 /*6*/
+.Aboutme-6 .Aboutme-title {
+  max-width: 84%;
+}
 .Aboutme-6 .Aboutme-title,
 .Aboutme-2 .Aboutme-title {
-  margin-left: -3rem;
-  width: 33.1875rem;
+  margin-left: -19.5%;
 }
 .Aboutme-6 .Aboutme-6container .Aboutme-text {
   display: grid;
-  grid-template-columns: 6.25rem auto;
-  margin-bottom: 1.625rem;
+  grid-template-columns: 20% auto;
+  margin-bottom: 3%;
   justify-content: start;
   align-items: center;
   justify-items: center;
-  margin-left: 4.5rem;
+  margin-left: 4%;
 }
 .Aboutme-6container .Aboutme-text .Aboutme-abilitieIcon,
 .Aboutme-abilitieIconF {
@@ -324,7 +330,7 @@
   margin-top: -15rem;
 }
 .Aboutme-5 .Aboutme-title {
-  margin-left: -3.3rem;
+  margin-left: -19.5%;
 }
 .Aboutme-5 .Aboutme-subtitle {
   margin-bottom: 1.75rem;
@@ -332,30 +338,38 @@
 .Aboutme-5 .Aboutme-subtitle2 {
   margin-bottom: 0.8125rem;
 }
-/*2*/
-.Aboutme-2 {
-  margin-top: 9.5rem;
-}
-.Aboutme-2 .Aboutme-title {
-  margin-bottom: 3.2rem;
-}
-.Aboutme-2 .Aboutme-subtitle {
-  margin-bottom: 1.875rem;
-  margin-top: -2rem;
-}
+
 /*medias querys*/
 @media screen and (width <= 320px) {
   .Aboutme-2356container {
     column-gap: 3.2%;
   }
-  .Aboutme-3,
-  .Aboutme-6,
-  .Aboutme-2,
-  .Aboutme-5 {
-    grid-template-columns: 8.5625rem 1fr;
+  .Aboutme-name {
+    font-size: 1.13em;
   }
+  .Aboutme-introGraphic,
+  .Aboutme-introName {
+    font-size: 0.53em;
+  }
+  .Aboutme-number1,
+  .Aboutme-number {
+    font-size: 3.13em;
+  }
+  .Aboutme-titleProf,
+  .Aboutme-title {
+    font-size: 1em;
+  }
+  .Aboutme-contactTittle {
+    font-size: 0.84em;
 }
-@media screen and (320px <= width <=425px) {
+.Aboutme-contactNumber {
+  font-size: 0.8em;
+}
+.Aboutme-contactMail {
+  font-size: 0.45em;
+}
+}
+/* @media screen and (320px <= width <=425px) {
   .Aboutme-title {
     font-size: 5rem;
   }
@@ -374,8 +388,8 @@
   .AboutBG {
     width: 32%;
   }
-}
-@media screen and (1200px < width <= 1440px) {
+} */
+/* @media screen and (1200px < width <= 1440px) {
   .About2BG,
   .AboutBG {
     width: 38%;
@@ -398,4 +412,4 @@
   .Aboutme-number {
     font-size: 16rem;
   }
-}
+} */
