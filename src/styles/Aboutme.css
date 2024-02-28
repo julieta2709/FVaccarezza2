@@ -90,7 +90,6 @@
 /*contenedor general*/
 .Aboutme-Maincontainer {
   max-width: 1920px;
-  height: 192vh;
   position: relative;
   margin-bottom: 19%;
   display: flex;

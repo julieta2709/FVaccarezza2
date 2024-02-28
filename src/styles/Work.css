@@ -2,7 +2,6 @@
 /*Work Container*/
 .Work-container {
   width: 100%;
-  height: 62.2vh;
   display: flex;
   flex-direction: column;
   align-items: center;
