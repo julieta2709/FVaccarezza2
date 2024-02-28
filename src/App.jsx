@@ -41,55 +41,55 @@ function App() {
                   <div className="IndividualWork-container">
                     <div
                       id="frog"
-                      style={{ width: "100%", marginTop: "11.125rem" }}
+                      style={{ width: "100%" }}
                     >
                       <Frog />
                     </div>
                     <div
                       id="estudio"
-                      style={{ width: "100%", marginTop: "11.125rem" }}
+                      style={{ width: "100%" }}
                     >
                       <Estudio />
                     </div>
                     <div
                       id="moreno"
-                      style={{ width: "100%", marginTop: "11.125rem" }}
+                      style={{ width: "100%" }}
                     >
                       <Moreno />
                     </div>
                     <div
                       id="opame"
-                      style={{ width: "100%", marginTop: "11.125rem" }}
+                      style={{ width: "100%" }}
                     >
                       <Opame />
                     </div>
                     <div
                       id="michi"
-                      style={{ width: "100%", marginTop: "11.125rem" }}
+                      style={{ width: "100%" }}
                     >
                       <Michi />
                     </div>
                     <div
                       id="broke"
-                      style={{ width: "100%", marginTop: "11.125rem" }}
+                      style={{ width: "100%" }}
                     >
                       <Broke />
                     </div>
                     <div
                       id="kp"
-                      style={{ width: "100%", marginTop: "11.125rem" }}
+                      style={{ width: "100%" }}
                     >
                       <Kp />
                     </div>
                     <div
                       id="logofolio"
-                      style={{ width: "100%", marginTop: "11.125rem" }}
+                      style={{ width: "100%" }}
                     >
                       <Logofolio />
                     </div>
                     <div
                       id="misc"
-                      style={{ width: "100%", marginTop: "11.125rem" }}
+                      style={{ width: "100%" }}
                     >
                       <Misc />
                     </div>

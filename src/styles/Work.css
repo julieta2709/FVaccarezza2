@@ -2,6 +2,7 @@
 /*Work Container*/
 .Work-container {
   width: 100%;
+  margin-top: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,17 +11,20 @@
   background-image: url("../assets/img/BG/Line.svg");
   background-position: center bottom;
   background-repeat: no-repeat;
+  background-size: 5%;
 }
 /*imgBG*/
 .WorkRightBG {
   position: absolute;
   top: -18.75rem;
   right: 0;
+  width: 35%;
 }
 .WorkLeft {
   position: absolute;
   left: 0;
   top: -18.75rem;
+  width: 35%;
 }
 .Work-TitleContainer {
   display: flex;
@@ -52,6 +56,7 @@
   align-items: center;
   z-index: 2;
   width: 81.67%;
+  margin-bottom: 12.5%;
 }
 .Work-ListRow1 {
   display: grid;
@@ -119,12 +124,14 @@
 .Work-LogofolioContainer,
 .Work-MiscContainer {
   width: 100%;
+  margin-top: 2%;
   display: flex;
   flex-direction: column;
   background-position: top center;
   background-repeat: no-repeat;
   align-items: center;
   position: relative;
+  background-size: 100%;
 }
 .Work-FrogContainer {
   background-image: url("../assets/img/BG/FrogBg.svg");
@@ -155,18 +162,18 @@
 }
 .Work-TitleIndivCont {
   width: 80%;
+  margin-top: 3%;
 }
 .Work-TitleIndividual {
   display: grid;
-  grid-template-rows: 8.4375rem 4.5rem auto;
-  grid-template-columns: 12.5% 85% 12.5%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 8fr 1fr;
   width: 100%;
-  height: 20%;
-  margin-top: 6.75rem;
-  margin-bottom: 3.6875rem;
+  height: 11.5rem;
   position: relative;
   align-items: center;
   justify-content: center;
+  justify-items: center;
 }
 .Work-TitleIndivContainer {
   grid-column: 2;
@@ -175,7 +182,7 @@
   grid-template-columns: auto auto;
   grid-template-rows: auto;
   justify-content: center;
-  width: 100%;
+  width: 90%;
 }
 .Work-TitleIndivContainer .Work-TextIndividual {
   grid-column: 2;
@@ -183,16 +190,15 @@
   align-self: center;
   z-index: 2;
   position: sticky;
-  margin-bottom: 1.8rem;
   opacity: 0.9;
 }
 .Work-TitleIndivContainer .Work-NumberIndividual {
   grid-column: 1;
   grid-row: 1;
   z-index: 1;
-  margin-right: -1.7rem;
   justify-self: right;
   opacity: 1;
+  margin-right: -47%;
 }
 .Work-EstudioContainer .Work-NumberIndividual {
   margin-right: -3.6rem;
@@ -233,13 +239,12 @@
   z-index: 10;
   position: sticky;
   width: 100%;
-  margin-top: -2rem;
 }
 .Next {
-  margin-left: -5rem;
+  margin-left: -109%;
 }
 .Prev {
-  margin-left: 3.5rem;
+  margin-left: 46%;
 }
 .Work-DescriptionContainer {
   grid-row: 2;
@@ -250,13 +255,14 @@
   justify-content: flex-start;
   opacity: 1;
   position: sticky;
+  margin-top: -5%;
 }
 .WorkTitleDate {
   grid-row: 3;
   grid-column: 2;
   justify-self: center;
   position: sticky;
-  margin-top: 2.5rem;
+  margin-top: 5%;
 }
 
 /*Fonts*/
@@ -313,10 +319,10 @@ li {
     font-size: 1.9em;
   }
   .Work-NumberIndividual {
-    font-size: 11.625rem;
+    font-size: 2.4em;
   }
   .Work-TextIndividual {
-    font-size: 3.6rem;
+    font-size: 0.81em;
   }
   .Work-ItemText {
     font-size: 0.289em;
@@ -326,9 +332,39 @@ li {
   }
   .Work-ItemNumber {
     font-size: 4rem;
+  }
+  .Work-EstudioContainer .Work-NumberIndividual {
+    margin-right: -53%;
+  }
+  .Work-MorenoContainer .Work-NumberIndividual {
+    margin-right: -28%;
+  }
+  .Work-OpameContainer .Work-NumberIndividual {
+    margin-right: -38%;
+  }
+  .Work-MichiContainer .Work-NumberIndividual {
+    margin-right: -27%;
+  }
+  .Work-BrokeContainer .Work-NumberIndividual {
+    margin-right: -29%;
+  }
+  .Work-KpContainer .Work-NumberIndividual {
+    margin-right: -1.4rem;
+  }
+  .Work-KpContainer .Work-DescriptionContainer {
+    margin-top: -7%;
+  }
+  .Work-KpContainer .WorkTitleDate {
+    margin-top: 0;
+  }
+  .Work-LogofolioContainer .Work-NumberIndividual {
+    margin-right: -30%;
+  }
+  .Work-MiscContainer .Work-NumberIndividual {
+    margin-right: -32%;
+  }
 }
-}
-@media screen and (320px <= width <= 425px) {
+/* @media screen and (320px <= width <= 425px) {
   .Work-NumberIndividual {
     font-size: 13.625rem;
   }
@@ -411,4 +447,4 @@ li {
 .Work-ItemText {
   font-size: 1rem;
 }
-}
+} */

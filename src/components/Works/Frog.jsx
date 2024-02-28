@@ -42,7 +42,7 @@ const Frog = () => {
     if (nextElement) {
       let offset = 200;
       if (window.innerWidth <= 767) {
-        offset = 40; 
+        offset = 40;
       }
       const elementPosition =
         nextElement.getBoundingClientRect().top + window.scrollY;
@@ -56,6 +56,8 @@ const Frog = () => {
 
   return (
     <div className="Work-FrogContainer">
+      <img src={FrogBgVectorL} alt="FrogBgL" className="FrogBgL" />
+      <img src={FrogBgVectorR} alt="FrogBgR" className="FrogBgR" />
       <div className="Work-TitleIndivCont">
         <div className="Work-TitleIndividual">
           <div className="Work-TitleIndivContainer">
@@ -75,8 +77,6 @@ const Frog = () => {
           <p className="WorkTitleDate">{date}</p>
         </div>
       </div>
-      <img src={FrogBgVectorL} alt="FrogBgL" className="FrogBgL" />
-      <img src={FrogBgVectorR} alt="FrogBgR" className="FrogBgR" />
       <div className="WorkIndividualphoto-container">
         <img src={Frog1} alt="FrogBazar1" className="Frog1" />
         <img src={Frog2} alt="FrogBazar2" className="Frog2" />
