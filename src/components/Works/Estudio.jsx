@@ -99,9 +99,9 @@ const Estudio = () => {
         <div className="carroContainer">
           <img src={Estudio4} alt="Estudio4" className="Estudio4" />
           <img src={carro} alt="carroGif" className="carroGif" />
-          <div className="Belink-container">
-            <BeLink link={url} />
-          </div>
+        </div>
+        <div className="Belink-container">
+          <BeLink link={url} />
         </div>
         <div className="EstudioCel-animationContainer">
           <EstudioCelAnimation />

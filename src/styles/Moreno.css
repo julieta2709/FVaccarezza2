@@ -64,7 +64,7 @@ margin-left: -5rem;
   width: 103%;
   margin-left: -0.36rem;
 }
-@media screen and (width <= 425px) {
+/* @media screen and (width <= 425px) {
   .Moreno2 {
     width: 130%;
   }
@@ -103,4 +103,4 @@ margin-left: -5rem;
   .Nmp-AnimationContainer {
     margin-left: 0.25rem;
   }
-}
+} */

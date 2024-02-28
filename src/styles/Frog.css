@@ -12,7 +12,7 @@
 .FrogCel-container2 {
   grid-column: 1;
   z-index: 1;
-  width: 12.5rem;
+  width: 31%;
 }
 .FrogCel-container1,
 .FrogCelanimation-container {
@@ -21,7 +21,7 @@
 .FrogCel-container2,
 .FrogCel-container4 {
   grid-row: 3;
-  width: 12.5rem;
+  width: 31%;
 }
 .FrogCelanimation-container,
 .FrogCel-container4 {
@@ -56,19 +56,22 @@
 .FrogCel-container1 {
   justify-self: end;
   align-self: start;
-  margin-right: -4.5rem;
-  margin-top: -3rem;
+  margin-right: -10%;
+  margin-top: -10%;
+  overflow: hidden;
 }
 .FrogCel-container2 {
   justify-self: left;
   align-self: center;
-  margin-left: -8.1rem;
+  margin-left: -21%;
+  overflow: hidden;
 }
 .FrogCel-container4 {
   justify-self: end;
   align-self: flex-end;
-  margin-right: -8rem;
-  margin-bottom: -5.2rem;
+  margin-right: -24%;
+  margin-bottom: -22%;
+  overflow: hidden;
 }
 .Frogcel1,
 .Frogcel2,
@@ -77,16 +80,16 @@
 }
 .FrogCelanimation-container {
   position: relative;
-  width: 7.5rem;
-  height: 16.25rem;
+  width: 28%;
+  height: 76%;
   justify-self: end;
   align-self: flex-end;
-  margin-right: -6.1rem;
-  margin-bottom: -4.8rem;
+  margin-right: -24%;
+  margin-bottom: -28%;
   overflow: hidden;
   border-radius: 1.1rem;
-  border: 0.25rem solid #222;
-  background-color: #FBF8F3;
+  border: 0.334rem solid #222;
+  background-color: #fbf8f3;
 }
 .image-animation {
   position: absolute;
@@ -96,23 +99,21 @@
   height: 100%;
   /* object-fit: cover; */
 }
-/*imgBG*/
-.FrogBgL {
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  bottom: -14rem;
+.Work-FrogContainer .WorkIndividualphoto-container .Belink-container {
+  bottom: -8.5%;
 }
+/*imgBG*/
+.FrogBgL,
 .FrogBgR {
   position: absolute;
   z-index: 1;
-  right: 0;
-  top: 110rem;
+  width: 26%;
 }
-
-@media screen and (width <= 1200px) {
-  .FrogBgL,
-  .FrogBgR {
-    width: 32.5%;
-  }
+.FrogBgL {
+  left: 0;
+  bottom: -7%;
+}
+.FrogBgR {
+  right: 0;
+  top: 49%;
 }

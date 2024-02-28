@@ -10,7 +10,7 @@
 .carroContainer {
   grid-row: 3;
   position: relative;
-  height: 62.5rem;
+  height: 36rem;
 }
 .Estudio2 {
   grid-row: 2;
@@ -26,7 +26,7 @@
 }
 .Estudio3 {
   justify-self: center;
-  width: 100%;
+  width: 133%;
   z-index: 2;
 }
 .EstudioCel-animationContainer1 {
@@ -34,23 +34,24 @@
 }
 .EstudioCel-animationContainer {
   align-self: start;
-  margin-left: -28.6rem;
-  margin-top: 1.4rem;
+  margin-left: -95%;
+  margin-top: 5%;
   position: relative;
-  width: 8.125rem;
+  width: 23.2%;
+  height: 14%;
 }
 .Ipad-container {
-  height: 25.9375rem;
-  width: 34.625rem;
+  height: 15.8%;
+  width: 76.6%;
   border: solid 0.3256rem #222222;
   border-radius: 1.3rem;
   align-self: center;
   justify-self: end;
-  margin-right: -5.2rem;
+  margin-right: -9%;
   margin-bottom: 6rem;
   z-index: 4;
   position: relative;
-  background-color: #EDEDED;
+  background-color: #ededed;
 }
 .Estudiopad1 {
   width: 100%;
@@ -64,10 +65,9 @@
   width: 67.5625rem;
   height: auto;
 }
-.carroContainer .Belink-container {
-  position: absolute;
-  bottom: -0.5625rem;
-  right: 36.3125rem;
+.Work-EstudioContainer .WorkIndividualphoto-container .Belink-container {
+  bottom: -7.8%;
+  right: 19%;
 }
 /*imgBg*/
 .Work-EstudioContainer .eclipse {
@@ -76,20 +76,23 @@
   top: -35rem;
   align-self: center;
   z-index: 1;
+  width: 50%;
 }
 .EstudioBgR {
   position: absolute;
   right: 0;
-  top: 70rem;
+  top: 20%;
   z-index: 1;
+  width: 35%;
 }
 .EstudioBgBottomL {
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: 1;
+  width: 50%;
 }
-@media screen and (width <=1200px) {
+/* @media screen and (width <=1200px) {
   .Estudio3 {
     width: 131%;
   }
@@ -131,4 +134,4 @@
     margin-right: -5.4rem;
     margin-bottom: 6rem;
   }
-}
+} */
