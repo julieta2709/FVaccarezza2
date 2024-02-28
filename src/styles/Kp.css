@@ -10,11 +10,10 @@
 .Kp4 {
   grid-row: 2;
 }
-.Kp2 {
+.Kp2, .Kp3 {
   width: 125%;
 }
 .Kp4 {
-  width: 122%;
   margin-left: 7rem;
 }
 .Kp2,
@@ -25,11 +24,11 @@
 .Kp4,
 .Kp5 {
   grid-column: 2;
+  width: 122%;
 }
 .Kp3,
 .Kp5 {
   grid-row: 3;
-  width: 100%;
 }
 .Kp6 {
   grid-row: 4;
@@ -49,12 +48,15 @@
   justify-self: flex-end;
 }
 @media screen and (width <= 1200px) {
-  .Kp2,
-  .Kp3,
-  .Kp4,
-  .Kp5 {
-    width: 124%;
-  }
+.Kp3 {
+  margin-top: -52%;
+}
+.Kp5 {
+  margin-top: -28%;
+}
+.Kp6 {
+  margin-top: -29%;
+}
   .Kp4, .Kp5 {
     justify-self: left;
   }
