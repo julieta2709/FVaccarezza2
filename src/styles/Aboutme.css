@@ -90,12 +90,12 @@
 /*contenedor general*/
 .Aboutme-Maincontainer {
   max-width: 1920px;
+  height: 192vh;
   position: relative;
-  margin-bottom: 32%;
+  margin-bottom: 19%;
   display: flex;
   justify-content: center;
   margin-top: 10%;
-  height: auto;
 }
 /*imgBG*/
 .About2BG {
