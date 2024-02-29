@@ -8,9 +8,9 @@ import Moreno4 from "../../assets/img/Moreno/Moreno4.svg";
 import "../../styles/Moreno.css";
 import "../../styles/Work.css";
 import Countdown from "../Animations/Moreno/CountDown";
-// import FuViews from "../Animations/Moreno/FuViews";
 import Nmp1 from "../Animations/Moreno/Nmp1";
 import Nmp2 from "../Animations/Moreno/Nmp2";
+// import FuViews from "../Animations/Moreno/FuViews";
 // import CircleAnimation from "../Animations/Moreno/circleAnimation";
 import Next from "../Buttons/Next";
 import Prev from "../Buttons/Prev";
@@ -39,7 +39,7 @@ const Moreno = () => {
     if (nextElement) {
       let offset = 200;
       if (window.innerWidth <= 767) {
-        offset = 40; 
+        offset = 40;
       }
       const elementPosition =
         nextElement.getBoundingClientRect().top + window.scrollY;
@@ -56,7 +56,7 @@ const Moreno = () => {
     if (nextElement) {
       let offset = 200;
       if (window.innerWidth <= 767) {
-        offset = 40; 
+        offset = 40;
       }
       const elementPosition =
         nextElement.getBoundingClientRect().top + window.scrollY;
@@ -94,17 +94,15 @@ const Moreno = () => {
       </div>
       <div className="WorkIndividualphoto-container">
         <img src={Moreno1} alt="Moreno1" className="Moreno1" />
-        <div className="Moreno2-container">
-          <img src={Moreno2} alt="Moreno2" className="Moreno2" />
-          <div className="Nmp-AnimationContainer">
-            <img src={Envelope} alt="Envelope" className="Envelope" />
-            <Nmp1 />
-            <Nmp2 />
-          </div>
+        <img src={Moreno2} alt="Moreno2" className="Moreno2" />
+        <div className="Nmp-AnimationContainer">
+          <img src={Envelope} alt="Envelope" className="Envelope" />
+          <Nmp1 />
+          <Nmp2 />
         </div>
         <img src={Moreno4} alt="Moreno4" className="Moreno4" />
+        <img src={Moreno3} alt="Moreno3" className="Moreno3" />
         <div className="countdown-container">
-          <img src={Moreno3} alt="Moreno3" className="Moreno3" />
           <Countdown />
           {/*           <CircleAnimation />
           <FuViews /> */}

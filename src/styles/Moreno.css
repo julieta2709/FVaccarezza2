@@ -6,63 +6,52 @@
 .Moreno1 {
   grid-row: 1;
 }
-.Moreno2-container {
-  grid-row: 2;
-  width: 100%;
-  grid-column: 1;
-}
-/* .Moreno2-container2 {
-  grid-column: 1;
-  justify-self: center;
-} */
 .Moreno3,
 .Moreno2 {
   position: relative;
 }
 .Moreno2 {
-width: 131%;
-margin-left: -5rem;
+  grid-row: 2;
+  width: 127%;
+  grid-column: 1;
 }
 .Moreno3 {
-  margin-left: -8.3rem;
-  width: 161%;
+  grid-column: 2;
+  grid-row: 2;
+  width: 158%;
+  margin-left: 8%;
 }
 /*Animación cuenta regresiva*/
 .countdown-container {
-  grid-column: 2;
-  grid-row: 2;
   z-index: 2;
-  position: relative;
-  width: 100%;
-}
-.countdown-Animacontainer {
   position: absolute;
-  z-index: 3;
-  top: 3.5rem;
-  left: 15rem;
+  width: 2%;
+  height: 0.62%;
+  top: 36.4%;
+  right: 33.3%;
 }
 .countdown-text {
   font-family: "FraktionSansLight";
   color: #fff;
-  font-size: 1.625rem;
+  font-size: 0.28em;
   letter-spacing: -0.0814rem;
   line-height: 86.1%;
 }
+/*Nmp animation*/
 .Nmp-AnimationContainer {
   display: grid;
-  grid-template-columns: 10.7rem 10.7rem;
-  grid-template-rows: auto 13.98rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 36% 36%;
   gap: 1.4rem;
-  width: 100%;
-  margin-top: -35.2rem;
+  width: 66%;
+  margin-top: -125%;
   justify-content: center;
 }
 .Envelope {
   grid-column: 1 / span 2;
   grid-row: 1;
   z-index: 3;
-  width: 103%;
-  margin-left: -0.36rem;
+  width: 100%;
 }
 /* @media screen and (width <= 425px) {
   .Moreno2 {

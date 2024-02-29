@@ -147,7 +147,7 @@
     margin-right: 9%;
   }
 }
-@media screen and (319px <= width <= 1920px) {
+@media screen and (320px <= width <= 1920px) {
   .Photography-container {
     background-size: 26.5%;
   }

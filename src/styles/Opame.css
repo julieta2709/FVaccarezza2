@@ -44,11 +44,11 @@
   width: 100%;
 }
 .Opame4 {
-  margin-top: -6rem;
+  margin-top: -5%;
   width: 100%;
 }
 .Opame5 {
-  margin-top: -11rem;
+  margin-top: -33%;
 }
 .Opame6 {
   grid-row: 5;
@@ -58,82 +58,63 @@
 .Opame7 {
   margin-top: -2rem;
 }
-
 .Opamecel3,
 .Opamecel4 {
-  z-index: 1;
+  z-index: 3;
+  width: 31%;
 }
 .Opamecel1,
 .Opamecel2 {
   z-index: 3;
+  width: 31%;
+  height: 34%;
 }
 .Opamecel1 {
   justify-self: end;
   align-self: start;
-  margin-right: -4.5rem;
-  margin-top: -2rem;
-  width: 8.5rem;
-  height: 16.25rem;
+  margin-right: -12%;
+  margin-top: -15%;
 }
 .Opamecel2 {
   justify-self: start;
   align-self: center;
-  margin-left: -4rem;
-  margin-top: 15.5rem;
-  width: 8.5rem;
-  height: 16.25rem;
+  margin-left: -21%;
+  margin-top: 72%;
 }
 .Opamecel3 {
   justify-self: start;
   align-self: center;
-  margin-left: -4.5rem;
-  margin-top: -1rem;
-  width: 8.5rem;
-  height: 16.25rem;
+  margin-left: -18%;
+  margin-top: 15%;
+  height: 34%;
 }
 .Opamecel4 {
   justify-self: end;
   align-self: start;
   margin-right: -4rem;
   margin-top: 1rem;
-  width: 8.5rem;
-  height: 16.25rem;
+  height: 92.3%;
 }
 /*imgBg*/
 .Work-OpameContainer .eclipse {
   position: absolute;
   right: 0;
-  top: -50rem;
+  top: -23%;
   align-self: center;
   z-index: 1;
+  width: 50%;
 }
 .OpameBgR {
   position: absolute;
   right: 0;
   z-index: 1;
-  top: 30rem;
+  top: 11%;
+  width: 32.5%;
 }
 .OpameBgL {
   position: absolute;
   left: 0;
   z-index: 1;
-  bottom: 60rem;
-}
-@media screen and (width <= 1200px) {
-  .Opamecel1,
-  .Opamecel2,
-  .Opamecel3,
-  .Opamecel4 {
-    width: 35%;
-  }
-  .Opamecel2 {
-    margin-top: 18rem;
-  }
-  .Work-OpameContainer .eclipse {
-    width: 50%;
-  }
-  .OpameBgR,
-  .OpameBgL {
-    width: 32.5%;
-  }
+  bottom: 17%;
+  width: 32.5%;
 }

@@ -49,7 +49,7 @@
 }
 .Michi6 {
   grid-row: 5;
-  margin-top: -10rem;
+  margin-top: -15%;
 }
 .animated-imageContainer {
   position: relative;
@@ -68,12 +68,7 @@
   position: absolute;
 }
 .Work-MichiContainer .WorkIndividualphoto-container .Belink-container {
-  align-self: flex-end;
-  justify-self: end;
-  z-index: 3;
-  margin-right: -3rem;
-  margin-bottom: -58rem;
-  width: 6.25rem;
+  bottom: -8.5%;
 }
 /*animación*/
 @keyframes fadeInOut {
@@ -111,7 +106,8 @@
   .Michi2 {
     width: 134%;
   }
-  .MichiBgR, .MichiBgL {
+  .MichiBgR,
+  .MichiBgL {
     width: 32.5%;
   }
 }
