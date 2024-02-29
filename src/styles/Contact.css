@@ -70,7 +70,7 @@
     font-size: 1em;
   }
 }
-@media screen and (320px <= width <= 375px) {
+@media screen and (320px < width <= 375px) {
   .Contact-main {
     font-size: 1.5em;
   }

@@ -1,8 +1,11 @@
+.buttonUp-link {
+  display: inline-block;
+  text-decoration: none;
+}
 .button-up {
   cursor: pointer;
   width: 100%;
   height: 100%;
- 
 }
 .upIcon {
   width: 100%;

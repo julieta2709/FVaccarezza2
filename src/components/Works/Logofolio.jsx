@@ -31,7 +31,13 @@ const Logofolio = () => {
   const sentences = description.split("\n");
 
   function easeInOutExpo(t) {
-    return t === 0 ? 0 : t === 1 ? 1 : t < 0.5 ? Math.pow(2, 20 * t - 10) / 2 : (2 - Math.pow(2, -20 * t + 10)) / 2;
+    return t === 0
+      ? 0
+      : t === 1
+      ? 1
+      : t < 0.5
+      ? Math.pow(2, 20 * t - 10) / 2
+      : (2 - Math.pow(2, -20 * t + 10)) / 2;
   }
 
   const handlePrevClick = () => {
@@ -39,7 +45,7 @@ const Logofolio = () => {
     if (nextElement) {
       let offset = 200;
       if (window.innerWidth <= 767) {
-        offset = 40; 
+        offset = 40;
       }
       const elementPosition =
         nextElement.getBoundingClientRect().top + window.scrollY;
@@ -56,7 +62,7 @@ const Logofolio = () => {
     if (nextElement) {
       let offset = 200;
       if (window.innerWidth <= 767) {
-        offset = 40; 
+        offset = 40;
       }
       const elementPosition =
         nextElement.getBoundingClientRect().top + window.scrollY;
@@ -130,22 +136,18 @@ const Logofolio = () => {
         </li>
       </ul>
       <div className="Frame-container">
-        <div className="Frame-row">
-          <img src={Frame1} alt="Frame1" className="Frame1" />
-          <img src={Frame2} alt="Frame2" className="Frame2" />
-          <img src={Frame3} alt="Frame3" className="Frame3" />
-          <img src={Frame4} alt="Frame4" className="Frame4" />
-          <img src={Frame5} alt="Frame5" className="Frame5" />
-          <img src={Frame6} alt="Frame6" className="Frame6" />
-        </div>
-        <div className="Frame-row">
-          <img src={Frame7} alt="Frame7" className="Frame7" />
-          <img src={Frame8} alt="Frame8" className="Frame8" />
-          <img src={Frame9} alt="Frame9" className="Frame9" />
-          <img src={Frame10} alt="Frame10" className="Frame10" />
-          <img src={Frame11} alt="Frame11" className="Frame11" />
-          <img src={Frame12} alt="Frame12" className="Frame12" />
-        </div>
+        <img src={Frame1} alt="Frame1" className="Frame1" />
+        <img src={Frame7} alt="Frame7" className="Frame7" />
+        <img src={Frame2} alt="Frame2" className="Frame2" />
+        <img src={Frame8} alt="Frame8" className="Frame8" />
+        <img src={Frame3} alt="Frame3" className="Frame3" />
+        <img src={Frame9} alt="Frame9" className="Frame9" />
+        <img src={Frame4} alt="Frame4" className="Frame4" />
+        <img src={Frame10} alt="Frame10" className="Frame10" />
+        <img src={Frame5} alt="Frame5" className="Frame5" />
+        <img src={Frame11} alt="Frame11" className="Frame11" />
+        <img src={Frame6} alt="Frame6" className="Frame6" />
+        <img src={Frame12} alt="Frame12" className="Frame12" />
       </div>
     </div>
   );

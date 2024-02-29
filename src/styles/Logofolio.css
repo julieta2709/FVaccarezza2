@@ -68,52 +68,88 @@
 }
 .Frame-container {
   width: 56.67%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin-top: 11.875rem;
-}
-.Frame-row {
-  width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto auto;
+  row-gap: 20%;
   align-items: center;
-  justify-content: space-between;
+  justify-items: center;
+  margin-top: 11.875rem;
+  height: 14.5rem;
+}
+.Frame1,
+.Frame2,
+.Frame3,
+.Frame4,
+.Frame5,
+.Frame6 {
+  grid-row: 1;
+  height: auto;
+}
+.Frame7,
+.Frame8,
+.Frame9,
+.Frame10,
+.Frame11,
+.Frame12 {
+  grid-row: 2;
+  height: auto;
+}
+.Frame1,
+.Frame7 {
+  grid-column: 1;
+}
+.Frame2,
+.Frame8 {
+  grid-column: 2;
+}
+.Frame3,
+.Frame9 {
+  grid-column: 3;
+}
+.Frame4,
+.Frame10 {
+  grid-column: 4;
+}
+.Frame5,
+.Frame11 {
+  grid-column: 5;
+}
+.Frame6,
+.Frame12 {
+  grid-column: 6;
 }
 .Frame1 {
-  width: 11.4%;
+  width: 66.5%;
 }
 .Frame2 {
-  width: 12.32%;
-}
-.Frame3 {
-  width: 10.2%;
+  width: 73.1%;
 }
 .Frame4 {
-  width: 10.7%;
+  width: 63.1%;
 }
 .Frame5 {
-  width: 8.5%;
+  width: 49.9%;
 }
 .Frame6 {
-  width: 13.06%;
+  width: 78.1%;
 }
 .Frame7 {
-  width: 12.7%;
+  width: 76.2%;
 }
-.Frame8 {
-  width: 10.11%;
+.Frame3,
+.Frame8,
+.Frame11 {
+  width: 59.8%;
 }
 .Frame9 {
-  width: 13.5%;
+  width: 79.5%;
 }
 .Frame10 {
-  width: 9.5%;
-}
-.Frame11 {
-  width: 10.11%;
+  width: 56.5%;
 }
 .Frame12 {
-  width: 8.6%;
+  width: 49.8%;
 }
 @media screen and (width <= 425px) {
   .Logo-text {

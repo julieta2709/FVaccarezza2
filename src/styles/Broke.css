@@ -8,50 +8,52 @@
   grid-row: 2;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: center;
   width: 100%;
 }
 .broke-column1 {
   grid-column: 1;
   background-color: #222222;
-  /* height: 97.4375rem; */
   gap: 3rem;
+  height: 96.5%;
 }
 .broke-column2 {
   grid-column: 2;
-  /* height: 97.4375rem; */
+  justify-content: space-between;
 }
 .Broke2 {
   margin-top: 3rem;
-  width: 16.15rem;
+  width: 52.8%;
+}
+.Broke3 {
+  width: 66.6%;
   height: auto;
 }
 .Broke4 {
   width: 106%;
-  margin-top: 3.5rem;
 }
 .Broke5 {
-  width: 18.9375rem;
+  width: 66%;
 }
 .Broke6 {
-  margin-top: -1rem;
-  width: 39.9375rem;
-  height: auto;
+  width: 130%;
+  margin-left: 13%;
+  margin-top: -10%
+  ;
 }
 .Broke7 {
   margin-top: 1rem;
-  width: 100%;
+  width: 115%;
 }
 .Broke8 {
-  width: 26.83rem;
+  width: 86%;
   height: auto;
 }
 .Broke9 {
   grid-row: 3;
   grid-column: 1 / span 2;
   justify-self: center;
-  width: 51.75rem;
+  width: 70%;
   height: auto;
 }
 .Broke10 {
@@ -65,8 +67,9 @@
   z-index: 1;
   align-self: center;
   justify-self: flex-start;
-  margin-left: -7rem;
-  margin-top: -17rem;
+  margin-left: -25%;
+  margin-top: -55%;
+  width: 43%;
 }
 /*imgBG*/
 .BrokeBgL,
@@ -76,14 +79,14 @@
   width: 32.5%;
 }
 .BrokeBgL {
-  top: 35rem;
+  top: 13%;
   left: 0;
 }
 .BrokeBgR {
-  top: 125rem;
+  top: 52%;
   right: 0;
 }
-@media screen and (width <= 1200px) {
+/* @media screen and (width <= 1200px) {
   .Broke2 {
     width: 52.8%;
   }
@@ -108,3 +111,4 @@
     width: 46%;
   }
 }
+ */
