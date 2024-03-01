@@ -24,13 +24,12 @@
 .Aboutme-introName,
 .Aboutme-introGraphic {
   font-family: "PP-Hatton-Ultralight";
-  font-size: 3.125rem;
-  font-weight: 200;
+  font-size: 0.64em;
 }
 .Aboutme-name,
 .Aboutme-title,
 .Aboutme-titleProf {
-  font-size: 6.25rem;
+  font-size: 1.4em;
   font-weight: 700;
 }
 .Aboutme-number,
@@ -90,6 +89,7 @@
 /*contenedor general*/
 .Aboutme-Maincontainer {
   max-width: 1920px;
+  width: 100%;
   position: relative;
   margin-bottom: 19%;
   display: flex;
@@ -205,7 +205,7 @@
 .Aboutme-2356container {
   display: grid;
   grid-template-rows: auto auto auto;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
   justify-content: center;
   column-gap: 13.2%;
   row-gap: 8%;
@@ -225,10 +225,12 @@
 .Aboutme-3,
 .Aboutme-5 {
   grid-column: 1;
+  width: 100%;
 }
 .Aboutme-2,
 .Aboutme-6 {
   grid-column: 2;
+  width: 100%;
 }
 /*contact*/
 .Aboutme-contact {
@@ -360,13 +362,18 @@
   }
   .Aboutme-contactTittle {
     font-size: 0.84em;
+  }
+  .Aboutme-contactNumber {
+    font-size: 0.8em;
+  }
+  .Aboutme-contactMail {
+    font-size: 0.45em;
+  }
 }
-.Aboutme-contactNumber {
-  font-size: 0.8em;
-}
-.Aboutme-contactMail {
-  font-size: 0.45em;
-}
+@media screen and (375px <= width <= 425px) {
+  .Aboutme-2356container {
+    column-gap: 0%;
+  }
 }
 /* @media screen and (320px <= width <=425px) {
   .Aboutme-title {

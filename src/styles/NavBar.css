@@ -84,7 +84,7 @@
 }
 @media screen and (425px <= width <= 768px) {
   .Header-container {
-    height: 14.6vh;
+    height: 10vh;
   }
   .navbar {
     font-size: 0.35em;

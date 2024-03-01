@@ -27,13 +27,17 @@
   color: #000;
   padding: 0.625rem;
   border-radius: 5px;
-  transition: opacity 0.5s ease-in-out;
 }
 .messageNext,
 .messagePrev {
-  bottom: -0%;
+  bottom: -10%;
   left: 57%;
   transform: translateX(-50%);
+  transition: opacity 1s ease-out;
+}
+.NextContainer .messageNext,
+.NextContainer .messagePrev {
+  transition: transform 0.5s ease-in-out;
 }
 .NextContainer:hover .messageNext,
 .NextContainer:hover .messagePrev {
