@@ -75,6 +75,7 @@
   column-gap: 0.8%;
   justify-items: stretch;
   justify-content: center;
+  width: 100%;
 }
 .Work-ItemLink {
   display: flex;
@@ -203,30 +204,30 @@
   margin-right: -47%;
 }
 .Work-EstudioContainer .Work-NumberIndividual {
-  margin-right: -3.6rem;
+  margin-right: -53%;
 }
 .Work-MorenoContainer .Work-NumberIndividual {
-  margin-right: -2.4rem;
+  margin-right: -28%;
 }
 .Work-OpameContainer .Work-NumberIndividual {
-  margin-right: -2.6rem;
+  margin-right: -38%;
 }
 .Work-MichiContainer .Work-NumberIndividual {
-  margin-right: -2.1rem;
+  margin-right: -27%;
 }
 .Work-BrokeContainer .Work-NumberIndividual {
-  margin-right: -2.7rem;
+  margin-right: -29%;
 }
 .Work-KpContainer .Work-NumberIndividual {
-  margin-right: -2.2rem;
+  margin-right: -1.4rem;
   margin-bottom: -1rem;
 }
 .Work-LogofolioContainer .Work-NumberIndividual {
-  margin-right: -2.8rem;
+  margin-right: -30%;
   margin-bottom: -1.1rem;
 }
 .Work-MiscContainer .Work-NumberIndividual {
-  margin-right: -2.7rem;
+  margin-right: -32%;
 }
 .Next {
   grid-column: 3;
@@ -342,118 +343,71 @@ li {
   .Work-ItemNumber {
     font-size: 4rem;
   }
-  .Work-EstudioContainer .Work-NumberIndividual {
-    margin-right: -53%;
-  }
-  .Work-MorenoContainer .Work-NumberIndividual {
-    margin-right: -28%;
-  }
-  .Work-OpameContainer .Work-NumberIndividual {
-    margin-right: -38%;
-  }
-  .Work-MichiContainer .Work-NumberIndividual {
-    margin-right: -27%;
-  }
-  .Work-BrokeContainer .Work-NumberIndividual {
-    margin-right: -29%;
-  }
-  .Work-KpContainer .Work-NumberIndividual {
-    margin-right: -1.4rem;
-  }
   .Work-KpContainer .Work-DescriptionContainer {
     margin-top: -7%;
   }
   .Work-KpContainer .WorkTitleDate {
     margin-top: 0;
   }
-  .Work-LogofolioContainer .Work-NumberIndividual {
-    margin-right: -30%;
-  }
-  .Work-MiscContainer .Work-NumberIndividual {
-    margin-right: -32%;
-  }
 }
-/* @media screen and (320px <= width <= 425px) {
-  .Work-NumberIndividual {
-    font-size: 13.625rem;
-  }
-  .Work-TextIndividual {
-    font-size: 4.1rem;
-  }
-  .WorkTitleDescription {
-    font-size: 1.7rem;
-  }
-  .WorkTitleDate {
-    font-size: 1.2rem;
-  }
-  .Work-container {
-    background-size: 5.5%;
-  }
-  .Work-ListRow1,
-  .Work-ListRow2 {
-    column-gap: 1rem;
-  }
-  .Work-TitleIndividual {
-    row-gap: 0.7rem;
-  }
-  .Work-ItemText {
-    font-size: 1.2rem;
-  }
-}
-@media screen and (425px <= width <= 500px) {
-  .Work-ItemText {
-    font-size: 1.1rem;
-  }
-}
-@media screen and (500px <= width <= 565px) {
-  .Work-ItemText {
-    font-size: 1.3rem;
-  }
-}
-@media screen and (565px <= width <= 576px) {
-  .Work-ItemText {
-    font-size: 1.6rem;
-  }
-}
-@media screen and (425px <= width <= 576px) {
-  .Work-ListRow1,
-  .Work-ListRow2 {
-    column-gap: 1rem;
-  }
-  .WorkTitleDescription {
-    font-size: 1.7rem;
-  }
-}
-@media screen and (576px <= width <= 768px) {
-  .Work-ItemText {
-    font-size: 1.6rem;
+@media screen and (375px <= width <= 425px) {
+  .Work-KpContainer .Work-TextIndividual {
+    font-size: 0.941em;
   }
 }
 @media screen and (768px <= width <= 1024px) {
-  .Work-ListRow2,
-  .Work-ListRow1 {
-    column-gap: 0.7rem;
+  .Work-NumberIndividual {
+    font-size: 4.2em;
+  }
+  .Work-TextIndividual {
+    font-size: 1.93em;
+  }
+}
+@media screen and (1024px <= width <= 1200px) {
+  .Work-ItemNumber {
+    font-size: 4rem;
+  }
+  .Work-ItemText,
+  .WorkTitleDescription {
+    font-size: 1.14rem;
+  }
+  .Work-TitleIndivCont {
+    margin-top: 1%;
+  }
+  .Work-TitleIndividual {
+    margin-bottom: 8%;
+  }
+  .Work-NumberIndividual {
+    margin-top: 30%;
+    font-size: 7em;
+  }
+  /*   .Work-MorenoContainer .Work-TextIndividual {
+    font-size: 2.8em;
+  } */
+  .Work-TextIndividual {
+    font-size: 2.6em;
+  }
+}
+@media screen and (width > 1200px) {
+  .Work-mainTitle {
+    font-size: 9em;
+  }
+  .Work-ItemNumber {
+    font-size: 3.35rem;
+  }
+  .Work-ItemText,
+  .WorkTitleDescription {
+    font-size: 0.86rem;
   }
   .Work-ItemText {
-    font-size: 1.2rem;
+    margin-left: -0.75rem;
+    margin-bottom: 0.2rem;
+  }
+  .Work-NumberIndividual {
+    font-size: 8.5em;
+    margin-top: 15%;
+  }
+  .Work-TextIndividual {
+    font-size: 3.1em;
   }
 }
-@media screen and (width <= 1200px) {
-  .Work-container {
-    background-size: 5.5%;
-  }
-  .WorkRightBG {
-    width: 32.5%;
-  }
-  .WorkLeft {
-    width: 50%;
-  }
-}
-@media screen and (1200px <= width <= 1440px) {
-  .Work-TitleIndivCont {
-    width: 94%;
-}
-.Work-ItemText {
-  font-size: 1rem;
-}
-} */

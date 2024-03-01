@@ -117,3 +117,79 @@
   right: 0;
   top: 49%;
 }
+@media screen and (768px <= width <= 1024px) {
+  .FrogCel-container1,
+  .FrogCel-container2,
+  .FrogCel-container4 {
+    width: 24%;
+  }
+  .FrogCel-container1,
+  .FrogCelanimation-container {
+    height: 61.95%;
+  }
+  .FrogCel-container2,
+  .FrogCel-container4 {
+    height: 52%;
+  }
+  .FrogCel-container1 {
+    margin-right: -6%;
+    margin-top: -3%;
+  }
+  .FrogCel-container2 {
+    margin-left: -15%;
+  }
+  .FrogCel-container4 {
+    margin-right: -18%;
+    margin-bottom: -4%;
+  }
+  .Frogcel1,
+  .Frogcel2,
+  .Frogcel4 {
+    height: 100%;
+  }
+  .FrogCelanimation-container {
+    width: 21%;
+    border: 0.25rem solid #222;
+    border-radius: 0.9rem;
+    margin-right: -18%;
+  }
+}
+@media screen and (1024px <= width <= 1200px) {
+  .FrogCel-container1,
+  .FrogCel-container2,
+  .FrogCel-container4 {
+    width: 24.4%;
+  }
+}
+@media screen and (width > 1200px) {
+  .FrogCel-container1,
+  .FrogCel-container2,
+  .FrogCel-container4 {
+    width: 24%;
+  }
+  .FrogCel-container1,
+  .FrogCelanimation-container {
+    height: 61.95%;
+  }
+  .FrogCel-container2,
+  .FrogCel-container4 {
+    height: 52%;
+  }
+  .FrogCel-container1 {
+    margin-right: -6%;
+    margin-top: -3%;
+  }
+  .FrogCel-container2 {
+    margin-left: -15%;
+  }
+  .FrogCel-container4 {
+    margin-right: -18%;
+    margin-bottom: -4%;
+  }
+  .FrogCelanimation-container {
+    width: 22%;
+    border: 0.2rem solid #222;
+    border-radius: 0.7rem;
+    margin-right: -18%;
+  }
+}

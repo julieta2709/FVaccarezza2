@@ -48,7 +48,8 @@
 .Misc5 {
   grid-row: 3;
 }
-.Misc-section2, .Misc-section3 {
+.Misc-section2,
+.Misc-section3 {
   width: 100%;
   margin-top: 6%;
 }
@@ -105,8 +106,32 @@
 .MiscBgL2 {
   margin-top: 97%;
 }
-@media screen and (width <= 1200px) {
+@media screen and (width <= 768px) {
   .Misc-sectionTitle {
     font-size: 1.2rem;
   }
 }
+@media screen and (768px <= width <= 1024px) {
+ .Misc-sectionTitle {
+    font-size: 0.7rem;
+  }
+  .Misc-subContainer {
+    margin-top: 4%;
+  }
+}
+@media screen and (1024px <= width <= 1200px) {
+  .Misc-sectionTitle {
+     font-size: 0.8rem;
+   }
+   .Misc-subContainer {
+    margin-top: 4%;
+  }
+ }
+ @media screen and (width > 1200px) {
+  .Misc-sectionTitle {
+     font-size: 0.92rem;
+   }
+   .Misc-subContainer {
+    margin-top: 4%;
+  }
+ }

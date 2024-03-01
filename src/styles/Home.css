@@ -97,66 +97,82 @@ h1,
 .year {
   transition: transform 2s cubic-bezier(0.21, 0.87, 0.35, 1);
 }
-/*media query*/
-/* @media screen and (width <= 425px) {
-  .fv {
-    font-size: 1.1rem;
-    line-height: 8;
-  }
-  .Home-container {
-    height: 56rem;
-  }
-} */
 @media screen and (width <= 375px) {
   h2,
-.year {
-  font-size: 6.25em;
-}
-h1,
-.portfolio {
-  font-size: 1.56em;
-}
-.fv {
-  font-size: 0.23em;
-}
+  .year {
+    font-size: 6.25em;
+  }
+  h1,
+  .portfolio {
+    font-size: 1.56em;
+  }
+  .fv {
+    font-size: 0.23em;
+  }
 }
 @media screen and (375px <= width <= 425px) {
   h2,
-.year {
-  font-size: 7.3em;
-}
-h1,
-.portfolio {
-  font-size: 1.83em;
-}
-.fv {
-  font-size: 0.187em;
-}
+  .year {
+    font-size: 7.3em;
+  }
+  h1,
+  .portfolio {
+    font-size: 1.83em;
+  }
+  .fv {
+    font-size: 0.187em;
+  }
 }
 @media screen and (425px <= width <= 768px) {
   h2,
-.year {
-  font-size: 8.3em;
-}
-h1,
-.portfolio {
-  font-size: 2.08em;
-}
-.fv {
-  font-size: 0.21em;
-}
+  .year {
+    font-size: 8.3em;
+  }
+  h1,
+  .portfolio {
+    font-size: 2.08em;
+  }
+  .fv {
+    font-size: 0.21em;
+  }
 }
 @media screen and (768px <= width <= 1024px) {
   h2,
-.year {
-  font-size: 20em;
+  .year {
+    font-size: 15em;
+  }
+  h1,
+  .portfolio {
+    font-size: 3.75em;
+  }
+  .fv {
+    font-size: 0.381em;
+  }
 }
-h1,
-.portfolio {
-  font-size: 5em;
+@media screen and (1024px <= width <= 1200px) {
+  h2,
+  .year {
+    font-size: 20em;
+  }
+  h1,
+  .portfolio {
+    font-size: 4.997em;
+  }
+  .fv {
+    font-size: 0.509em;
+  }
 }
-.fv {
-  font-size: 0.51em;
+@media screen and (width > 1200px) {
+  h2,
+  .year {
+    font-size: 24.15em;
+  }
+  h1,
+  .portfolio {
+    font-size: 6.06em;
+  }
+  .fv {
+    font-size: 0.62em;
+    margin-right: 5%
+  }
 }
-}
-

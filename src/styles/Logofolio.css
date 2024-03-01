@@ -156,11 +156,41 @@
     font-size: 1.2rem;
   }
 }
-@media screen and (425px < width <= 1200px) {
-  .Logo-container {
-    background-size: 10%;
-  }
+@media screen and (425px < width <= 768px) {
   .Logo-text {
     font-size: 1.2rem;
+  }
+}
+@media screen and (768px <= width <= 1024px) {
+  .Logo-container {
+    height: 36.3rem;
+  }
+  .Logo-text {
+    font-size: 0.702rem;
+  }
+  .Logo-number {
+    font-size: 2.42rem;
+  }
+}
+@media screen and (1024px <= width <= 1200px) {
+  .Logo-container {
+    height: 41rem;
+  }
+  .Logo-text {
+    font-size: 0.796rem;
+  }
+  .Logo-number {
+    font-size: 2.68rem;
+  }
+}
+@media screen and (width > 1200px) {
+  .Logo-container {
+    height: 48.13rem;
+  }
+  .Logo-text {
+    font-size: 0.943rem;
+  }
+  .Logo-number {
+    font-size: 3.2rem;
   }
 }

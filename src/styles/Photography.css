@@ -103,7 +103,7 @@
   }
   .Photography-mainText1,
   .Photography-mainText2 {
-    font-size: 2em;
+    font-size: 1.7em;
   }
 }
 @media screen and (375px <= width <= 425px) {
@@ -112,7 +112,7 @@
   }
   .Photography-mainText1,
   .Photography-mainText2 {
-    font-size: 2.2em;
+    font-size: 2em;
   }
 }
 @media screen and (425px <= width <= 768px) {
@@ -124,7 +124,7 @@
   }
   .Photography-mainText1,
   .Photography-mainText2 {
-    font-size: 4em;
+    font-size: 2.27em;
   }
   .RedCircle {
     margin-right: 9%;
@@ -141,7 +141,25 @@
 @media screen and (768px <= width <= 1024px) {
   .Photography-mainText1,
   .Photography-mainText2 {
+    font-size: 4.07em;
+  }
+  .RedCircle {
+    margin-right: 9%;
+  }
+}
+@media screen and (1024px <= width <= 1200px) {
+  .Photography-mainText1,
+  .Photography-mainText2 {
     font-size: 5.4em;
+  }
+  .RedCircle {
+    margin-right: 9%;
+  }
+}
+@media screen and (width > 1200px) {
+  .Photography-mainText1,
+  .Photography-mainText2 {
+    font-size: 6.6em;
   }
   .RedCircle {
     margin-right: 9%;
@@ -152,14 +170,3 @@
     background-size: 26.5%;
   }
 }
-/* @media screen and (1200px < width <= 1440px) {
-  .Photography-container {
-    background-size: 26.5%;
-  }
-  .Work-TitleIndividual {
-    grid-template-columns: 12.5% 80% 12.5%;
-  }
-  .Work-TextIndividual {
-    font-size: 4.7rem;
-  }
-} */

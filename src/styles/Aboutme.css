@@ -207,7 +207,7 @@
   grid-template-rows: auto auto auto;
   grid-template-columns: 50% 50%;
   justify-content: center;
-  column-gap: 13.2%;
+  /* column-gap: 13.2%; */
   row-gap: 8%;
   margin-top: 10%;
   align-items: flex-start;
@@ -367,55 +367,142 @@
     font-size: 0.8em;
   }
   .Aboutme-contactMail {
-    font-size: 0.45em;
+    font-size: 0.5em;
+  }
+}
+@media screen and (width <=375px) {
+  .Aboutme-2356container {
+    column-gap: 13.2%;
   }
 }
 @media screen and (375px <= width <= 425px) {
-  .Aboutme-2356container {
-    column-gap: 0%;
+  .Aboutme-number,
+  .Aboutme-number1 {
+    font-size: 15.75rem;
+  }
+  .Aboutme-contactTittle {
+    font-size: 1.2em;
+  }
+  .Aboutme-contactNumber {
+    font-size: 1.2em;
+  }
+  .Aboutme-contactMail {
+    font-size: 0.75em;
   }
 }
-/* @media screen and (320px <= width <=425px) {
-  .Aboutme-title {
-    font-size: 5rem;
+@media screen and (425px <= width <= 768px) {
+  .Aboutme-contactTittle {
+    font-size: 1.3em;
   }
-  .Aboutme-number {
+  .Aboutme-number,
+  .Aboutme-number1 {
+    font-size: 15.75rem;
+  }
+  .Aboutme-titleProf,
+  .Aboutme-title {
+    font-size: 1.5em;
+  }
+}
+@media screen and (768px <= width <= 1024px) {
+  .Aboutme-number,
+  .Aboutme-number1 {
+    font-size: 14.6rem;
+  }
+  .Aboutme-name,
+  .Aboutme-title,
+  .Aboutme-titleProf {
+    font-size: 2.4em;
+  }
+  .Aboutme-introName,
+  .Aboutme-introGraphic {
+    font-size: 1.11em;
+  }
+  .Aboutme-contactTittle {
+    font-size: 2.1em;
+  }
+  .Aboutme-contactNumber {
+    font-size: 1.6em;
+  }
+  .Aboutme-abilitieIcon {
+    width: 46.6%;
+  }
+  .Aboutme-abilitieIconF {
+    width: 20%;
+  }
+  .Aboutme-contactMail {
+    font-size: 0.9em;
+  }
+}
+@media screen and (1024px <= width <= 1200px) {
+  .Aboutme-name {
+    font-size: 3.6em;
+  }
+  .Aboutme-introName,
+  .Aboutme-introGraphic {
+    font-size: 1.67em;
+  }
+  .Aboutme-number,
+  .Aboutme-number1 {
     font-size: 16rem;
   }
-  .AboutBG {
-    width: 32%;
+  .Aboutme-title,
+  .Aboutme-titleProf {
+    font-size: 3.3em;
   }
-  .About2BG {
-    width: 58%;
+  .Aboutme-contactTittle {
+    font-size: 3em;
+  }
+  .Aboutme-contactNumber {
+    font-size: 2.45em;
+  }
+  .Aboutme-contactMail {
+    font-size: 1.4em;
+  }
+  .Aboutme-abilitieIcon {
+    width: 46.6%;
+  }
+  .Aboutme-abilitieIconF {
+    width: 20%;
   }
 }
-@media screen and (425px < width <= 1200px) {
-  .About2BG,
-  .AboutBG {
-    width: 32%;
+@media screen and (width > 1200px) {
+  .Aboutme-name {
+    font-size: 4.4em;
   }
-} */
-/* @media screen and (1200px < width <= 1440px) {
-  .About2BG,
-  .AboutBG {
-    width: 38%;
+  .Aboutme-introName,
+  .Aboutme-introGraphic {
+    font-size: 2.05em;
   }
-  .Aboutme-maininfo {
-    grid-template-columns: 65% 27.8%;
+  .Aboutme-title,
+  .Aboutme-titleProf {
+    font-size: 4em;
   }
-  .Aboutme-2356container {
-    column-gap: 10.2%;
+  .Aboutme-number,
+  .Aboutme-number1 {
+    font-size: 12.1rem;
   }
-  .Aboutme-3,
-  .Aboutme-6,
-  .Aboutme-2,
+  .Aboutme-description .Aboutme-subtitle {
+    margin-top: 4%;
+  }
   .Aboutme-5 {
-    grid-template-columns: 8.5625rem 1fr;
+    margin-top: -13rem;
   }
-  .Aboutme-title {
-    font-size: 5rem;
+  .Aboutme-abilitieIcon {
+    width: 46.6%;
   }
-  .Aboutme-number {
-    font-size: 16rem;
+  .Aboutme-abilitieIconF {
+    width: 20%;
   }
-} */
+  .Aboutme-contactTittle {
+    font-size: 3.6em;
+  }
+  .Aboutme-text {
+    font-size: 1rem;
+  }
+  .Aboutme-contactNumber {
+    font-size: 3em;
+  }
+  .Aboutme-contactMail {
+    font-size: 1.7em;
+  }
+}

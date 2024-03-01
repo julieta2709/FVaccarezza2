@@ -86,29 +86,13 @@
   top: 52%;
   right: 0;
 }
-/* @media screen and (width <= 1200px) {
-  .Broke2 {
-    width: 52.8%;
-  }
-  .Broke3 {
-    width: 66.6%;
-  }
-  .Broke5 {
-    width: 60.6%;
-  }
-  .Broke6 {
-    width: 115%;
-    margin-right: -2rem;
-  }
-  .Broke8 {
-    width: 80%;
-  }
-  .Broke9 {
-    width: 75%;
-  }
-  .Brokecel1 {
-    margin-left: -8rem;
-    width: 46%;
+@media screen and (768px <= width <= 1024px) {
+  .WorkIndividualphoto-container .Belink-container {
+    bottom: -6.5%;
   }
 }
- */
+@media screen and (width > 1200px) {
+  .WorkIndividualphoto-container .Belink-container {
+    bottom: -6.5%;
+  }
+}

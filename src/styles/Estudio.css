@@ -92,46 +92,26 @@
   z-index: 1;
   width: 50%;
 }
-/* @media screen and (width <=1200px) {
-  .Estudio3 {
-    width: 131%;
-  }
-  .EstudioCel-animationContainer {
-    margin-left: -28.8rem;
-    margin-top: 1.4rem;
-  }
-  .Ipad-container {
-    width: 31rem;
-    margin-right: -5.4rem;
-    margin-bottom: 6rem;
-  }
-  .Work-EstudioContainer .eclipse {
-    width: 50%;
-  }
-  .EstudioBgR {
-    width: 35%;
-  }
-  .EstudioBgBottomL {
-    width: 45%;
+@media screen and (768px <= width <= 1024px) {
+  .Work-EstudioContainer .WorkIndividualphoto-container .Belink-container {
+    bottom: -10.2%;
   }
 }
-@media screen and (1200px < width <= 1440px) {
-  .Estudio3 {
-    width: 131%;
+@media screen and (1024px <= width <= 1200px) {
+  .Work-EstudioContainer {
+    margin-bottom: 35%;
   }
-  .Ipad-container {
-    width: 31rem;
-    margin-right: -5.4rem;
-    margin-bottom: 6rem;
+  .Work-EstudioContainer .WorkIndividualphoto-container .Belink-container {
+    bottom: -12.9%;
+    right: 19.5%;
   }
 }
-@media screen and (width > 1400px) {
-  .Estudio3 {
-    width: 131%;
+@media screen and (width > 1200px) {
+  .Work-EstudioContainer {
+    margin-bottom: 35%;
   }
-  .Ipad-container {
-    width: 31rem;
-    margin-right: -5.4rem;
-    margin-bottom: 6rem;
+  .Work-EstudioContainer .WorkIndividualphoto-container .Belink-container {
+    bottom: -6.8%;
+    right: 19.3%;
   }
-} */
+}

@@ -27,7 +27,7 @@
   position: absolute;
   width: 2%;
   height: 0.62%;
-  top: 36.4%;
+  top: 37.5%;
   right: 33.3%;
 }
 .countdown-text {
@@ -53,43 +53,40 @@
   z-index: 3;
   width: 100%;
 }
-/* @media screen and (width <= 425px) {
-  .Moreno2 {
-    width: 130%;
-  }
-  .Moreno3 {
-    width: 161.5%;
-  }
-  .Moreno2 {
-    margin-left: -5rem;
-  }
-  .Nmp-AnimationContainer {
-    margin-left: 0.25rem;
+@media screen and (375px <= width <= 425px) {
+  .countdown-container {
+    top: 36.3%;
   }
 }
-@media screen and (425px < width <= 576px) {
-  .Moreno2 {
-    width: 130%;
-    margin-left: -5rem;
-  }
-  .Moreno3 {
-    width: 161%;
-  }
-  .Nmp-AnimationContainer {
-    margin-left: 0.25rem;
+@media screen and (425px <= width <= 768px) {
+  .countdown-container {
+    top: 37%;
   }
 }
-@media screen and (576px < width <= 1200px) {
-  .Moreno2 {
-    width: 129.8%;
+@media screen and (768px <= width <= 1024px) {
+  .countdown-text {
+    font-size: 0.6em;
   }
-  .Moreno3 {
-    width: 161.5%;
+  .countdown-container {
+    right: 34%;
+    top: 36.9%;
   }
-  .Moreno2 {
-    margin-left: -5rem;
+}
+@media screen and (1024px <= width <= 1200px) {
+  .countdown-text {
+    font-size: 0.74em;
   }
-  .Nmp-AnimationContainer {
-    margin-left: 0.25rem;
+  .countdown-container {
+    right: 34%;
+    top: 36.1%;
   }
-} */
+}
+@media screen and (width > 1200px) {
+  .countdown-text {
+    font-size: 0.91em;
+  }
+  .countdown-container {
+    right: 34%;
+    top: 38%;
+  }
+}
