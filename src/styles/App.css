@@ -157,3 +157,8 @@ body {
     width: 3.87%;
   } 
 }
+@media screen and (min-width: 1920px) {
+  .buttonUp-Container {
+    right: calc((100% - 1920px) / 2 + 7%);
+  }
+}
