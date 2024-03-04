@@ -14,17 +14,17 @@
   background-size: 5%;
 }
 /*imgBG*/
-.WorkRightBG {
-  position: absolute;
-  top: -18.75rem;
-  right: 0;
-  width: 35%;
-}
+.WorkRightBG,
 .WorkLeft {
   position: absolute;
-  left: 0;
   top: -18.75rem;
   width: 35%;
+}
+.WorkRightBG {
+  right: 0;
+}
+.WorkLeft {
+  left: 0;
 }
 .Work-TitleContainer {
   display: flex;
@@ -34,7 +34,7 @@
   justify-content: center;
 }
 .Work-mainTitle {
-  font-size: 11.25rem;
+  font-size: 9.25vw;
   text-decoration-line: underline;
   line-height: 1.1;
   text-decoration-thickness: from-font;
@@ -82,14 +82,6 @@
   justify-content: center;
   align-items: center;
 }
-.Work-ListItem a.Work-ItemLink[href="/#frog"] .Work-ItemText {
-  margin-left: -0.6rem;
-}
-.Work-ItemText {
-  margin-left: -0.8rem;
-  margin-bottom: 0.6rem;
-}
-
 /*animación*/
 .Work-ItemNumber,
 .Work-ItemText {
@@ -288,7 +280,7 @@
   font-family: "Magilio";
 }
 .Work-ItemNumber {
-  font-size: 5rem;
+  font-size: 4.5vw;
 }
 .Work-ItemText,
 .Work-TextIndividual,
@@ -304,20 +296,27 @@
 }
 .Work-ItemText,
 .WorkTitleDescription {
-  font-size: 1.25rem;
+  font-size: 1.1vw;
+}
+.Work-ListItem a.Work-ItemLink[href="/#frog"] .Work-ItemText {
+  margin-left: -0.55vw;
+}
+.Work-ItemText {
+  margin-left: -0.95vw;
+  margin-bottom: 2vh;
 }
 .Work-NumberIndividual {
-  font-size: 3em;
+  font-size: 12vw;
 }
 .Work-TextIndividual {
-  font-size: 0.95em;
+  font-size: 4vw;
 }
 .WorkTitleDescription {
   font-family: "Montserrat-Light";
 }
 .WorkTitleDate {
   font-family: "MontserratBold";
-  font-size: 0.9375rem;
+  font-size: 0.8vw;
 }
 
 li {
@@ -325,9 +324,6 @@ li {
 }
 /*media query*/
 @media screen and (width <= 320px) {
-  .Work-mainTitle {
-    font-size: 1.9em;
-  }
   .Work-NumberIndividual {
     font-size: 2.4em;
   }
@@ -340,9 +336,6 @@ li {
     display: block;
     overflow-wrap: break-word;
   }
-  .Work-ItemNumber {
-    font-size: 4rem;
-  }
   .Work-KpContainer .Work-DescriptionContainer {
     margin-top: -7%;
   }
@@ -350,27 +343,12 @@ li {
     margin-top: 0;
   }
 }
-@media screen and (375px <= width <= 425px) {
+@media screen and (375px > width <= 425px) {
   .Work-KpContainer .Work-TextIndividual {
     font-size: 0.941em;
   }
 }
-@media screen and (768px <= width <= 1024px) {
-  .Work-NumberIndividual {
-    font-size: 4.2em;
-  }
-  .Work-TextIndividual {
-    font-size: 1.93em;
-  }
-}
-@media screen and (1024px <= width <= 1200px) {
-  .Work-ItemNumber {
-    font-size: 4rem;
-  }
-  .Work-ItemText,
-  .WorkTitleDescription {
-    font-size: 1.14rem;
-  }
+@media screen and (1024px > width <= 1200px) {
   .Work-TitleIndivCont {
     margin-top: 1%;
   }
@@ -379,35 +357,10 @@ li {
   }
   .Work-NumberIndividual {
     margin-top: 30%;
-    font-size: 7em;
-  }
-  /*   .Work-MorenoContainer .Work-TextIndividual {
-    font-size: 2.8em;
-  } */
-  .Work-TextIndividual {
-    font-size: 2.6em;
   }
 }
 @media screen and (width > 1200px) {
-  .Work-mainTitle {
-    font-size: 9em;
-  }
-  .Work-ItemNumber {
-    font-size: 3.35rem;
-  }
-  .Work-ItemText,
-  .WorkTitleDescription {
-    font-size: 0.86rem;
-  }
-  .Work-ItemText {
-    margin-left: -0.75rem;
-    margin-bottom: 0.2rem;
-  }
   .Work-NumberIndividual {
-    font-size: 8.5em;
     margin-top: 15%;
-  }
-  .Work-TextIndividual {
-    font-size: 3.1em;
   }
 }

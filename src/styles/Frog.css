@@ -117,7 +117,7 @@
   right: 0;
   top: 49%;
 }
-@media screen and (768px <= width <= 1024px) {
+@media screen and (768px > width <= 1024px) {
   .FrogCel-container1,
   .FrogCel-container2,
   .FrogCel-container4 {
@@ -154,7 +154,7 @@
     margin-right: -18%;
   }
 }
-@media screen and (1024px <= width <= 1200px) {
+@media screen and (1024px > width <= 1200px) {
   .FrogCel-container1,
   .FrogCel-container2,
   .FrogCel-container4 {

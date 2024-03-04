@@ -29,13 +29,13 @@
 .Contact-main {
   font-family: "PP-Hattonbold";
   color: #3a3a39;
-  font-size: 5.8em;
+  font-size: 7.4vw;
   line-height: 1;
   letter-spacing: -0.3125rem;
 }
 .Contact-number {
   font-family: "Magilio";
-  font-size: 6em;
+  font-size: 8vw;
   color: #e52421;
   font-weight: normal;
   margin-top: 1rem;
@@ -43,7 +43,7 @@
 .Contact-mail {
   font-family: "PP-Hatton-Ultralight";
   color: #3a3a39;
-  font-size: 4em;
+  font-size: 5.2vw;
   margin-top: -1rem;
 }
 .Contact-LinkContainer {
@@ -58,70 +58,4 @@
 }
 .Contact-LinkContainer a img {
   width: 100%;
-}
-/* @media screen and (width <= 320px) {
-  .Contact-main {
-    font-size: 1.5em;
-  }
-  .Contact-number {
-    font-size: 1.6em;
-  }
-  .Contact-mail {
-    font-size: 1em;
-  }
-} */
-@media screen and (320px <= width <= 375px) {
-  .Contact-main {
-    font-size: 1.5em;
-  }
-  .Contact-number {
-    font-size: 1.6em;
-  }
-  .Contact-mail {
-    font-size: 1em;
-  }
-}
-@media screen and (375px <= width <= 425px) {
-  .Contact-main {
-    font-size: 1.76em;
-  }
-  .Contact-number {
-    font-size: 2em;
-  }
-  .Contact-mail {
-    font-size: 1.3em;
-  }
-}
-@media screen and (425px <= width <= 768px) {
-  .Contact-main {
-    font-size: 2em;
-  }
-  .Contact-number {
-    font-size: 2.2em;
-  }
-  .Contact-mail {
-    font-size: 1.4em;
-  }
-}
-@media screen and (768px <= width <= 1024px) {
-  .Contact-main {
-    font-size: 3.5em;
-  }
-  .Contact-number {
-    font-size: 3.8em;
-  }
-  .Contact-mail {
-    font-size: 2.5em;
-  }
-}
-@media screen and (1024px <= width <= 1200px) {
-  .Contact-main {
-    font-size: 4.7em;
-  }
-  .Contact-number {
-    font-size: 5em;
-  }
-  .Contact-mail {
-    font-size: 3.3em;
-  }
 }

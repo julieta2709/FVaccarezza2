@@ -73,7 +73,7 @@
 .Photography-mainText1,
 .Photography-mainText2 {
   font-family: "PP-HattonBold";
-  font-size: 6.5em;
+  font-size: 8.4vw;
   color: #3a3a39;
 }
 .PhotosContainer {
@@ -82,37 +82,17 @@
   z-index: 2;
 }
 
-@media screen and (width <= 320px) {
+@media screen and ( width <= 375px) {
   .PhotoBg2 {
     top: 8%;
   }
   .PhotoBg3 {
     top: 35.5%;
-  }
-  .Photography-mainText1,
-  .Photography-mainText2 {
-    font-size: 1.7em;
-  }
-}
-@media screen and (320px <= width <= 375px) {
-  .PhotoBg2 {
-    top: 8%;
-  }
-  .PhotoBg3 {
-    top: 35.5%;
-  }
-  .Photography-mainText1,
-  .Photography-mainText2 {
-    font-size: 1.7em;
   }
 }
 @media screen and (375px <= width <= 425px) {
   .PhotoBg3 {
     top: 35.5%;
-  }
-  .Photography-mainText1,
-  .Photography-mainText2 {
-    font-size: 2em;
   }
 }
 @media screen and (425px <= width <= 768px) {
@@ -121,10 +101,6 @@
   }
   .PhotoBg3 {
     top: 37%;
-  }
-  .Photography-mainText1,
-  .Photography-mainText2 {
-    font-size: 2.27em;
   }
   .RedCircle {
     margin-right: 9%;
@@ -139,28 +115,16 @@
   }
 }
 @media screen and (768px <= width <= 1024px) {
-  .Photography-mainText1,
-  .Photography-mainText2 {
-    font-size: 4.07em;
-  }
   .RedCircle {
     margin-right: 9%;
   }
 }
 @media screen and (1024px <= width <= 1200px) {
-  .Photography-mainText1,
-  .Photography-mainText2 {
-    font-size: 5.4em;
-  }
   .RedCircle {
     margin-right: 9%;
   }
 }
 @media screen and (width > 1200px) {
-  .Photography-mainText1,
-  .Photography-mainText2 {
-    font-size: 6.6em;
-  }
   .RedCircle {
     margin-right: 9%;
   }

@@ -48,8 +48,8 @@ body {
   bottom: 5%;
   right: 7%;
   z-index: 999;
-  width: 3.45%;
-} 
+  width: 4%;
+}
 /*fuentes*/
 @font-face {
   font-family: "Montserrat";
@@ -116,17 +116,17 @@ body {
   font-display: swap;
 }
 /*medias querys*/
-@media screen and (width <= 425px ) {
+@media screen and (width <= 425px) {
   html {
     font-size: 4px;
   }
 }
-@media screen and (425px <= width <= 576px) {
+@media screen and (425px > width <= 576px) {
   html {
     font-size: 4.8px;
   }
 }
-@media screen and (576px <= width <= 768px) {
+@media screen and (576px > width <= 768px) {
   html {
     font-size: 6px;
   }
@@ -134,28 +134,28 @@ body {
 @media screen and (425px <= width <=768px) {
   .buttonUp-Container {
     width: 3.91%;
-  } 
+  }
 }
-@media screen and (768px <= width <= 1024px) {
+@media screen and (768px > width <= 1024px) {
   html {
     font-size: 8.5px;
   }
   .buttonUp-Container {
     width: 3.91%;
-  } 
+  }
 }
-@media screen and (1024px <= width <= 1200px) {
+@media screen and (1024px > width <= 1200px) {
   html {
     font-size: 10px;
   }
   .buttonUp-Container {
     width: 3.91%;
-  } 
+  }
 }
 @media screen and (width > 1200px) {
   .buttonUp-Container {
     width: 3.87%;
-  } 
+  }
 }
 @media screen and (min-width: 1920px) {
   .buttonUp-Container {

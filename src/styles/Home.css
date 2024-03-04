@@ -1,6 +1,7 @@
 /*layout*/
 .Home-container {
   width: 100%;
+  margin-top: 10vh;
   max-width: 1920px;
   display: flex;
   justify-content: center;
@@ -43,13 +44,13 @@
 h2,
 .year {
   font-family: "Magilio";
-  font-size: 23.43em;
+  font-size: 33vw;
   font-weight: normal;
   color: #e52421;
   line-height: 1;
   margin: 0;
-  grid-column: 2 / span 1;
-  grid-row: 1 / span 1;
+  grid-column: 2;
+  grid-row: 1;
   margin-block-start: 0.13em;
   margin-block-end: 0;
   justify-self: center;
@@ -58,7 +59,7 @@ h2,
 h1,
 .portfolio {
   font-family: "PP-Hattonbold";
-  font-size: 5.86em;
+  font-size: 8.4vw;
   margin: 0;
   line-height: 1;
   grid-column: 2 / span 1;
@@ -72,14 +73,14 @@ h1,
 }
 .fv {
   font-family: "Montserrat";
-  font-size: 0.6em;
+  font-size: 0.8vw;
   font-weight: bold;
   justify-self: flex-end;
   align-self: flex-end;
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
   line-height: 10;
-  margin-right: 6%;
+  margin-right: 3%;
 }
 /*animaciones*/
 .HomePF-Container:hover .portfolio {
@@ -97,82 +98,8 @@ h1,
 .year {
   transition: transform 2s cubic-bezier(0.21, 0.87, 0.35, 1);
 }
-@media screen and (width <= 375px) {
-  h2,
-  .year {
-    font-size: 6.25em;
-  }
-  h1,
-  .portfolio {
-    font-size: 1.56em;
-  }
+@media screen and (width <= 425px) {
   .fv {
-    font-size: 0.23em;
-  }
-}
-@media screen and (375px <= width <= 425px) {
-  h2,
-  .year {
-    font-size: 7.3em;
-  }
-  h1,
-  .portfolio {
-    font-size: 1.83em;
-  }
-  .fv {
-    font-size: 0.187em;
-  }
-}
-@media screen and (425px <= width <= 768px) {
-  h2,
-  .year {
-    font-size: 8.3em;
-  }
-  h1,
-  .portfolio {
-    font-size: 2.08em;
-  }
-  .fv {
-    font-size: 0.21em;
-  }
-}
-@media screen and (768px <= width <= 1024px) {
-  h2,
-  .year {
-    font-size: 15em;
-  }
-  h1,
-  .portfolio {
-    font-size: 3.75em;
-  }
-  .fv {
-    font-size: 0.381em;
-  }
-}
-@media screen and (1024px <= width <= 1200px) {
-  h2,
-  .year {
-    font-size: 20em;
-  }
-  h1,
-  .portfolio {
-    font-size: 4.997em;
-  }
-  .fv {
-    font-size: 0.509em;
-  }
-}
-@media screen and (width > 1200px) {
-  h2,
-  .year {
-    font-size: 24.15em;
-  }
-  h1,
-  .portfolio {
-    font-size: 6.06em;
-  }
-  .fv {
-    font-size: 0.62em;
-    margin-right: 5%
+    font-size: 1.1vw;
   }
 }

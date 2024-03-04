@@ -58,12 +58,12 @@
     top: 36.3%;
   }
 }
-@media screen and (425px <= width <= 768px) {
+@media screen and (425px > width <= 768px) {
   .countdown-container {
     top: 37%;
   }
 }
-@media screen and (768px <= width <= 1024px) {
+@media screen and (768px > width <= 1024px) {
   .countdown-text {
     font-size: 0.6em;
   }
@@ -72,7 +72,7 @@
     top: 36.9%;
   }
 }
-@media screen and (1024px <= width <= 1200px) {
+@media screen and (1024px > width <= 1200px) {
   .countdown-text {
     font-size: 0.74em;
   }

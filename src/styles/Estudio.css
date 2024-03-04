@@ -97,7 +97,7 @@
     bottom: -10.2%;
   }
 }
-@media screen and (1024px <= width <= 1200px) {
+@media screen and (1024px > width <= 1200px) {
   .Work-EstudioContainer {
     margin-bottom: 35%;
   }

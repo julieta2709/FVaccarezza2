@@ -118,7 +118,7 @@
   bottom: 17%;
   width: 32.5%;
 }
-@media screen and (768px <= width <= 1024px) {
+@media screen and (768px > width <= 1024px) {
   .Opamecel1,
   .Opamecel2,
   .Opamecel3 {
@@ -144,7 +144,7 @@
     margin-top: 2rem;
   }
 }
-@media screen and (1024px <= width <= 1200px) {
+@media screen and (1024px > width <= 1200px) {
   .Opamecel1,
   .Opamecel2,
   .Opamecel3 {

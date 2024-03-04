@@ -4,7 +4,7 @@
   max-width: 1920px;
   display: flex;
   align-items: center;
-  height: 22.9vh;
+  height: 20vh;
   position: fixed;
   top: 0;
   background-color: #f8f4ef;
@@ -16,7 +16,7 @@
 .navbar {
   font-family: "Montserrat";
   font-weight: bold;
-  font-size: 0.59em;
+  font-size: 1.19vw;
   width: 100%;
   height: 100%;
   display: flex;
@@ -40,77 +40,14 @@
   justify-content: center;
   flex-grow: 1;
   justify-content: space-evenly;
-/*   width: 70%;
-  margin-left: 20%;
-  margin-right: 30%; */
 }
 .navbar-menu {
   display: none;
 }
-/* .nav-item {
-  margin-right: 8%;
-} */
 
 .nav-link {
   color: #3a3a39;
 }
 .nav-link:hover {
   color: #e52421;
-}
-/*medias query*/
-@media screen and (width <= 320px) {
-  .Header-container {
-    height: 6.1vh;
-  }
-  .navbar {
-    font-size: 0.35em;
-  }
-}
-@media screen and (320 <= width <= 375px) {
-  .Header-container {
-    height: 7.16vh;
-  }
-  .navbar {
-    font-size: 0.35em;
-  }
-}
-@media screen and (375px <= width <= 425px) {
-  .Header-container {
-    height: 8.12vh;
-  }
-  .navbar {
-    font-size: 0.35em;
-  }
-}
-@media screen and (425px <= width <= 768px) {
-  .Header-container {
-    height: 8.6vh;
-  }
-  .navbar {
-    font-size: 0.35em;
-  }
-}
-@media screen and (768px <= width <= 1024px) {
-  .Header-container {
-    height: 15.54vh;
-  }
-  .navbar {
-    font-size: 0.57em;
-  }
-}
-@media screen and (1024px <= width <= 1200px) {
-  .Header-container {
-    height: 19.31vh;
-  }
-  .navbar {
-    font-size: 0.75em;
-  }
-}
-@media screen and (width > 1200px) {
-  .Header-container {
-    max-height: 16vh;
-  }
-  .navbar {
-    font-size: 0.92em;
-  }
 }

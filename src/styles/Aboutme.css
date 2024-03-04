@@ -3,13 +3,10 @@
 .Aboutme-name,
 .Aboutme-titleProf,
 .Aboutme-subtitle,
-.Aboutme-,
+.Aboutme-title,
 .Aboutme-contactTittle,
 .Aboutme-contactMail {
   color: #3a3a39;
-}
-.Aboutme-title {
-  color: #3a3a39ec;
 }
 .Aboutme-name,
 .Aboutme-title,
@@ -24,12 +21,12 @@
 .Aboutme-introName,
 .Aboutme-introGraphic {
   font-family: "PP-Hatton-Ultralight";
-  font-size: 0.64em;
+  font-size: 2.65vw;
 }
 .Aboutme-name,
 .Aboutme-title,
 .Aboutme-titleProf {
-  font-size: 1.4em;
+  font-size: 5.7vw;
   font-weight: 700;
 }
 .Aboutme-number,
@@ -42,27 +39,27 @@
 }
 .Aboutme-number,
 .Aboutme-number1 {
-  font-size: 18.75rem;
+  font-size: 15.7vw;
 }
 .Aboutme-text {
   font-family: "Montserrat-Light";
-  font-size: 1.25rem;
+  font-size: 1.2vw;
   line-height: 1.4;
 }
 .Aboutme-2 .Aboutme-2container .Aboutme-subtitle2 .Aboutme-text {
   font-family: "Montserrat-Light";
-  font-size: 1.25rem;
+  font-size: 1.2vw;
   line-height: 1.4;
 }
 .Aboutme-subtitle2 {
   font-family: "MontserratSemiboldItalic";
-  font-size: 1.25rem;
+  font-size: 1.2vw;
   line-height: 1;
   margin-bottom: 2%;
 }
 .Aboutme-subtitle {
   font-family: "MontserratBold";
-  font-size: 1.25rem;
+  font-size: 1vw;
   line-height: normal;
   font-style: normal;
 }
@@ -74,15 +71,15 @@
   margin-bottom: 1.4375rem;
 }
 .Aboutme-contactTittle {
-  font-size: 5rem;
+  font-size: 5vw;
   font-weight: 700;
   letter-spacing: -0.325rem;
 }
 .Aboutme-contactNumber {
-  font-size: 4.375rem;
+  font-size: 4vw;
 }
 .Aboutme-contactMail {
-  font-size: 2.5rem;
+  font-size: 2.3vw;
   font-weight: 200;
 }
 /*Layout styles*/
@@ -191,11 +188,11 @@
   grid-column: 2;
   display: flex;
   flex-direction: column;
-  margin-left: 10%;
+  margin-left: 12%;
   margin-right: 15%;
 }
 .Aboutme-description .Aboutme-subtitle {
-  margin-top: 2%;
+  margin-top: 4%;
   margin-bottom: 2%;
 }
 .Aboutme-subtitle {
@@ -207,7 +204,6 @@
   grid-template-rows: auto auto auto;
   grid-template-columns: 50% 50%;
   justify-content: center;
-  /* column-gap: 13.2%; */
   row-gap: 8%;
   margin-top: 10%;
   align-items: flex-start;
@@ -287,7 +283,7 @@
 }
 /*3*/
 .Aboutme-3 .Aboutme-title {
-  margin-left: -16%;
+  margin-left: -17%;
 }
 
 /*6*/
@@ -296,7 +292,7 @@
 }
 .Aboutme-6 .Aboutme-title,
 .Aboutme-2 .Aboutme-title {
-  margin-left: -19.5%;
+  margin-left: -20.5%;
 }
 .Aboutme-6 .Aboutme-6container .Aboutme-text {
   display: grid;
@@ -313,10 +309,10 @@
   margin-right: 1.3125rem;
 }
 .Aboutme-abilitieIcon {
-  width: 70%;
+  width: 46.6%;
 }
 .Aboutme-abilitieIconF {
-  width: 35%;
+  width: 20%;
 }
 .Aboutme-6container .Aboutme-text .Aboutme-abilitieIcon span,
 .Aboutme-abilitieIconF span {
@@ -331,7 +327,7 @@
   margin-top: -15rem;
 }
 .Aboutme-5 .Aboutme-title {
-  margin-left: -19.5%;
+  margin-left: -20.5%;
 }
 .Aboutme-5 .Aboutme-subtitle {
   margin-bottom: 1.75rem;
@@ -345,164 +341,6 @@
   .Aboutme-2356container {
     column-gap: 3.2%;
   }
-  .Aboutme-name {
-    font-size: 1.13em;
-  }
-  .Aboutme-introGraphic,
-  .Aboutme-introName {
-    font-size: 0.53em;
-  }
-  .Aboutme-number1,
-  .Aboutme-number {
-    font-size: 3.13em;
-  }
-  .Aboutme-titleProf,
-  .Aboutme-title {
-    font-size: 1em;
-  }
-  .Aboutme-contactTittle {
-    font-size: 0.84em;
-  }
-  .Aboutme-contactNumber {
-    font-size: 0.8em;
-  }
-  .Aboutme-contactMail {
-    font-size: 0.5em;
-  }
 }
-@media screen and (width <=375px) {
-  .Aboutme-2356container {
-    column-gap: 13.2%;
-  }
-}
-@media screen and (375px <= width <= 425px) {
-  .Aboutme-number,
-  .Aboutme-number1 {
-    font-size: 15.75rem;
-  }
-  .Aboutme-contactTittle {
-    font-size: 1.2em;
-  }
-  .Aboutme-contactNumber {
-    font-size: 1.2em;
-  }
-  .Aboutme-contactMail {
-    font-size: 0.75em;
-  }
-}
-@media screen and (425px <= width <= 768px) {
-  .Aboutme-contactTittle {
-    font-size: 1.3em;
-  }
-  .Aboutme-number,
-  .Aboutme-number1 {
-    font-size: 15.75rem;
-  }
-  .Aboutme-titleProf,
-  .Aboutme-title {
-    font-size: 1.5em;
-  }
-}
-@media screen and (768px <= width <= 1024px) {
-  .Aboutme-number,
-  .Aboutme-number1 {
-    font-size: 14.6rem;
-  }
-  .Aboutme-name,
-  .Aboutme-title,
-  .Aboutme-titleProf {
-    font-size: 2.4em;
-  }
-  .Aboutme-introName,
-  .Aboutme-introGraphic {
-    font-size: 1.11em;
-  }
-  .Aboutme-contactTittle {
-    font-size: 2.1em;
-  }
-  .Aboutme-contactNumber {
-    font-size: 1.6em;
-  }
-  .Aboutme-abilitieIcon {
-    width: 46.6%;
-  }
-  .Aboutme-abilitieIconF {
-    width: 20%;
-  }
-  .Aboutme-contactMail {
-    font-size: 0.9em;
-  }
-}
-@media screen and (1024px <= width <= 1200px) {
-  .Aboutme-name {
-    font-size: 3.6em;
-  }
-  .Aboutme-introName,
-  .Aboutme-introGraphic {
-    font-size: 1.67em;
-  }
-  .Aboutme-number,
-  .Aboutme-number1 {
-    font-size: 16rem;
-  }
-  .Aboutme-title,
-  .Aboutme-titleProf {
-    font-size: 3.3em;
-  }
-  .Aboutme-contactTittle {
-    font-size: 3em;
-  }
-  .Aboutme-contactNumber {
-    font-size: 2.45em;
-  }
-  .Aboutme-contactMail {
-    font-size: 1.4em;
-  }
-  .Aboutme-abilitieIcon {
-    width: 46.6%;
-  }
-  .Aboutme-abilitieIconF {
-    width: 20%;
-  }
-}
-@media screen and (width > 1200px) {
-  .Aboutme-name {
-    font-size: 4.4em;
-  }
-  .Aboutme-introName,
-  .Aboutme-introGraphic {
-    font-size: 2.05em;
-  }
-  .Aboutme-title,
-  .Aboutme-titleProf {
-    font-size: 4em;
-  }
-  .Aboutme-number,
-  .Aboutme-number1 {
-    font-size: 12.1rem;
-  }
-  .Aboutme-description .Aboutme-subtitle {
-    margin-top: 4%;
-  }
-  .Aboutme-5 {
-    margin-top: -13rem;
-  }
-  .Aboutme-abilitieIcon {
-    width: 46.6%;
-  }
-  .Aboutme-abilitieIconF {
-    width: 20%;
-  }
-  .Aboutme-contactTittle {
-    font-size: 3.6em;
-  }
-  .Aboutme-text {
-    font-size: 1rem;
-  }
-  .Aboutme-contactNumber {
-    font-size: 3em;
-  }
-  .Aboutme-contactMail {
-    font-size: 1.7em;
-  }
-}
+
+
